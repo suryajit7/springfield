@@ -4,23 +4,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.annotation.PostConstruct;
 
-public abstract class BasePage {
+public class BasePage {
+
+    @Value("${default.timeout:50}")
+    private int timeout;
 
     @Autowired
-    public WebDriver driver;
+    protected WebDriver driver;
 
     @Autowired
-    public WebDriverWait wait;
+    protected WebDriverWait wait;
 
     @PostConstruct
     private void init(){
         PageFactory.initElements(this.driver, this);
     }
 
-    public abstract Boolean isLoaded();
+    //public Boolean isLoaded();
 
 
 
