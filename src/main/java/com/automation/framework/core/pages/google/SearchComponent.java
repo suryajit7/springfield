@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class SearchComponent extends BasePage {
 
@@ -15,19 +17,20 @@ public class SearchComponent extends BasePage {
     private WebElement searchInputField;
 
     @FindBy(name = GOOGLE_SEARCH_BTN)
-    private WebElement googleSearchBtn;
+    private List<WebElement> googleSearchBtnList;
 
     //TODO  - Add wait
-    public void searchInGoogle(String input){
+    public void searchInGoogle(String input) {
         this.searchInputField.click();
         this.searchInputField.sendKeys(input);
+
     }
 
-    public void clickGoogleSearchButton(){
-        this.googleSearchBtn.click();
+    public void clickGoogleSearchButton() {
+        this.googleSearchBtnList.stream()
+                .filter(btn -> btn.isEnabled() && btn.isDisplayed())
+                .findFirst().get().click();
     }
-
-
 
 
 }
