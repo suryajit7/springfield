@@ -1,7 +1,6 @@
 package com.automation.framework.core.reporting;
 
-import com.assertthat.selenium_shutterbug.core.Capture;
-import com.assertthat.selenium_shutterbug.core.Shutterbug;
+
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.*;
