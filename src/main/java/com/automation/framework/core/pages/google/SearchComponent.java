@@ -3,6 +3,8 @@ package com.automation.framework.core.pages.google;
 import com.automation.framework.core.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -21,6 +23,7 @@ public class SearchComponent extends BasePage {
 
     //TODO  - Add wait
     public void searchInGoogle(String input) {
+        //wait.until(ExpectedConditions.visibilityOf(this.searchInputField));
         this.searchInputField.click();
         this.searchInputField.sendKeys(input);
 

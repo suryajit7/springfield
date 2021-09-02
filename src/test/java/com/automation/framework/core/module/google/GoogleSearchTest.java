@@ -5,10 +5,12 @@ import com.automation.framework.core.pages.google.GoogleSearchPage;
 import com.automation.framework.core.util.ScreenshotUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.test.context.ActiveProfiles;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.core.reporting.TestExecutionListener.getTestMethod;
 
+@ActiveProfiles("remote")
 public class GoogleSearchTest extends BaseTestNGTest {
 
 
