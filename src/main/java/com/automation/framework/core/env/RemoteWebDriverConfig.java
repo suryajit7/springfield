@@ -16,24 +16,24 @@ import java.net.URL;
 
 @Lazy
 @Configuration
-@Profile("remote")
 public class RemoteWebDriverConfig {
 
     @Value("${selenium.grid.url}")
     private URL url;
 
-
     @Bean
-    @ConditionalOnMissingBean
+    @ConditionalOnProperty(name = "browser", havingValue = "chrome")
     public WebDriver remoteChromeDriver() {
         return new RemoteWebDriver(this.url, DesiredCapabilities.chrome());
     }
 
+/*
     @Bean
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver remoteGeckoDriver() {
         return new RemoteWebDriver(this.url, DesiredCapabilities.firefox());
     }
+*/
 
     @Bean
     public WebDriverWait webDriverWait(WebDriver driver) {

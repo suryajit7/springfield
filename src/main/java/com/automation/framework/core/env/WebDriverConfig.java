@@ -24,7 +24,6 @@ import java.util.Map;
 
 @Lazy
 @Configuration
-@Profile("!remote")
 public class WebDriverConfig {
 
 
@@ -67,16 +66,16 @@ public class WebDriverConfig {
         //chromeOptions.setCapability(CapabilityType.BROWSER_NAME, "chrome");
         chromeOptions.setCapability("chrome.switches", Arrays.asList("--disable-extensions"));
         chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
-        prefs.put("profile.content_settings.exceptions.automatic_downloads.*.setting", 1);
-        chromeOptions.setExperimentalOption("prefs", prefs);
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--allow-insecure-localhost");
         chromeOptions.addArguments("disable-gpu");
         chromeOptions.addArguments("--window-size=1920,1080");
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+        prefs.put("profile.content_settings.exceptions.automatic_downloads.*.setting", 1);
+        chromeOptions.setExperimentalOption("prefs", prefs);
         return chromeOptions;
     }
 }
