@@ -1,4 +1,4 @@
-package com.automation.framework.core.setup;
+package com.automation.framework.core.util;
 
 import org.springframework.stereotype.Component;
 

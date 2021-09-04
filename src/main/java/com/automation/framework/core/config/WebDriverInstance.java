@@ -1,6 +1,7 @@
 package com.automation.framework.core.config;
 
-import com.automation.framework.core.config.annotations.LazyConfiguration;
+import com.automation.framework.core.config.annotation.LazyConfiguration;
+import com.automation.framework.core.config.annotation.ThreadScopeBean;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,9 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.Scope;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -23,23 +22,21 @@ import java.util.Map;
 public class WebDriverInstance {
 
 
-    @Bean
-    @Scope("browserscope")
+    @ThreadScopeBean
     @ConditionalOnProperty(name = "browser", havingValue = "chrome")
     WebDriver getChromeInstance() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
 
-    @Bean
+    @ThreadScopeBean
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     WebDriver getGeckoInstance(){
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
     }
 
-    @Bean
-    @ConditionalOnProperty(name = "browser", havingValue = "edge")
+    @ThreadScopeBean
     WebDriver getEdgeInstance(){
         WebDriverManager.edgedriver().setup();
         return new EdgeDriver();

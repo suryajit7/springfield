@@ -1,6 +1,6 @@
-package com.automation.framework.core.config.annotations;
+package com.automation.framework.core.config.annotation;
 
-
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -9,9 +9,11 @@ import java.lang.annotation.*;
 
 @Lazy
 @Component
-@Scope("prototype")
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 @Documented
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Page {
+public @interface PageComponent {
+
+
 }

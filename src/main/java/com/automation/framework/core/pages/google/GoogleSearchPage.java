@@ -1,6 +1,6 @@
 package com.automation.framework.core.pages.google;
 
-import com.automation.framework.core.config.annotations.Page;
+import com.automation.framework.core.config.annotation.Page;
 import com.automation.framework.core.pages.BasePage;
 import org.springframework.beans.factory.annotation.Autowired;
 

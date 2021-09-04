@@ -1,4 +1,4 @@
-package com.automation.framework.core.config.annotations;
+package com.automation.framework.core.config.annotation;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
