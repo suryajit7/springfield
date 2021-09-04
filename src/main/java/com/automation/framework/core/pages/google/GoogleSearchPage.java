@@ -1,12 +1,12 @@
 package com.automation.framework.core.pages.google;
 
+import com.automation.framework.core.config.annotations.Page;
 import com.automation.framework.core.pages.BasePage;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
+@Page
 public class GoogleSearchPage extends BasePage {
 
     @Autowired
@@ -22,8 +22,8 @@ public class GoogleSearchPage extends BasePage {
         this.driver.get(url);
     }
 
-    public void performSearch() {
-        this.searchComponent.searchInGoogle("sas");
+    public void performSearch(String input) {
+        this.searchComponent.searchInGoogle(input);
     }
 
 

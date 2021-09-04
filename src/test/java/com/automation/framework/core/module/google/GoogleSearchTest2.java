@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import static com.automation.framework.core.reporting.TestExecutionListener.getTestMethod;
 
 
-public class GoogleSearchTest extends BaseTestNGTest {
+public class GoogleSearchTest2 extends BaseTestNGTest {
 
 
     @Autowired
@@ -24,8 +24,8 @@ public class GoogleSearchTest extends BaseTestNGTest {
     @Test
     public void googleSearchTest() {
         this.googleSearchPage.goToURL();
-        this.googleSearchPage.performSearch("test1");
-        this.screenshotUtil.takeScreenshot(getTestMethod(), "test1");
+        this.googleSearchPage.performSearch("test2");
+        this.screenshotUtil.takeScreenshot(getTestMethod(), "test2");
 
     }
 

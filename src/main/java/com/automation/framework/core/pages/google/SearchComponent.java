@@ -1,15 +1,13 @@
 package com.automation.framework.core.pages.google;
 
+import com.automation.framework.core.config.annotations.PageComponent;
 import com.automation.framework.core.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+@PageComponent
 public class SearchComponent extends BasePage {
 
     private final String SEARCH_INPUT_FIELD = "//input[@title='Search']";

@@ -1,22 +1,19 @@
-package com.automation.framework.core.env;
+package com.automation.framework.core.config;
 
+import com.automation.framework.core.config.annotations.LazyConfiguration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Profile;
 
 import java.net.URL;
 
 @Profile("remote")
-@Lazy
-@Configuration
-public class RemoteWebDriverConfig {
+@LazyConfiguration
+public class RemoteWebDriverInstance {
 
     @Value("${selenium.grid.url}")
     private URL url;
@@ -31,11 +28,6 @@ public class RemoteWebDriverConfig {
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver remoteGeckoDriver() {
         return new RemoteWebDriver(this.url, DesiredCapabilities.firefox());
-    }
-
-    @Bean
-    public WebDriverWait webDriverWait(WebDriver driver) {
-        return new WebDriverWait(driver, 10);
     }
 
 

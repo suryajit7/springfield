@@ -1,5 +1,6 @@
-package com.automation.framework.core.env;
+package com.automation.framework.core.config;
 
+import com.automation.framework.core.config.annotations.LazyConfiguration;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,28 +8,23 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.Scope;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 @Profile("!remote")
-@Lazy
-@Configuration
-public class WebDriverConfig {
+@LazyConfiguration
+public class WebDriverInstance {
 
 
     @Bean
+    @Scope("browserscope")
     @ConditionalOnProperty(name = "browser", havingValue = "chrome")
     WebDriver getChromeInstance() {
         WebDriverManager.chromedriver().setup();
@@ -49,10 +45,6 @@ public class WebDriverConfig {
         return new EdgeDriver();
     }
 
-    @Bean
-    public WebDriverWait webDriverWait(WebDriver driver) {
-        return new WebDriverWait(driver, 10);
-    }
 
 
     private ChromeOptions configureChromeOptions() {
