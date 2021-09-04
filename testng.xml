@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="C:/code/automation-suite">
+        <classes>
+            <class name="com.automation.framework.core.module.google.GoogleSearchTest">
+            </class>
+        </classes>
+    </test>
+    <test name="sas">
+        <classes>
+            <class name="com.automation.framework.core.module.google.GoogleSearchTest2">
+            </class>
+        </classes>
+    </test>
+</suite>
