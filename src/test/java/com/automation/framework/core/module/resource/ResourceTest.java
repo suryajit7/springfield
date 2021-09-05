@@ -1,4 +1,4 @@
-package com.automation.framework.core.module.csv;
+package com.automation.framework.core.module.resource;
 
 import com.automation.framework.core.BaseTestNGTest;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,7 +10,7 @@ import java.nio.file.Files;
 
 public class ResourceTest extends BaseTestNGTest {
 
-    @Value("classpath:test-data/test-data-file.csv")
+    @Value("classpath:test-data/test-data-file.resource")
     private Resource csvResource;
 
     @Value("https://www.w3.org/TR/PNG/iso_8859-1.txt")
@@ -18,14 +18,12 @@ public class ResourceTest extends BaseTestNGTest {
 
     @Test
     public void csvResourceTest() throws IOException {
-
         Files.readAllLines(csvResource.getFile().toPath())
                 .forEach(System.out::println);
     }
 
     @Test
     public void txtResourceTest() throws IOException {
-
         System.out.printf(new String(textFile.getInputStream().readAllBytes()));
     }
 }
