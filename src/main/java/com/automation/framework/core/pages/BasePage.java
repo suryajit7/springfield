@@ -1,6 +1,7 @@
 package com.automation.framework.core.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,11 @@ public class BasePage {
     @Autowired
     protected WebDriverWait wait;
 
+    @Autowired
+    protected Actions actions;
+
     @PostConstruct
-    private void init(){
+    private void init() {
         PageFactory.initElements(this.driver, this);
     }
 

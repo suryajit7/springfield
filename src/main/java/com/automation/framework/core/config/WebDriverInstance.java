@@ -37,6 +37,7 @@ public class WebDriverInstance {
     }
 
     @ThreadScopeBean
+    @ConditionalOnProperty(name = "browser", havingValue = "edge")
     WebDriver getEdgeInstance(){
         WebDriverManager.edgedriver().setup();
         return new EdgeDriver();

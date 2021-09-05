@@ -27,7 +27,6 @@ dependencies {
 	implementation 'io.github.bonigarcia:webdrivermanager:4.4.3'
 	implementation 'org.projectlombok:lombok:1.18.12'
 	implementation 'com.github.javafaker:javafaker:1.0.2'
-	implementation 'org.apache.commons:commons-resource:1.9.0'
 	implementation 'com.opencsv:opencsv:5.5.1'
 	implementation 'org.awaitility:awaitility:4.1.0'
 	implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-beta-4'
