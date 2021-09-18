@@ -1,7 +1,7 @@
-package com.automation.framework.core.pages.google;
+package com.automation.framework.core.page.google;
 
 import com.automation.framework.core.config.annotation.PageComponent;
-import com.automation.framework.core.pages.BasePage;
+import com.automation.framework.core.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

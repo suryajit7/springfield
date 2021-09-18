@@ -10,15 +10,15 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Profile;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-@Profile("!remote")
+
 @LazyConfiguration
+@ConditionalOnProperty(name = "runmode", havingValue = "local")
 public class WebDriverInstance {
 
 

@@ -1,12 +1,12 @@
-package com.automation.framework.core.pages.window;
+package com.automation.framework.core.page.window;
 
-import com.automation.framework.core.config.annotation.Page;
-import com.automation.framework.core.pages.BasePage;
+import com.automation.framework.core.config.annotation.Window;
+import com.automation.framework.core.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-@Page
-public class PageB extends BasePage {
+@Window("Page A")
+public class PageA extends BasePage {
 
     @FindBy(id = "area")
     private WebElement textArea;

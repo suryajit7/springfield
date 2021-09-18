@@ -10,7 +10,7 @@ import java.nio.file.Files;
 
 public class ResourceTest extends BaseTestNGTest {
 
-    @Value("classpath:test-data/test-data-file.resource")
+    @Value("classpath:test-data/test-data-file.csv")
     private Resource csvResource;
 
     @Value("https://www.w3.org/TR/PNG/iso_8859-1.txt")

@@ -1,14 +1,11 @@
 package com.automation.framework.core.module.window;
 
 import com.automation.framework.core.BaseTestNGTest;
-import com.automation.framework.core.pages.window.MainPage;
-import com.automation.framework.core.pages.window.PageA;
-import com.automation.framework.core.pages.window.PageB;
-import com.automation.framework.core.pages.window.PageC;
-import com.automation.framework.core.util.WindowSwitchService;
+import com.automation.framework.core.page.window.MainPage;
+import com.automation.framework.core.page.window.PageA;
+import com.automation.framework.core.page.window.PageB;
+import com.automation.framework.core.page.window.PageC;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.TestPropertySource;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,9 +24,6 @@ public class WindowSwitchTest extends BaseTestNGTest {
     @Autowired
     private PageC pageC;
 
-    @Autowired
-    private WindowSwitchService switchService;
-
     @BeforeClass
     public void setup() {
         this.mainPage.goTo();
@@ -37,11 +31,10 @@ public class WindowSwitchTest extends BaseTestNGTest {
     }
 
     @Test
-    public void switchServiceTest() {
-        this.switchService.switchByTitle("Page A");
-        this.pageA.addToArea("Page a");
-
-        this.switchService.switchByIndex(2);
-        this.pageB.addToArea("Page B");
+    public void switchTest() {
+        this.pageA.addToArea(1 + "\n");
+        this.pageB.addToArea((2 * 2) + "\n");
+        this.pageC.addToArea((3 * 3) + "\n");
     }
+
 }

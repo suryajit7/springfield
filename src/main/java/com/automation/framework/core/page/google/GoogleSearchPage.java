@@ -1,9 +1,8 @@
-package com.automation.framework.core.pages.google;
+package com.automation.framework.core.page.google;
 
 import com.automation.framework.core.config.annotation.Page;
-import com.automation.framework.core.pages.BasePage;
+import com.automation.framework.core.page.BasePage;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.beans.factory.annotation.Value;
 
 @Page

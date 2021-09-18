@@ -1,13 +1,14 @@
-package com.automation.framework.core.pages.window;
+package com.automation.framework.core.page.window;
 
-import com.automation.framework.core.config.annotation.Page;
-import com.automation.framework.core.pages.BasePage;
+import com.automation.framework.core.config.annotation.Screenshot;
+import com.automation.framework.core.config.annotation.Window;
+import com.automation.framework.core.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-@Page
+@Window
 public class MainPage extends BasePage {
 
 
@@ -18,6 +19,7 @@ public class MainPage extends BasePage {
         this.driver.get("https://vins-udemy.s3.amazonaws.com/ds/window/main.html");
     }
 
+    @Screenshot
     public void launchAllWindows() {
         for (int i = 0; i < links.size(); i++) {
             links.get(i).click();
