@@ -21,10 +21,13 @@ public class Kernel {
     protected Log logger;
     protected Actions actions;
     protected CommonUtil commonUtil;
+
     @Autowired
     protected WebDriver driver;
+
     @Autowired
     protected WebDriverWait wait;
+
     @Value("${default.timeout: 50}")
     private int timeout;
 
