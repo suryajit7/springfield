@@ -1,5 +1,7 @@
 package com.automation.framework.page;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,6 +12,7 @@ import javax.annotation.PostConstruct;
 
 public class BasePage {
 
+    protected Log logger;
 
     @Value("${default.timeout:50}")
     private int timeout;
@@ -23,9 +26,9 @@ public class BasePage {
     @PostConstruct
     private void init() {
         PageFactory.initElements(this.driver, this);
+        this.logger = LogFactory.getLog(getClass());
     }
 
-    //public Boolean isLoaded();
 
     public void goTo(String url) {
         this.driver.get(url);

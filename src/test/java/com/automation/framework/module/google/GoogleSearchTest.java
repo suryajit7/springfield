@@ -21,6 +21,7 @@ public class GoogleSearchTest extends BaseTestNGTest {
     @Test
     public void googleSearchTest() {
         this.googleSearchPage.goToURL();
+        logger.info("url passed");
         this.googleSearchPage.performSearch("test1");
         this.screenshotService.takeScreenshot(getTestMethod(), "test1");
 

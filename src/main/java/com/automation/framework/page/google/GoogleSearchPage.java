@@ -19,6 +19,9 @@ public class GoogleSearchPage extends BasePage {
 
     public void goToURL() {
         this.driver.get(url);
+
+        logger.info("Page url passed");
+
     }
 
     public void performSearch(String input) {
