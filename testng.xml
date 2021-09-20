@@ -4,38 +4,38 @@
     <test verbose="2" preserve-order="true" name="C:/code/automation-suite">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.automation.framework.core.module.crm.DashboardTest">
+            <class name="com.automation.framework.module.crm.DashboardTest">
                 <methods>
                     <include name="verifyPieChartLabels"/>
                 </methods>
             </class>
-            <class name="com.automation.framework.core.module.crm.OrangeCRMLoginTest">
+            <class name="com.automation.framework.module.crm.OrangeCRMLoginTest">
                 <methods>
                     <include name="verifyLoginPage"/>
                 </methods>
             </class>
-            <class name="com.automation.framework.core.module.google.GoogleSearchTest">
+            <class name="com.automation.framework.module.google.GoogleSearchTest">
                 <methods>
                     <include name="googleSearchTest"/>
                 </methods>
             </class>
-            <class name="com.automation.framework.core.module.google.GoogleSearchTest2">
+            <class name="com.automation.framework.module.google.GoogleSearchTest2">
                 <methods>
                     <include name="googleSearchTest"/>
                 </methods>
             </class>
-            <class name="com.automation.framework.core.module.property.PropertyTest">
+            <class name="com.automation.framework.module.property.PropertyTest">
                 <methods>
                     <include name="testPropertiesFile"/>
                 </methods>
             </class>
-            <class name="com.automation.framework.core.module.resource.ResourceTest">
+            <class name="com.automation.framework.module.resource.ResourceTest">
                 <methods>
                     <include name="csvResourceTest"/>
                     <include name="txtResourceTest"/>
                 </methods>
             </class>
-            <class name="com.automation.framework.core.module.window.WindowSwitchTest">
+            <class name="com.automation.framework.module.window.WindowSwitchTest">
                 <methods>
                     <include name="switchTest"/>
                 </methods>
