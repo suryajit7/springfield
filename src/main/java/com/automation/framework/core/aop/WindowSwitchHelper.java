@@ -1,6 +1,6 @@
-package com.automation.framework.core.config.aop;
+package com.automation.framework.core.aop;
 
-import com.automation.framework.core.config.annotation.Window;
+import com.automation.framework.core.annotation.Window;
 import com.automation.framework.util.WindowSwitchService;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

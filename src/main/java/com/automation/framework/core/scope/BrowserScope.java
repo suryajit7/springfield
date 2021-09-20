@@ -1,4 +1,4 @@
-package com.automation.framework.core.config.scope;
+package com.automation.framework.core.scope;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;

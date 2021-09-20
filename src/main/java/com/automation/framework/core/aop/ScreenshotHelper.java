@@ -1,6 +1,6 @@
-package com.automation.framework.core.config.aop;
+package com.automation.framework.core.aop;
 
-import com.automation.framework.core.config.annotation.Screenshot;
+import com.automation.framework.core.annotation.Screenshot;
 import com.automation.framework.util.ScreenshotService;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

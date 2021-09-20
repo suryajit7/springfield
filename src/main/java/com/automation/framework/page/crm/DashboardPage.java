@@ -1,6 +1,6 @@
 package com.automation.framework.page.crm;
 
-import com.automation.framework.core.config.annotation.Page;
+import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
 import org.springframework.beans.factory.annotation.Autowired;
 

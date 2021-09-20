@@ -1,5 +1,4 @@
-package com.automation.framework.core.config.annotation;
-
+package com.automation.framework.core.annotation;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Lazy;
@@ -14,5 +13,7 @@ import java.lang.annotation.*;
 @Documented
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Page {
+public @interface PageComponent {
+
+
 }

@@ -1,7 +1,7 @@
 package com.automation.framework.page.window;
 
-import com.automation.framework.core.config.annotation.Screenshot;
-import com.automation.framework.core.config.annotation.Window;
+import com.automation.framework.core.annotation.Screenshot;
+import com.automation.framework.core.annotation.Window;
 import com.automation.framework.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

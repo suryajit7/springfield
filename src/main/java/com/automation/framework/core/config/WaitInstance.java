@@ -1,6 +1,6 @@
 package com.automation.framework.core.config;
 
-import com.automation.framework.core.config.annotation.LazyConfiguration;
+import com.automation.framework.core.annotation.LazyConfiguration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;

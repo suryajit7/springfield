@@ -1,4 +1,4 @@
-package com.automation.framework.core.config.annotation;
+package com.automation.framework.core.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

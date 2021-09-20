@@ -1,4 +1,4 @@
-package com.automation.framework.core.config.scope;
+package com.automation.framework.core.scope;
 
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.annotation.Bean;

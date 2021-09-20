@@ -1,6 +1,6 @@
 package com.automation.framework.page.visa;
 
-import com.automation.framework.core.config.annotation.Page;
+import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

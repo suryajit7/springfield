@@ -1,6 +1,6 @@
 package com.automation.framework.page.crm;
 
-import com.automation.framework.core.config.annotation.PageComponent;
+import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

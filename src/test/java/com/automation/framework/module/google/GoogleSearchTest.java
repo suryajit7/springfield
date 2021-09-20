@@ -1,7 +1,7 @@
 package com.automation.framework.module.google;
 
 import com.automation.framework.BaseTestNGTest;
-import com.automation.framework.core.config.annotation.LazyAutowired;
+import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.google.GoogleSearchPage;
 import com.automation.framework.util.ScreenshotService;
 import org.testng.annotations.Test;

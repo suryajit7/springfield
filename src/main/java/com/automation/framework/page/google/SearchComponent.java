@@ -1,9 +1,10 @@
 package com.automation.framework.page.google;
 
-import com.automation.framework.core.config.annotation.PageComponent;
+import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class SearchComponent extends BasePage {
 
     //TODO  - Add wait
     public void searchInGoogle(String input) {
-        //wait.until(ExpectedConditions.visibilityOf(this.searchInputField));
+        wait.until(ExpectedConditions.visibilityOf(this.searchInputField));
         this.searchInputField.click();
         this.searchInputField.sendKeys(input);
 

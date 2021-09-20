@@ -1,7 +1,7 @@
 package com.automation.framework.core.config;
 
-import com.automation.framework.core.config.annotation.LazyConfiguration;
-import com.automation.framework.core.config.annotation.ThreadScopeBean;
+import com.automation.framework.core.annotation.LazyConfiguration;
+import com.automation.framework.core.annotation.ThreadScopeBean;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
