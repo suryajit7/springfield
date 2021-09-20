@@ -1,4 +1,4 @@
-package com.automation.framework.page.google;
+package com.automation.framework.page.app.crm;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
@@ -9,21 +9,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @PageComponent
-public class SearchResultsComponent extends BasePage {
+public class EmployeeDistributionComponent extends BasePage {
 
-    private final String SEARCH_RESULTS = "div.rc";
+    private static final String PIE_CHART = "//span[contains(@id,'pieLabel')]";
 
-    @FindBy(css = SEARCH_RESULTS)
-    private List<WebElement> searchResults;
+    @FindBy(xpath = PIE_CHART)
+    private List<WebElement> piechartLabels;
 
-    public List<String> getSearchResults(){
-        return this.searchResults.stream()
+    public List<String> getAllPieChartLabels() {
+        return this.piechartLabels.stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
     }
-
-
-
 
 
 }

@@ -1,7 +1,6 @@
-package com.automation.framework.core.aop;
+package com.automation.framework.util;
 
 import com.automation.framework.core.annotation.Screenshot;
-import com.automation.framework.util.ScreenshotService;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-import static com.automation.framework.reporting.TestExecutionListener.getTestMethod;
+import static com.automation.framework.report.TestExecutionListener.getTestMethod;
 
 @Aspect
 @Component

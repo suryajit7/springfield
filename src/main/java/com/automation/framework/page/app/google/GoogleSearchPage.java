@@ -1,4 +1,4 @@
-package com.automation.framework.page.google;
+package com.automation.framework.page.app.google;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
@@ -18,10 +18,7 @@ public class GoogleSearchPage extends BasePage {
     private String url;
 
     public void goToURL() {
-        this.driver.get(url);
-
-        logger.info("Page url passed");
-
+        goTo(url);
     }
 
     public void performSearch(String input) {

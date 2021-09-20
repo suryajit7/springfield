@@ -1,4 +1,4 @@
-package com.automation.framework.page.google;
+package com.automation.framework.page.app.google;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;

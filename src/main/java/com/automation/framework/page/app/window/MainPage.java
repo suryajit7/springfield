@@ -1,4 +1,4 @@
-package com.automation.framework.page.window;
+package com.automation.framework.page.app.window;
 
 import com.automation.framework.core.annotation.Screenshot;
 import com.automation.framework.core.annotation.Window;

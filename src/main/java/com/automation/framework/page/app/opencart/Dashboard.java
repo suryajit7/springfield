@@ -1,4 +1,4 @@
-package com.automation.framework.page.opencart;
+package com.automation.framework.page.app.opencart;
 
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.annotation.Page;

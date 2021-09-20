@@ -1,58 +1,28 @@
 package com.automation.framework.page;
 
-import com.automation.framework.util.CommonUtil;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.openqa.selenium.WebDriver;
+import com.automation.framework.core.Kernel;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 
-import javax.annotation.PostConstruct;
 import java.util.List;
 
-public class BasePage {
-
-    protected Log logger;
-    protected Actions actions;
-    protected CommonUtil commonUtil;
-
-    @Value("${default.timeout:50}")
-    private int timeout;
-
-    @Autowired
-    protected WebDriver driver;
-
-    @Autowired
-    protected WebDriverWait wait;
-
-
-    @PostConstruct
-    private void init() {
-        PageFactory.initElements(this.driver, this);
-        this.actions = new Actions(this.driver);
-        this.logger = LogFactory.getLog(getClass());
-        this.commonUtil = new CommonUtil();
-    }
-
+public class BasePage extends Kernel {
 
     public void goTo(String url) {
         this.driver.get(url);
+        logger.info("URL loaded: ".concat(url));
     }
 
 
     public void switchToActiveElement() {
         this.driver.switchTo().activeElement();
+        logger.info("Switched to active WebElement.");
     }
 
     public void enterText(WebElement webelement, String text) {
         webelement.clear();
         webelement.sendKeys(text);
-        logger.info("Text entered:".concat(text));
+        logger.info("Text entered: ".concat(text));
     }
 
 
@@ -64,23 +34,25 @@ public class BasePage {
 
     public void moveToElementAndClick(WebElement webelement) {
         this.actions.click(webelement);
+        logger.info("Moved to WebElement and clicked: ".concat(webelement.getText()));
     }
 
 
     public void dragAndDropWebElement(WebElement source, WebElement destination) {
         this.actions.moveToElement(source).dragAndDrop(source, destination);
+        logger.info("WebElement dragged and dropped to ".concat(destination.getText()));
     }
 
 
     public void selectByVisibleTextInDropdown(WebElement webelement, String visibleText) {
         new Select(webelement).selectByVisibleText(visibleText);
-        logger.info("WebElement selected by visible text:".concat(visibleText));
+        logger.info("WebElement selected by visible text: ".concat(visibleText));
     }
 
 
     public void selectByValueInDropdown(WebElement webelement, String value) {
         new Select(webelement).selectByValue(value);
-        logger.info("WebElement selected by value:".concat(value));
+        logger.info("WebElement selected by value: ".concat(value));
     }
 
 
@@ -88,7 +60,7 @@ public class BasePage {
         for (String valueToBeSelected : multiValues) {
             new Select(webelement).selectByValue(valueToBeSelected);
         }
-        logger.info("All WebElements selected by value:".concat(multiValues.toString()));
+        logger.info("All WebElements selected by value: ".concat(multiValues.toString()));
     }
 
 
@@ -96,13 +68,13 @@ public class BasePage {
         for (String valueToBeSelected : multiValues) {
             new Select(webelement).selectByVisibleText(valueToBeSelected);
         }
-        logger.info("All WebElements selected by visible text:".concat(multiValues.toString()));
+        logger.info("All WebElements selected by visible text: ".concat(multiValues.toString()));
     }
 
 
     public void selectByIndexInDropdown(WebElement webelement, int index) {
         new Select(webelement).selectByIndex(index);
-        logger.info("WebElement selected by index:".concat(String.valueOf(index)));
+        logger.info("WebElement selected by index: ".concat(String.valueOf(index)));
     }
 
 
@@ -118,19 +90,19 @@ public class BasePage {
 
     public void deselectByVisibleTextInDropdown(WebElement webelement, String visibleText) {
         new Select(webelement).deselectByVisibleText(visibleText);
-        logger.info("WebElement deselected by visible text:".concat(visibleText));
+        logger.info("WebElement deselected by visible text: ".concat(visibleText));
     }
 
 
     public void deselectByValueInDropdown(WebElement webelement, String value) {
         new Select(webelement).deselectByValue(value);
-        logger.info("WebElement deselected by value:".concat(value));
+        logger.info("WebElement deselected by value: ".concat(value));
     }
 
 
     public void deselectByIndexInDropdown(WebElement webelement, int index) {
         new Select(webelement).deselectByIndex(index);
-        logger.info("WebElement deselected by index:".concat(String.valueOf(index)));
+        logger.info("WebElement deselected by index: ".concat(String.valueOf(index)));
     }
 
     public void deselectAllInDropdown(WebElement webelement) {

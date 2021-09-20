@@ -2,8 +2,8 @@ package com.automation.framework.module.opencart;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.page.opencart.Dashboard;
-import com.automation.framework.page.opencart.Login;
+import com.automation.framework.page.app.opencart.Dashboard;
+import com.automation.framework.page.app.opencart.Login;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;
 import org.testng.annotations.BeforeClass;

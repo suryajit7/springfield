@@ -1,8 +1,8 @@
 package com.automation.framework.module.crm;
 
 import com.automation.framework.BaseTestNGTest;
-import com.automation.framework.page.crm.DashboardPage;
-import com.automation.framework.page.crm.LoginPage;
+import com.automation.framework.page.app.crm.DashboardPage;
+import com.automation.framework.page.app.crm.LoginPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.Test;

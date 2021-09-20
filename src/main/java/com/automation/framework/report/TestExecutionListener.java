@@ -1,4 +1,4 @@
-package com.automation.framework.reporting;
+package com.automation.framework.report;
 
 
 import org.openqa.selenium.WebDriver;

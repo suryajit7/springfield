@@ -15,7 +15,7 @@ import java.net.URL;
 
 @LazyConfiguration
 @ConditionalOnProperty(name = "runmode", havingValue = "remote")
-public class RemoteWebDriverInstance {
+public class RemoteWebDriverConfig {
 
     @Value("${selenium.grid.url}")
     private URL url;
