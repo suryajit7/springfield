@@ -13,6 +13,9 @@ import org.testng.annotations.Test;
 @Profile("opencart")
 public class DashboardTest extends BaseTestNGTest {
 
+    @Value("${app.url:https://demo.opencart.com/admin/}")
+    private String url;
+
     @Value("${app.username:demo}")
     private String username;
 
@@ -27,7 +30,7 @@ public class DashboardTest extends BaseTestNGTest {
 
     @BeforeClass
     public void setup() {
-        this.login.goTo();
+        this.login.goTo(url);
         this.login.enterUsernameAndPassword(username, password);
         this.login.clickLoginButton();
     }

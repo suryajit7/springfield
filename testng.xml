@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" thread-count="3" parallel="classes">
-    <test verbose="2" preserve-order="true" name="C:/code/automation-suite">
-        <parameter name="browser" value="chrome"/>
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="automation">
         <classes>
+            <class name="com.automation.framework.AutomationSuiteApplicationTests">
+                <methods>
+                    <include name="contextLoads"/>
+                </methods>
+            </class>
             <class name="com.automation.framework.module.crm.DashboardTest">
                 <methods>
                     <include name="verifyPieChartLabels"/>
@@ -24,6 +28,16 @@
                     <include name="googleSearchTest"/>
                 </methods>
             </class>
+            <class name="com.automation.framework.module.google.MultiBrowserTest">
+                <methods>
+                    <include name="browserTest"/>
+                </methods>
+            </class>
+            <class name="com.automation.framework.module.opencart.DashboardTest">
+                <methods>
+                    <include name="verifyDashboard"/>
+                </methods>
+            </class>
             <class name="com.automation.framework.module.property.PropertyTest">
                 <methods>
                     <include name="testPropertiesFile"/>
@@ -33,6 +47,11 @@
                 <methods>
                     <include name="csvResourceTest"/>
                     <include name="txtResourceTest"/>
+                </methods>
+            </class>
+            <class name="com.automation.framework.module.visa.VisaRegistrationTest">
+                <methods>
+                    <include name="visaTest"/>
                 </methods>
             </class>
             <class name="com.automation.framework.module.window.WindowSwitchTest">

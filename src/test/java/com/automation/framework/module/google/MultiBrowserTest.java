@@ -17,8 +17,8 @@ public class MultiBrowserTest extends BaseTestNGTest {
         this.applicationContext.getBean("getChromeInstance", WebDriver.class)
                 .get("http://www.google.com");
 
-        this.applicationContext.getBean("getGeckoInstance", WebDriver.class)
-                .get("http://www.google.com");
+        /*this.applicationContext.getBean("getGeckoInstance", WebDriver.class)
+                .get("http://www.google.com");*/
 
 
     }

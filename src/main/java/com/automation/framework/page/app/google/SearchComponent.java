@@ -20,12 +20,11 @@ public class SearchComponent extends BasePage {
     @FindBy(name = GOOGLE_SEARCH_BTN)
     private List<WebElement> googleSearchBtnList;
 
-    //TODO  - Add wait
+
     public void searchInGoogle(String input) {
         wait.until(ExpectedConditions.visibilityOf(this.searchInputField));
         this.searchInputField.click();
         this.searchInputField.sendKeys(input);
-
     }
 
     public void clickGoogleSearchButton() {

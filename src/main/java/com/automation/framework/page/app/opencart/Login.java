@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.springframework.beans.factory.annotation.Value;
 
 @Page
 @Getter
@@ -21,8 +20,6 @@ public class Login extends BasePage {
     private static final String LOGIN_BUTTON = "//button[normalize-space()='Login']";
     private static final String FORGOT_PASSWORD = "//a[normalize-space()='Forgotten Password']";
 
-    @Value("${app.url:https://demo.opencart.com/admin/}")
-    private String url;
 
     @FindBy(xpath = OPENCART_LOGO)
     private WebElement opencartLogo;
@@ -39,9 +36,6 @@ public class Login extends BasePage {
     @FindBy(xpath = FORGOT_PASSWORD)
     private WebElement forgotPassword;
 
-    public void goTo() {
-        this.driver.get(this.url);
-    }
 
     public void enterUsername(String username) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(USERNAME_ID)));
