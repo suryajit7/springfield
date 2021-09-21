@@ -11,7 +11,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
+import java.net.MalformedURLException;
 import java.net.URL;
+
+import static org.openqa.selenium.remote.CapabilityType.BROWSER_NAME;
+import static org.openqa.selenium.remote.CapabilityType.BROWSER_VERSION;
 
 
 @LazyConfiguration
@@ -30,10 +34,16 @@ public class RemoteWebDriverConfig {
         return new RemoteWebDriver(this.url, DesiredCapabilities.firefox());
     }
 
-    @ThreadScopeBean
+ /*   @ThreadScopeBean
     @ConditionalOnMissingBean
     public WebDriver remoteChromeDriver() {
         return new RemoteWebDriver(this.url, DesiredCapabilities.chrome());
+    }*/
+
+    @ThreadScopeBean
+    @ConditionalOnMissingBean
+    public WebDriver remoteBrowserstack() throws MalformedURLException {
+        return new RemoteWebDriver(new URL("https://uchihasuryajit_rIUiWy:HXYBWT4pHu8sCrrXTQNz@hub.browserstack.com/wd/hub"), configureCap());
     }
 
 /*    @ThreadScopeBean
@@ -98,11 +108,17 @@ public class RemoteWebDriverConfig {
 
     public DesiredCapabilities configureCap() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("build", "browserstack-build-1");
+        capabilities.setCapability("name", "parallel_test");
+        capabilities.setCapability("browserstack.debug", true);
+
+        capabilities.setCapability(BROWSER_NAME, "Chrome");
+        //capabilities.setCapability(BROWSER_NAME, "firefox");
+        capabilities.setCapability(BROWSER_VERSION, "latest");
+
         //Map<String, String> envCapabilities = (Map<String, String>) envs.get(environment);
-        capabilities.setPlatform(Platform.WIN10);
-        capabilities.setBrowserName("firefox");
-        //capabilities.setVersion("38");
-        capabilities.setCapability("browserstack.debug", "true");
+        capabilities.setPlatform(Platform.WIN8);
+
 
         return capabilities;
     }
