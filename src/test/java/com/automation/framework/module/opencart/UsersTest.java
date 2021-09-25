@@ -2,51 +2,43 @@ package com.automation.framework.module.opencart;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.page.app.hrm.LoginPanelPage;
 import com.automation.framework.page.app.hrm.MenuNavigationPage;
-import com.automation.framework.page.app.opencart.Dashboard;
-import com.automation.framework.page.app.opencart.Login;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.page.app.hrm.MenuOption.USERS;
 
+public class UsersTest extends BaseTestNGTest {
 
-public class DashboardTest extends BaseTestNGTest {
 
-    @Value("${app.opencart.url}")
+    @Value("${app.hrm.url}")
     private String url;
 
-    @Value("${app.opencart.username:demo}")
+    @Value("${app.hrm.username:demo}")
     private String username;
 
-    @Value("${app.opencart.password:demo}")
+    @Value("${app.hrm.password:demo}")
     private String password;
 
     @LazyAutowired
-    private Login login;
-
-    @LazyAutowired
-    private Dashboard dashboard;
+    private LoginPanelPage loginPanelPage;
 
     @LazyAutowired
     private MenuNavigationPage menuNavigation;
 
     @BeforeClass
     public void setup() {
-        this.login.goTo(url);
-        this.login.enterUsernameAndPassword(username, password);
-        this.login.clickLoginButton();
+        this.loginPanelPage.goTo(url);
+        this.loginPanelPage.enterUsernameAndPassword(username, password);
+        this.loginPanelPage.clickLoginButton();
     }
 
     @Test(priority = 0)
-    public void verifyDashboard() {
-        this.dashboard.selectCountryByCode("in");
-    }
-
-    @Test(priority = 1)
     public void verify() {
         menuNavigation.navigateToMenu(USERS);
     }
+
 
 }

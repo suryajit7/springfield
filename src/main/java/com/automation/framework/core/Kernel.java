@@ -34,8 +34,11 @@ public class Kernel {
     @PostConstruct
     private void init() {
         PageFactory.initElements(this.driver, this);
+
         this.actions = new Actions(this.driver);
         this.logger = LogFactory.getLog(getClass());
         this.commonUtil = new CommonUtil();
+
+        this.driver.manage().window().maximize();
     }
 }

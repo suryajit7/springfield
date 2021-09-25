@@ -1,7 +1,7 @@
 package com.automation.framework.module.crm;
 
 import com.automation.framework.BaseTestNGTest;
-import com.automation.framework.page.app.crm.LoginPage;
+import com.automation.framework.page.app.hrm.LoginPanelPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.Test;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class OrangeCRMLoginTest extends BaseTestNGTest {
 
     @Autowired
-    private LoginPage loginPage;
+    private LoginPanelPage login;
 
     @Value("${app.crm.url}")
     private String crmURL;
@@ -22,10 +22,10 @@ public class OrangeCRMLoginTest extends BaseTestNGTest {
 
     @Test
     public void verifyLoginPage() {
-        this.loginPage.goTo(this.crmURL);
-        this.loginPage.enterUsername(this.username);
-        this.loginPage.enterPassword(this.pwd);
-        this.loginPage.clickLoginButton();
+        this.login.goTo(this.crmURL);
+        this.login.enterUsername(this.username);
+        this.login.enterPassword(this.pwd);
+        this.login.clickLoginButton();
     }
 
 

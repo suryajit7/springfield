@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.crm;
+package com.automation.framework.page.app.hrm.dashboard;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
@@ -14,10 +14,10 @@ public class EmployeeDistributionComponent extends BasePage {
     private static final String PIE_CHART = "//span[contains(@id,'pieLabel')]";
 
     @FindBy(xpath = PIE_CHART)
-    private List<WebElement> piechartLabels;
+    private List<WebElement> pieChartLabels;
 
     public List<String> getAllPieChartLabels() {
-        return this.piechartLabels.stream()
+        return this.pieChartLabels.stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
     }

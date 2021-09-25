@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.crm;
+package com.automation.framework.page.app.hrm.dashboard;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;

@@ -1,10 +1,13 @@
 package com.automation.framework.page;
 
 import com.automation.framework.core.Kernel;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class BasePage extends Kernel {
 
@@ -20,6 +23,7 @@ public class BasePage extends Kernel {
     }
 
     public void enterText(WebElement webelement, String text) {
+        wait.until(visibilityOf(webelement)).click();
         webelement.clear();
         webelement.sendKeys(text);
         logger.info("Text entered: ".concat(text));
@@ -35,6 +39,23 @@ public class BasePage extends Kernel {
     public void moveToElementAndClick(WebElement webelement) {
         this.actions.click(webelement);
         logger.info("Moved to WebElement and clicked: ".concat(webelement.getText()));
+    }
+
+    public void moveToElementAndClick(List<WebElement> webelements) {
+        for (WebElement element : webelements) {
+            wait.until(visibilityOf(element));
+            this.actions.click(element);
+            logger.info("Moved to WebElement and clicked: ".concat(element.getText()));
+        }
+
+    }
+
+    public String getDynamicLocator(String locator, String newString) {
+        return String.format(locator, newString);
+    }
+
+    public WebElement getDynamicWebElement(String locator, String newString) {
+        return this.driver.findElement(By.xpath(String.format(locator, newString)));
     }
 
 

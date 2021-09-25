@@ -1,8 +1,8 @@
 package com.automation.framework.module.crm;
 
 import com.automation.framework.BaseTestNGTest;
-import com.automation.framework.page.app.crm.DashboardPage;
-import com.automation.framework.page.app.crm.LoginPage;
+import com.automation.framework.page.app.hrm.LoginPanelPage;
+import com.automation.framework.page.app.hrm.dashboard.DashboardPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.Test;
@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class DashboardTest extends BaseTestNGTest {
 
     @Autowired
-    private LoginPage loginPage;
+    private LoginPanelPage login;
 
     @Autowired
     private DashboardPage dashboardPage;
@@ -27,7 +27,7 @@ public class DashboardTest extends BaseTestNGTest {
     @Test
     public void verifyPieChartLabels() {
 
-        this.loginPage.goTo("https://opensource-demo.orangehrmlive.com/index.php/dashboard");
+        this.login.goTo("https://opensource-demo.orangehrmlive.com/index.php/dashboard");
         this.dashboardPage.getAllPieChartLabels();
     }
 
