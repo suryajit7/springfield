@@ -4,6 +4,9 @@ import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.app.hrm.LoginPanelPage;
 import com.automation.framework.page.app.hrm.MenuNavigationPage;
+import com.automation.framework.page.app.hrm.admin.usermanagement.UserStatus;
+import com.automation.framework.page.app.hrm.admin.usermanagement.UserType;
+import com.automation.framework.page.app.hrm.admin.usermanagement.Users;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -26,6 +29,9 @@ public class UsersTest extends BaseTestNGTest {
     private LoginPanelPage loginPanelPage;
 
     @LazyAutowired
+    private Users users;
+
+    @LazyAutowired
     private MenuNavigationPage menuNavigation;
 
     @BeforeClass
@@ -37,7 +43,14 @@ public class UsersTest extends BaseTestNGTest {
 
     @Test(priority = 0)
     public void verify() {
-        menuNavigation.navigateToMenu(USERS);
+        this.menuNavigation.navigateToMenu(USERS);
+
+        this.users.enterUsername("David");
+        this.users.selectUserType(UserType.ALL);
+        this.users.enterEmployeeName("David");
+        this.users.selectUserStatus(UserStatus.ALL);
+        this.users.clickSearchButton();
+
     }
 
 
