@@ -1,19 +1,15 @@
-** Springboot based Full-Fledged Automation Framework**
+**花山 Hanayama: Springboot based Full-Fledged Robust Automation Framework**
 
-The key objective behind this project is to design an Automation Test Framework which would support test automation at all levels, including, but not limited to UI (Presentation Layer), APIs & Integration (Service Layer) and Unit/Components etc. The framework supports various Test Data, Test Environment Management and test automation features which are needed to run any modern automated tests. 
+The key objective behind this project is to design an robust Automation Test Framework which would support test automation at all levels, including, but not limited to UI (Presentation Layer), APIs & Integration (Service Layer) and Unit/Components etc. The framework supports various Test Data, Test Environment Management and test automation features which are needed to run any modern automated tests. 
 
-Design Patterns: 
-1. Page Object Model with Page Factory.
-2. Supports both Data & Keyword driven tests
+**Features:**
+1. Supports data insertion in all types of DB's like MongoDB, SQL DB, Excel, CSV etc.
+2. Inbuilt Test Data Suppliers logic using Faker & Fixture libraries.
+3. Supports all kind of projects inluding Data & Keyword driven along with Page Object Model with PageFactory.
+4. Infrastructure support for Dockerized Selenium Grid containers.  
+5. Parallel testing with Cross Browser and Cross Platform support.
 
-Infrastructure:
-1. Supports Selenium Grid
-2. Docker container support
-3. AWS-EC2 support (WIP)
 
-Test Data Management:
-1. Supports data insertion in all types of DB's like MongoDB, SQL DB, Excel, CSV etc. (WIP)
-2. Inbuilt Test Data Suppliers logic (WIP) 
 
 
 
