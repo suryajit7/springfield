@@ -1,12 +1,12 @@
 package com.automation.framework.page.app.hrm.admin.usermanagement;
 
-public enum UserStatus {
+public enum UserRole {
 
-    ALL("All"), ENABLED("Enabled"), DISABLED("Disabled");
+    ADMIN("Admin"), ESS("ESS");
 
     private final String stringValue;
 
-    UserStatus(String stringValue) {
+    UserRole(String stringValue) {
         this.stringValue = stringValue;
     }
 

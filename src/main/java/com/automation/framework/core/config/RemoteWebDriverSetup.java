@@ -20,7 +20,7 @@ import static org.openqa.selenium.remote.CapabilityType.BROWSER_VERSION;
 
 @LazyConfiguration
 @ConditionalOnProperty(name = "runmode", havingValue = "remote")
-public class RemoteWebDriverConfig {
+public class RemoteWebDriverSetup {
 
 
     private Local local;

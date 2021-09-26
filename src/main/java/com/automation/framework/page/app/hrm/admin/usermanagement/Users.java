@@ -2,6 +2,9 @@ package com.automation.framework.page.app.hrm.admin.usermanagement;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 @Page
+@Getter @Setter @NoArgsConstructor
 public class Users extends BasePage {
 
     private final String USERNAME_FIELD = "searchSystemUser_userName";
@@ -42,10 +46,10 @@ public class Users extends BasePage {
         enterText(this.username, username);
     }
 
-    public void selectUserType(UserType userType) {
+    public void selectUserType(UserRole userRole) {
         wait.until(visibilityOfElementLocated(By.id(USER_TYPE)));
         this.userType.click();
-        selectByVisibleTextInDropdown(this.userType, userType.name());
+        selectByVisibleTextInDropdown(this.userType, userRole.getStringValue());
     }
 
     public void enterEmployeeName(String employeeName) {
@@ -53,10 +57,10 @@ public class Users extends BasePage {
         enterText(this.employeeName, employeeName);
     }
 
-    public void selectUserStatus(UserStatus userStatus) {
+    public void selectUserStatus(Status status) {
         wait.until(visibilityOfElementLocated(By.id(USER_STATUS)));
         this.userStatus.click();
-        selectByVisibleTextInDropdown(this.userStatus, userStatus.name());
+        selectByVisibleTextInDropdown(this.userStatus, status.getStringValue());
     }
 
     public void clickSearchButton() {
