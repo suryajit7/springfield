@@ -1,4 +1,4 @@
-package com.automation.framework.data.entity.template;
+package com.automation.framework.data.template;
 
 import br.com.six2six.fixturefactory.Fixture;
 import br.com.six2six.fixturefactory.Rule;
@@ -8,19 +8,31 @@ import com.automation.framework.page.app.hrm.admin.usermanagement.Status;
 import com.automation.framework.page.app.hrm.admin.usermanagement.UserRole;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.testng.annotations.DataProvider;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.automation.framework.util.helper.PojoHelper.getObject;
 
 /**
  * The overridden load() implementation will load the data templates in memory
  * which can be supplied to test as test datasets [@DataProvider].
  */
-
 public class EmployeeTemplate implements TemplateLoader {
 
     @Autowired
     private Faker faker;
+
+    @DataProvider(parallel = true)
+    public static Object[][] getEmployeeData(){
+        return new Object[][]{
+                {getObject("validEmployee", Employee.class)},
+                {getObject("invalidEmployee", Employee.class)},
+                {getObject("invalidEmployeeName", Employee.class)},
+                {getObject("validFakerGeneratedEmployees", Employee.class)}
+        };
+    }
 
     private Object[] getEmployeeUsernames(){
         List<String> usernameList = new ArrayList<>();

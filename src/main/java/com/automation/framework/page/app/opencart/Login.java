@@ -33,21 +33,21 @@ public class Login extends BasePage {
     private WebElement forgotPassword;
 
 
-    public void enterUsername(String username) {
+    public void enterUsername() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(USERNAME_ID)));
         this.usernameId.click();
-        enterText(this.usernameId, username);
+        enterText(this.usernameId, decryptService.getOpencartUsername());
     }
 
-    public void enterPassword(String password) {
+    public void enterPassword() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PASSWORD_ID)));
         this.passwordId.click();
-        enterText(this.passwordId, password);
+        enterText(this.passwordId, decryptService.getOpencartPassword());
     }
 
-    public void enterUsernameAndPassword(String username, String password) {
-        enterUsername(username);
-        enterPassword(password);
+    public void enterUsernameAndPassword() {
+        enterUsername();
+        enterPassword();
     }
 
     public void clickLoginButton() {

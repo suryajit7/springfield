@@ -17,12 +17,6 @@ public class DashboardTest extends BaseTestNGTest {
     @Value("${app.opencart.url}")
     private String url;
 
-    @Value("${app.opencart.username:demo}")
-    private String username;
-
-    @Value("${app.opencart.password:demo}")
-    private String password;
-
     @LazyAutowired
     private Login login;
 
@@ -35,7 +29,7 @@ public class DashboardTest extends BaseTestNGTest {
     @BeforeClass
     public void setup() {
         this.login.goTo(url);
-        this.login.enterUsernameAndPassword(username, password);
+        this.login.enterUsernameAndPassword();
         this.login.clickLoginButton();
     }
 

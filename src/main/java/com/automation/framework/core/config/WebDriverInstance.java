@@ -8,13 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.CapabilityType;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.openqa.selenium.remote.CapabilityType.*;
 
 
 @LazyConfiguration
@@ -26,7 +27,7 @@ public class WebDriverInstance {
     @ConditionalOnProperty(name = "browser", havingValue = "chrome")
     WebDriver getChromeInstance() {
         WebDriverManager.chromedriver().setup();
-        return new ChromeDriver();
+        return new ChromeDriver(configureChromeOptions());
     }
 
     @ThreadScopeBean
@@ -44,28 +45,32 @@ public class WebDriverInstance {
     }
 
 
-
     private ChromeOptions configureChromeOptions() {
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setCapability(CapabilityType.ELEMENT_SCROLL_BEHAVIOR, true);
-        chromeOptions.setCapability(CapabilityType.SUPPORTS_ALERTS, true);
-        chromeOptions.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
-        chromeOptions.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, true);
-        chromeOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        chromeOptions.setCapability(CapabilityType.ELEMENT_SCROLL_BEHAVIOR, true);
-        //chromeOptions.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+
+        chromeOptions.setCapability(ELEMENT_SCROLL_BEHAVIOR, true);
+        chromeOptions.setCapability(SUPPORTS_ALERTS, true);
+        chromeOptions.setCapability(SUPPORTS_JAVASCRIPT, true);
+        chromeOptions.setCapability(SUPPORTS_APPLICATION_CACHE, true);
+        chromeOptions.setCapability(ACCEPT_SSL_CERTS, true);
+        chromeOptions.setCapability(ELEMENT_SCROLL_BEHAVIOR, true);
         chromeOptions.setCapability("chrome.switches", Arrays.asList("--disable-extensions"));
         chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--allow-insecure-localhost");
         chromeOptions.addArguments("disable-gpu");
+
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("credentials_enable_service", false);
         prefs.put("profile.password_manager_enabled", false);
         prefs.put("profile.content_settings.exceptions.automatic_downloads.*.setting", 1);
+
         chromeOptions.setExperimentalOption("prefs", prefs);
+
+        System.setProperty("java.awt.headless", "false");
+        System.setProperty("jasypt.encryptor.password", "kaoru");
+
         return chromeOptions;
     }
 }
