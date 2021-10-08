@@ -1,6 +1,6 @@
 package com.automation.framework.data.repo;
 
-import com.automation.framework.data.entity.User;
+import com.automation.framework.data.entity.app.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

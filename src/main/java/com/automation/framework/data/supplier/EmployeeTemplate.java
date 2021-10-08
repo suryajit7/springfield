@@ -1,9 +1,9 @@
-package com.automation.framework.data.template;
+package com.automation.framework.data.supplier;
 
 import br.com.six2six.fixturefactory.Fixture;
 import br.com.six2six.fixturefactory.Rule;
 import br.com.six2six.fixturefactory.loader.TemplateLoader;
-import com.automation.framework.data.entity.Employee;
+import com.automation.framework.data.entity.app.ems.Employee;
 import com.automation.framework.page.app.hrm.admin.usermanagement.Status;
 import com.automation.framework.page.app.hrm.admin.usermanagement.UserRole;
 import com.github.javafaker.Faker;
@@ -13,9 +13,10 @@ import org.testng.annotations.DataProvider;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.automation.framework.util.helper.PojoHelper.getObject;
+import static com.automation.framework.util.converter.PojoHelper.getObject;
 
 /**
+ * Test Data Supplier example using Fixture Template with Faker
  * The overridden load() implementation will load the data templates in memory
  * which can be supplied to test as test datasets [@DataProvider].
  */

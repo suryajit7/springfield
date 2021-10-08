@@ -1,4 +1,4 @@
-package com.automation.framework.util.helper;
+package com.automation.framework.util.converter;
 
 import br.com.six2six.fixturefactory.Fixture;
 

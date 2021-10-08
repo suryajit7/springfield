@@ -1,8 +1,7 @@
-package com.automation.framework.data.entity;
+package com.automation.framework.data.entity.app;
 
 import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,8 +9,7 @@ import javax.persistence.Id;
 import java.sql.Date;
 
 @Entity
-@Getter
-@Setter
+@Data
 @Builder
 public class User {
 

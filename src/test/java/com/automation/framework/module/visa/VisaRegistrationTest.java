@@ -1,7 +1,7 @@
 package com.automation.framework.module.visa;
 
 import com.automation.framework.BaseTestNGTest;
-import com.automation.framework.data.entity.User;
+import com.automation.framework.data.entity.app.User;
 import com.automation.framework.data.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
