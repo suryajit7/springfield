@@ -3,7 +3,7 @@ package com.automation.framework.module.google;
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.app.google.GoogleSearchPage;
-import com.automation.framework.util.ScreenshotService;
+import com.automation.framework.util.services.ScreenshotService;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.report.TestExecutionListener.getTestMethod;

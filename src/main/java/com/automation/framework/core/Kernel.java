@@ -1,7 +1,7 @@
 package com.automation.framework.core;
 
 import com.automation.framework.util.CommonUtil;
-import com.automation.framework.util.PropertyDecryptService;
+import com.automation.framework.util.services.PropertyDecryptService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
