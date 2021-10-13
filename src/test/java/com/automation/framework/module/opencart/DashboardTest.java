@@ -8,7 +8,9 @@ import com.automation.framework.page.app.hrm.MenuNavigationPage;
 import com.automation.framework.page.app.opencart.Dashboard;
 import com.automation.framework.page.app.opencart.Login;
 import com.automation.framework.util.converter.CsvToJson;
+import com.automation.framework.util.converter.StringToCsv;
 import org.springframework.beans.factory.annotation.Value;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -35,7 +37,7 @@ public class DashboardTest extends BaseTestNGTest {
     @LazyAutowired
     private MenuNavigationPage menuNavigation;
 
-    //@BeforeClass
+    @BeforeClass
     public void setup() {
         this.login.goTo(url);
         this.login.enterUsernameAndPassword();
@@ -53,9 +55,10 @@ public class DashboardTest extends BaseTestNGTest {
 
 
         CsvToJson csvToJson = new CsvToJson();
+        StringToCsv csv = new StringToCsv();
 
-        List<Employee> employeeList = csvToJson.csvToJson(reader.getFilePathForFile("test-data-file.csv"));
-        System.out.println(employeeList);
+        List<Employee> employeeList = csv.csvToJson(reader.getFilePathForFile("test-data-file.csv"));
+        System.out.println(csv);
     }
 
     @Test(priority = 1)
