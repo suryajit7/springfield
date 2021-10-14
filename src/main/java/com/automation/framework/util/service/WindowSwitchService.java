@@ -1,4 +1,4 @@
-package com.automation.framework.util.services;
+package com.automation.framework.util.service;
 
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;

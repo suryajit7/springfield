@@ -1,7 +1,7 @@
 package com.automation.framework.util.helper;
 
 import com.automation.framework.core.annotation.Screenshot;
-import com.automation.framework.util.services.ScreenshotService;
+import com.automation.framework.util.service.ScreenshotService;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;

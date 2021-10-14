@@ -1,4 +1,4 @@
-package com.automation.framework.util.services;
+package com.automation.framework.util.service;
 
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
