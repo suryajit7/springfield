@@ -12,32 +12,32 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StringToCsv {
+public class CsvToString {
 
 
-    public List<Employee> csvToJson(Path filepath) throws IOException {
+    public  <T> T csvToString(Path filepath, Class<T> type) throws IOException {
 
         CsvSchema csvSchema = CsvSchema.builder()
                 .addColumn("id")
                 .addColumn("employeeId")
-                .addColumn("deptId")
                 .addColumn("username")
+                .addColumn("deptId")
                 .addColumn("employeeName")
                 .addColumn("userRole")
                 .addColumn("status")
                 .build().withHeader();
 
         ObjectReader reader = new CsvMapper().readerFor(Employee.class).with(csvSchema);
-        List<Employee> financialDataExports = new ArrayList<>();
+        List<Employee> employeeList = new ArrayList<>();
         try (FileInputStream inputStream = new FileInputStream(filepath.toAbsolutePath().toString())) {
             try (MappingIterator<Employee> iterator = reader.readValues(inputStream)) {
-                iterator.forEachRemaining(financialDataExports::add);
+               iterator.forEachRemaining(employeeList::add);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
 
-        return financialDataExports;
+        return employeeList;
     }
 
 

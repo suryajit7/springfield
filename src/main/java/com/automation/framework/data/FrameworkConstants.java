@@ -1,4 +1,4 @@
-package com.automation.framework.core;
+package com.automation.framework.data;
 
 /**
  * All framework related constants which are not defined in application.properties.

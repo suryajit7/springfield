@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -37,7 +36,7 @@ public class CsvToJson {
                 .addColumn("status")
                 .build().withHeader();
 
-        FileInputStream inputStream = new FileInputStream(new File(filepath.toAbsolutePath().toString()));
+        FileInputStream inputStream = new FileInputStream(filepath.toAbsolutePath().toString());
 
         MappingIterator<Employee> it = mapper
                 .readerForListOf(Employee.class)
