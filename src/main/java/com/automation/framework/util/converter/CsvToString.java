@@ -14,8 +14,23 @@ import java.util.List;
 
 public class CsvToString {
 
+    public List<Employee> csvToString(Path filepath) throws IOException {
 
-    public  <T> T csvToString(Path filepath, Class<T> type) throws IOException {
+        CsvSchema csvSchema = CsvSchema.emptySchema().withHeader();
+
+        ObjectReader reader = new CsvMapper().readerFor(Employee.class).with(csvSchema);
+        List<Employee> employeeList = new ArrayList<>();
+        try (FileInputStream inputStream = new FileInputStream(filepath.toAbsolutePath().toString())) {
+            try (MappingIterator<Employee> iterator = reader.readValues(inputStream)) {
+                iterator.forEachRemaining(employeeList::add);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return employeeList;
+    }
+
+/*    public  <T> T csvToString(Path filepath, Class<T> type) throws IOException {
 
         CsvSchema csvSchema = CsvSchema.builder()
                 .addColumn("id")
@@ -38,13 +53,6 @@ public class CsvToString {
         }
 
         return employeeList;
-    }
-
-
-
-
-
-
-
+    }*/
 
 }
