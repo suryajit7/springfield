@@ -1,6 +1,5 @@
 package com.automation.framework.util.converter;
 
-import com.automation.framework.data.entity.app.ems.Employee;
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
@@ -14,14 +13,14 @@ import java.util.List;
 
 public class CsvToString {
 
-    public List<Employee> csvToString(Path filepath) throws IOException {
+    public <T> List<T> csvToString(Path filepath, Class<T> type) throws IOException {
 
         CsvSchema csvSchema = CsvSchema.emptySchema().withHeader();
 
-        ObjectReader reader = new CsvMapper().readerFor(Employee.class).with(csvSchema);
-        List<Employee> employeeList = new ArrayList<>();
+        ObjectReader reader = new CsvMapper().readerFor(type).with(csvSchema);
+        List<T> employeeList = new ArrayList<>();
         try (FileInputStream inputStream = new FileInputStream(filepath.toAbsolutePath().toString())) {
-            try (MappingIterator<Employee> iterator = reader.readValues(inputStream)) {
+            try (MappingIterator<T> iterator = reader.readValues(inputStream)) {
                 iterator.forEachRemaining(employeeList::add);
             } catch (IOException e) {
                 e.printStackTrace();
