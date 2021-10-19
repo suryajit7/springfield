@@ -7,8 +7,8 @@ import com.automation.framework.data.entity.app.ems.Employee;
 import com.automation.framework.page.app.hrm.MenuNavigationPage;
 import com.automation.framework.page.app.opencart.Dashboard;
 import com.automation.framework.page.app.opencart.Login;
+import com.automation.framework.util.converter.CsvReader;
 import com.automation.framework.util.converter.CsvToJson;
-import com.automation.framework.util.converter.CsvToString;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -55,9 +55,9 @@ public class DashboardTest extends BaseTestNGTest {
 
 
         CsvToJson csvToJson = new CsvToJson();
-        CsvToString csv = new CsvToString();
+        CsvReader csv = new CsvReader();
 
-        List<Employee> employeeList = csv.csvToString(reader.getFilePathForFile("EmployeeData.csv"), Employee.class);
+        List<Employee> employeeList = csv.readCSV(reader.getFilePathForFile("EmployeeData.csv"), Employee.class);
         System.out.println(employeeList);
     }
 

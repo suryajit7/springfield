@@ -3,8 +3,7 @@ package com.automation.framework.module;
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.data.FileReader;
 import com.automation.framework.data.entity.app.ems.Employee;
-import com.automation.framework.util.converter.CsvToJson;
-import com.automation.framework.util.converter.CsvToString;
+import com.automation.framework.util.converter.CsvReader;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -32,11 +31,9 @@ public class ReaderTest extends BaseTestNGTest {
         reader.readFile(resourceName);
         System.out.println(path);
 
+        CsvReader csv = new CsvReader();
 
-        CsvToJson csvToJson = new CsvToJson();
-        CsvToString csv = new CsvToString();
-
-        List<Employee> employeeList = csv.csvToString(reader.getFilePathForFile("EmployeeData.csv"), Employee.class);
+        List<Employee> employeeList = csv.readCSV(reader.getFilePathForFile("EmployeeData.csv"), Employee.class);
         System.out.println(employeeList);
 
 
