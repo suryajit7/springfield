@@ -13,4 +13,4 @@ The key objective behind this project is to design a robust Automation Test Fram
 • Infrastructure support for Dockerized Selenium Grid containers.
 • Support for Parallel testing with Cross-Browser and Cross-Platform support. (Used Browserstack as an example, but the same example can be used for any other type of Cloud Testing platforms like LambdaTest or Applitools.
 • Custom scopes for running Webdriver thread.
-• Visual assertions support using Shutterbug library.
+• Visual assertions support using Shutterbug library.	
