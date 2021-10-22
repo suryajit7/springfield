@@ -167,6 +167,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.automation-suite [dependencies]" />
+      <item itemvalue="Gradle.ReaderTest" />
+      <item itemvalue="Gradle.ReaderTest.verifyDashboard" />
+      <item itemvalue="TestNG.ReaderTest" />
+      <item itemvalue="TestNG.DashboardTest.verifyDashboard" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ReaderTest" />
