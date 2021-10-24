@@ -1,8 +1,0 @@
-id,employeeId,username,deptId,employeeName,userRole,status
-103101,103,Kakashi,101,Uchiha Kakashi,ESS,ENABLED
-344101,344,Pranav,101,Pranav Thakar,ADMIN,DISABLED
-237201,237,Rohan,201,Rohan Patel,ESS,ENABLED
-456301,456,Deepali,301,Deepali Patidar,ADMIN,ENABLED
-417401,417,Sathish,401,Sathish Subramanium,ADMIN,DISABLED
-521401,521,Venki,401,Venkat Raj,ESS,ENABLED
-626501,626,Sarvesh,501,Sarvesh Bharthi,ADMIN,DISABLED
