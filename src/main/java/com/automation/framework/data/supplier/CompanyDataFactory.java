@@ -24,8 +24,7 @@ public class CompanyDataFactory {
         return Company.builder()
                 .companyId(faker.company().hashCode()).companyName(faker.company().name()).companyType(faker.company().industry())
                 .city(faker.address().cityName()).state(faker.address().state()).country(faker.address().country())
-                .postalCode(faker.address().zipCode()).timezone(faker.address().timeZone())
-                .phoneNumber(faker.phoneNumber().phoneNumber())
+                .postalCode(faker.address().zipCode()).phoneNumber(Long.valueOf(faker.phoneNumber().phoneNumber()))
                 .build();
   }
 
