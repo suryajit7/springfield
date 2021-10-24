@@ -3,15 +3,19 @@ package com.automation.framework.data.entity.app.ems;
 import com.automation.framework.util.converter.StringToBoolean;
 import com.automation.framework.util.converter.StringToInteger;
 import com.creditdatamw.zerocell.annotation.Column;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Data
-@Builder
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Department {
 
 
