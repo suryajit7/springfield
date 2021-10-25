@@ -8,4 +8,5 @@ public class StringToBoolean implements Converter<Boolean> {
     public Boolean convert(String value, String columnName, int row) {
         return value.equalsIgnoreCase("true");
     }
+
 }
