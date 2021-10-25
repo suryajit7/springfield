@@ -44,9 +44,13 @@ dependencies {
 	implementation 'br.com.six2six:fixture-factory:3.1.0'
 	implementation 'com.creditdatamw.labs:zerocell-core:0.4.1'
 	implementation 'com.opencsv:opencsv:5.5.2'
-	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.13.0'
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.0'
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.13.0'
+	implementation 'javax.xml.bind:jaxb-api:2.3.1'
+	implementation 'org.simpleframework:simple-xml:2.7.1'
+
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 

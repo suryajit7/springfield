@@ -5,35 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eacd4625-a81d-49b6-a12a-993b3cb7eced" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/fnb/BreakfastMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/fnb/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/library/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/library/Catalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/monitor/HealthCheck.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/FileReader.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToList.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToLocalDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/tdm/ReaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/RemoteWebDriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/RemoteWebDriverSetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PathFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/FileType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/FileType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/CompanyDataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/CompanyDataFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/DepartmentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/DepartmentData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/bean/FakerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/bean/FakerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToBoolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToBoolean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/ReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/ReaderTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/opencart/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/opencart/DashboardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,12 +168,12 @@
       <module name="automation-suite.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.module.*" />
+          <option name="PATTERN" value="com.automation.framework.module.tdm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.framework.module" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.module.ReaderTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.module.tdm.ReaderTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -282,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635073596728</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit54: Adding Entities">
+      <created>1635073733890</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1635073733890</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit55: Adding Entities">
+      <created>1635073810077</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1635073810077</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,7 +306,9 @@
     <MESSAGE value="Commit51: Upgrading dependencies" />
     <MESSAGE value="Commit52: Adding datasets with different extensions." />
     <MESSAGE value="Commit53: Adding compiled classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit53: Adding compiled classes" />
+    <MESSAGE value="Commit54: Adding Entities" />
+    <MESSAGE value="Commit55: Adding Entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit55: Adding Entities" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
