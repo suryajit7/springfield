@@ -2,13 +2,12 @@ package com.automation.framework.module.opencart;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.data.FileReader;
 import com.automation.framework.data.entity.app.ems.Employee;
 import com.automation.framework.page.app.hrm.MenuNavigationPage;
 import com.automation.framework.page.app.opencart.Dashboard;
 import com.automation.framework.page.app.opencart.Login;
-import com.automation.framework.util.converter.CsvReader;
-import com.automation.framework.util.converter.CsvToJson;
+import com.automation.framework.util.FileReader;
+import com.automation.framework.util.PathFinder;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -37,6 +36,9 @@ public class DashboardTest extends BaseTestNGTest {
     @LazyAutowired
     private MenuNavigationPage menuNavigation;
 
+    @LazyAutowired
+    private FileReader fileReader;
+
     @BeforeClass
     public void setup() {
         this.login.goTo(url);
@@ -47,17 +49,13 @@ public class DashboardTest extends BaseTestNGTest {
     @Test(priority = 0)
     public void verifyDashboard() throws IOException {
         String resourceName = "property-test.properties";
-        FileReader reader = new FileReader();
+        PathFinder pathfinder = new PathFinder();
         //this.dashboard.selectCountryByCode("in");
-        Path path = reader.getFilePathForFile(resourceName);
-        reader.readFile(resourceName);
+        Path path = pathfinder.getFilePathForFile(resourceName);
+        //pathfinder.readFile(resourceName);
         System.out.println(path);
 
-
-        CsvToJson csvToJson = new CsvToJson();
-        CsvReader csv = new CsvReader();
-
-        List<Employee> employeeList = csv.readCSV(reader.getFilePathForFile("EmployeeData.csv"), Employee.class);
+        List<Employee> employeeList = fileReader.readCsvFile("EmployeeData.csv", Employee.class);
         System.out.println(employeeList);
     }
 

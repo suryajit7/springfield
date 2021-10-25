@@ -1,17 +1,21 @@
-package com.automation.framework.data;
+package com.automation.framework.util;
 
+
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 @Slf4j
-public class FileReader {
+@Component
+public class PathFinder {
 
-    public Path getFilePathForFile(String filename) throws IOException {
+    @SneakyThrows
+    public Path getFilePathForFile(String filename) {
         try (Stream<Path> stream = Files.walk(Paths.get("src"))) {
             log.info("Looking for filepath for given filename: ".concat(filename));
             return stream
@@ -20,12 +24,6 @@ public class FileReader {
         }
     }
 
-    public void readFile(String filename) throws IOException {
-
-        Files.readAllLines(getFilePathForFile(filename))
-                .forEach(System.out::println);
-
-    }
 
 
 }

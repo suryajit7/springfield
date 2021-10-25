@@ -1,4 +1,4 @@
-package com.automation.framework.util.bean;
+package com.automation.framework.core.bean;
 
 import com.automation.framework.core.annotation.LazyConfiguration;
 import com.github.javafaker.Faker;
