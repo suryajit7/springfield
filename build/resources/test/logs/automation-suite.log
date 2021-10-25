@@ -1,0 +1,273 @@
+2021-10-24 15:41:55.473  WARN 15488 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-24 15:41:55.542  INFO 15488 --- [main] c.a.framework.module.ReaderTest          : Starting ReaderTest using Java 11.0.12 on win7pro with PID 15488 (C:\code\automation-suite\build\classes\java\test started by Administrator in C:\code\automation-suite)
+2021-10-24 15:41:55.547  INFO 15488 --- [main] c.a.framework.module.ReaderTest          : No active profile set, falling back to default profiles: default
+2021-10-24 15:41:57.338  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:41:57.343  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-24 15:41:57.561  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 1 JPA repository interfaces.
+2021-10-24 15:41:57.639  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:41:57.640  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-24 15:41:57.686  INFO 15488 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-24 15:41:57.687  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 0 MongoDB repository interfaces.
+2021-10-24 15:41:58.440  INFO 15488 --- [main] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2021-10-24 15:41:58.452  INFO 15488 --- [main] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1635070318444' from locations: [application.properties]
+2021-10-24 15:42:00.380  INFO 15488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-24 15:42:00.924  INFO 15488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-24 15:42:01.262  INFO 15488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-24 15:42:01.474  INFO 15488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-24 15:42:02.002  INFO 15488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-24 15:42:02.442  INFO 15488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-24 15:42:04.421  INFO 15488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-24 15:42:04.441  INFO 15488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:42:06.939  INFO 15488 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-10-24 15:42:07.281  INFO 15488 --- [cluster-rtt-ClusterId{value='61753176c3f5247194a1d64c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:193}] to localhost:27017
+2021-10-24 15:42:07.281  INFO 15488 --- [cluster-ClusterId{value='61753176c3f5247194a1d64c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:194}] to localhost:27017
+2021-10-24 15:42:07.288  INFO 15488 --- [cluster-ClusterId{value='61753176c3f5247194a1d64c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=223818300}
+2021-10-24 15:42:08.621  INFO 15488 --- [main] c.a.framework.module.ReaderTest          : Started ReaderTest in 13.959 seconds (JVM running for 17.755)
+2021-10-24 15:42:08.663  INFO 15488 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.nio.file.Path com.automation.framework.module.ReaderTest.testDir
+2021-10-24 15:42:09.393  INFO 15488 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EmployeeData.csv
+2021-10-24 15:42:09.776  INFO 15488 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EMSTestData.json
+2021-10-24 15:42:09.890  INFO 15488 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: BooksTestData.xml
+2021-10-24 15:42:14.722  INFO 15488 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 95.0.4638.17 (resolved driver for Chrome 95)
+2021-10-24 15:42:14.878  INFO 15488 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-24 15:42:31.446  INFO 15488 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2021-10-24 15:42:33.357  INFO 15488 --- [main] c.a.framework.module.ReaderTest          : Quiting all browser instances.
+2021-10-24 15:42:33.376  INFO 15488 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:42:33.377  INFO 15488 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-24 15:42:33.484  INFO 15488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-24 15:42:33.582  INFO 15488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-24 15:43:27.224  WARN 14800 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-24 15:43:27.249  INFO 14800 --- [main] c.a.framework.module.ReaderTest          : Starting ReaderTest using Java 11.0.12 on win7pro with PID 14800 (C:\code\automation-suite\build\classes\java\test started by Administrator in C:\code\automation-suite)
+2021-10-24 15:43:27.255  INFO 14800 --- [main] c.a.framework.module.ReaderTest          : No active profile set, falling back to default profiles: default
+2021-10-24 15:43:28.786  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:43:28.793  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-24 15:43:29.030  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 218 ms. Found 1 JPA repository interfaces.
+2021-10-24 15:43:29.113  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:43:29.114  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-24 15:43:29.174  INFO 14800 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-24 15:43:29.175  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 0 MongoDB repository interfaces.
+2021-10-24 15:43:29.875  INFO 14800 --- [main] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2021-10-24 15:43:29.891  INFO 14800 --- [main] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1635070409879' from locations: [application.properties]
+2021-10-24 15:43:31.098  INFO 14800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-24 15:43:31.591  INFO 14800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-24 15:43:31.905  INFO 14800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-24 15:43:32.127  INFO 14800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-24 15:43:32.643  INFO 14800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-24 15:43:33.151  INFO 14800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-24 15:43:35.201  INFO 14800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-24 15:43:35.243  INFO 14800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:43:38.149  INFO 14800 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-10-24 15:43:38.467  INFO 14800 --- [cluster-ClusterId{value='617531d2c07fdc3555772202', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:196}] to localhost:27017
+2021-10-24 15:43:38.467  INFO 14800 --- [cluster-rtt-ClusterId{value='617531d2c07fdc3555772202', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:195}] to localhost:27017
+2021-10-24 15:43:38.484  INFO 14800 --- [cluster-ClusterId{value='617531d2c07fdc3555772202', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=108021700}
+2021-10-24 15:43:39.840  INFO 14800 --- [main] c.a.framework.module.ReaderTest          : Started ReaderTest in 13.342 seconds (JVM running for 16.95)
+2021-10-24 15:43:39.864  INFO 14800 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.nio.file.Path com.automation.framework.module.ReaderTest.testDir
+2021-10-24 15:43:40.532  INFO 14800 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EmployeeData.csv
+2021-10-24 15:43:40.629  INFO 14800 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EMSTestData.json
+2021-10-24 15:43:40.791  INFO 14800 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: DepartmentTestData.xlsx
+2021-10-24 15:43:45.293  INFO 14800 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 95.0.4638.17 (resolved driver for Chrome 95)
+2021-10-24 15:43:45.377  INFO 14800 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-24 15:44:04.343  INFO 14800 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2021-10-24 15:44:05.682  INFO 14800 --- [main] c.a.framework.module.ReaderTest          : Quiting all browser instances.
+2021-10-24 15:44:05.945  INFO 14800 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:44:05.947  INFO 14800 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-24 15:44:06.125  INFO 14800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-24 15:44:06.132  INFO 14800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-24 15:45:11.688  WARN 34208 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-24 15:45:11.712  INFO 34208 --- [main] c.a.framework.module.ReaderTest          : Starting ReaderTest using Java 11.0.12 on win7pro with PID 34208 (C:\code\automation-suite\build\classes\java\test started by Administrator in C:\code\automation-suite)
+2021-10-24 15:45:11.716  INFO 34208 --- [main] c.a.framework.module.ReaderTest          : No active profile set, falling back to default profiles: default
+2021-10-24 15:45:13.410  INFO 34208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:45:13.417  INFO 34208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-24 15:45:13.622  INFO 34208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 1 JPA repository interfaces.
+2021-10-24 15:45:13.696  INFO 34208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:45:13.697  INFO 34208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-24 15:45:13.745  INFO 34208 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-24 15:45:13.745  INFO 34208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 0 MongoDB repository interfaces.
+2021-10-24 15:45:14.466  INFO 34208 --- [main] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2021-10-24 15:45:14.479  INFO 34208 --- [main] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1635070514470' from locations: [application.properties]
+2021-10-24 15:45:15.907  INFO 34208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-24 15:45:16.442  INFO 34208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-24 15:45:16.762  INFO 34208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-24 15:45:16.922  INFO 34208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-24 15:45:17.486  INFO 34208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-24 15:45:18.024  INFO 34208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-24 15:45:20.759  INFO 34208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-24 15:45:20.789  INFO 34208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:45:23.501  INFO 34208 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-10-24 15:45:23.779  INFO 34208 --- [cluster-rtt-ClusterId{value='6175323bc3c2834bcbb0dfd9', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:198}] to localhost:27017
+2021-10-24 15:45:23.777  INFO 34208 --- [cluster-ClusterId{value='6175323bc3c2834bcbb0dfd9', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:197}] to localhost:27017
+2021-10-24 15:45:23.794  INFO 34208 --- [cluster-ClusterId{value='6175323bc3c2834bcbb0dfd9', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=101801200}
+2021-10-24 15:45:25.072  INFO 34208 --- [main] c.a.framework.module.ReaderTest          : Started ReaderTest in 14.413 seconds (JVM running for 20.693)
+2021-10-24 15:45:25.107  INFO 34208 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.nio.file.Path com.automation.framework.module.ReaderTest.testDir
+2021-10-24 15:46:17.463  WARN 34208 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m894ms752µs200ns).
+2021-10-24 15:46:17.898  INFO 34208 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EmployeeData.csv
+2021-10-24 15:46:17.998  INFO 34208 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EMSTestData.json
+2021-10-24 15:46:18.149  INFO 34208 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: DepartmentTestData.xlsx
+2021-10-24 15:46:20.588  INFO 34208 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 95.0.4638.17 (resolved driver for Chrome 95)
+2021-10-24 15:46:20.654  INFO 34208 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-24 15:46:25.760  INFO 34208 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2021-10-24 15:46:27.507  INFO 34208 --- [main] c.a.framework.module.ReaderTest          : Quiting all browser instances.
+2021-10-24 15:46:27.777  INFO 34208 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:46:27.778  INFO 34208 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-24 15:46:27.794  INFO 34208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-24 15:46:27.883  INFO 34208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-24 15:46:52.307  WARN 28600 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-24 15:46:52.331  INFO 28600 --- [main] c.a.framework.module.ReaderTest          : Starting ReaderTest using Java 11.0.12 on win7pro with PID 28600 (C:\code\automation-suite\build\classes\java\test started by Administrator in C:\code\automation-suite)
+2021-10-24 15:46:52.337  INFO 28600 --- [main] c.a.framework.module.ReaderTest          : No active profile set, falling back to default profiles: default
+2021-10-24 15:46:54.256  INFO 28600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:46:54.262  INFO 28600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-24 15:46:54.520  INFO 28600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233 ms. Found 1 JPA repository interfaces.
+2021-10-24 15:46:54.596  INFO 28600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:46:54.598  INFO 28600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-24 15:46:54.652  INFO 28600 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-24 15:46:54.653  INFO 28600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 0 MongoDB repository interfaces.
+2021-10-24 15:46:55.339  INFO 28600 --- [main] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2021-10-24 15:46:55.360  INFO 28600 --- [main] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1635070615351' from locations: [application.properties]
+2021-10-24 15:46:56.795  INFO 28600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-24 15:46:57.563  INFO 28600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-24 15:46:57.838  INFO 28600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-24 15:46:58.012  INFO 28600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-24 15:46:58.567  INFO 28600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-24 15:46:59.179  INFO 28600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-24 15:47:01.569  INFO 28600 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-24 15:47:01.604  INFO 28600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:47:03.992  INFO 28600 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-10-24 15:47:04.254  INFO 28600 --- [cluster-ClusterId{value='6175329fd3fe0655a68d96be', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:200}] to localhost:27017
+2021-10-24 15:47:04.263  INFO 28600 --- [cluster-ClusterId{value='6175329fd3fe0655a68d96be', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=82634000}
+2021-10-24 15:47:04.254  INFO 28600 --- [cluster-rtt-ClusterId{value='6175329fd3fe0655a68d96be', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:199}] to localhost:27017
+2021-10-24 15:47:05.656  INFO 28600 --- [main] c.a.framework.module.ReaderTest          : Started ReaderTest in 14.211 seconds (JVM running for 18.928)
+2021-10-24 15:47:05.681  INFO 28600 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.nio.file.Path com.automation.framework.module.ReaderTest.testDir
+2021-10-24 15:47:50.345  WARN 28600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s671ms985µs).
+2021-10-24 15:47:52.261  INFO 28600 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EmployeeData.csv
+2021-10-24 15:47:52.447  INFO 28600 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EMSTestData.json
+2021-10-24 15:47:52.820  INFO 28600 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: DepartmentTestData.xlsx
+2021-10-24 15:47:55.093  INFO 28600 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 95.0.4638.17 (resolved driver for Chrome 95)
+2021-10-24 15:47:55.181  INFO 28600 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-24 15:47:58.541  INFO 28600 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2021-10-24 15:48:00.265  INFO 28600 --- [main] c.a.framework.module.ReaderTest          : Quiting all browser instances.
+2021-10-24 15:48:00.522  INFO 28600 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:48:00.531  INFO 28600 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-24 15:48:00.565  INFO 28600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-24 15:48:00.588  INFO 28600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-24 15:48:14.876  WARN 26956 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-24 15:48:14.895  INFO 26956 --- [main] c.a.framework.module.ReaderTest          : Starting ReaderTest using Java 11.0.12 on win7pro with PID 26956 (C:\code\automation-suite\build\classes\java\test started by Administrator in C:\code\automation-suite)
+2021-10-24 15:48:14.899  INFO 26956 --- [main] c.a.framework.module.ReaderTest          : No active profile set, falling back to default profiles: default
+2021-10-24 15:48:16.590  INFO 26956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:48:16.598  INFO 26956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-24 15:48:16.901  INFO 26956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 282 ms. Found 1 JPA repository interfaces.
+2021-10-24 15:48:17.003  INFO 26956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 15:48:17.004  INFO 26956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-24 15:48:17.063  INFO 26956 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-24 15:48:17.064  INFO 26956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 0 MongoDB repository interfaces.
+2021-10-24 15:48:17.865  INFO 26956 --- [main] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2021-10-24 15:48:17.902  INFO 26956 --- [main] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1635070697870' from locations: [application.properties]
+2021-10-24 15:48:19.663  INFO 26956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-24 15:48:20.137  INFO 26956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-24 15:48:21.295  INFO 26956 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-24 15:48:21.519  INFO 26956 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-24 15:48:21.901  INFO 26956 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-24 15:48:22.363  INFO 26956 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-24 15:48:25.040  INFO 26956 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-24 15:48:25.058  INFO 26956 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:48:29.262  INFO 26956 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-10-24 15:48:29.599  INFO 26956 --- [cluster-ClusterId{value='617532f550018007e0c8c3a4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:202}] to localhost:27017
+2021-10-24 15:48:29.599  INFO 26956 --- [cluster-rtt-ClusterId{value='617532f550018007e0c8c3a4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:201}] to localhost:27017
+2021-10-24 15:48:29.605  INFO 26956 --- [cluster-ClusterId{value='617532f550018007e0c8c3a4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=77309200}
+2021-10-24 15:48:30.978  INFO 26956 --- [main] c.a.framework.module.ReaderTest          : Started ReaderTest in 16.752 seconds (JVM running for 20.481)
+2021-10-24 15:48:30.996  INFO 26956 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.nio.file.Path com.automation.framework.module.ReaderTest.testDir
+2021-10-24 15:48:31.387  INFO 26956 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: UserTestData.txt
+2021-10-24 15:48:31.940  INFO 26956 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EmployeeData.csv
+2021-10-24 15:48:32.042  INFO 26956 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EMSTestData.json
+2021-10-24 15:48:32.186  INFO 26956 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: DepartmentTestData.xlsx
+2021-10-24 15:48:34.148  INFO 26956 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 95.0.4638.17 (resolved driver for Chrome 95)
+2021-10-24 15:48:34.207  INFO 26956 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-24 15:48:37.359  INFO 26956 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2021-10-24 15:48:38.696  INFO 26956 --- [main] c.a.framework.module.ReaderTest          : Quiting all browser instances.
+2021-10-24 15:48:38.714  INFO 26956 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 15:48:38.715  INFO 26956 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-24 15:48:38.729  INFO 26956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-24 15:48:38.736  INFO 26956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-24 16:03:27.602  WARN 6792 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-24 16:03:27.621  INFO 6792 --- [main] c.a.framework.module.ReaderTest          : Starting ReaderTest using Java 11.0.12 on win7pro with PID 6792 (C:\code\automation-suite\build\classes\java\test started by Administrator in C:\code\automation-suite)
+2021-10-24 16:03:27.626  INFO 6792 --- [main] c.a.framework.module.ReaderTest          : No active profile set, falling back to default profiles: default
+2021-10-24 16:03:29.407  INFO 6792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 16:03:29.412  INFO 6792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-24 16:03:29.695  INFO 6792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 262 ms. Found 1 JPA repository interfaces.
+2021-10-24 16:03:29.791  INFO 6792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-24 16:03:29.791  INFO 6792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-24 16:03:29.830  INFO 6792 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-10-24 16:03:29.831  INFO 6792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 MongoDB repository interfaces.
+2021-10-24 16:03:30.549  INFO 6792 --- [main] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2021-10-24 16:03:30.563  INFO 6792 --- [main] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1635071610551' from locations: [application.properties]
+2021-10-24 16:03:32.033  INFO 6792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-24 16:03:32.523  INFO 6792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-24 16:03:32.837  INFO 6792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-24 16:03:33.152  INFO 6792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-24 16:03:33.980  INFO 6792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-24 16:03:34.652  INFO 6792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-24 16:03:36.805  INFO 6792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-24 16:03:36.824  INFO 6792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 16:03:38.972  INFO 6792 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-10-24 16:03:39.294  INFO 6792 --- [cluster-ClusterId{value='6175368256648243a5c2b776', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:203}] to localhost:27017
+2021-10-24 16:03:39.298  INFO 6792 --- [cluster-ClusterId{value='6175368256648243a5c2b776', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=177773700}
+2021-10-24 16:03:39.317  INFO 6792 --- [cluster-rtt-ClusterId{value='6175368256648243a5c2b776', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:204}] to localhost:27017
+2021-10-24 16:03:40.260  INFO 6792 --- [main] c.a.framework.module.ReaderTest          : Started ReaderTest in 13.356 seconds (JVM running for 18.143)
+2021-10-24 16:03:40.513  INFO 6792 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: UserTestData.txt
+2021-10-24 16:03:40.905  INFO 6792 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EmployeeData.csv
+2021-10-24 16:03:40.995  INFO 6792 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: EMSTestData.json
+2021-10-24 16:03:41.123  INFO 6792 --- [main] c.automation.framework.util.PathFinder   : Looking for filepath for given filename: DepartmentTestData.xlsx
+2021-10-24 16:03:42.712  INFO 6792 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 95.0.4638.17 (resolved driver for Chrome 95)
+2021-10-24 16:03:42.742  INFO 6792 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-24 16:03:45.149  INFO 6792 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2021-10-24 16:03:47.234  INFO 6792 --- [main] c.a.framework.module.ReaderTest          : Quiting all browser instances.
+2021-10-24 16:03:47.305  INFO 6792 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 16:03:47.308  INFO 6792 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-24 16:03:47.435  INFO 6792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-24 16:03:48.054  INFO 6792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
