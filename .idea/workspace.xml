@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eacd4625-a81d-49b6-a12a-993b3cb7eced" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToLocalDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/tdm/ReaderTest.java" afterDir="false" />
+    <list default="true" id="eacd4625-a81d-49b6-a12a-993b3cb7eced" name="Changes" comment="Commit57: Added few file reader tests">
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/RemoteWebDriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/RemoteWebDriverSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PathFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/bean/FakerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/bean/FakerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToBoolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToBoolean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/ReaderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/opencart/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/opencart/DashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/tdm/ReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/tdm/ReaderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/logs/automation-suite.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/tdm/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/tdm/ReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +273,56 @@
       <option name="project" value="LOCAL" />
       <updated>1635073810077</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commit55: Update Gradle">
+      <created>1635133182307</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1635133182307</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Commit56: Added Pathfinder and FileReader utility along with minor Refactoring.">
+      <created>1635133358909</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1635133358909</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Commit56: Added zero cell excel converters">
+      <created>1635133428402</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1635133428402</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Commit57: Added few file reader tests">
+      <created>1635135111789</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1635135111789</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Commit57: Adding complied classes">
+      <created>1635151385830</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635151385830</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Commit58:">
+      <created>1635162296795</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635162296795</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Commit58:">
+      <created>1635162380400</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1635162380400</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,7 +347,13 @@
     <MESSAGE value="Commit53: Adding compiled classes" />
     <MESSAGE value="Commit54: Adding Entities" />
     <MESSAGE value="Commit55: Adding Entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit55: Adding Entities" />
+    <MESSAGE value="Commit55: Update Gradle" />
+    <MESSAGE value="Commit56: Added Pathfinder and FileReader utility along with minor Refactoring." />
+    <MESSAGE value="Commit56: Added zero cell excel converters" />
+    <MESSAGE value="Commit57: Added few file reader tests" />
+    <MESSAGE value="Commit57: Adding complied classes" />
+    <MESSAGE value="Commit58:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit58:" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

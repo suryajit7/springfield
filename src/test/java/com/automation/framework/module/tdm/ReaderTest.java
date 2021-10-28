@@ -24,7 +24,7 @@ public class ReaderTest extends BaseTestNGTest {
     @Autowired
     private ResourceLoader resourceLoader;
 
-    @Value("${user.dir}/datasets-file.csv")
+    @Value("${user.dir}/src/test/resources/datasets/test-data-file.csv")
     private Resource csvResource;
 
     @Value("https://www.w3.org/TR/PNG/iso_8859-1.txt")
@@ -50,14 +50,14 @@ public class ReaderTest extends BaseTestNGTest {
         Files.readAllLines(csvResource.getFile().toPath())
                 .forEach(System.out::println);
 
-        System.out.printf(new String(textFile.getInputStream().readAllBytes()));
+        System.out.print(new String(textFile.getInputStream().readAllBytes()));
     }
 
     @Test(priority = 2)
-    public void testPropertiesFile() throws IOException {
+    public void verifyTestPropertiesFile() throws IOException {
 
         Properties property = PropertiesLoaderUtils.loadProperties(resourceLoader.getResource("property-test.properties"));
-        System.out.printf(String.valueOf(property));
+        System.out.print(String.valueOf(property));
     }
 
 
