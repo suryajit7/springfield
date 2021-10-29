@@ -5,13 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eacd4625-a81d-49b6-a12a-993b3cb7eced" name="Changes" comment="Commit57: Added few file reader tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/googleSearchTest_test1test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest2/googleSearchTest_test2test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/WindowSwitchTest/setup_pass method namepass method name.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/tdm/ReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/tdm/ReaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/logs/automation-suite.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/tdm/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/tdm/ReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/crm/DashboardTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/crm/OrangeCRMLoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/google/GoogleSearchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/google/GoogleSearchTest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/google/MultiBrowserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/opencart/DashboardTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/opencart/UsersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/tdm/ReaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/visa/VisaRegistrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/module/window/WindowSwitchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/logs/automation-suite.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parallel.testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parallel.testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/crm/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/crm/DashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/crm/OrangeCRMLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/crm/OrangeCRMLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/google/GoogleSearchTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/google/MultiBrowserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/MultiBrowserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/opencart/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/DashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/opencart/UsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/UsersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/tdm/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/tdm/ReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/visa/VisaRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/visa/VisaRegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/module/window/WindowSwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/window/WindowSwitchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,59 +118,59 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="TestNG.ReaderTest">
-    <configuration name="ReaderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.module.ReaderTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="TestNG.AutomationSuiteGUI">
+    <configuration name="AutomationSuiteGUI" type="TestNG" temporary="true">
+      <shortenClasspath name="ARGS_FILE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="ReaderTest.verifyDashboard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.module.ReaderTest.verifyDashboard&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/code/automation-suite/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DashboardTest.verifyDashboard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.module.opencart.*" />
+          <option name="PATTERN" value="com.automation.framework.gui.module.opencart.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.framework.module.opencart" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.module.opencart.DashboardTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.gui.module.opencart.DashboardTest" />
       <option name="METHOD_NAME" value="verifyDashboard" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -158,12 +183,21 @@
       <module name="automation-suite.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.module.tdm.*" />
+          <option name="PATTERN" value="com.automation.framework.gui.module.tdm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.framework.module" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.module.tdm.ReaderTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.gui.module.tdm.ReaderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -173,17 +207,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.automation-suite [dependencies]" />
-      <item itemvalue="Gradle.ReaderTest" />
-      <item itemvalue="Gradle.ReaderTest.verifyDashboard" />
       <item itemvalue="TestNG.DashboardTest.verifyDashboard" />
       <item itemvalue="TestNG.ReaderTest" />
+      <item itemvalue="TestNG.C:/code/automation-suite/testng.xml" />
+      <item itemvalue="TestNG.AutomationSuiteGUI" />
+      <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AutomationSuiteGUI" />
+        <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
+        <item itemvalue="TestNG.C:/code/automation-suite/testng.xml" />
         <item itemvalue="TestNG.ReaderTest" />
         <item itemvalue="TestNG.DashboardTest.verifyDashboard" />
-        <item itemvalue="Gradle.ReaderTest.verifyDashboard" />
-        <item itemvalue="Gradle.ReaderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635162380400</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Commit58: Added more tests in FileReader">
+      <created>1635388476333</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1635388476333</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +396,8 @@
     <MESSAGE value="Commit57: Added few file reader tests" />
     <MESSAGE value="Commit57: Adding complied classes" />
     <MESSAGE value="Commit58:" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit58:" />
+    <MESSAGE value="Commit58: Added more tests in FileReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit58: Added more tests in FileReader" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

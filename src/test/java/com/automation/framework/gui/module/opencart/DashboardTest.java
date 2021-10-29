@@ -1,4 +1,4 @@
-package com.automation.framework.module.opencart;
+package com.automation.framework.gui.module.opencart;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
@@ -59,7 +59,7 @@ public class DashboardTest extends BaseTestNGTest {
         System.out.println(employeeList);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = false)
     public void verify() {
         menuNavigation.navigateToMenu(USERS);
     }

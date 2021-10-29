@@ -1,4 +1,4 @@
-package com.automation.framework.module.visa;
+package com.automation.framework.gui.module.visa;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.data.entity.app.User;

@@ -1,4 +1,4 @@
-package com.automation.framework.module.tdm;
+package com.automation.framework.gui.module.tdm;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.data.entity.app.ems.Department;

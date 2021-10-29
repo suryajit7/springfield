@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+    <test verbose="2" preserve-order="true" name="Automation Regression Suite" >
+        <classes>
+            <class name="com.automation.framework.gui.module.google.GoogleSearchTest"/>
+            <class name="com.automation.framework.gui.module.google.GoogleSearchTest2"/>
+            <class name="com.automation.framework.gui.module.google.MultiBrowserTest"/>
+            <class name="com.automation.framework.gui.module.crm.OrangeCRMLoginTest"/>
+            <class name="com.automation.framework.gui.module.crm.DashboardTest"/>
+            <class name="com.automation.framework.gui.module.opencart.DashboardTest"/>
+            <class name="com.automation.framework.gui.module.opencart.UsersTest"/>
+            <class name="com.automation.framework.gui.module.tdm.ReaderTest"/>
+            <class name="com.automation.framework.gui.module.visa.VisaRegistrationTest"/>
+            <class name="com.automation.framework.gui.module.window.WindowSwitchTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Role Based User Journey Tests">
+    </test>
+</suite>
+

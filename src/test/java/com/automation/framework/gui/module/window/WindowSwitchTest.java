@@ -1,4 +1,4 @@
-package com.automation.framework.module.window;
+package com.automation.framework.gui.module.window;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.page.app.window.MainPage;

@@ -1,4 +1,4 @@
-package com.automation.framework.module.google;
+package com.automation.framework.gui.module.google;
 
 import com.automation.framework.BaseTestNGTest;
 import org.openqa.selenium.WebDriver;

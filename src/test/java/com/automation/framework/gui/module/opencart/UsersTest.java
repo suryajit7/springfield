@@ -1,4 +1,4 @@
-package com.automation.framework.module.opencart;
+package com.automation.framework.gui.module.opencart;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;

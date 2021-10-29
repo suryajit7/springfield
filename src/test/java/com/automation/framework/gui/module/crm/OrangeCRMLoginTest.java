@@ -1,19 +1,15 @@
-package com.automation.framework.module.crm;
+package com.automation.framework.gui.module.crm;
 
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.page.app.hrm.LoginPanelPage;
-import com.automation.framework.page.app.hrm.dashboard.DashboardPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.Test;
 
-public class DashboardTest extends BaseTestNGTest {
+public class OrangeCRMLoginTest extends BaseTestNGTest {
 
     @Autowired
     private LoginPanelPage login;
-
-    @Autowired
-    private DashboardPage dashboardPage;
 
     @Value("${app.crm.url}")
     private String crmURL;
@@ -25,10 +21,12 @@ public class DashboardTest extends BaseTestNGTest {
     private String pwd;
 
     @Test
-    public void verifyPieChartLabels() {
-
-        this.login.goTo("https://opensource-demo.orangehrmlive.com/index.php/dashboard");
-        this.dashboardPage.getAllPieChartLabels();
+    public void verifyLoginPage() {
+        this.login.goTo(this.crmURL);
+        this.login.enterUsername(this.username);
+        this.login.enterPassword(this.pwd);
+        this.login.clickLoginButton();
     }
+
 
 }
