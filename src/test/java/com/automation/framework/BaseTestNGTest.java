@@ -27,7 +27,7 @@ public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
     @AfterSuite(alwaysRun = true)
     public void tearDownSuite() {
 
-        Optional<WebDriver> driver = Optional.ofNullable(appCtx.getBean(WebDriver.class));
+        Optional<WebDriver> driver = Optional.of(appCtx.getBean(WebDriver.class));
         if (driver.isPresent()){
             driver.get().quit();
             logger.info("Quiting all browser instances.");
