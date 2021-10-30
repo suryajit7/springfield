@@ -13,5 +13,5 @@ The key objective behind this project is to design a robust Automation Test Fram
 6. Supports all kinds of projects including Data & Keyword-driven along with Page Object Model with PageFactory.
 7. Infrastructure support for Dockerized Selenium Grid containers.
 8. Support for Parallel testing with Cross-Browser and Cross-Platform support. (Used Browserstack as an example, but the same example can be used for any other type of Cloud Testing platforms like LambdaTest or Applitools)
-9. Custom scopes for running WebDriver thread and easy configuration for different Run modes. (To run tests in local machine; in application.properties change runmode=local, for Dockerized Grid containers -> runmode=remote, and for cloud platform -> runmode=cloud)
+9. Custom scopes for running WebDriver thread and easy configuration for different Run modes. (To run local tests change -> **runmode=local** in application.properties, for Dockerized Grid containers -> **runmode=remote**, and for cloud platforms -> **runmode=cloud**)
 10. Visual assertions support using Shutterbug library.	
