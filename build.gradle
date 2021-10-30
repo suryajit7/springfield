@@ -44,6 +44,7 @@ dependencies {
 	implementation 'br.com.six2six:fixture-factory:3.1.0'
 	implementation 'com.creditdatamw.labs:zerocell-core:0.4.1'
 	implementation 'com.opencsv:opencsv:5.5.2'
+	implementation 'com.github.ramalapure:json-parser:1.1'
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
 	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.0'
