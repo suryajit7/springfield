@@ -3,6 +3,7 @@ package com.automation.framework.integration;
 import com.automation.framework.AutomationSuiteApplicationTests;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -15,6 +16,7 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+
 public class PostmanAPITest extends AutomationSuiteApplicationTests {
 
     @Value("${app.postman.url}")
@@ -24,6 +26,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     private String apiKey;
 
     @Test
+    @Order(1)
     public void verifySimpleRestTest(){
 
         given()
@@ -36,6 +39,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Order(2)
     public void verifyGetStatusCode(){
 
         given()
@@ -49,6 +53,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Order(3)
     public void verifyGetResponseCode(){
         given()
                 .baseUri(postmanUrl)
@@ -71,6 +76,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Order(4)
     public void verifyExtractResponse(){
         //Example 1
         Response response = given()
@@ -102,6 +108,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Order(5)
     public void verifyLoggingForRequestAndResponse(){
 
         given()
@@ -116,6 +123,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Order(6)
     public void verifyLoggingIfValidationFails(){
 
         given()
@@ -128,8 +136,8 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
                 .statusCode(SC_SUCCESS);
     }
 
-
     @Test
+    @Order(7)
     public void verifyLoggingBlackListedHeaders(){
 
         Set blackListHeaders = Set.of("X-Api-Key", "Accept");
