@@ -20,13 +20,12 @@ public class AutomationSuiteApplicationTests {
 
 
 	@BeforeAll
-	public static void setup(){
-
-	}
+	public static void setup(){}
 
 	@Test
-	void contextLoads() {
+	void verifySpringContextLoad() {
 
+		log.info("******Spring Context loaded******");
 	}
 
 

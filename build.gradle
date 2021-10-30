@@ -54,6 +54,7 @@ dependencies {
 	implementation 'io.rest-assured:json-schema-validator:4.4.0'
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.5'
 	testImplementation 'org.hamcrest:hamcrest-all:1.3'
