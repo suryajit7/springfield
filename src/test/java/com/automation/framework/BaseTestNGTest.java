@@ -28,12 +28,8 @@ public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
     public void tearDownSuite() {
 
         Optional<WebDriver> driver = Optional.of(appCtx.getBean(WebDriver.class));
-        if (driver.isPresent()){
-            driver.get().quit();
-            logger.info("Quiting all browser instances.");
-        } else {
-            logger.warn("WebDriver instance is empty during tearing down.");
-        }
+        driver.get().quit();
+        logger.info("Quiting all browser instances.");
     }
 
 }
