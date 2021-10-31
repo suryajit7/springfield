@@ -21,13 +21,6 @@ public class DepartmentData {
 
     }
 
- /*   public Department getDepartmentData(){
-        Reader.of(Department.class)
-                .from()
-
-        return
-    }*/
-
 
 
 

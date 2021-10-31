@@ -6,7 +6,7 @@ The key objective behind this project is to design a robust Automation Test Fram
 
 **Features:**
 1. Context and Dependency Injection using Spring.
-2. Supports data insertion in all types of DB's like MongoDB, SQL DB, H2 etc. using Spring JPA.
+2. Supports data insertion in all types of DB's like MongoDB, SQL, and in-memory DB like H2 using Spring JPA.
 3. Inbuilt Test Data Generation features using Faker & Fixture libraries for supplying Test Data in respective tests.
 4. Common File Reader for deserializing data from various file types (json, txt, csv, xml, excel etc.).
 5. Rest Assured support for API testing and PACT for running Contract tests.

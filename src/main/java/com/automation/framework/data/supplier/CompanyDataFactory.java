@@ -12,8 +12,8 @@ public class CompanyDataFactory {
 
 
     @DataProvider(parallel = true)
-    public static Object[] getCompanyData(){
-        return new Object[]{getValidCompany(), getEmptyCompany()};
+    public static Object[][] getCompanyData(){
+        return new Object[][]{{getValidCompany(), getEmptyCompany()}};
     }
 
     public static Company getEmptyCompany() {

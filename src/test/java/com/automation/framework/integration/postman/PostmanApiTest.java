@@ -1,4 +1,4 @@
-package com.automation.framework.integration;
+package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
 import io.restassured.path.json.JsonPath;
