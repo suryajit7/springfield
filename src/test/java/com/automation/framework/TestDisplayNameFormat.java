@@ -1,15 +1,15 @@
 package com.automation.framework;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.DisplayNameGenerator;
 
 import java.lang.reflect.Method;
 
 import static java.lang.Character.*;
+import static org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores;
+import static org.junit.jupiter.api.DisplayNameGenerator.parameterTypesAsString;
 
-//TODO:: Modify the logic of generating the test method names
 @Slf4j
-class TestDisplayNameFormat extends DisplayNameGenerator.ReplaceUnderscores {
+class TestDisplayNameFormat extends ReplaceUnderscores {
 
     @Override
     public String generateDisplayNameForClass(Class<?> testClass) {
@@ -23,7 +23,7 @@ class TestDisplayNameFormat extends DisplayNameGenerator.ReplaceUnderscores {
 
     @Override
     public String generateDisplayNameForMethod(Class<?> testClass, Method testMethod) {
-        return this.formatTestName(testMethod.getName()).concat(DisplayNameGenerator.parameterTypesAsString(testMethod));
+        return this.formatTestName(testMethod.getName()).concat(parameterTypesAsString(testMethod));
     }
 
     String formatTestName(String testName) {
