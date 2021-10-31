@@ -5,30 +5,38 @@ import org.junit.jupiter.api.DisplayNameGenerator;
 
 import java.lang.reflect.Method;
 
-@Slf4j
-public class TestDisplayNameFormat extends DisplayNameGenerator.Standard {
+import static java.lang.Character.isUpperCase;
+import static java.lang.Character.toUpperCase;
 
-    public TestDisplayNameFormat(){}
+//TODO:: Modify the logic of generating the test method names
+@Slf4j
+class TestDisplayNameFormat extends DisplayNameGenerator.ReplaceUnderscores {
+
 
     @Override
     public String generateDisplayNameForClass(Class<?> testClass) {
-        return this.replaceCapitals(super.generateDisplayNameForClass(testClass));
+        return replaceCamelCase(super.generateDisplayNameForClass(testClass));
     }
 
     @Override
     public String generateDisplayNameForNestedClass(Class<?> nestedClass) {
-        return this.replaceCapitals(super.generateDisplayNameForNestedClass(nestedClass));
+        return replaceCamelCase(super.generateDisplayNameForNestedClass(nestedClass));
     }
 
     @Override
     public String generateDisplayNameForMethod(Class<?> testClass, Method testMethod) {
-        return this.replaceCapitals(testMethod.getName());
+        return this.replaceCamelCase(testMethod.getName()) +
+                DisplayNameGenerator.parameterTypesAsString(testMethod);
     }
 
-    private String replaceCapitals(String name) {
-        name = name.replaceAll("([A-Z])", " $1");
-        name = name.replaceAll("([0-9]+)", " $1");
-        return name;
+    String replaceCamelCase(String camelCase) {
+        StringBuilder result = new StringBuilder();
+        result.append(toUpperCase(camelCase.charAt(0)));
+        for (int i=1; i<camelCase.length(); i++) {
+
+            result = isUpperCase(camelCase.charAt(i)) ? result.append(' ').append(camelCase.charAt(i)) : result.append(camelCase.charAt(i));
+        }
+        return result.toString();
     }
 }
 

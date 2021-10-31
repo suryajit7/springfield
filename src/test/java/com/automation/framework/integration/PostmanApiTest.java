@@ -17,7 +17,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 
-public class PostmanAPITest extends AutomationSuiteApplicationTests {
+public class PostmanApiTest extends AutomationSuiteApplicationTests {
 
     @Value("${app.postman.url}")
     private String postmanUrl;
@@ -151,6 +151,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
                 .then()
                 .statusCode(SC_SUCCESS);
     }
+
 
 
 }

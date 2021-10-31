@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 @Execution(CONCURRENT)
 @TestPropertySource(locations = {"classpath:application.properties"})
 @TestMethodOrder(OrderAnnotation.class)
-@DisplayNameGeneration(TestDisplayNameFormat.Standard.class)
+@DisplayNameGeneration(TestDisplayNameFormat.class)
 @TestInstance(PER_CLASS)
 public class AutomationSuiteApplicationTests {
 
