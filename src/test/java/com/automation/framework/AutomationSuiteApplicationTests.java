@@ -26,7 +26,7 @@ public class AutomationSuiteApplicationTests {
 	@Test
 	@Order(-1)
 	void verifySpringContextLoad() {
-		log.info("******Spring Context loaded******");
+		log.info("****** Spring Context loaded ******");
 	}
 
 
