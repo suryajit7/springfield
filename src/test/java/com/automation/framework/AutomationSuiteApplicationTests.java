@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.parallel.Execution;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 
@@ -19,13 +20,8 @@ import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 @TestInstance(PER_CLASS)
 public class AutomationSuiteApplicationTests {
 
-
 	@BeforeAll
-	public static void setup(){}
-
-	@Test
-	@Order(-1)
-	void verifySpringContextLoad() {
+	public static void setup(){
 		log.info("****** Spring Context loaded ******");
 	}
 
