@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 import java.util.Set;
 
+import static com.automation.framework.data.FrameworkConstants.X_API_KEY_HEADER;
 import static io.restassured.RestAssured.config;
 import static io.restassured.RestAssured.given;
 import static io.restassured.config.LogConfig.logConfig;
@@ -31,7 +32,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .when()
                 .get("/workspaces")
                 .then()
@@ -44,7 +45,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .when()
                 .get("/workspaces")
                 .then()
@@ -57,7 +58,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     public void verifyGetResponseCode(){
         given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .when()
                 .get("/workspaces")
                 .then()
@@ -81,7 +82,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
         //Example 1
         Response response = given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .when()
                 .get("/workspaces")
                 .then()
@@ -95,7 +96,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
         //Example 2
         String workspaceName = given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .when()
                 .get("/workspaces")
                 .then()
@@ -113,7 +114,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .log().all()
                 .when()
                 .get("/workspaces")
@@ -128,7 +129,7 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
@@ -140,10 +141,10 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
     @Order(7)
     public void verifyLoggingBlackListedHeaders(){
 
-        Set blackListHeaders = Set.of("X-Api-Key", "Accept");
+        Set blackListHeaders = Set.of(X_API_KEY_HEADER, "Accept");
         given()
                 .baseUri(postmanUrl)
-                .header("X-Api-Key", apiKey)
+                .header(X_API_KEY_HEADER, apiKey)
                 .config(config().logConfig(logConfig().blacklistHeaders(blackListHeaders)))
                 .log().all()
                 .when()
