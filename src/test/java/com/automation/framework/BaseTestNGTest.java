@@ -21,15 +21,20 @@ public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
 
     @BeforeSuite(alwaysRun = true)
     public void setupSuite() {
-
+        logger.info("*** Before Suite Setup ***");
     }
 
     @AfterSuite(alwaysRun = true)
     public void tearDownSuite() {
 
-        Optional<WebDriver> driver = Optional.of(appCtx.getBean(WebDriver.class));
-        driver.get().quit();
-        logger.info("Quiting all browser instances.");
+        Optional<WebDriver> driver = Optional.ofNullable(appCtx.getBean(WebDriver.class));
+            if (driver.isPresent()){
+                driver.get().quit();
+                logger.info("Quiting all browser instances.");
+            } else {
+                logger.warn("WebDriver instance is empty during tearing down.");
+            }
+        logger.info("*** Suite Tear Down ***");
     }
 
 }

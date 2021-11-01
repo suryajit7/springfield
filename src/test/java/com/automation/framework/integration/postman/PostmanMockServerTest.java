@@ -126,7 +126,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
                 .log().body()
                 .assertThat()
                 .statusCode(SC_SUCCESS)
-                .headers("responseHeader", "resValue1",X_RATELIMIT_LIMIT, "120");
+                .headers("responseHeader", "resValue1",X_RATE_LIMIT_LIMIT, "120");
     }
 
 

@@ -24,6 +24,7 @@ public class GoogleSearchTest extends BaseTestNGTest {
         logger.info("url passed");
         this.googleSearchPage.performSearch("test1");
         this.screenshotService.takeScreenshot(getTestMethod(), "test1");
+
         assertThat(googleSearchPage.getSearchComponent().getSearchInputField())
                 .isDisplayed()
                 .isNotNull();

@@ -14,9 +14,9 @@ public class FrameworkConstants {
     public static final String X_MOCK_MATCH_REQUEST_HEADERS = "x-mock-match-request-headers";
     public static final String X_SRV_TRACE = "x-srv-trace";
     public static final String X_SRV_SPAN = "x-srv-span";
-    public static final String X_RATELIMIT_LIMIT = "X-RateLimit-Limit";
-    public static final String X_RATELIMIT_REMAINING = "X-RateLimit-Remaining";
-    public static final String X_RATELIMIT_RESET = "X-RateLimit-Reset";
+    public static final String X_RATE_LIMIT_LIMIT = "X-RateLimit-Limit";
+    public static final String X_RATE_LIMIT_REMAINING = "X-RateLimit-Remaining";
+    public static final String X_RATE_LIMIT_RESET = "X-RateLimit-Reset";
 
 
 
