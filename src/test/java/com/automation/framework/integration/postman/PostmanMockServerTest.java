@@ -3,16 +3,19 @@ package com.automation.framework.integration.postman;
 import com.automation.framework.AutomationSuiteApplicationTests;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 
 import java.util.HashMap;
+import java.util.List;
 
 import static com.automation.framework.data.FrameworkConstants.*;
 import static io.restassured.RestAssured.given;
 import static org.apache.hc.core5.http.HttpStatus.SC_NOT_FOUND;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
@@ -141,6 +144,59 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
                 .log().body()
                 .assertThat()
                 .statusCode(SC_NOT_FOUND);
+    }
+
+
+    @Test
+    @Order(7)
+    public void verifyExtractResponseHeaders(){
+
+        HashMap<String, String> headers = new HashMap<String, String>();
+
+        headers.put(HEADER, "value1");
+        headers.put(X_MOCK_MATCH_REQUEST_HEADERS, HEADER);
+        headers.put(X_API_KEY_HEADER, apiKey);
+
+        Headers responseHeaders = given()
+                .baseUri(postmanMockServerUrl).headers(headers)
+                .when()
+                .get("/get")
+                .then()
+                .assertThat().statusCode(SC_SUCCESS)
+                .extract().headers();
+
+        assertTrue(responseHeaders.get(RESPONSE_HEADER).getName().equalsIgnoreCase(RESPONSE_HEADER), "Verify Header Name: ");
+        assertTrue(responseHeaders.get(RESPONSE_HEADER).getValue().equalsIgnoreCase("resValue1"), "Verify Header Value: ");
+        assertTrue(responseHeaders.getValue(RESPONSE_HEADER).equalsIgnoreCase("resValue1"), "Verify Header Value: ");
+
+    }
+
+
+    @Test
+    @Order(8)
+    public void verifyExtractMultiResponseHeaders(){
+
+        HashMap<String, String> headers = new HashMap<String, String>();
+
+        headers.put(HEADER, "value1");
+        headers.put(X_MOCK_MATCH_REQUEST_HEADERS, HEADER);
+        headers.put(X_API_KEY_HEADER, apiKey);
+
+        Headers responseHeaders = given()
+                .baseUri(postmanMockServerUrl).headers(headers)
+                .when()
+                .get("/get")
+                .then()
+                .assertThat().statusCode(SC_SUCCESS)
+                .extract().headers();
+
+        assertTrue(responseHeaders.get(MULTI_VALUE_HEADER).getName().equalsIgnoreCase(MULTI_VALUE_HEADER), "Verify Header Name: ");
+        Assertions.assertThat(responseHeaders.get(MULTI_VALUE_HEADER).getName()).asString().isEqualTo(MULTI_VALUE_HEADER);
+
+        Assertions.assertThat(responseHeaders.getValues(MULTI_VALUE_HEADER).toArray())
+                .hasSize(1)
+                .containsAll(List.of("multiResValue1, multiResValue2"))
+                .doesNotContain("resValue1");
     }
 
 

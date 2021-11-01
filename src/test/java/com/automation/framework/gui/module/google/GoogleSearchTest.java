@@ -7,10 +7,10 @@ import com.automation.framework.util.service.ScreenshotService;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.report.TestExecutionListener.getTestMethod;
+import static com.automation.framework.util.WebElementAssert.assertThat;
 
 
 public class GoogleSearchTest extends BaseTestNGTest {
-
 
     @LazyAutowired
     private GoogleSearchPage googleSearchPage;
@@ -24,6 +24,9 @@ public class GoogleSearchTest extends BaseTestNGTest {
         logger.info("url passed");
         this.googleSearchPage.performSearch("test1");
         this.screenshotService.takeScreenshot(getTestMethod(), "test1");
+        assertThat(googleSearchPage.getSearchComponent().getSearchInputField())
+                .isDisplayed()
+                .isNotNull();
 
     }
 

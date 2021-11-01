@@ -2,12 +2,14 @@ package com.automation.framework.page.app.google;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
+import lombok.Data;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Data
 @PageComponent
 public class SearchResultsComponent extends BasePage {
 

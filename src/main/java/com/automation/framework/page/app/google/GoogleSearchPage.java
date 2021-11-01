@@ -2,10 +2,12 @@ package com.automation.framework.page.app.google;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 @Page
+@Data
 public class GoogleSearchPage extends BasePage {
 
     @Autowired
