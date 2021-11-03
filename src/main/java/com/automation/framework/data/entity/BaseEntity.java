@@ -7,6 +7,8 @@ import com.automation.framework.data.entity.app.ems.Department;
 import com.automation.framework.data.entity.app.ems.Employee;
 import com.automation.framework.data.entity.app.fnb.BreakfastMenu;
 import com.automation.framework.data.entity.app.library.Catalog;
+import com.automation.framework.data.entity.app.postman.Postman;
+import com.automation.framework.data.entity.app.postman.Workspace;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,6 +31,7 @@ public class BaseEntity {
     List<Company> companies;
     List<Department> departments;
     List<User> users;
+    List<Postman> postmen;
 
     @ElementList(name="breakfast_menu")
     List<BreakfastMenu> breakfast_menu;

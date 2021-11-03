@@ -22,7 +22,6 @@ public class Kernel {
 
     protected Log logger;
     protected Actions actions;
-    protected CommonUtil commonUtil;
 
     @Autowired
     protected WebDriver driver;
@@ -46,7 +45,6 @@ public class Kernel {
 
         this.actions = new Actions(this.driver);
         this.logger = LogFactory.getLog(getClass());
-        this.commonUtil = new CommonUtil();
         this.decryptService = appCtx.getBean(PropertyDecryptService.class);
 
         this.driver.manage().window().maximize();
