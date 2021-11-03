@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.simpleframework.xml.Serializer;
@@ -42,7 +43,8 @@ public class FileReader {
         return hasValidExtension(filename, TXT) ? Files.readAllLines(pathFinder.getFilePathForFile(filename)): List.of("");
     }
 
-    public BaseEntity readJsonFile(String filename) throws IOException {
+    @SneakyThrows
+    public BaseEntity readJsonFile(String filename) {
         return hasValidExtension(filename, JSON) ? new ObjectMapper().readValue(pathFinder.getFilePathForFile(filename).toFile(), BaseEntity.class): BaseEntity.builder().build();
     }
 

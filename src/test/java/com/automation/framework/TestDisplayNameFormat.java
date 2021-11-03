@@ -40,5 +40,6 @@ class TestDisplayNameFormat extends ReplaceUnderscores {
     private boolean isTestName(String name, int i) {
         return (isUpperCase(name.charAt(i)) && isLowerCase(name.charAt(i-1))) || (isUpperCase(name.charAt(i)) && isLowerCase(name.charAt(i+1)));
     }
+
 }
 

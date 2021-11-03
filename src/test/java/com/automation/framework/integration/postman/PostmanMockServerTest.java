@@ -19,12 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
-    @Value("${app.api.key}")
-    private String apiKey;
-
-    @Value("${app.postman.mock.url}")
-    private String postmanMockServerUrl;
-
     @Test
     @Order(1)
     public void verifyMultipleHeadersRequestUsingHeaders(){
