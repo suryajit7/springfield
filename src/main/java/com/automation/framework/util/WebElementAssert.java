@@ -35,6 +35,14 @@ public class WebElementAssert extends AbstractAssert<WebElementAssert, WebElemen
         return this;
     }
 
+    public WebElementAssert isSelected() {
+        isNotNull();
+        if (!actual.isSelected()) {
+            log.error("Expected element is NOT selected.");
+        }
+        return this;
+    }
+
     public WebElementAssert isButton() {
         isNotNull();
         boolean isButton = actual.getTagName().equalsIgnoreCase("button") || actual.getAttribute("type").equalsIgnoreCase("button");
