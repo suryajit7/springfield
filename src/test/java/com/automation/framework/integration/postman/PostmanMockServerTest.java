@@ -4,6 +4,7 @@ import com.automation.framework.AutomationSuiteApplicationTests;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,6 +28,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
                 .header(HEADER, "value1")
                 .header(X_MOCK_MATCH_REQUEST_HEADERS, HEADER)
                 .header(X_API_KEY_HEADER, apiKey)
+                .log().headers()
                 .when()
                 .get("/get")
                 .then()
@@ -126,7 +128,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
     @Test
     @Order(6)
-    public void verifyRequestHeaderWithoutXApiKeyReturnsNotFoundStatusCode(){
+    public void verifyRequestHeaderWithoutXApiKey(){
 
         given()
                 .baseUri(postmanMockServerUrl)

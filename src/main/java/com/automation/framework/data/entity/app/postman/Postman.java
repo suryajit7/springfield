@@ -9,9 +9,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Postman {
+
     @Id
     private String id;
-
     @Transient
     private Workspace workspace;
 

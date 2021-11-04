@@ -10,21 +10,21 @@ import org.springframework.beans.factory.annotation.Value;
 import java.util.Set;
 
 import static com.automation.framework.data.FrameworkConstants.X_API_KEY_HEADER;
-import static io.restassured.RestAssured.config;
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 import static io.restassured.config.LogConfig.logConfig;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 
-public class PostmanAPITest extends AutomationSuiteApplicationTests {
-
-    @Value("${app.postman.url}")
-    private String postmanUrl;
+public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
     @Value("${app.api.key}")
-    private String apiKey;
+    protected String apiKey;
+
+    @Value("${app.postman.url}")
+    protected String postmanUrl;
+
 
     @Test
     @Order(1)
@@ -65,11 +65,9 @@ public class PostmanAPITest extends AutomationSuiteApplicationTests {
                 .log().all()
                 .assertThat().statusCode(SC_SUCCESS)
                 .body("workspaces.name", is(not(emptyArray())),
-                        "workspaces.name", contains("Team Workspace", "MyWorkspace", "My Workspace", "Test", "Test"),
-                        "workspaces.name", containsInAnyOrder("MyWorkspace", "Team Workspace", "My Workspace", "Test", "Test"),
                         "workspaces.name", hasItem("MyWorkspace"),
                         "workspaces[0].name", equalTo("Team Workspace"),
-                        "workspaces.name", hasSize(5),
+                        "workspaces.name", hasSize(greaterThan(3)),
                         "workspaces[0]", hasKey("type"),
                         "workspaces[0]", hasValue("Team Workspace"),
                         "workspaces[0]", hasEntry("name", "Team Workspace"));

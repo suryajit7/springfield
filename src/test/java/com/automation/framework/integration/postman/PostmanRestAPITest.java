@@ -28,10 +28,12 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class PostmanRequestSpecificationTest extends AutomationSuiteApplicationTests {
+public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
 
     @Autowired
     private FileReader fileReader;
+
+    private String workspaceId;
 
     @BeforeAll
     public void beforeClassSetup() {
@@ -113,7 +115,7 @@ public class PostmanRequestSpecificationTest extends AutomationSuiteApplicationT
 
         assertThat(response.<String>path("workspace.name"), equalTo("testWorkspace"));
 
-        System.out.println(toJson(response.body().toString(), Workspace.class).getId());
+        workspaceId = response.<String>path("workspace.id");
     }
 
 
@@ -121,11 +123,15 @@ public class PostmanRequestSpecificationTest extends AutomationSuiteApplicationT
     @Order(6)
     public void validatePutRequest() {
 
-        BaseEntity payLoad = fileReader.readJsonFile("postmanWorkspaceData.json");
+        Workspace payLoad = fileReader.readJsonFile("postmanWorkspaceData.json")
+                .getPostmen().get(0).getWorkspace();
+
+        payLoad.setName("Modified Workspace");
 
         Response response = with()
-                .body(payLoad.getPostmen().get(0))
-                .put("/workspaces/b59b5d87-cda7-46a5-a896-13b67555f98d")
+                .body(payLoad)
+                .pathParam("workspaceId", workspaceId)
+                .put("/workspaces/{workspaceId}")
                 .then()
                 .extract().response();
 
@@ -133,7 +139,32 @@ public class PostmanRequestSpecificationTest extends AutomationSuiteApplicationT
 
         Assertions.assertThat(response.jsonPath().getJsonObject("workspace.id").toString())
                 .isNotNull()
-                .isEqualTo("b59b5d87-cda7-46a5-a896-13b67555f98d");
+                .isEqualTo(workspaceId);
+    }
+
+
+
+    @Test
+    @Order(7)
+    public void validateDeleteRequest() {
+
+        Workspace payLoad = fileReader.readJsonFile("postmanWorkspaceData.json")
+                .getPostmen().get(0).getWorkspace();
+
+        payLoad.setName("Modified Workspace");
+
+        Response response = with()
+                .body(payLoad)
+                .pathParam("workspaceId", workspaceId)
+                .put("/workspaces/{workspaceId}")
+                .then()
+                .extract().response();
+
+        assertThat(response.<String>path("workspace.name"), equalTo("testWorkspace"));
+
+        Assertions.assertThat(response.jsonPath().getJsonObject("workspace.id").toString())
+                .isNotNull()
+                .isEqualTo(workspaceId);
     }
 
 

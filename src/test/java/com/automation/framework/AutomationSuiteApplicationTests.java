@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
+import org.junit.jupiter.api.parallel.Isolated;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
@@ -15,7 +16,7 @@ import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 
 @Slf4j
 @SpringBootTest
-@Execution(SAME_THREAD)
+@Isolated
 @TestPropertySource(locations = {"classpath:application.properties"})
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayNameGeneration(TestDisplayNameFormat.class)
@@ -32,7 +33,7 @@ public class AutomationSuiteApplicationTests {
 	protected String postmanMockServerUrl;
 
 	@BeforeAll
-	public static void setup(){
+	public void setup(){
 		log.info("****** Spring Context loaded ******");
 	}
 

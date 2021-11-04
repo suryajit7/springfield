@@ -16,6 +16,7 @@ import org.simpleframework.xml.core.Persister;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -38,9 +39,13 @@ public class FileReader {
     @Autowired
     private PathFinder pathFinder;
 
+    public File readFile(String filename) {
+        return pathFinder.getFilePathForFile(filename).toFile();
+    }
+
 
     public List<String> readTxtFile(String filename) throws IOException {
-        return hasValidExtension(filename, TXT) ? Files.readAllLines(pathFinder.getFilePathForFile(filename)): List.of("");
+        return hasValidExtension(filename, TXT) ? Files.readAllLines(pathFinder.getFilePathForFile(filename)) : List.of("");
     }
 
     @SneakyThrows
