@@ -1,6 +1,7 @@
 package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Order;
@@ -33,9 +34,11 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         given()
                 .baseUri(postmanUrl)
                 .header(X_API_KEY_HEADER, apiKey)
+                .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
                 .then()
+                .assertThat()
                 .statusCode(SC_SUCCESS);
     }
 
@@ -46,6 +49,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         given()
                 .baseUri(postmanUrl)
                 .header(X_API_KEY_HEADER, apiKey)
+                .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
                 .then()
@@ -59,6 +63,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         given()
                 .baseUri(postmanUrl)
                 .header(X_API_KEY_HEADER, apiKey)
+                .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
                 .then()
@@ -81,6 +86,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         Response response = given()
                 .baseUri(postmanUrl)
                 .header(X_API_KEY_HEADER, apiKey)
+                .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
                 .then()

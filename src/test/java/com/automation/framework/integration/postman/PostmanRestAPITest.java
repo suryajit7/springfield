@@ -1,31 +1,27 @@
 package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
-import com.automation.framework.data.entity.BaseEntity;
-import com.automation.framework.data.entity.app.postman.Workspace;
+import com.automation.framework.data.entity.app.postman.Postman;
+
 import com.automation.framework.util.FileReader;
-import com.automation.framework.util.converter.StringToJson;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.filter.log.LogDetail;
 import io.restassured.response.Response;
 import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
 import org.assertj.core.api.Assertions;
-import org.json.JSONObject;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.json.Json;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.HashMap;
+
 import static com.automation.framework.data.FrameworkConstants.X_API_KEY_HEADER;
-import static com.automation.framework.util.converter.StringToJson.*;
 import static io.restassured.RestAssured.*;
 import static io.restassured.filter.log.LogDetail.*;
 import static io.restassured.http.ContentType.*;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 
 public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
@@ -34,6 +30,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     private FileReader fileReader;
 
     private String workspaceId;
+    private Postman payLoad;
 
     @BeforeAll
     public void beforeClassSetup() {
@@ -49,6 +46,9 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
                 .expectContentType(JSON)
                 .log(ALL)
                 .build();
+
+        payLoad = fileReader.readJsonFile("postmanWorkspaceData.json")
+                .getPostmen().get(0);
     }
 
 
@@ -105,15 +105,13 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     @Order(5)
     public void validatePostRequest() {
 
-        BaseEntity payLoad = fileReader.readJsonFile("postmanWorkspaceData.json");
-
         Response response = with()
-                .body(payLoad.getPostmen().get(0))
+                .body(payLoad)
                 .post("/workspaces")
                 .then()
                 .extract().response();
 
-        assertThat(response.<String>path("workspace.name"), equalTo("testWorkspace"));
+        assertThat(response.<String>path("workspace.name"), containsString("testWorkspace"));
 
         workspaceId = response.<String>path("workspace.id");
     }
@@ -123,10 +121,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     @Order(6)
     public void validatePutRequest() {
 
-        Workspace payLoad = fileReader.readJsonFile("postmanWorkspaceData.json")
-                .getPostmen().get(0).getWorkspace();
-
-        payLoad.setName("Modified Workspace");
+        payLoad.getWorkspace().setName("Modified Workspace");
 
         Response response = with()
                 .body(payLoad)
@@ -135,7 +130,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
                 .then()
                 .extract().response();
 
-        assertThat(response.<String>path("workspace.name"), equalTo("testWorkspace"));
+        assertThat(response.<String>path("workspace.name"), containsString("Modified Workspace"));
 
         Assertions.assertThat(response.jsonPath().getJsonObject("workspace.id").toString())
                 .isNotNull()
@@ -143,28 +138,53 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     }
 
 
-
     @Test
     @Order(7)
     public void validateDeleteRequest() {
 
-        Workspace payLoad = fileReader.readJsonFile("postmanWorkspaceData.json")
-                .getPostmen().get(0).getWorkspace();
-
-        payLoad.setName("Modified Workspace");
-
         Response response = with()
-                .body(payLoad)
                 .pathParam("workspaceId", workspaceId)
-                .put("/workspaces/{workspaceId}")
+                .delete("/workspaces/{workspaceId}")
                 .then()
+                .assertThat().statusCode(SC_SUCCESS)
                 .extract().response();
-
-        assertThat(response.<String>path("workspace.name"), equalTo("testWorkspace"));
 
         Assertions.assertThat(response.jsonPath().getJsonObject("workspace.id").toString())
                 .isNotNull()
                 .isEqualTo(workspaceId);
+    }
+
+
+    @Test
+    @Order(8)
+    public void validatePostRequestWithNestedJson() {
+
+        HashMap<String, Object> mainObject = new HashMap<String, Object>();
+        HashMap<String, String> nestedObject = new HashMap<String, String>();
+
+        nestedObject.put("name", "Nested Workspace");
+        nestedObject.put("type", "personal");
+        nestedObject.put("description", "Creating a Nested Workspace");
+        mainObject.put("workspace", nestedObject);
+
+        Response response = with()
+                .body(mainObject)
+                .post("/workspaces")
+                .then()
+                .assertThat().statusCode(SC_SUCCESS)
+                .extract().response();
+
+        Assertions.assertThat(response.jsonPath().getJsonObject("workspace.name").toString())
+                .isNotNull()
+                .isEqualTo("Nested Workspace");
+
+        workspaceId = response.<String>path("workspace.id");
+
+        with()
+                .pathParam("workspaceId", workspaceId)
+                .delete("/workspaces/{workspaceId}")
+                .then()
+                .assertThat().statusCode(SC_SUCCESS);
     }
 
 
