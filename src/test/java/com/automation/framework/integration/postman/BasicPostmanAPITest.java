@@ -1,13 +1,16 @@
 package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.util.PathFinder;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
+import java.io.*;
 import java.util.Set;
 
 import static com.automation.framework.data.FrameworkConstants.X_API_KEY_HEADER;
@@ -20,11 +23,20 @@ import static org.hamcrest.Matchers.*;
 
 public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
+    @Autowired
+    private PathFinder pathFinder;
+
     @Value("${app.api.key}")
     protected String apiKey;
 
     @Value("${app.postman.url}")
     protected String postmanUrl;
+
+    @Value("${app.postman-echo.url}")
+    protected String postmanEchoUrl;
+
+    @Value("${app.reqres.url}")
+    protected String reqresUrl;
 
 
     @Test
@@ -156,6 +168,83 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
                 .then()
                 .statusCode(SC_SUCCESS);
     }
+
+    @Test
+    @Order(8)
+    public void verifyPathParametersInGetRequest(){
+
+        given()
+                .baseUri(reqresUrl)
+                .pathParam("userId", "1")
+                .log().all()
+                .when()
+                .get("/users/{userId}")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(SC_SUCCESS);
+
+
+
+    }
+
+
+    @Test
+    @Order(9)
+    public void verifyMultipartFormDataInPostRequest(){
+
+        given()
+                .baseUri(postmanEchoUrl)
+                .multiPart("ping1", "pong")
+                .multiPart("ping2", "pong")
+                .log().all()
+                .when()
+                .post("/post")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(SC_SUCCESS);
+    }
+
+
+    @Test
+    @Order(10)
+    public void verifyUploadFileMultipartFormData(){
+        String attributes = "{\"name\":\"cv\"}";
+        given()
+                .baseUri(postmanEchoUrl)
+                .multiPart("file", new File(pathFinder.getFilePathForFile("UserTestData.txt").toString()))
+                .multiPart("attributes", attributes, "application/json")
+                .log().all()
+                .when()
+                .post("/post")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(SC_SUCCESS);
+    }
+
+
+    @Test
+    @Order(11)
+    public void verifyDownloadFileMultipartFormData() throws IOException {
+        String attributes = "{\"name\":\"cv\"}";
+        InputStream data = given()
+                .baseUri("https://raw.githubusercontent.com")
+                .log().all()
+                .when()
+                        .get("/appium/appium/master/sample-code/apps/ApiDemos-debug.apk")
+                .then()
+                .log().all()
+                .extract().response().asInputStream();
+
+        OutputStream os = new FileOutputStream(new File("ApiDemos-debug.apk"));
+        byte[] bytes = new byte[data.available()];
+        data.read(bytes);
+        os.write(bytes);
+        os.close();
+    }
+
 
 
 
