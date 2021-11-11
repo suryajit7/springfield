@@ -2,7 +2,9 @@ package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.util.PathFinder;
-import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.filter.log.LogDetail;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Order;
@@ -16,6 +18,8 @@ import java.util.Set;
 import static com.automation.framework.data.FrameworkConstants.X_API_KEY_HEADER;
 import static io.restassured.RestAssured.*;
 import static io.restassured.config.LogConfig.logConfig;
+import static io.restassured.filter.log.LogDetail.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -136,7 +140,9 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
                 .get("/workspaces")
                 .then()
                 .log().all()
-                .statusCode(SC_SUCCESS);
+                .assertThat()
+                .statusCode(SC_SUCCESS)
+                .body(matchesJsonSchemaInClasspath("schemas/SimpleJsonSchema.json"));
     }
 
     @Test
@@ -245,6 +251,43 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         os.close();
     }
 
+    @Test
+    @Order(12)
+    public void verifyFilterMethodInRequestAndResponse(){
+
+        given()
+                .baseUri(postmanUrl)
+                .header(X_API_KEY_HEADER, apiKey)
+                .filter(new RequestLoggingFilter(BODY))
+                .filter(new ResponseLoggingFilter(STATUS))
+                .log().all()
+                .when()
+                .get("/workspaces")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(SC_SUCCESS)
+                .body(matchesJsonSchemaInClasspath("schemas/SimpleJsonSchema.json"));
+    }
+
+    @Test
+    @Order(13)
+    public void verifyFilterMethodInLoggingForRequestAndResponse() throws FileNotFoundException {
+        PrintStream fileOutput = new PrintStream(new File("api-test.log"));
+        given()
+                .baseUri(postmanUrl)
+                .header(X_API_KEY_HEADER, apiKey)
+                .filter(new RequestLoggingFilter(fileOutput))
+                .filter(new ResponseLoggingFilter(fileOutput))
+                .log().all()
+                .when()
+                .get("/workspaces")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(SC_SUCCESS)
+                .body(matchesJsonSchemaInClasspath("schemas/SimpleJsonSchema.json"));
+    }
 
 
 
