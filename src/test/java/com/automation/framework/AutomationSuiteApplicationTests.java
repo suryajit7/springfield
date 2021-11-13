@@ -1,10 +1,10 @@
 package com.automation.framework;
 
+
+import com.automation.framework.util.TestDisplayNameFormat;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.api.parallel.Isolated;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,8 +13,6 @@ import org.springframework.test.context.TestPropertySource;
 import java.lang.reflect.Method;
 
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
-import static org.junit.jupiter.api.parallel.ExecutionMode.*;
-import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 
 @Slf4j
 @SpringBootTest
@@ -35,9 +33,9 @@ public class AutomationSuiteApplicationTests {
 	protected String postmanMockServerUrl;
 
 	@BeforeAll
-	public void setup(Method method){
+	public void setup(){
 		log.info("****** Spring Context loaded ******");
-		log.info(method.getName());
+		log.info("Display Method Name");
 		log.info(String.valueOf(Thread.currentThread().getId()));
 	}
 

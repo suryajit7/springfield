@@ -1,6 +1,7 @@
-package com.automation.framework;
+package com.automation.framework.util;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.DisplayNameGenerator;
 
 import java.lang.reflect.Method;
 
@@ -9,6 +10,7 @@ import static org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores;
 import static org.junit.jupiter.api.DisplayNameGenerator.parameterTypesAsString;
 
 @Slf4j
+public
 class TestDisplayNameFormat extends ReplaceUnderscores {
 
     @Override
@@ -23,7 +25,7 @@ class TestDisplayNameFormat extends ReplaceUnderscores {
 
     @Override
     public String generateDisplayNameForMethod(Class<?> testClass, Method testMethod) {
-        return this.formatTestName(testMethod.getName()).concat(parameterTypesAsString(testMethod));
+        return this.formatTestName(testMethod.getName()).concat(DisplayNameGenerator.parameterTypesAsString(testMethod));
     }
 
     String formatTestName(String testName) {
