@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 
+import java.lang.reflect.Method;
+
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 import static org.junit.jupiter.api.parallel.ExecutionMode.*;
 import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
@@ -33,8 +35,10 @@ public class AutomationSuiteApplicationTests {
 	protected String postmanMockServerUrl;
 
 	@BeforeAll
-	public void setup(){
+	public void setup(Method method){
 		log.info("****** Spring Context loaded ******");
+		log.info(method.getName());
+		log.info(String.valueOf(Thread.currentThread().getId()));
 	}
 
 	@AfterAll
