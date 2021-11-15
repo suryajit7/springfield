@@ -19,7 +19,4 @@ public class FrameworkConstants {
     public static final String X_RATE_LIMIT_LIMIT = "X-RateLimit-Limit";
     public static final String X_RATE_LIMIT_REMAINING = "X-RateLimit-Remaining";
     public static final String X_RATE_LIMIT_RESET = "X-RateLimit-Reset";
-
-
-
 }
