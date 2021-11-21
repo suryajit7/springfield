@@ -36,7 +36,7 @@ dependencies {
 	implementation 'org.awaitility:awaitility:4.1.1'
 	implementation 'org.seleniumhq.selenium:selenium-java:4.0.0'
 	implementation 'com.assertthat:selenium-shutterbug:1.5'
-	implementation 'io.qameta.allure:allure-testng:2.16.0'
+	implementation 'io.qameta.allure:allure-testng:2.16.1'
 	implementation 'com.github.automatedowl:allure-environment-writer:1.0.0'
 	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 	implementation 'com.browserstack:browserstack-local-java:1.0.6'
