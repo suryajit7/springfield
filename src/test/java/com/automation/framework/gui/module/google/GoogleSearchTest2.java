@@ -22,7 +22,7 @@ public class GoogleSearchTest2 extends BaseTestNGTest {
     public void googleSearchTest() {
         this.googleSearchPage.goToURL();
         this.googleSearchPage.performSearch("test2");
-        this.screenshotService.takeScreenshot(getTestMethod(), "test2");
+        this.screenshotService.takeWebPageScreenshot(getTestMethod(), "test2");
 
     }
 

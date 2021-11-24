@@ -21,6 +21,6 @@ public class ScreenshotHelper {
     @After("@annotation(screenshot)")
     public void after(Screenshot screenshot) throws IOException {
         //TODO: add some kind of identifier later as method name etc. so screenshots have good name
-        this.screenshotService.takeScreenshot(getTestMethod(), "pass method name");
+        this.screenshotService.takeWebPageScreenshot(getTestMethod(), "pass method name");
     }
 }

@@ -2,6 +2,7 @@ package com.automation.framework.page;
 
 import com.automation.framework.core.Kernel;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -33,6 +34,10 @@ public class BasePage extends Kernel {
     public void refreshPage() {
         this.driver.navigate().refresh();
         logger.info("Page refreshed");
+    }
+
+    public void waitForPageToLoad() {
+        wait.until(webDriver -> ((JavascriptExecutor) this.driver).executeScript("return document.readyState").toString().equals("complete"));
     }
 
 
