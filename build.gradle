@@ -55,6 +55,9 @@ dependencies {
 	implementation 'io.rest-assured:json-schema-validator:4.4.0'
 	implementation 'org.assertj:assertj-core:3.21.0'
 	implementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+	implementation 'com.googlecode.libphonenumber:libphonenumber:8.12.38'
+	implementation 'commons-validator:commons-validator:1.7'
+
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'

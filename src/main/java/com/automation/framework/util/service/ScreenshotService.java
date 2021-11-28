@@ -3,6 +3,7 @@ package com.automation.framework.util.service;
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
+import com.automation.framework.page.BasePage;
 import com.automation.framework.util.PathFinder;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,7 @@ public class ScreenshotService {
 
     public void takeWebPageScreenshot(ITestNGMethod testMethod, String identifier) {
         String currentTestMethodName = testMethod.getMethodName().concat(identifier);
+
         PageSnapshot snapshot = Shutterbug.shootPage(this.applicationContext.getBean(WebDriver.class), Capture.FULL_SCROLL, 50, true);
         snapshot.withName(currentTestMethodName.concat(identifier))
                 .save(screenshotDirectory.concat(testMethod.getRealClass().getSimpleName()));

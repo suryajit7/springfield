@@ -9,17 +9,17 @@ import org.openqa.selenium.WebElement;
  * Custom assertions suitable for WebElements.
  */
 @Slf4j
-public class WebElementAssert extends AbstractAssert<WebElementAssert, WebElement> {
+public class AssertWebElement extends AbstractAssert<AssertWebElement, WebElement> {
 
-    public WebElementAssert(WebElement webElement) {
-        super(webElement, WebElementAssert.class);
+    public AssertWebElement(WebElement webElement) {
+        super(webElement, AssertWebElement.class);
     }
 
-    public static WebElementAssert assertThat(WebElement element) {
-        return new WebElementAssert(element);
+    public static AssertWebElement assertThat(WebElement element) {
+        return new AssertWebElement(element);
     }
 
-    public WebElementAssert isDisplayed() {
+    public AssertWebElement isDisplayed() {
         isNotNull();
         if (actual.isDisplayed()) {
             log.info("Expected element is Displayed");
@@ -30,7 +30,7 @@ public class WebElementAssert extends AbstractAssert<WebElementAssert, WebElemen
         return this;
     }
 
-    public WebElementAssert isEnabled() {
+    public AssertWebElement isEnabled() {
         isNotNull();
         if (actual.isEnabled()) {
             log.info("Expected element is enabled.");
@@ -41,7 +41,7 @@ public class WebElementAssert extends AbstractAssert<WebElementAssert, WebElemen
         return this;
     }
 
-    public WebElementAssert isSelected() {
+    public AssertWebElement isSelected() {
         isNotNull();
 
         if (actual.isSelected()) {
@@ -53,7 +53,7 @@ public class WebElementAssert extends AbstractAssert<WebElementAssert, WebElemen
         return this;
     }
 
-    public WebElementAssert isButton() {
+    public AssertWebElement isButton() {
         isNotNull();
         boolean isButton = actual.getTagName().equalsIgnoreCase("button") || actual.getAttribute("type").equalsIgnoreCase("button");
 
@@ -66,7 +66,7 @@ public class WebElementAssert extends AbstractAssert<WebElementAssert, WebElemen
         return this;
     }
 
-    public WebElementAssert hasAttributeValue(String attribute, String value) {
+    public AssertWebElement hasAttributeValue(String attribute, String value) {
         isNotNull();
         if (actual.getAttribute(attribute).equals(value)) {
             log.info("Expected element have attribute <%s> value as <%s>.", attribute, value);
