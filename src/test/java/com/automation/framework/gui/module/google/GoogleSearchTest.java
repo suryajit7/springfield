@@ -32,9 +32,7 @@ public class GoogleSearchTest extends BaseTestNGTest {
                 .isNotNull();
 
         this.screenshotService.takeWebPageScreenshot(getTestMethod(), "");
-
         this.googleSearchPage.changeLanguage();
-
         this.screenshotService.assertWebPageScreenshots(getTestMethod(), "");
 
     }

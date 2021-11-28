@@ -28,6 +28,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
 	implementation 'com.github.ulisesbocchio:jasypt-spring-boot:3.0.4'
 	implementation 'com.h2database:h2:1.4.200'
+	implementation 'mysql:mysql-connector-java:8.0.27'
 	implementation 'org.testng:testng:7.4.0'
 	implementation 'io.github.bonigarcia:webdrivermanager:5.0.2'
 	implementation 'org.projectlombok:lombok:1.18.22'
@@ -54,7 +55,6 @@ dependencies {
 	implementation 'io.rest-assured:json-schema-validator:4.4.0'
 	implementation 'org.assertj:assertj-core:3.21.0'
 	implementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
