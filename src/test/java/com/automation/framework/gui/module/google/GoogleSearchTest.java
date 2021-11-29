@@ -3,12 +3,8 @@ package com.automation.framework.gui.module.google;
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.app.google.GoogleSearchPage;
-import com.automation.framework.util.AssertField;
 import com.automation.framework.util.service.ScreenshotService;
-import com.google.i18n.phonenumbers.NumberParseException;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 
 import static com.automation.framework.report.TestExecutionListener.getTestMethod;
 import static com.automation.framework.util.AssertWebElement.assertThat;
@@ -23,7 +19,7 @@ public class GoogleSearchTest extends BaseTestNGTest {
     private ScreenshotService screenshotService;
 
     @Test
-    public void googleSearchTest() throws IOException {
+    public void googleSearchTest() {
 
         this.googleSearchPage.goToURL();
 
@@ -36,7 +32,6 @@ public class GoogleSearchTest extends BaseTestNGTest {
         this.screenshotService.takeWebPageScreenshot(getTestMethod(), "");
         this.googleSearchPage.changeLanguage();
         this.screenshotService.assertWebPageScreenshots(getTestMethod(), "");
-
     }
 
 

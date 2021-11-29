@@ -2,11 +2,21 @@ package com.automation.framework.util;
 
 import com.google.i18n.phonenumbers.*;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.validator.routines.EmailValidator;
+import org.apache.commons.validator.GenericValidator;
 import org.assertj.core.api.AbstractAssert;
 
-import static com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.*;
+import javax.money.Monetary;
+import javax.money.UnknownCurrencyException;
+import java.util.Arrays;
 
+import static java.util.Arrays.*;
+import static org.assertj.core.api.Assertions.*;
+import static com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.*;
+import static java.util.Locale.*;
+
+/**
+ * Custom assertions suitable for Common Fields.
+ */
 @Slf4j
 public class AssertField extends AbstractAssert<AssertField, String> {
 
@@ -18,49 +28,115 @@ public class AssertField extends AbstractAssert<AssertField, String> {
         return new AssertField(string);
     }
 
-
-    public AssertField isPhoneNumber() throws NumberParseException {
+    public AssertField isPhoneNumber() {
         isNotNull();
-
-        Boolean isValidPhoneNumber = PhoneNumberUtil.getInstance()
-                .isValidNumber(PhoneNumberUtil.getInstance()
-                        .parse(actual, CountryCodeSource.UNSPECIFIED.name()));
-
-        if (isValidPhoneNumber) {
-            log.info("Given string is a valid phone number in Earth.");
-        } else {
+        try {
+            Boolean isValidPhoneNumber = PhoneNumberUtil.getInstance()
+                    .isValidNumber(PhoneNumberUtil.getInstance()
+                            .parse(actual, CountryCodeSource.UNSPECIFIED.name()));
+            if (isValidPhoneNumber) {
+                log.info("Given string is a valid phone number in Earth.");
+            }
+        } catch (NumberParseException e) {
             log.error("Given string is NOT a valid phone number in Earth.");
             failWithMessage("Given string is NOT a valid phone number in Earth.");
-        }
-        return this;
+        } return this;
     }
 
-    public AssertField isNumberFrom(String geographicalCode) throws NumberParseException {
+    public AssertField isPhoneNumberFrom(String geographicalCode) {
         isNotNull();
+        try {
+            Boolean isNumberFromGivenGeographical = PhoneNumberUtil.getInstance()
+                    .isNumberGeographical(PhoneNumberUtil.getInstance()
+                            .parse(actual, geographicalCode));
 
-        Boolean isNumberFromGivenGeographical = PhoneNumberUtil.getInstance()
-                .isNumberGeographical(PhoneNumberUtil.getInstance()
-                        .parse(actual, geographicalCode));
-
-        if (isNumberFromGivenGeographical) {
-            log.info("The PhoneNumber belongs to given geographical area.");
-        } else {
+            if (isNumberFromGivenGeographical) {
+                log.info("The PhoneNumber belongs to given geographical area.");
+            }
+        } catch (NumberParseException e) {
             log.error("The PhoneNumber DOES NOT belongs to given geographical area.");
             failWithMessage("The PhoneNumber DOES NOT belongs to given geographical area.");
-        }
-        return this;
+        } return this;
     }
-
 
     public AssertField isEmailID() {
         isNotNull();
-
-        if (EmailValidator.getInstance().isValid(actual)) {
+        if (GenericValidator.isEmail(actual)) {
             log.info("Given EmailID is valid.");
         } else {
             log.error("Given EmailID is NOT valid.");
             failWithMessage("Given EmailID is NOT valid.");
-        }
-        return this;
+        } return this;
+    }
+
+    public AssertField isDate(String datePattern) {
+        isNotNull();
+        if (GenericValidator.isDate(actual, datePattern, true)) {
+            log.info("Given Date is valid.");
+        } else {
+            log.error("Given Date is NOT valid.");
+            failWithMessage("Given Date is NOT valid.");
+        } return this;
+    }
+
+    public AssertField isURL() {
+        isNotNull();
+        if (GenericValidator.isUrl(actual)) {
+            log.info("Given URL is valid.");
+        } else {
+            log.error("Given URL is NOT valid.");
+            failWithMessage("Given URL is NOT valid.");
+        } return this;
+    }
+
+    public AssertField isCreditCard() {
+        isNotNull();
+        if (GenericValidator.isCreditCard(actual)) {
+            log.info("Given CreditCard is valid.");
+        } else {
+            log.error("Given CreditCard is NOT valid.");
+            failWithMessage("Given CreditCard is NOT valid.");
+        } return this;
+    }
+
+    public AssertField isCurrencyCode() {
+        isNotNull();
+        try {
+            Monetary.getCurrency(actual);
+            log.info("Given CurrencyCode is valid.");
+        } catch (UnknownCurrencyException e) {
+            log.error("Given CurrencyCode is NOT valid.");
+            failWithMessage("Given CurrencyCode is NOT valid.");
+        } return this;
+    }
+
+    public AssertField isCountryCodeISO() {
+        isNotNull();
+
+        Boolean isCountryCodeISO = stream(getISOCountries())
+                .anyMatch(country -> country.contains(actual));
+
+        if (isCountryCodeISO) {
+            log.info("Given Country is valid.");
+        } else {
+            log.error("Given Country is NOT valid.");
+            failWithMessage("Given Country is NOT valid.");
+        } return this;
+    }
+
+    public AssertField isCountryCode() {
+        isNotNull();
+
+        Boolean isCountryCodeISO = stream(getISOCountries())
+                .anyMatch(country -> country.contains(actual));
+
+
+
+        if (isCountryCodeISO) {
+            log.info("Given Country is valid.");
+        } else {
+            log.error("Given Country is NOT valid.");
+            failWithMessage("Given Country is NOT valid.");
+        } return this;
     }
 }

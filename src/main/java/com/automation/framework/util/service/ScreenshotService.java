@@ -5,6 +5,7 @@ import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.automation.framework.page.BasePage;
 import com.automation.framework.util.PathFinder;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,6 +21,7 @@ import java.io.IOException;
 
 @Lazy
 @Service
+@Slf4j
 public class ScreenshotService {
 
     @Autowired
@@ -46,15 +48,18 @@ public class ScreenshotService {
 
     }
 
-    public void assertWebPageScreenshots(ITestNGMethod testMethod, String identifier) throws IOException {
+    public void assertWebPageScreenshots(ITestNGMethod testMethod, String identifier) {
         String currentTestMethodName = testMethod.getMethodName().concat(identifier);
 
         PageSnapshot snapshot = Shutterbug.shootPage(this.applicationContext.getBean(WebDriver.class), Capture.FULL_SCROLL, 50, true);
         snapshot.withName(currentTestMethodName.concat(identifier.concat("Actual")))
                 .save(screenshotDirectory.concat(testMethod.getRealClass().getSimpleName()));
+        try {
+            BufferedImage expectedImage = ImageIO.read(pathFinder.getFilePathForFile(currentTestMethodName.concat(".png")).toFile());
 
-        BufferedImage expectedImage = ImageIO.read(pathFinder.getFilePathForFile(currentTestMethodName.concat(".png")).toFile());
-
-        snapshot.equalsWithDiff(expectedImage, screenshotDirectory.concat(testMethod.getRealClass().getSimpleName().concat("//").concat(currentTestMethodName).concat("Difference")), 0.0000000000000);
+            snapshot.equalsWithDiff(expectedImage, screenshotDirectory.concat(testMethod.getRealClass().getSimpleName().concat("//").concat(currentTestMethodName).concat("Difference")), 0.0000000000000);
+        } catch(IOException e) {
+            log.error(e.getMessage());
+        }
     }
 }
