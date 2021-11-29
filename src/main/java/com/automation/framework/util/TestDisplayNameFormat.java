@@ -10,8 +10,7 @@ import static org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores;
 import static org.junit.jupiter.api.DisplayNameGenerator.parameterTypesAsString;
 
 @Slf4j
-public
-class TestDisplayNameFormat extends ReplaceUnderscores {
+public class TestDisplayNameFormat extends ReplaceUnderscores {
 
     @Override
     public String generateDisplayNameForClass(Class<?> testClass) {
@@ -39,6 +38,7 @@ class TestDisplayNameFormat extends ReplaceUnderscores {
         return result.toString();
     }
 
+    //TODO - Correct fail scenario for testcase name: verifyGivenFieldIsValidEmailID
     private boolean isTestName(String name, int i) {
         return (isUpperCase(name.charAt(i)) && isLowerCase(name.charAt(i-1))) || (isUpperCase(name.charAt(i)) && isLowerCase(name.charAt(i+1)));
     }

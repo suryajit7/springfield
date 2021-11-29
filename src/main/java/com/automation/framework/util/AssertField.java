@@ -7,10 +7,10 @@ import org.assertj.core.api.AbstractAssert;
 
 import javax.money.Monetary;
 import javax.money.UnknownCurrencyException;
-import java.util.Arrays;
+import java.util.regex.Pattern;
 
+import static com.automation.framework.data.FrameworkConstants.RFC5322_EMAIL_REGEX;
 import static java.util.Arrays.*;
-import static org.assertj.core.api.Assertions.*;
 import static com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.*;
 import static java.util.Locale.*;
 
@@ -38,8 +38,8 @@ public class AssertField extends AbstractAssert<AssertField, String> {
                 log.info("Given string is a valid phone number in Earth.");
             }
         } catch (NumberParseException e) {
-            log.error("Given string is NOT a valid phone number in Earth.");
-            failWithMessage("Given string is NOT a valid phone number in Earth.");
+            log.error("Given string is NOT a valid phone number in Earth: ".concat(actual));
+            failWithMessage("Given string is NOT a valid phone number in Earth: ".concat(actual));
         } return this;
     }
 
@@ -54,18 +54,19 @@ public class AssertField extends AbstractAssert<AssertField, String> {
                 log.info("The PhoneNumber belongs to given geographical area.");
             }
         } catch (NumberParseException e) {
-            log.error("The PhoneNumber DOES NOT belongs to given geographical area.");
-            failWithMessage("The PhoneNumber DOES NOT belongs to given geographical area.");
+            log.error("The PhoneNumber DOES NOT belongs to given geographical area: ".concat(actual));
+            failWithMessage("The PhoneNumber DOES NOT belongs to given geographical area: ".concat(actual));
         } return this;
     }
 
     public AssertField isEmailID() {
         isNotNull();
-        if (GenericValidator.isEmail(actual)) {
+        Boolean isValidEmail = Pattern.compile(RFC5322_EMAIL_REGEX).matcher(actual).matches() && GenericValidator.isEmail(actual);
+        if (isValidEmail) {
             log.info("Given EmailID is valid.");
         } else {
-            log.error("Given EmailID is NOT valid.");
-            failWithMessage("Given EmailID is NOT valid.");
+            log.error("Given EmailID is NOT valid: ".concat(actual));
+            failWithMessage("Given EmailID is NOT valid: ".concat(actual));
         } return this;
     }
 
@@ -74,18 +75,18 @@ public class AssertField extends AbstractAssert<AssertField, String> {
         if (GenericValidator.isDate(actual, datePattern, true)) {
             log.info("Given Date is valid.");
         } else {
-            log.error("Given Date is NOT valid.");
-            failWithMessage("Given Date is NOT valid.");
+            log.error("Given Date is NOT valid: ".concat(actual));
+            failWithMessage("Given Date is NOT valid: ".concat(actual));
         } return this;
     }
 
     public AssertField isURL() {
         isNotNull();
-        if (GenericValidator.isUrl(actual)) {
+        if (GenericValidator.isUrl("https://".concat(actual))) {
             log.info("Given URL is valid.");
         } else {
-            log.error("Given URL is NOT valid.");
-            failWithMessage("Given URL is NOT valid.");
+            log.error("Given URL is NOT valid: ".concat(actual));
+            failWithMessage("Given URL is NOT valid: ".concat(actual));
         } return this;
     }
 
@@ -94,8 +95,8 @@ public class AssertField extends AbstractAssert<AssertField, String> {
         if (GenericValidator.isCreditCard(actual)) {
             log.info("Given CreditCard is valid.");
         } else {
-            log.error("Given CreditCard is NOT valid.");
-            failWithMessage("Given CreditCard is NOT valid.");
+            log.error("Given CreditCard is NOT valid: ".concat(actual));
+            failWithMessage("Given CreditCard is NOT valid: ".concat(actual));
         } return this;
     }
 
@@ -105,8 +106,8 @@ public class AssertField extends AbstractAssert<AssertField, String> {
             Monetary.getCurrency(actual);
             log.info("Given CurrencyCode is valid.");
         } catch (UnknownCurrencyException e) {
-            log.error("Given CurrencyCode is NOT valid.");
-            failWithMessage("Given CurrencyCode is NOT valid.");
+            log.error("Given CurrencyCode is NOT valid: ".concat(actual));
+            failWithMessage("Given CurrencyCode is NOT valid: ".concat(actual));
         } return this;
     }
 
@@ -119,24 +120,9 @@ public class AssertField extends AbstractAssert<AssertField, String> {
         if (isCountryCodeISO) {
             log.info("Given Country is valid.");
         } else {
-            log.error("Given Country is NOT valid.");
-            failWithMessage("Given Country is NOT valid.");
+            log.error("Given Country is NOT valid: ".concat(actual));
+            failWithMessage("Given Country is NOT valid: ".concat(actual));
         } return this;
     }
 
-    public AssertField isCountryCode() {
-        isNotNull();
-
-        Boolean isCountryCodeISO = stream(getISOCountries())
-                .anyMatch(country -> country.contains(actual));
-
-
-
-        if (isCountryCodeISO) {
-            log.info("Given Country is valid.");
-        } else {
-            log.error("Given Country is NOT valid.");
-            failWithMessage("Given Country is NOT valid.");
-        } return this;
-    }
 }

@@ -17,7 +17,6 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @Isolated
 @TestPropertySource(locations = {"classpath:application.properties"})
 @TestMethodOrder(OrderAnnotation.class)
-@DisplayNameGeneration(TestDisplayNameFormat.class)
 @TestInstance(PER_CLASS)
 public class AutomationSuiteApplicationTests {
 
