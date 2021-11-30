@@ -15,14 +15,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
 
-import static com.automation.framework.data.FrameworkConstants.X_API_KEY_HEADER;
+import static com.automation.framework.data.Constants.X_API_KEY_HEADER;
 import static io.restassured.RestAssured.*;
 import static io.restassured.filter.log.LogDetail.*;
 import static io.restassured.http.ContentType.*;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.equalTo;
 
 public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
 

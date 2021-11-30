@@ -2,7 +2,6 @@ package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.util.PathFinder;
-import io.restassured.filter.log.LogDetail;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.path.json.JsonPath;
@@ -15,7 +14,7 @@ import org.springframework.beans.factory.annotation.Value;
 import java.io.*;
 import java.util.Set;
 
-import static com.automation.framework.data.FrameworkConstants.X_API_KEY_HEADER;
+import static com.automation.framework.data.Constants.X_API_KEY_HEADER;
 import static io.restassured.RestAssured.*;
 import static io.restassured.config.LogConfig.logConfig;
 import static io.restassured.filter.log.LogDetail.*;

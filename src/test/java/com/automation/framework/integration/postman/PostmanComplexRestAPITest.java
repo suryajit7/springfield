@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.automation.framework.data.FrameworkConstants.*;
+import static com.automation.framework.data.Constants.*;
 import static io.restassured.RestAssured.*;
 import static io.restassured.filter.log.LogDetail.ALL;
 import static io.restassured.http.ContentType.JSON;

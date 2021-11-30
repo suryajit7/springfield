@@ -3,10 +3,11 @@ package com.automation.framework.data;
 /**
  * All framework related constants which are not defined in application.properties.
  */
-public class FrameworkConstants {
+public class Constants {
 
     public static final String TEST_RESOURCE = "";
 
+    //API Related Constants
     public static final String CONTENT_TYPE_JSON_CHARSET_UTF8 = "application/json;charset=utf-8";
     public static final String HEADER = "header";
     public static final String RESPONSE_HEADER = "responseHeader";
@@ -19,5 +20,7 @@ public class FrameworkConstants {
     public static final String X_RATE_LIMIT_LIMIT = "X-RateLimit-Limit";
     public static final String X_RATE_LIMIT_REMAINING = "X-RateLimit-Remaining";
     public static final String X_RATE_LIMIT_RESET = "X-RateLimit-Reset";
+
+    //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
 }

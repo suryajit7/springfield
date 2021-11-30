@@ -9,7 +9,7 @@ import javax.money.Monetary;
 import javax.money.UnknownCurrencyException;
 import java.util.regex.Pattern;
 
-import static com.automation.framework.data.FrameworkConstants.RFC5322_EMAIL_REGEX;
+import static com.automation.framework.data.Constants.RFC5322_EMAIL_REGEX;
 import static java.util.Arrays.*;
 import static com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.*;
 import static java.util.Locale.*;
