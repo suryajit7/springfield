@@ -50,7 +50,7 @@ public class FileReader {
 
     @SneakyThrows
     public BaseEntity readJsonFile(String filename) {
-        return hasValidExtension(filename, JSON) ? new ObjectMapper().readValue(pathFinder.getFilePathForFile(filename).toFile(), BaseEntity.class): BaseEntity.builder().build();
+        return hasValidExtension(filename, JSON) ? new ObjectMapper().readValue(pathFinder.getFilePathForFile(filename).toFile(), BaseEntity.class) : BaseEntity.builder().build();
     }
 
 
@@ -90,7 +90,7 @@ public class FileReader {
         return FilenameUtils.getExtension(filename);
     }
 
-    private Boolean hasValidExtension(String filename, FileType fileType){
+    public Boolean hasValidExtension(String filename, FileType fileType){
         return getFileExtension(filename).equalsIgnoreCase(fileType.getStringValue());
     }
 }
