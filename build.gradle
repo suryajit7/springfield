@@ -60,6 +60,8 @@ dependencies {
 	implementation 'org.javamoney:moneta:1.4.2'
 	implementation 'com.google.maps:google-maps-services:1.0.1'
 	implementation 'org.testcontainers:testcontainers:1.16.2'
+	implementation 'org.aeonbits.owner:owner:1.0.12'
+
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
