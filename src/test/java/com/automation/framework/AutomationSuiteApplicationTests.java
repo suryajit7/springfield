@@ -1,10 +1,13 @@
 package com.automation.framework;
 
 
+import com.automation.framework.core.bean.FakerConfig;
+import com.github.javafaker.Faker;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.parallel.Isolated;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
@@ -18,6 +21,9 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @TestMethodOrder(OrderAnnotation.class)
 @TestInstance(PER_CLASS)
 public class AutomationSuiteApplicationTests {
+
+	@Autowired
+	protected FakerConfig fakerConfig;
 
 	@Value("${app.api.key}")
 	protected String apiKey;

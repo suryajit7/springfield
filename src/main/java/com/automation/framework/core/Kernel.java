@@ -1,6 +1,6 @@
 package com.automation.framework.core;
 
-import com.automation.framework.util.CommonUtil;
+import com.automation.framework.core.bean.FakerConfig;
 import com.automation.framework.util.service.PropertyDecryptService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -31,6 +31,9 @@ public class Kernel {
 
     @Autowired
     protected ApplicationContext appCtx;
+
+    @Autowired
+    protected FakerConfig fakerConfig;
 
     @Autowired
     protected PropertyDecryptService decryptService;
