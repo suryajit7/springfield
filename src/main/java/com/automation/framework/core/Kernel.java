@@ -2,6 +2,7 @@ package com.automation.framework.core;
 
 import com.automation.framework.core.bean.FakerConfig;
 import com.automation.framework.util.service.PropertyDecryptService;
+import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +23,7 @@ public class Kernel {
 
     protected Log logger;
     protected Actions actions;
+    protected Faker faker;
 
     @Autowired
     protected WebDriver driver;
@@ -49,6 +51,7 @@ public class Kernel {
         this.actions = new Actions(this.driver);
         this.logger = LogFactory.getLog(getClass());
         this.decryptService = appCtx.getBean(PropertyDecryptService.class);
+        this.faker = fakerConfig.getFakerConfig();
 
         this.driver.manage().window().maximize();
     }
