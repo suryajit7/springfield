@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/annotation/LazyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/ScreenshotService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/ScreenshotService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/ScreenshotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/ScreenshotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/WindowSwitchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/WindowSwitchService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -124,7 +131,7 @@
       <recent name="C:\code\automation-suite\src\test\resources\datasets" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidPhoneNumber">
+  <component name="RunManager" selected="TestNG.GoogleSearchTest">
     <configuration name="automation-suite [dependencies] (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -196,26 +203,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomAssertionsTest.verifyGivenFieldIsValidURL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="ARGS_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.CustomAssertionsTest" />
-      <option name="METHOD_NAME" value="verifyGivenFieldIsValidURL" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration name="GoogleSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.gui.module.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.gui.module.google" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.gui.module.google.GoogleSearchTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,18 +240,18 @@
     <list>
       <item itemvalue="Gradle.automation-suite [dependencies]" />
       <item itemvalue="Gradle.automation-suite [dependencies] (1)" />
-      <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidURL" />
       <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidISOCountryCode" />
       <item itemvalue="JUnit.CustomAssertionsTest" />
       <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidPhoneNumber" />
+      <item itemvalue="TestNG.GoogleSearchTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoogleSearchTest" />
         <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidPhoneNumber" />
         <item itemvalue="Gradle.automation-suite [dependencies] (1)" />
         <item itemvalue="JUnit.CustomAssertionsTest" />
         <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidISOCountryCode" />
-        <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidURL" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +439,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639583087741</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Commit96: Minor Refactoring">
+      <created>1639854003550</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1639854003550</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Commit96: Minor Refactoring">
+      <created>1639858730800</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1639858730800</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

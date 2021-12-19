@@ -3,6 +3,7 @@ package com.automation.framework.util.service;
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
+import com.automation.framework.core.annotation.LazyService;
 import com.automation.framework.page.BasePage;
 import com.automation.framework.util.PathFinder;
 import lombok.extern.slf4j.Slf4j;
@@ -19,9 +20,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-@Lazy
-@Service
 @Slf4j
+@LazyService
 public class ScreenshotService {
 
     @Autowired
