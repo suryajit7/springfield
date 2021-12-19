@@ -53,6 +53,9 @@ dependencies {
 	implementation 'org.simpleframework:simple-xml:2.7.1'
 	implementation 'io.rest-assured:rest-assured:4.4.0'
 	implementation 'io.rest-assured:json-schema-validator:4.4.0'
+	implementation 'io.rest-assured:spring-web-test-client:4.4.0'
+	implementation 'io.rest-assured:spring-mock-mvc:4.4.0'
+	implementation 'io.rest-assured:rest-assured-all:4.4.0'
 	implementation 'org.assertj:assertj-core:3.21.0'
 	implementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
 	implementation 'com.googlecode.libphonenumber:libphonenumber:8.12.38'
@@ -61,7 +64,6 @@ dependencies {
 	implementation 'com.google.maps:google-maps-services:1.0.1'
 	implementation 'org.testcontainers:testcontainers:1.16.2'
 	implementation 'org.aeonbits.owner:owner:1.0.12'
-
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
