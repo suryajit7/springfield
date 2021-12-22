@@ -11,7 +11,7 @@ public class CustomAssertionsTest extends AutomationSuiteApplicationTests {
     @Order(1)
     public void verifyGivenFieldIsValidPhoneNumber(){
 
-        AssertField.assertThat("+1".concat(fakerConfig.getFakerConfig().phoneNumber().cellPhone()))
+        AssertField.assertThat("+1".concat(faker.phoneNumber().cellPhone()))
                 .isPhoneNumber()
                 .isPhoneNumberFrom("IN");
 

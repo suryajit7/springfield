@@ -36,13 +36,13 @@ public class Login extends BasePage {
     public void enterUsername() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(USERNAME_ID)));
         this.usernameId.click();
-        enterText(this.usernameId, decryptService.getOpencartUsername());
+        enterText(this.usernameId, "");
     }
 
     public void enterPassword() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PASSWORD_ID)));
         this.passwordId.click();
-        enterText(this.passwordId, decryptService.getOpencartPassword());
+        enterText(this.passwordId, "");
     }
 
     public void enterUsernameAndPassword() {

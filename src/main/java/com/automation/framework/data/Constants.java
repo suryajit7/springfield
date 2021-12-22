@@ -11,6 +11,7 @@ public class Constants {
     public static final String CONTENT_TYPE_JSON_CHARSET_UTF8 = "application/json;charset=utf-8";
     public static final String HEADER = "header";
     public static final String AUTHORIZE = "Authorize";
+    public static final String BEARER = "Bearer";
     public static final String RESPONSE_HEADER = "responseHeader";
     public static final String MULTI_VALUE_HEADER = "multiValueHeader";
     public static final String X_API_KEY_HEADER = "X-Api-Key";
@@ -24,4 +25,7 @@ public class Constants {
 
     //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
+
+    public static final String JASYPT_ENCRYPTOR_KEY = "jasypt.encryptor.password";
+    public static final String JASYPT_ENCRYPTOR_VALUE = "automation93";
 }
