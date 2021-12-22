@@ -15,8 +15,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.automation.framework.data.Constants.*;
-import static io.restassured.RestAssured.*;
+import static com.automation.framework.data.Constants.X_API_KEY_HEADER;
+import static com.automation.framework.data.Constants.X_MOCK_MATCH_REQUEST_BODY;
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.requestSpecification;
 import static io.restassured.filter.log.LogDetail.ALL;
 import static io.restassured.http.ContentType.JSON;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
@@ -82,6 +84,7 @@ public class PostmanComplexRestAPITest extends AutomationSuiteApplicationTests {
                 .assertThat()
                 .body("msg", containsString("Pong"));
     }
+
 
     @Test
     @Order(2)

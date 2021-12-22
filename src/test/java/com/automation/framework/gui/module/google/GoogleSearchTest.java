@@ -6,8 +6,8 @@ import com.automation.framework.page.app.google.GoogleSearchPage;
 import com.automation.framework.util.service.ScreenshotService;
 import org.testng.annotations.Test;
 
+import static com.automation.framework.core.AssertWebElement.assertThat;
 import static com.automation.framework.report.TestExecutionListener.getTestMethod;
-import static com.automation.framework.util.AssertWebElement.assertThat;
 
 
 public class GoogleSearchTest extends BaseTestNGTest {

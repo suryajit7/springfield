@@ -10,7 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.http.ContentType.*;
+import static io.restassured.http.ContentType.JSON;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
 public class GmailAPITest extends AutomationSuiteApplicationTests {
@@ -18,7 +18,8 @@ public class GmailAPITest extends AutomationSuiteApplicationTests {
     private RequestSpecification requestSpecification;
     private ResponseSpecification responseSpecification;
 
-    private String access_token= "Bearer ya29.A0ARrdaM-dZwt9fbVZ_IdErrkPrcJucoKgeT90pRYcpvagsvknRHhYdR24SZ2U-fpwYI4S5bJQYwsoPbvhIsUBd5oDNRtRWAa6UWXTDCdn3j16s_ahYmcb2XXazKmkLE-fvw0ywsOfjrzRifxxlLFbv68LG5Tg";
+    //TODO- Encrypt the below token.
+    private final String access_token= "Bearer ya29.A0ARrdaM-dZwt9fbVZ_IdErrkPrcJucoKgeT90pRYcpvagsvknRHhYdR24SZ2U-fpwYI4S5bJQYwsoPbvhIsUBd5oDNRtRWAa6UWXTDCdn3j16s_ahYmcb2XXazKmkLE-fvw0ywsOfjrzRifxxlLFbv68LG5Tg";
 
     @BeforeAll
     public void beforeClass() {

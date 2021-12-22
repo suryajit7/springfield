@@ -1,4 +1,4 @@
-package com.automation.framework.util;
+package com.automation.framework.core;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayNameGenerator;
@@ -7,7 +7,6 @@ import java.lang.reflect.Method;
 
 import static java.lang.Character.*;
 import static org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores;
-import static org.junit.jupiter.api.DisplayNameGenerator.parameterTypesAsString;
 
 @Slf4j
 public class TestDisplayNameFormat extends ReplaceUnderscores {

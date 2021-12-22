@@ -1,7 +1,7 @@
 package com.automation.framework.unit;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
-import com.automation.framework.util.AssertField;
+import com.automation.framework.core.AssertField;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 

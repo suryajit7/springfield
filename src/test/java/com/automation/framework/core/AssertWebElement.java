@@ -1,4 +1,4 @@
-package com.automation.framework.util;
+package com.automation.framework.core;
 
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.AbstractAssert;
