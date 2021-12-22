@@ -1,6 +1,6 @@
 package com.automation.framework.gui.module.crm;
 
-import com.automation.framework.BaseTestNGTest;
+import com.automation.framework.gui.BaseTestNGTest;
 import com.automation.framework.page.app.hrm.LoginPanelPage;
 import com.automation.framework.page.app.hrm.dashboard.DashboardPage;
 import org.springframework.beans.factory.annotation.Autowired;

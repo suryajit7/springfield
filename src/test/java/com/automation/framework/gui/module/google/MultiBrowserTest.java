@@ -1,6 +1,6 @@
 package com.automation.framework.gui.module.google;
 
-import com.automation.framework.BaseTestNGTest;
+import com.automation.framework.gui.BaseTestNGTest;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

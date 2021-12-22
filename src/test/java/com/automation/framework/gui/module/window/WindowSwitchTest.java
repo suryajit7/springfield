@@ -1,6 +1,6 @@
 package com.automation.framework.gui.module.window;
 
-import com.automation.framework.BaseTestNGTest;
+import com.automation.framework.gui.BaseTestNGTest;
 import com.automation.framework.page.app.window.MainPage;
 import com.automation.framework.page.app.window.PageA;
 import com.automation.framework.page.app.window.PageB;

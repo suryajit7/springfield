@@ -1,6 +1,6 @@
 package com.automation.framework.gui.module.opencart;
 
-import com.automation.framework.BaseTestNGTest;
+import com.automation.framework.gui.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.app.ems.Employee;
 import com.automation.framework.page.app.hrm.MenuNavigationPage;

@@ -1,6 +1,6 @@
 package com.automation.framework.gui.module.tdm;
 
-import com.automation.framework.BaseTestNGTest;
+import com.automation.framework.gui.BaseTestNGTest;
 import com.automation.framework.data.entity.app.ems.Department;
 import com.automation.framework.data.entity.app.ems.Employee;
 import com.automation.framework.util.FileReader;

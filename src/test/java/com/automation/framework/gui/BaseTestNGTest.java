@@ -1,4 +1,4 @@
-package com.automation.framework;
+package com.automation.framework.gui;
 
 import com.automation.framework.report.TestExecutionListener;
 import org.openqa.selenium.WebDriver;
