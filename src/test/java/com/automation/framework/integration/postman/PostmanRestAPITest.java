@@ -2,7 +2,6 @@ package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.data.entity.app.postman.Postman;
-
 import com.automation.framework.util.FileReader;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -10,15 +9,17 @@ import io.restassured.response.Response;
 import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
 import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
 
 import static com.automation.framework.data.Constants.X_API_KEY_HEADER;
 import static io.restassured.RestAssured.*;
-import static io.restassured.filter.log.LogDetail.*;
-import static io.restassured.http.ContentType.*;
+import static io.restassured.filter.log.LogDetail.ALL;
+import static io.restassured.http.ContentType.JSON;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -36,7 +37,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
 
         requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(postmanUrl)
-                .addHeader(X_API_KEY_HEADER, apiKey)
+                .addHeader(X_API_KEY_HEADER, "apiKey")
                 .setContentType(JSON)
                 .build();
 
@@ -110,9 +111,9 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
                 .then()
                 .extract().response();
 
-        assertThat(response.<String>path("workspace.name"), containsString("testWorkspace"));
+        assertThat(response.path("workspace.name"), containsString("testWorkspace"));
 
-        workspaceId = response.<String>path("workspace.id");
+        workspaceId = response.path("workspace.id");
     }
 
 
@@ -129,7 +130,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
                 .then()
                 .extract().response();
 
-        assertThat(response.<String>path("workspace.name"), containsString("Modified Workspace"));
+        assertThat(response.path("workspace.name"), containsString("Modified Workspace"));
 
         Assertions.assertThat(response.jsonPath().getJsonObject("workspace.id").toString())
                 .isNotNull()
@@ -177,7 +178,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
                 .isNotNull()
                 .isEqualTo("Nested Workspace");
 
-        workspaceId = response.<String>path("workspace.id");
+        workspaceId = response.path("workspace.id");
 
         with()
                 .pathParam("workspaceId", workspaceId)

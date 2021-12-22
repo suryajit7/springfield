@@ -39,7 +39,7 @@ public class PostmanComplexRestAPITest extends AutomationSuiteApplicationTests {
 
         requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(postmanMockServerUrl)
-                .addHeader(X_API_KEY_HEADER, apiKey)
+                .addHeader(X_API_KEY_HEADER, "apiKey")
                 .addHeader(X_MOCK_MATCH_REQUEST_BODY, "true")
                 .setContentType(JSON)
                 .log(ALL)

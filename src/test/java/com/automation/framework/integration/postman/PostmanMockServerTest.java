@@ -25,7 +25,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
                 .baseUri(postmanMockServerUrl)
                 .header(HEADER, "value1")
                 .header(X_MOCK_MATCH_REQUEST_HEADERS, HEADER)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .log().headers()
                 .when()
                 .get("/get")
@@ -42,7 +42,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
         Header header = new Header(HEADER, "value2");
         Header matchHeader = new Header(X_MOCK_MATCH_REQUEST_HEADERS, HEADER);
-        Header xApiKey = new Header(X_API_KEY_HEADER, apiKey);
+        Header xApiKey = new Header(X_API_KEY_HEADER, "apiKey");
 
         Headers headers = new Headers(header, matchHeader, xApiKey);
 
@@ -65,7 +65,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
         headers.put(HEADER, "value2");
         headers.put(X_MOCK_MATCH_REQUEST_HEADERS, HEADER);
-        headers.put(X_API_KEY_HEADER, apiKey);
+        headers.put(X_API_KEY_HEADER, "apiKey");
 
         given()
                 .baseUri(postmanMockServerUrl)
@@ -84,7 +84,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
         Header header1 = new Header(HEADER, "value1");
         Header header2 = new Header(HEADER, "value2");
-        Header header3 = new Header(X_API_KEY_HEADER, apiKey);
+        Header header3 = new Header(X_API_KEY_HEADER, "apiKey");
 
         Headers headers = new Headers(header1, header2, header3);
 
@@ -106,7 +106,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
         Header header1 = new Header(HEADER, "value1");
         Header header2 = new Header(HEADER, "value2");
-        Header header3 = new Header(X_API_KEY_HEADER, apiKey);
+        Header header3 = new Header(X_API_KEY_HEADER, "apiKey");
 
         Headers headers = new Headers(header1, header2, header3);
 
@@ -149,7 +149,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
         headers.put(HEADER, "value1");
         headers.put(X_MOCK_MATCH_REQUEST_HEADERS, HEADER);
-        headers.put(X_API_KEY_HEADER, apiKey);
+        headers.put(X_API_KEY_HEADER, "apiKey");
 
         Headers responseHeaders = given()
                 .baseUri(postmanMockServerUrl).headers(headers)
@@ -174,7 +174,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
         headers.put(HEADER, "value1");
         headers.put(X_MOCK_MATCH_REQUEST_HEADERS, HEADER);
-        headers.put(X_API_KEY_HEADER, apiKey);
+        headers.put(X_API_KEY_HEADER, "apiKey");
 
         Headers responseHeaders = given()
                 .baseUri(postmanMockServerUrl).headers(headers)

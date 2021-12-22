@@ -43,9 +43,6 @@ public class AutomationSuiteApplicationTests {
 	@Autowired
 	protected FakerConfig fakerConfig;
 
-	@Value("${app.api.key}")
-	protected String apiKey;
-
 	@Value("${app.postman.url}")
 	protected String postmanUrl;
 

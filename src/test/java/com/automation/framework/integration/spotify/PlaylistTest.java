@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Value;
 
 import static com.automation.framework.data.Constants.AUTHORIZE;
 import static io.restassured.RestAssured.given;
@@ -19,17 +20,16 @@ public class PlaylistTest extends AutomationSuiteApplicationTests {
     private RequestSpecification requestSpecification;
     private ResponseSpecification responseSpecification;
 
-    //TODO- Encrypt the below token.
-    private final String access_token= "Bearer BQARoyhr3ISnAEYXagAJZUXhhSPapy_0TOggQOugsi3YBRXMSiH4Wkt_hNpF3257bI9r1jikQf-8rSEdMJiitiaghXl2E-2JF6w43hjwenaEhe3UdtD3poK_3Vv-FGqBXVBoPkl-CPY56haLJbLdbNQQfuzXcfO-MsgAdv17zUdB5qwBheRM5s2BtRz1LJ5jMOEOjtsJpu6tTPvfBzXwvy16IolwmfGweuVCphUCiUeP";
-
+    @Value("${app.spotify.url}")
+    private String spotifyUrl;
 
     @BeforeAll
     public void beforeClass() {
 
         requestSpecification = new RequestSpecBuilder()
-                .setBaseUri("")
+                .setBaseUri(spotifyUrl)
                 .setBasePath("/v1")
-                .addHeader(AUTHORIZE, access_token)
+                .addHeader(AUTHORIZE, decryptService.getSpotifyAccessToken())
                 .setContentType(JSON)
                 .log(ALL).build();
 

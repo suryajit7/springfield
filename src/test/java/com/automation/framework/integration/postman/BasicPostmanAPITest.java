@@ -15,9 +15,11 @@ import java.io.*;
 import java.util.Set;
 
 import static com.automation.framework.data.Constants.X_API_KEY_HEADER;
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.config;
+import static io.restassured.RestAssured.given;
 import static io.restassured.config.LogConfig.logConfig;
-import static io.restassured.filter.log.LogDetail.*;
+import static io.restassured.filter.log.LogDetail.BODY;
+import static io.restassured.filter.log.LogDetail.STATUS;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -28,9 +30,6 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
     @Autowired
     private PathFinder pathFinder;
-
-    @Value("${app.api.key}")
-    protected String apiKey;
 
     @Value("${app.postman.url}")
     protected String postmanUrl;
@@ -48,7 +47,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
@@ -63,7 +62,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
@@ -77,7 +76,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
     public void verifyGetResponseCode(){
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
@@ -100,7 +99,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         //Example 1
         Response response = given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
@@ -115,7 +114,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         //Example 2
         String workspaceName = given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .when()
                 .get("/workspaces")
                 .then()
@@ -133,7 +132,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .log().all()
                 .when()
                 .get("/workspaces")
@@ -150,7 +149,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
@@ -165,7 +164,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         Set blackListHeaders = Set.of(X_API_KEY_HEADER, "Accept");
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .config(config().logConfig(logConfig().blacklistHeaders(blackListHeaders)))
                 .log().all()
                 .when()
@@ -256,7 +255,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .filter(new RequestLoggingFilter(BODY))
                 .filter(new ResponseLoggingFilter(STATUS))
                 .log().all()
@@ -275,7 +274,7 @@ public class BasicPostmanAPITest extends AutomationSuiteApplicationTests {
         PrintStream fileOutput = new PrintStream(new File("api-test.log"));
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, apiKey)
+                .header(X_API_KEY_HEADER, "apiKey")
                 .filter(new RequestLoggingFilter(fileOutput))
                 .filter(new ResponseLoggingFilter(fileOutput))
                 .log().all()
