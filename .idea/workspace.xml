@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/annotation/LazyService.java" afterDir="false" />
+    <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="Commit98: Added Gmail API Test and few RestAssured libraries.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/ScreenshotService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/ScreenshotService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/ScreenshotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/ScreenshotService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/WindowSwitchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/WindowSwitchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/PropertyDecryptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/PropertyDecryptService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/BasicPostmanAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/BasicPostmanAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanComplexRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanComplexRestAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +62,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -114,7 +117,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="ReaderModeSettings">
@@ -131,28 +134,7 @@
       <recent name="C:\code\automation-suite\src\test\resources\datasets" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GoogleSearchTest">
-    <configuration name="automation-suite [dependencies] (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.PropertyDecryptTest">
     <configuration name="CustomAssertionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
@@ -169,24 +151,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomAssertionsTest.verifyGivenFieldIsValidISOCountryCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.unit.*" />
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.CustomAssertionsTest" />
-      <option name="METHOD_NAME" value="verifyGivenFieldIsValidISOCountryCode" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.PlaylistTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomAssertionsTest.verifyGivenFieldIsValidPhoneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PropertyDecryptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
@@ -196,9 +177,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.framework.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.CustomAssertionsTest" />
-      <option name="METHOD_NAME" value="verifyGivenFieldIsValidPhoneNumber" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.PropertyDecryptTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,6 +186,15 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="framework in automation-suite.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/automation/framework" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,19 +228,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.automation-suite [dependencies]" />
-      <item itemvalue="Gradle.automation-suite [dependencies] (1)" />
-      <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidISOCountryCode" />
-      <item itemvalue="JUnit.CustomAssertionsTest" />
-      <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidPhoneNumber" />
+      <item itemvalue="JUnit.framework in automation-suite.test" />
       <item itemvalue="TestNG.GoogleSearchTest" />
+      <item itemvalue="JUnit.CustomAssertionsTest" />
+      <item itemvalue="JUnit.PlaylistTest" />
+      <item itemvalue="JUnit.PropertyDecryptTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoogleSearchTest" />
-        <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidPhoneNumber" />
-        <item itemvalue="Gradle.automation-suite [dependencies] (1)" />
+        <item itemvalue="JUnit.PropertyDecryptTest" />
         <item itemvalue="JUnit.CustomAssertionsTest" />
-        <item itemvalue="JUnit.CustomAssertionsTest.verifyGivenFieldIsValidISOCountryCode" />
+        <item itemvalue="JUnit.PlaylistTest" />
+        <item itemvalue="JUnit.framework in automation-suite.test" />
+        <item itemvalue="TestNG.GoogleSearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -453,18 +442,58 @@
       <option name="project" value="LOCAL" />
       <updated>1639858730800</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Commit97: Added @LazyService annotation and its usage.">
+      <created>1639913229791</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1639913229791</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Commit98: Added Gmail API Test and few RestAssured libraries.">
+      <created>1639930118835</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1639930118835</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Commit99: Refactoring">
+      <created>1640172562167</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1640172562167</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Commit99: Refactoring">
+      <created>1640183356861</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1640183356861</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Commit98: Updated libraries">
+      <created>1640183398976</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1640183398976</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Commit100: Added Encryption feature to framework">
+      <created>1640195190286</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1640195190286</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit75: Added API tests and minor refactoring" />
-    <MESSAGE value="Commit76: Added Postman related Entities" />
-    <MESSAGE value="Commit77: Adding RestAssured tests for Postman APIs and related entities." />
-    <MESSAGE value="Commit78: Adding methods for WebElementAssert" />
     <MESSAGE value="Commit79: Adding RestAssured tests" />
     <MESSAGE value="Commit80: Adding RestAssured tests" />
     <MESSAGE value="Commit81: Updating dependencies to its latest version." />
@@ -485,7 +514,13 @@
     <MESSAGE value="Generic Assert Class" />
     <MESSAGE value="Commit95: Minor Refactoring" />
     <MESSAGE value="Commit96: Minor Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit96: Minor Refactoring" />
+    <MESSAGE value="Commit97: Added @LazyService annotation and its usage." />
+    <MESSAGE value="Commit98: Added Gmail API Test and few RestAssured libraries." />
+    <MESSAGE value="Commit99: Refactoring" />
+    <MESSAGE value="Commit98: Updated libraries" />
+    <MESSAGE value="Commit100: Added Encryption feature to framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit100: Added Encryption feature to framework" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,7 +536,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/util/TestDisplayNameFormat.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/core/TestDisplayNameFormat.java</url>
           <line>42</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
