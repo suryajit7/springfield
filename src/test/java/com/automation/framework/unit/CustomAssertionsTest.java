@@ -15,7 +15,7 @@ public class CustomAssertionsTest extends AutomationSuiteApplicationTests {
                 .isPhoneNumber()
                 .isPhoneNumberFrom("IN");
 
-        AssertField.assertThat("+91".concat(fakerConfig.getFakerConfig().phoneNumber().phoneNumber()))
+        AssertField.assertThat("+91".concat(faker.phoneNumber().phoneNumber()))
                 .isPhoneNumber()
                 .isPhoneNumberFrom("US");
 
@@ -28,13 +28,13 @@ public class CustomAssertionsTest extends AutomationSuiteApplicationTests {
     @Order(2)
     public void verifyGivenFieldIsValidEmailID(){
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().internet().emailAddress())
+        AssertField.assertThat(faker.internet().emailAddress())
                 .isEmailID();
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().internet().emailAddress())
+        AssertField.assertThat(faker.internet().emailAddress())
                 .isEmailID();
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().internet().emailAddress().toUpperCase())
+        AssertField.assertThat(faker.internet().emailAddress().toUpperCase())
                 .isEmailID();
 
     }
@@ -43,13 +43,13 @@ public class CustomAssertionsTest extends AutomationSuiteApplicationTests {
     @Order(3)
     public void verifyGivenFieldIsValidURL(){
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().internet().url())
+        AssertField.assertThat(faker.internet().url())
                 .isURL();
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().internet().url())
+        AssertField.assertThat(faker.internet().url())
                 .isURL();
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().internet().url())
+        AssertField.assertThat(faker.internet().url())
                 .isURL();
     }
 
@@ -57,10 +57,10 @@ public class CustomAssertionsTest extends AutomationSuiteApplicationTests {
     @Order(4)
     public void verifyGivenFieldIsValidISOCountryCode(){
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().country().countryCode2().toUpperCase())
+        AssertField.assertThat(faker.country().countryCode2().toUpperCase())
                 .isCountryCodeISO();
 
-        AssertField.assertThat(fakerConfig.getFakerConfig().country().countryCode2().toUpperCase())
+        AssertField.assertThat(faker.country().countryCode2().toUpperCase())
                 .isCountryCodeISO();
     }
 

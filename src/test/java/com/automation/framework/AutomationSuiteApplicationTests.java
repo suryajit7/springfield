@@ -1,8 +1,6 @@
 package com.automation.framework;
 
 
-import com.automation.framework.core.bean.FakerConfig;
-import com.automation.framework.util.service.PropertyDecryptService;
 import com.github.javafaker.Faker;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
@@ -16,13 +14,10 @@ import org.junit.jupiter.api.parallel.Isolated;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.TestPropertySource;
 
 import javax.annotation.PostConstruct;
 
-import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
-import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_VALUE;
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 
 @Slf4j
@@ -34,14 +29,9 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 public class AutomationSuiteApplicationTests {
 
 	protected Log logger;
+
+	@Autowired
 	protected Faker faker;
-	protected PropertyDecryptService decryptService;
-
-	@Autowired
-	protected ApplicationContext appCtx;
-
-	@Autowired
-	protected FakerConfig fakerConfig;
 
 	@Value("${app.postman.url}")
 	protected String postmanUrl;
@@ -50,12 +40,7 @@ public class AutomationSuiteApplicationTests {
 	protected String postmanMockServerUrl;
 
 	@PostConstruct
-	private void init() {
-
-		System.setProperty(JASYPT_ENCRYPTOR_KEY, JASYPT_ENCRYPTOR_VALUE);
-
-		this.decryptService = appCtx.getBean(PropertyDecryptService.class);
-		this.faker = fakerConfig.getFakerConfig();
+	private void setupData() {
 		this.logger = LogFactory.getLog(getClass());
 	}
 

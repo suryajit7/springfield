@@ -1,5 +1,6 @@
 package com.automation.framework.data.entity.app.spotify;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,10 +9,13 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(NON_NULL)
 public class Playlist {
 
     private Boolean collaborative;

@@ -69,7 +69,6 @@ public class WebDriverInstance {
         chromeOptions.setExperimentalOption("prefs", prefs);
 
         System.setProperty("java.awt.headless", "false");
-        System.setProperty("jasypt.encryptor.password", "kaoru");
 
         return chromeOptions;
     }

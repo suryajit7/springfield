@@ -1,6 +1,6 @@
 package com.automation.framework.core;
 
-import com.automation.framework.core.bean.FakerConfig;
+import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.util.service.PropertyDecryptService;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
@@ -8,12 +8,16 @@ import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 
 import javax.annotation.PostConstruct;
+import java.util.Arrays;
+
+import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
+import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_VALUE;
 
 
 /**
@@ -23,36 +27,41 @@ public class Kernel {
 
     protected Log logger;
     protected Actions actions;
-    protected Faker faker;
+    public PropertyDecryptService decryptService;
 
-    @Autowired
+    @LazyAutowired
     protected WebDriver driver;
 
-    @Autowired
+    @LazyAutowired
     protected WebDriverWait wait;
 
-    @Autowired
+    @LazyAutowired
     protected ApplicationContext appCtx;
 
-    @Autowired
-    protected FakerConfig fakerConfig;
-
-    @Autowired
-    protected PropertyDecryptService decryptService;
+    @LazyAutowired
+    protected Faker faker;
 
     @Value("${default.timeout: 50}")
-    private int timeout;
+    protected int timeout;
+
+    @Value("${app.spotify.url}")
+    public String spotifyUrl;
 
     @PostConstruct
-    private void init() {
+    protected void init() {
+        System.setProperty(JASYPT_ENCRYPTOR_KEY, JASYPT_ENCRYPTOR_VALUE);
 
-        PageFactory.initElements(this.driver, this);
-
-        this.actions = new Actions(this.driver);
         this.logger = LogFactory.getLog(getClass());
         this.decryptService = appCtx.getBean(PropertyDecryptService.class);
-        this.faker = fakerConfig.getFakerConfig();
 
-        this.driver.manage().window().maximize();
+        if (!isJUnitTest()){
+            PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, timeout), this);
+            this.driver.manage().window().maximize();
+            this.actions = new Actions(this.driver);
+        }
+    }
+
+    public boolean isJUnitTest() {
+        return Arrays.stream(Thread.currentThread().getStackTrace()).anyMatch(test-> test.getClassName().startsWith("org.junit."));
     }
 }

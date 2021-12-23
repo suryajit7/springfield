@@ -24,7 +24,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @JacksonXmlRootElement(localName = "BaseEntity")
-@Root( name = "BaseEntity" )
+@Root(name = "BaseEntity")
 public class BaseEntity {
 
     List<Employee> employees;
@@ -32,7 +32,6 @@ public class BaseEntity {
     List<Department> departments;
     List<User> users;
     List<Postman> postmen;
-
     List<ExternalUrl> externalUrls;
     List<Follower> followers;
     List<Owner> owners;
