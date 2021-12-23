@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2021-12-23.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/config/WebDriverInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/config/WebDriverInstance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/repo/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/repo/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/DepartmentData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/WebDriverInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/WebDriverInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/DepartmentData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/encrypted.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/CustomAssertionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/CustomAssertionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +128,7 @@
       <recent name="C:\code\automation-suite\src\test\resources\datasets" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomAssertionsTest">
+  <component name="RunManager" selected="JUnit.PropertyDecryptTest.verifyGivenFieldIsValidPhoneNumber">
     <configuration name="CustomAssertionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
@@ -203,18 +178,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PropertyDecryptTest.verifyGivenFieldIsValidPhoneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="PATTERN" value="com.automation.framework.unit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.PlaylistTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAbleToCreatePlaylistWithGivenName" />
+      <option name="PACKAGE_NAME" value="com.automation.framework.unit" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.PropertyDecryptTest" />
+      <option name="METHOD_NAME" value="verifyGivenFieldIsValidPhoneNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -256,19 +231,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.automation-suite [dependencies]" />
-      <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" />
       <item itemvalue="JUnit.PlaylistTest" />
       <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
       <item itemvalue="JUnit.CustomAssertionsTest" />
       <item itemvalue="TestNG.GoogleSearchTest" />
+      <item itemvalue="JUnit.PropertyDecryptTest.verifyGivenFieldIsValidPhoneNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PropertyDecryptTest.verifyGivenFieldIsValidPhoneNumber" />
         <item itemvalue="JUnit.CustomAssertionsTest" />
         <item itemvalue="JUnit.PlaylistTest" />
         <item itemvalue="TestNG.GoogleSearchTest" />
         <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
-        <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640278529200</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Commit104: Added SpecBuilder for API tests and other minor refactoring.">
+      <created>1640290647391</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1640290647391</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -550,7 +532,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit82: Adding more API example tests" />
     <MESSAGE value="Commit83: Updating dependencies" />
     <MESSAGE value="Commit84: Added API test example for Json Schema Validation." />
     <MESSAGE value="Commit85: Added RandomUtils for generating random data and also a dummy class for BaseService." />
@@ -575,7 +556,8 @@
     <MESSAGE value="Commit101: Refactoring" />
     <MESSAGE value="Commit102: Added Spotify API Tests" />
     <MESSAGE value="Commit103: Adding Spotify Pojos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit103: Adding Spotify Pojos" />
+    <MESSAGE value="Commit104: Added SpecBuilder for API tests and other minor refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit104: Added SpecBuilder for API tests and other minor refactoring." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -595,11 +577,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/core/TestDisplayNameFormat.java</url>
           <line>42</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
