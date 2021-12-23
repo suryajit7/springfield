@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="Commit98: Added Gmail API Test and few RestAssured libraries.">
+    <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/PropertyDecryptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/PropertyDecryptService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/BasicPostmanAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/BasicPostmanAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanComplexRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanComplexRestAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/encrypted.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="ReaderModeSettings">
@@ -134,23 +132,7 @@
       <recent name="C:\code\automation-suite\src\test\resources\datasets" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PropertyDecryptTest">
-    <configuration name="CustomAssertionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.CustomAssertionsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PlaylistTest">
     <configuration name="PlaylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
@@ -167,18 +149,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropertyDecryptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaylistTest.shouldGetAllExistingSpotifyPlaylists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.unit.*" />
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.PropertyDecryptTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.PlaylistTest" />
+      <option name="METHOD_NAME" value="shouldGetAllExistingSpotifyPlaylists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.PlaylistTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.PlaylistTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToCreatePlaylistWithGivenName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaylistTest.shouldUpdateMySpotifyPlaylist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.PlaylistTest" />
+      <option name="METHOD_NAME" value="shouldUpdateMySpotifyPlaylist" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,33 +220,6 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="framework in automation-suite.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/automation/framework" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoogleSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.gui.module.google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.gui.module.google" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.gui.module.google.GoogleSearchTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,19 +235,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.automation-suite [dependencies]" />
-      <item itemvalue="JUnit.framework in automation-suite.test" />
-      <item itemvalue="TestNG.GoogleSearchTest" />
-      <item itemvalue="JUnit.CustomAssertionsTest" />
+      <item itemvalue="JUnit.PlaylistTest.shouldGetAllExistingSpotifyPlaylists" />
+      <item itemvalue="JUnit.PlaylistTest.shouldUpdateMySpotifyPlaylist" />
+      <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" />
       <item itemvalue="JUnit.PlaylistTest" />
-      <item itemvalue="JUnit.PropertyDecryptTest" />
+      <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PropertyDecryptTest" />
-        <item itemvalue="JUnit.CustomAssertionsTest" />
         <item itemvalue="JUnit.PlaylistTest" />
-        <item itemvalue="JUnit.framework in automation-suite.test" />
-        <item itemvalue="TestNG.GoogleSearchTest" />
+        <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
+        <item itemvalue="JUnit.PlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" />
+        <item itemvalue="JUnit.PlaylistTest.shouldUpdateMySpotifyPlaylist" />
+        <item itemvalue="JUnit.PlaylistTest.shouldGetAllExistingSpotifyPlaylists" />
       </list>
     </recent_temporary>
   </component>
@@ -484,7 +491,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640195190286</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Commit101: Refactoring">
+      <created>1640196454342</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1640196454342</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Commit101: Refactoring">
+      <created>1640196624334</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1640196624334</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +515,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit79: Adding RestAssured tests" />
     <MESSAGE value="Commit80: Adding RestAssured tests" />
     <MESSAGE value="Commit81: Updating dependencies to its latest version." />
     <MESSAGE value="Commit82: Adding more API example tests" />
@@ -519,7 +539,8 @@
     <MESSAGE value="Commit99: Refactoring" />
     <MESSAGE value="Commit98: Updated libraries" />
     <MESSAGE value="Commit100: Added Encryption feature to framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit100: Added Encryption feature to framework" />
+    <MESSAGE value="Commit101: Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit101: Refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

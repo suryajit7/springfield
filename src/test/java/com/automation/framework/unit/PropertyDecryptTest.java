@@ -13,12 +13,10 @@ public class PropertyDecryptTest extends AutomationSuiteApplicationTests {
     @Order(1)
     public void verifyGivenFieldIsValidPhoneNumber(){
 
-        Assertions.assertThat(decryptService.getSpotifyAccessToken())
+        Assertions.assertThat(decryptService.getSpotifyAccessToken(false))
                 .isNotBlank()
                 .startsWith(BEARER)
                 .contains(BEARER);
-
-        logger.info(decryptService.getSpotifyAccessToken());
 
     }
 }
