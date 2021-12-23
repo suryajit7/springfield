@@ -1,14 +1,14 @@
 package com.automation.framework.data.entity;
 
 
-import com.automation.framework.data.entity.app.User;
 import com.automation.framework.data.entity.app.ems.Company;
 import com.automation.framework.data.entity.app.ems.Department;
 import com.automation.framework.data.entity.app.ems.Employee;
+import com.automation.framework.data.entity.app.ems.User;
 import com.automation.framework.data.entity.app.fnb.BreakfastMenu;
 import com.automation.framework.data.entity.app.library.Catalog;
 import com.automation.framework.data.entity.app.postman.Postman;
-import com.automation.framework.data.entity.app.postman.Workspace;
+import com.automation.framework.data.entity.app.spotify.*;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -32,6 +32,12 @@ public class BaseEntity {
     List<Department> departments;
     List<User> users;
     List<Postman> postmen;
+
+    List<ExternalUrl> externalUrls;
+    List<Follower> followers;
+    List<Owner> owners;
+    List<Playlist> playlists;
+    List<Track> tracks;
 
     @ElementList(name="breakfast_menu")
     List<BreakfastMenu> breakfast_menu;

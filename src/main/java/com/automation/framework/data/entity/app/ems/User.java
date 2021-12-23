@@ -1,4 +1,4 @@
-package com.automation.framework.data.entity.app;
+package com.automation.framework.data.entity.app.ems;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
