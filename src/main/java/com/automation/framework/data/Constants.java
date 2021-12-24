@@ -24,6 +24,7 @@ public class Constants {
 
     //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
+    public static final String NAME_REGEX = "/^[a-z ,.'-]+$/i";
 
     public static final String JASYPT_ENCRYPTOR_KEY = "jasypt.encryptor.password";
     public static final String JASYPT_ENCRYPTOR_VALUE = "automation93";

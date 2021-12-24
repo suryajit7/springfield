@@ -10,6 +10,7 @@ import javax.money.Monetary;
 import javax.money.UnknownCurrencyException;
 import java.util.regex.Pattern;
 
+import static com.automation.framework.data.Constants.NAME_REGEX;
 import static com.automation.framework.data.Constants.RFC5322_EMAIL_REGEX;
 import static com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource;
 import static java.util.Arrays.stream;
@@ -27,6 +28,17 @@ public class AssertField extends AbstractAssert<AssertField, String> {
 
     public static AssertField assertThat(String string) {
         return new AssertField(string);
+    }
+
+    public AssertField isValidName() {
+        isNotNull();
+        Boolean isValidName = Pattern.compile(NAME_REGEX).matcher(actual).matches();
+        if (isValidName) {
+            log.info("Given Name is valid.");
+        } else {
+            log.error("Given Name is NOT valid: ".concat(actual));
+            failWithMessage("Given Name is NOT valid: ".concat(actual));
+        } return this;
     }
 
     public AssertField isPhoneNumber() {
