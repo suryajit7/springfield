@@ -1,5 +1,6 @@
 package com.automation.framework.data.entity.app.spotify;
 
+import com.automation.framework.data.entity.custom.Error;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -30,11 +31,13 @@ public class Playlist {
     private String primary_color;
 
     @JsonProperty("public")
-    private Boolean _public;
+    private Boolean isPublic;
     private String snapshot_id;
     private Track tracks;
     private String type;
 
     private String uri;
+
+    private Error error;
 
 }

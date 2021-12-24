@@ -44,4 +44,6 @@ public class BaseEntity {
     @ElementList(inline = true, required = false)
     List<Catalog> catalog;
 
+    List<Error> errors;
+
 }
