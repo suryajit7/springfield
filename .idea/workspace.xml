@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fb4130f-b789-4823-bf80-41021ff87aaf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -561,7 +561,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640359561766</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Commit112: Minor refactoring">
+      <created>1640359702895</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1640359702895</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Commit113: Minor refactoring">
+      <created>1640359985733</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1640359985733</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -571,8 +585,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit89: Adding JDBC dependency and config" />
-    <MESSAGE value="Commit90: Modifying custom WebElementAssert to throw failures with message." />
     <MESSAGE value="Commit91: Adding custom assertions for generic fields." />
     <MESSAGE value="Commit92: Pushing small changes and minor refactoring" />
     <MESSAGE value="Commit93: Added testcases for AssertField" />
@@ -596,7 +608,9 @@
     <MESSAGE value="Commit109: Minor refactoring and added API related constants." />
     <MESSAGE value="Commit110: Minor refactoring" />
     <MESSAGE value="Commit111: Minor refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit111: Minor refactoring" />
+    <MESSAGE value="Commit112: Minor refactoring" />
+    <MESSAGE value="Commit113: Minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit113: Minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
