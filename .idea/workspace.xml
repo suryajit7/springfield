@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="Commit106: Added valid name assertion">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/custom/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/PlaylistService.java" afterDir="false" />
+    <list default="true" id="3bb82cf1-1be9-4ad8-8afc-7089580b20e7" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Playlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/encrypted.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/PlaylistService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -535,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640318419999</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Commit107: Added Framework features for API Testing and added few tests for Spotify app.">
+      <created>1640339278051</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1640339278051</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +546,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit85: Added RandomUtils for generating random data and also a dummy class for BaseService." />
     <MESSAGE value="Commit86: Minor refactoring" />
     <MESSAGE value="Commit86: adding dummy SpecBuilder class for RestAssured tests" />
     <MESSAGE value="Commit87: adding dummy SpecBuilder class for RestAssured tests" />
@@ -570,7 +570,8 @@
     <MESSAGE value="Commit104: Added SpecBuilder for API tests and other minor refactoring." />
     <MESSAGE value="Commit105: minor refactoring." />
     <MESSAGE value="Commit106: Added valid name assertion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit106: Added valid name assertion" />
+    <MESSAGE value="Commit107: Added Framework features for API Testing and added few tests for Spotify app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit107: Added Framework features for API Testing and added few tests for Spotify app." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

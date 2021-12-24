@@ -34,7 +34,7 @@ public class PlaylistTest extends AutomationSuiteApplicationTests {
 
         Assertions.assertThat(playlistIds)
                 .isNotNull()
-                .hasSize(3);
+                .hasSize(5);
     }
 
 
@@ -89,12 +89,12 @@ public class PlaylistTest extends AutomationSuiteApplicationTests {
     public void shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken() {
 
         Playlist requestPlaylist = Playlist.builder()
-                .name("")
+                .name(faker.music().genre())
                 .description(faker.artist().name())
                 .isPublic(false)
                 .build();
 
-        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist);
+        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist, true);
         Playlist responsePlaylist = response.as(Playlist.class);
 
         assertThat(response.statusCode(), equalTo(SC_UNAUTHORIZED));

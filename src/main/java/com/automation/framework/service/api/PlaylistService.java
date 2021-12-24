@@ -43,6 +43,17 @@ public class PlaylistService extends BaseService {
                 .extract().response();
     }
 
+    public Response post(String userID, Playlist requestPlaylist, Boolean expiredToken){
+        return given(getRequestSpec(expiredToken))
+                .body(requestPlaylist)
+                .when()
+                .pathParam("user_id", userID)
+                .post("/users/{user_id}/playlists")
+                .then()
+                .spec(getResponseSpec())
+                .extract().response();
+    }
+
     public Response update(String playlistID, Playlist requestPlaylist){
         return given(getRequestSpec())
                 .body(requestPlaylist)

@@ -26,6 +26,15 @@ public class BaseService extends Kernel {
                 .log(ALL).build();
     }
 
+    public RequestSpecification getRequestSpec(Boolean expiredToken){
+        return new RequestSpecBuilder()
+                .setBaseUri(spotifyUrl)
+                .setBasePath("/v1")
+                .addHeader(AUTHORIZATION, decryptService.getSpotifyAccessToken(expiredToken))
+                .setContentType(JSON)
+                .log(ALL).build();
+    }
+
     public ResponseSpecification getResponseSpec(){
         return new ResponseSpecBuilder()
                 .log(ALL).build();
