@@ -1,4 +1,4 @@
-package com.automation.framework.data.entity.custom;
+package com.automation.framework.data.entity.app;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

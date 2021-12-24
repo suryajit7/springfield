@@ -1,6 +1,6 @@
 package com.automation.framework.data.entity.app.spotify;
 
-import com.automation.framework.data.entity.custom.Error;
+import com.automation.framework.data.entity.app.Error;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
