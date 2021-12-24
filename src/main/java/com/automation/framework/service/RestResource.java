@@ -13,6 +13,7 @@ import static org.apache.hc.core5.http.HttpHeaders.AUTHORIZATION;
 public class RestResource extends BaseService {
 
     public Response get(String path, String id){
+
         return given(getRequestSpec())
                 .header(AUTHORIZATION, decryptService.getSpotifyAccessToken(false))
                 .when()
@@ -24,10 +25,10 @@ public class RestResource extends BaseService {
     }
 
     public Response post(String path, String id, Playlist requestPlaylist, Boolean expiredToken){
-        String token = expiredToken ? decryptService.getSpotifyAccessToken(false) : decryptService.getSpotifyAccessToken(true);
+
         return given(getRequestSpec())
                 .body(requestPlaylist)
-                .header(AUTHORIZATION, token)
+                .header(AUTHORIZATION, decryptService.getSpotifyAccessToken(expiredToken))
                 .when()
                 .pathParam("_id", id)
                 .post(path)
@@ -37,6 +38,7 @@ public class RestResource extends BaseService {
     }
 
     public Response update(String path, String id, Playlist requestPlaylist){
+
         return given(getRequestSpec())
                 .body(requestPlaylist)
                 .header(AUTHORIZATION, decryptService.getSpotifyAccessToken(false))

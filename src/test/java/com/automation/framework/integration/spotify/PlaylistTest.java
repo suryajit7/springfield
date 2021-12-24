@@ -27,14 +27,13 @@ public class PlaylistTest extends AutomationSuiteApplicationTests {
     @Order(1)
     public void shouldGetAllExistingSpotifyPlaylists(){
 
-        List<String> playlistIds = playlistService.get(SPOTIFY_USER_ID)
+        List<String> playlistIds = playlistService.getUserId(SPOTIFY_USER_ID)
                 .jsonPath().getJsonObject("items.id");
 
         logger.info(playlistIds);
 
         Assertions.assertThat(playlistIds)
-                .isNotNull()
-                .hasSize(7);
+                .isNotNull();
     }
 
 
@@ -74,7 +73,7 @@ public class PlaylistTest extends AutomationSuiteApplicationTests {
                 .isPublic(false)
                 .build();
 
-        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist);
+        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist,false);
         Playlist responsePlaylist = response.as(Playlist.class);
 
         assertThat(response.statusCode(), equalTo(SC_BAD_REQUEST));
@@ -100,6 +99,6 @@ public class PlaylistTest extends AutomationSuiteApplicationTests {
         assertThat(response.statusCode(), equalTo(SC_UNAUTHORIZED));
 
         assertThat(responsePlaylist.getError().getStatus(), equalTo(SC_UNAUTHORIZED));
-        assertThat(responsePlaylist.getError().getMessage(), equalTo("The access token expired"));
+        assertThat(responsePlaylist.getError().getMessage(), equalTo("Invalid access token"));
     }
 }

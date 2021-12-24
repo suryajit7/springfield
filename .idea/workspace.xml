@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1fb4130f-b789-4823-bf80-41021ff87aaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/RestResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/RestResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/PlaylistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/encrypted.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -575,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640359985733</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Commit114: Minor refactoring">
+      <created>1640360220477</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1640360220477</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +596,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit91: Adding custom assertions for generic fields." />
     <MESSAGE value="Commit92: Pushing small changes and minor refactoring" />
     <MESSAGE value="Commit93: Added testcases for AssertField" />
     <MESSAGE value="Commit94: Minor Refactoring" />
@@ -610,7 +620,8 @@
     <MESSAGE value="Commit111: Minor refactoring" />
     <MESSAGE value="Commit112: Minor refactoring" />
     <MESSAGE value="Commit113: Minor refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit113: Minor refactoring" />
+    <MESSAGE value="Commit114: Minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit114: Minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
