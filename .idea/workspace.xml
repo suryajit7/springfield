@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fb4130f-b789-4823-bf80-41021ff87aaf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/encrypted.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/PlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -534,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640339278051</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Commit108: Refactoring">
+      <created>1640358786306</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1640358786306</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -544,7 +549,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit86: Minor refactoring" />
     <MESSAGE value="Commit86: adding dummy SpecBuilder class for RestAssured tests" />
     <MESSAGE value="Commit87: adding dummy SpecBuilder class for RestAssured tests" />
     <MESSAGE value="Commit88: Adding Visual Assertions support and few related tests" />
@@ -569,7 +573,8 @@
     <MESSAGE value="Commit105: minor refactoring." />
     <MESSAGE value="Commit106: Added valid name assertion" />
     <MESSAGE value="Commit107: Added Framework features for API Testing and added few tests for Spotify app." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit107: Added Framework features for API Testing and added few tests for Spotify app." />
+    <MESSAGE value="Commit108: Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit108: Refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

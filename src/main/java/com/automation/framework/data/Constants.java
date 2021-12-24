@@ -22,6 +22,13 @@ public class Constants {
     public static final String X_RATE_LIMIT_REMAINING = "X-RateLimit-Remaining";
     public static final String X_RATE_LIMIT_RESET = "X-RateLimit-Reset";
 
+    public static final String CLIENT_ID = "client_id";
+    public static final String CLIENT_SECRET = "client_secret";
+    public static final String GRANT_TYPE = "grant_type";
+    public static final String REFRESH_TOKEN = "refresh_token";
+    public static final String ACCESS_TOKEN = "access_token";
+    public static final String REDIRECT_URI = "redirect_uri";
+
     //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
     public static final String NAME_REGEX = "/^[a-z ,.'-]+$/i";
