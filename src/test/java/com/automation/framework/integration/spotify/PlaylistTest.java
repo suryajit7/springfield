@@ -34,7 +34,7 @@ public class PlaylistTest extends AutomationSuiteApplicationTests {
 
         Assertions.assertThat(playlistIds)
                 .isNotNull()
-                .hasSize(5);
+                .hasSize(7);
     }
 
 
