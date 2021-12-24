@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fb4130f-b789-4823-bf80-41021ff87aaf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/RestResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -539,7 +540,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640358786306</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Commit109: Minor refactoring and added API related constants.">
+      <created>1640359133577</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1640359133577</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Commit110: Minor refactoring">
+      <created>1640359278491</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1640359278491</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,8 +564,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit86: adding dummy SpecBuilder class for RestAssured tests" />
-    <MESSAGE value="Commit87: adding dummy SpecBuilder class for RestAssured tests" />
     <MESSAGE value="Commit88: Adding Visual Assertions support and few related tests" />
     <MESSAGE value="Commit89: Adding JDBC dependency and config" />
     <MESSAGE value="Commit90: Modifying custom WebElementAssert to throw failures with message." />
@@ -574,7 +587,9 @@
     <MESSAGE value="Commit106: Added valid name assertion" />
     <MESSAGE value="Commit107: Added Framework features for API Testing and added few tests for Spotify app." />
     <MESSAGE value="Commit108: Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit108: Refactoring" />
+    <MESSAGE value="Commit109: Minor refactoring and added API related constants." />
+    <MESSAGE value="Commit110: Minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit110: Minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
