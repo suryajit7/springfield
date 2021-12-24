@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fb4130f-b789-4823-bf80-41021ff87aaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/RestResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -554,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640359278491</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Commit111: Minor refactoring">
+      <created>1640359561766</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1640359561766</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +571,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit88: Adding Visual Assertions support and few related tests" />
     <MESSAGE value="Commit89: Adding JDBC dependency and config" />
     <MESSAGE value="Commit90: Modifying custom WebElementAssert to throw failures with message." />
     <MESSAGE value="Commit91: Adding custom assertions for generic fields." />
@@ -589,7 +595,8 @@
     <MESSAGE value="Commit108: Refactoring" />
     <MESSAGE value="Commit109: Minor refactoring and added API related constants." />
     <MESSAGE value="Commit110: Minor refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit110: Minor refactoring" />
+    <MESSAGE value="Commit111: Minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit111: Minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
