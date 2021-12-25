@@ -37,5 +37,4 @@ public class Constants {
     public static final String NAME_REGEX = "/^[a-z ,.'-]+$/i";
 
     public static final String JASYPT_ENCRYPTOR_KEY = "jasypt.encryptor.password";
-    public static final String JASYPT_ENCRYPTOR_VALUE = "automation93";
 }

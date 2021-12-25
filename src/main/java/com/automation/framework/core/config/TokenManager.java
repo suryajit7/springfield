@@ -1,7 +1,7 @@
 package com.automation.framework.core.config;
 
+import com.automation.framework.core.Kernel;
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.service.BaseService;
 import com.automation.framework.service.SpecBuilder;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
@@ -20,11 +20,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
 @Component
-public class TokenManager extends BaseService {
+public class TokenManager extends Kernel {
 
     private static String accessToken;
     private static Instant expiryTime;
-
 
     @LazyAutowired
     private SpecBuilder specBuilder;
@@ -39,12 +38,11 @@ public class TokenManager extends BaseService {
                 int expiryDuration = getRenewToken().path(EXPIRY_TIME);
                 expiryTime = Instant.now().plusSeconds(expiryDuration - 300);
             } else {
-                log.info("Token is still Active");
+                log.info("Token is still Active.");
             }
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage());
         }
-
         return BEARER.concat(SPACE).concat(accessToken);
     }
 

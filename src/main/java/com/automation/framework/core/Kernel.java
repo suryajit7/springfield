@@ -18,7 +18,6 @@ import javax.annotation.PostConstruct;
 import java.util.Arrays;
 
 import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
-import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_VALUE;
 
 
 /**
@@ -43,26 +42,29 @@ public class Kernel {
     protected Faker faker;
 
     @LazyAutowired
-    public TokenManager tokenManager;
+    protected TokenManager tokenManager;
 
-    @Value("${default.timeout: 50}")
+    @Value("${default.timeout:50}")
     protected int timeout;
+
+    @Value("${jasypt.encryptor.secret}")
+    private String jasyptSecretValue;
 
     @PostConstruct
     protected void init() {
-        System.setProperty(JASYPT_ENCRYPTOR_KEY, JASYPT_ENCRYPTOR_VALUE);
+        System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
 
         this.logger = LogFactory.getLog(getClass());
         this.decryptService = appCtx.getBean(PropertyDecryptService.class);
 
         if (!isJUnitTest()){
             PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, timeout), this);
-            this.driver.manage().window().maximize();
             this.actions = new Actions(this.driver);
+            this.driver.manage().window().maximize();
         }
     }
 
-    public boolean isJUnitTest() {
+    private boolean isJUnitTest() {
         return Arrays.stream(Thread.currentThread().getStackTrace()).anyMatch(test-> test.getClassName().startsWith("org.junit."));
     }
 }
