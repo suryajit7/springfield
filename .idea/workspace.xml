@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1fb4130f-b789-4823-bf80-41021ff87aaf" name="Changes" comment="Commit119: Major Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/config/RemoteWebDriverSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/config/WaitInstance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/config/WebDriverInstance.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/TokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/TokenManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,20 +251,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635843585992</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Commit78: Adding methods for WebElementAssert">
-      <created>1635958513173</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1635958513173</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Commit79: Adding RestAssured tests">
-      <created>1636015042968</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1636015042968</updated>
     </task>
     <task id="LOCAL-00006" summary="Commit80: Adding RestAssured tests">
       <created>1636296194097</created>
@@ -593,7 +581,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640426974000</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Commit119: Major Refactoring">
+      <created>1640430171173</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1640430171174</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Commit120: Renamed directory">
+      <created>1640430403344</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1640430403344</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +605,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit96: Minor Refactoring" />
     <MESSAGE value="Commit97: Added @LazyService annotation and its usage." />
     <MESSAGE value="Commit98: Added Gmail API Test and few RestAssured libraries." />
     <MESSAGE value="Commit99: Refactoring" />
@@ -628,7 +629,8 @@
     <MESSAGE value="Commit117: Added Token Manager to renew spotify access tokens for api tests" />
     <MESSAGE value="Commit118: Minor Refactoring" />
     <MESSAGE value="Commit119: Major Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit119: Major Refactoring" />
+    <MESSAGE value="Commit120: Renamed directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit120: Renamed directory" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -648,11 +650,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/core/TestDisplayNameFormat.java</url>
           <line>42</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

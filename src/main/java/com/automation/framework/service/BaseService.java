@@ -20,9 +20,6 @@ public class BaseService extends Kernel {
     @LazyAutowired
     private TokenManager tokenManager;
 
-
-
-
     public Response get(String path, String id){
 
         return given(tokenManager.getRequestSpec())
