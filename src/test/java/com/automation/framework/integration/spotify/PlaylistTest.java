@@ -3,7 +3,7 @@ package com.automation.framework.integration.spotify;
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.app.spotify.Playlist;
-import com.automation.framework.service.api.PlaylistService;
+import com.automation.framework.service.api.spotify.PlaylistService;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Order;

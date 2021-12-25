@@ -1,14 +1,14 @@
-package com.automation.framework.service.api;
+package com.automation.framework.service.api.spotify;
 
 import com.automation.framework.data.entity.app.spotify.Playlist;
-import com.automation.framework.service.RestResource;
+import com.automation.framework.service.BaseService;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class PlaylistService extends RestResource {
+public class PlaylistService extends BaseService {
 
     public Response getPlaylist(String id){
         return get("/playlists/{_id}", id);

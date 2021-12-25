@@ -1,7 +1,7 @@
 package com.automation.framework.core;
 
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.service.TokenManager;
+import com.automation.framework.core.config.TokenManager;
 import com.automation.framework.util.service.PropertyDecryptService;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
@@ -47,9 +47,6 @@ public class Kernel {
 
     @Value("${default.timeout: 50}")
     protected int timeout;
-
-    @Value("${app.spotify.url}")
-    public String spotifyUrl;
 
     @PostConstruct
     protected void init() {

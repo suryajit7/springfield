@@ -1,5 +1,8 @@
-package com.automation.framework.service;
+package com.automation.framework.core.config;
 
+import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.service.BaseService;
+import com.automation.framework.service.SpecBuilder;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,10 +25,14 @@ public class TokenManager extends BaseService {
     private static String accessToken;
     private static Instant expiryTime;
 
+
+    @LazyAutowired
+    private SpecBuilder specBuilder;
+
     @Value("${app.spotify.accounts.url}")
     private String spotifyAccountsUrl;
 
-    public String getAccessToken(){
+    public String generateAccessToken(){
         try {
             if (accessToken == null || Instant.now().isAfter(expiryTime)){
                 accessToken = getRenewToken().path(ACCESS_TOKEN);
@@ -47,8 +54,9 @@ public class TokenManager extends BaseService {
                 .baseUri(spotifyAccountsUrl)
                 .contentType(URLENC)
                 .formParams(getFormParams())
+                .log().all()
                 .when().post("/api/token")
-                .then().spec(getResponseSpec())
+                .then().spec(specBuilder.getResponseSpec())
                 .extract().response();
 
         assertThat(response.statusCode())
