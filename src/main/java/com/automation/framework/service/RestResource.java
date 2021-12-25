@@ -1,5 +1,6 @@
 package com.automation.framework.service;
 
+import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.app.spotify.Playlist;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
@@ -12,10 +13,13 @@ import static org.apache.hc.core5.http.HttpHeaders.AUTHORIZATION;
 @Component
 public class RestResource extends BaseService {
 
+    @LazyAutowired
+    private TokenManager tokenManager;
+
     public Response get(String path, String id){
 
         return given(getRequestSpec())
-                .header(AUTHORIZATION, decryptService.getSpotifyAccessToken(false))
+                .header(AUTHORIZATION, tokenManager.getAccessToken())
                 .when()
                 .pathParam("_id", id)
                 .get(path)
@@ -28,7 +32,7 @@ public class RestResource extends BaseService {
 
         return given(getRequestSpec())
                 .body(requestPlaylist)
-                .header(AUTHORIZATION, decryptService.getSpotifyAccessToken(expiredToken))
+                .header(AUTHORIZATION, expiredToken ? decryptService.getSpotifyAccessToken(expiredToken) : tokenManager.getAccessToken())
                 .when()
                 .pathParam("_id", id)
                 .post(path)
@@ -41,7 +45,7 @@ public class RestResource extends BaseService {
 
         return given(getRequestSpec())
                 .body(requestPlaylist)
-                .header(AUTHORIZATION, decryptService.getSpotifyAccessToken(false))
+                .header(AUTHORIZATION, tokenManager.getAccessToken())
                 .when()
                 .pathParam("_id", id)
                 .put(path)

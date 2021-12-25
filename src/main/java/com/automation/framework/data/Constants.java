@@ -6,6 +6,7 @@ package com.automation.framework.data;
 public class Constants {
 
     public static final String TEST_RESOURCE = "";
+    public static final String SPACE = " ";
 
     //API Related Constants
     public static final String CONTENT_TYPE_JSON_CHARSET_UTF8 = "application/json;charset=utf-8";
@@ -21,6 +22,7 @@ public class Constants {
     public static final String X_RATE_LIMIT_LIMIT = "X-RateLimit-Limit";
     public static final String X_RATE_LIMIT_REMAINING = "X-RateLimit-Remaining";
     public static final String X_RATE_LIMIT_RESET = "X-RateLimit-Reset";
+    public static final String SPOTIFY_CLIENT_ID = "d05041af758d44a39037ba8a77e8743a";
 
     public static final String CLIENT_ID = "client_id";
     public static final String CLIENT_SECRET = "client_secret";
@@ -28,6 +30,7 @@ public class Constants {
     public static final String REFRESH_TOKEN = "refresh_token";
     public static final String ACCESS_TOKEN = "access_token";
     public static final String REDIRECT_URI = "redirect_uri";
+    public static final String EXPIRY_TIME = "expires_in";
 
     //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";

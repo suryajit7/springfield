@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class PlaylistService extends RestResource {
 
-
     public Response getPlaylist(String id){
         return get("/playlists/{_id}", id);
     }
