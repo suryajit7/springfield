@@ -1,4 +1,4 @@
-package com.automation.framework.core.config;
+package com.automation.framework.core.setup;
 
 import com.automation.framework.service.SpecBuilder;
 import io.restassured.response.Response;

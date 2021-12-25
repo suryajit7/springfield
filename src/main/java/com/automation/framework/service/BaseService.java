@@ -2,7 +2,7 @@ package com.automation.framework.service;
 
 import com.automation.framework.core.Kernel;
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.core.config.TokenManager;
+import com.automation.framework.core.setup.TokenManager;
 import com.automation.framework.data.entity.app.spotify.Playlist;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;

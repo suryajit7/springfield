@@ -1,4 +1,4 @@
-package com.automation.framework.core.config;
+package com.automation.framework.core.setup;
 
 import com.automation.framework.core.annotation.LazyConfiguration;
 import org.openqa.selenium.WebDriver;

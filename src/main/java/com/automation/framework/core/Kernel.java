@@ -1,7 +1,7 @@
 package com.automation.framework.core;
 
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.core.config.TokenManager;
+import com.automation.framework.core.setup.TokenManager;
 import com.automation.framework.util.service.PropertyDecryptService;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
