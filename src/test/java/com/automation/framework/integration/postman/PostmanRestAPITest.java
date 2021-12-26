@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class PostmanTest extends AutomationSuiteApplicationTests {
+public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
 
     private Postman requestPostman;
     private Postman requestPayload;

@@ -32,7 +32,6 @@ public class AutomationSuiteApplicationTests {
 
 	protected Log logger;
 
-
 	@LazyAutowired
 	protected Faker faker;
 

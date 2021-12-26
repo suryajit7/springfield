@@ -2,7 +2,6 @@ package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.service.SpecBuilder;
-import com.automation.framework.util.PathFinder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import org.junit.jupiter.api.Order;
@@ -24,9 +23,6 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
 
 public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
-
-    @Autowired
-    private PathFinder pathFinder;
 
     @Autowired
     private SpecBuilder specBuilder;

@@ -2,6 +2,7 @@ package com.automation.framework.core;
 
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.setup.TokenManager;
+import com.automation.framework.service.SpecBuilder;
 import com.automation.framework.util.service.PropertyDecryptService;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
@@ -43,6 +44,9 @@ public class Kernel {
 
     @LazyAutowired
     protected TokenManager tokenManager;
+
+    @LazyAutowired
+    protected SpecBuilder specBuilder;
 
     @Value("${default.timeout:50}")
     protected int timeout;

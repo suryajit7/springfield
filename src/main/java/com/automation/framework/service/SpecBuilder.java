@@ -1,6 +1,7 @@
 package com.automation.framework.service;
 
 
+import com.automation.framework.core.Kernel;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
@@ -19,7 +20,7 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
 @Slf4j
 @Component
-public class SpecBuilder extends BaseService {
+public class SpecBuilder extends Kernel {
 
     @Value("${app.spotify.url}")
     private String spotifyUrl;

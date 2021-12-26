@@ -1,8 +1,5 @@
 package com.automation.framework.service;
 
-import com.automation.framework.core.Kernel;
-import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.core.setup.TokenManager;
 import com.automation.framework.data.entity.app.spotify.Playlist;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
@@ -15,52 +12,49 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
 @Component
-public class BaseService extends Kernel {
+public class BaseService extends SpecBuilder {
 
     public static final String RESOURCE_ID = "resource_ID";
 
-    @LazyAutowired
-    private TokenManager tokenManager;
-
     public Response get(String path, String id){
 
-        return given(tokenManager.getRequestSpec())
-                .header(AUTHORIZATION, tokenManager.generateAccessToken())
+        return given(getRequestSpec())
+                .header(AUTHORIZATION, tokenManager.generateAccessToken(postAccount()))
                 .when()
                 .pathParam(RESOURCE_ID, id)
                 .get(path)
                 .then()
-                .spec(tokenManager.getResponseSpec())
+                .spec(getResponseSpec())
                 .extract().response();
     }
 
     public Response get(String path){
 
-        return given(tokenManager.getPostmanRequestSpec())
+        return given(getPostmanRequestSpec())
                 .when()
                 .get(path)
                 .then()
-                .spec(tokenManager.getResponseSpec())
+                .spec(getResponseSpec())
                 .extract().response();
     }
 
     public Response post(String path, String id, Playlist requestPlaylist, Boolean expiredToken){
 
-        return given(tokenManager.getRequestSpec())
+        return given(getRequestSpec())
                 .body(requestPlaylist)
-                .header(AUTHORIZATION, expiredToken ? decryptService.getSpotifyAccessToken(expiredToken) : tokenManager.generateAccessToken())
+                .header(AUTHORIZATION, expiredToken ? decryptService.getSpotifyAccessToken(expiredToken) : tokenManager.generateAccessToken(postAccount()))
                 .pathParam(RESOURCE_ID, id)
                 .post(path)
                 .then()
-                .spec(tokenManager.getResponseSpec())
+                .spec(getResponseSpec())
                 .extract().response();
     }
 
     public Response postAccount(){
 
-        Response response = given(tokenManager.getAccountSpec())
+        Response response = given(getAccountSpec())
                 .when().post("/api/token")
-                .then().spec(tokenManager.getResponseSpec())
+                .then().spec(getResponseSpec())
                 .extract().response();
 
         assertThat(response.statusCode())
@@ -74,43 +68,43 @@ public class BaseService extends Kernel {
 
     public Response update(String path, String id, Playlist requestPlaylist){
 
-        return given(tokenManager.getRequestSpec())
+        return given(getRequestSpec())
                 .body(requestPlaylist)
-                .header(AUTHORIZATION, tokenManager.generateAccessToken())
+                .header(AUTHORIZATION, tokenManager.generateAccessToken(postAccount()))
                 .when()
                 .pathParam(RESOURCE_ID, id)
                 .put(path)
                 .then()
-                .spec(tokenManager.getResponseSpec())
+                .spec(getResponseSpec())
                 .extract().response();
     }
 
 
     //TODO: Modify this request as common post
     public Response post(String path, Object requestPayload){
-        return given(tokenManager.getPostmanRequestSpec())
+        return given(getPostmanRequestSpec())
                 .body(requestPayload)
                 .post(path)
-                .then().spec(tokenManager.getPostmanResponseSpec())
+                .then().spec(getPostmanResponseSpec())
                 .extract().response();
     }
 
     //TODO: Modify this request as common put
     public Response put(String path, String id, Object requestPayload){
-        return given(tokenManager.getPostmanRequestSpec())
+        return given(getPostmanRequestSpec())
                 .body(requestPayload)
                 .pathParam(RESOURCE_ID, id)
                 .put(path)
-                .then().spec(tokenManager.getPostmanResponseSpec())
+                .then().spec(getPostmanResponseSpec())
                 .extract().response();
     }
 
     //TODO: Modify this request as common delete
     public Response delete(String path, String id){
-        return given(tokenManager.getPostmanRequestSpec())
+        return given(getPostmanRequestSpec())
                 .pathParam(RESOURCE_ID, id)
                 .delete(path)
-                .then().spec(tokenManager.getPostmanResponseSpec())
+                .then().spec(getPostmanResponseSpec())
                 .extract().response();
     }
 
