@@ -8,21 +8,28 @@ import com.automation.framework.data.entity.app.ems.User;
 import com.automation.framework.data.entity.app.fnb.BreakfastMenu;
 import com.automation.framework.data.entity.app.library.Catalog;
 import com.automation.framework.data.entity.app.postman.Postman;
+import com.automation.framework.data.entity.app.postman.Workspace;
 import com.automation.framework.data.entity.app.spotify.*;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
 import java.util.List;
 
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Jacksonized
+@JsonInclude(NON_NULL)
 @JacksonXmlRootElement(localName = "BaseEntity")
 @Root(name = "BaseEntity")
 public class BaseEntity {
@@ -32,6 +39,7 @@ public class BaseEntity {
     List<Department> departments;
     List<User> users;
     List<Postman> postmen;
+    List<Workspace> workspaces;
     List<ExternalUrl> externalUrls;
     List<Follower> followers;
     List<Owner> owners;

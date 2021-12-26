@@ -17,6 +17,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Component
 public class BaseService extends Kernel {
 
+    public static final String RESOURCE_ID = "resource_Id";
+
     @LazyAutowired
     private TokenManager tokenManager;
 
@@ -25,7 +27,17 @@ public class BaseService extends Kernel {
         return given(tokenManager.getRequestSpec())
                 .header(AUTHORIZATION, tokenManager.generateAccessToken())
                 .when()
-                .pathParam("_id", id)
+                .pathParam("resource_Id", id)
+                .get(path)
+                .then()
+                .spec(tokenManager.getResponseSpec())
+                .extract().response();
+    }
+
+    public Response get(String path){
+
+        return given(tokenManager.getPostmanRequestSpec())
+                .when()
                 .get(path)
                 .then()
                 .spec(tokenManager.getResponseSpec())
@@ -37,8 +49,7 @@ public class BaseService extends Kernel {
         return given(tokenManager.getRequestSpec())
                 .body(requestPlaylist)
                 .header(AUTHORIZATION, expiredToken ? decryptService.getSpotifyAccessToken(expiredToken) : tokenManager.generateAccessToken())
-                .when()
-                .pathParam("_id", id)
+                .pathParam(RESOURCE_ID, id)
                 .post(path)
                 .then()
                 .spec(tokenManager.getResponseSpec())
@@ -74,6 +85,34 @@ public class BaseService extends Kernel {
                 .extract().response();
     }
 
+
+    //TODO: Modify this request as common post
+    public Response post(String path, Object requestPayload){
+        return given(tokenManager.getPostmanRequestSpec())
+                .body(requestPayload)
+                .post(path)
+                .then().spec(tokenManager.getPostmanResponseSpec())
+                .extract().response();
+    }
+
+    //TODO: Modify this request as common put
+    public Response put(String path, String id, Object requestPayload){
+        return given(tokenManager.getPostmanRequestSpec())
+                .body(requestPayload)
+                .pathParam(RESOURCE_ID, id)
+                .put(path)
+                .then().spec(tokenManager.getPostmanResponseSpec())
+                .extract().response();
+    }
+
+    //TODO: Modify this request as common delete
+    public Response delete(String path, String id){
+        return given(tokenManager.getPostmanRequestSpec())
+                .pathParam(RESOURCE_ID, id)
+                .delete(path)
+                .then().spec(tokenManager.getPostmanResponseSpec())
+                .extract().response();
+    }
 
 
 }

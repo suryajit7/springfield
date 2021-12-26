@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Value;
 @LazyService
 public class PropertyDecryptService {
 
+    @Value("${app.postman.key}")
+    private String postmanKey;
+
     @Value("${app.spotify.client-secret}")
     private String spotifyClientSecret;
 
@@ -18,6 +21,10 @@ public class PropertyDecryptService {
     @Value("${app.spotify.expired-key}")
     private String spotifyExpiredAccessToken;
 
+    public String getPostmanKey() {
+        return postmanKey;
+    }
+
     public String getSpotifyClientSecret() {
         return spotifyClientSecret;
     }
@@ -25,7 +32,6 @@ public class PropertyDecryptService {
     public String getSpotifyRefreshToken() {
         return spotifyRefreshToken;
     }
-
 
     public String getSpotifyAccessToken(Boolean expiredToken) {
         return expiredToken ? spotifyExpiredAccessToken : spotifyAccessToken;

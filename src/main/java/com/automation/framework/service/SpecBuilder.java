@@ -15,6 +15,7 @@ import static com.automation.framework.data.Constants.*;
 import static io.restassured.filter.log.LogDetail.ALL;
 import static io.restassured.http.ContentType.JSON;
 import static io.restassured.http.ContentType.URLENC;
+import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
 @Slf4j
 @Component
@@ -26,8 +27,12 @@ public class SpecBuilder extends BaseService{
     @Value("${app.spotify.accounts.url}")
     private String spotifyAccountsUrl;
 
+    @Value("${app.postman.url}")
+    private String postmanUrl;
+
     public RequestSpecification getRequestSpec(){
-        return new RequestSpecBuilder()
+        RequestSpecification requestSpecification = null;
+        return requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(spotifyUrl)
                 .setBasePath("/v1")
                 .setContentType(JSON)
@@ -35,12 +40,32 @@ public class SpecBuilder extends BaseService{
     }
 
     public ResponseSpecification getResponseSpec(){
-        return new ResponseSpecBuilder()
+        ResponseSpecification responseSpec = null;
+        return responseSpec = new ResponseSpecBuilder()
+                .log(ALL).build();
+    }
+
+    public RequestSpecification getPostmanRequestSpec(){
+        RequestSpecification requestSpecification = null;
+        return requestSpecification = new RequestSpecBuilder()
+                .setBaseUri(postmanUrl)
+                .addHeader(X_API_KEY_HEADER, decryptService.getPostmanKey())
+                .setContentType(JSON)
+                .log(ALL).build();
+    }
+
+    public ResponseSpecification getPostmanResponseSpec(){
+        ResponseSpecification responseSpec = null;
+        return responseSpec = new ResponseSpecBuilder()
+                .expectStatusCode(SC_SUCCESS)
+                .expectContentType(JSON)
                 .log(ALL).build();
     }
 
     public RequestSpecification getAccountSpec(){
-        return new RequestSpecBuilder()
+        RequestSpecification requestSpecification = null;
+
+        return requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(spotifyAccountsUrl)
                 .addFormParams(getFormParams())
                 .setContentType(URLENC)
@@ -50,7 +75,7 @@ public class SpecBuilder extends BaseService{
     public HashMap<String, String> getFormParams() {
 
         HashMap<String, String> formParams = new HashMap<>();
-
+        formParams.clear();
         formParams.put(CLIENT_ID, SPOTIFY_CLIENT_ID);
         formParams.put(CLIENT_SECRET, decryptService.getSpotifyClientSecret());
         formParams.put(REFRESH_TOKEN, decryptService.getSpotifyRefreshToken());

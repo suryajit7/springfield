@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Jacksonized
 @JsonInclude(NON_NULL)
 public class Playlist {
 
@@ -40,4 +42,11 @@ public class Playlist {
 
     private Error error;
 
+    public Playlist getPlaylist(String name, String description, Boolean isPublic) {
+        return Playlist.builder()
+                .name(name)
+                .description(description)
+                .isPublic(isPublic)
+                .build();
+    }
 }
