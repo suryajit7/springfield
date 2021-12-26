@@ -1,9 +1,9 @@
 package com.automation.framework.util;
 
 
+import com.automation.framework.core.annotation.LazyService;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 @Slf4j
-@Component
+@LazyService
 public class PathFinder {
 
     @SneakyThrows

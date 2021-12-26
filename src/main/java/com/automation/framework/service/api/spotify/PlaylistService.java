@@ -11,19 +11,19 @@ import lombok.extern.slf4j.Slf4j;
 public class PlaylistService extends BaseService {
 
     public Response getPlaylist(String id){
-        return get("/playlists/{resource_id}", id);
+        return get("/playlists/{resource_ID}", id);
     }
 
     public Response getUserId(String id) {
-        return get("/users/{resource_id}/playlists", id);
+        return get("/users/{resource_ID}/playlists", id);
     }
 
     public Response post(String id, Playlist requestPlaylist, Boolean expiredToken){
-        return post("/users/{resource_id}/playlists", id, requestPlaylist, expiredToken);
+        return post("/users/{resource_ID}/playlists", id, requestPlaylist, expiredToken);
     }
 
     public Response update(String id, Playlist requestPlaylist){
-        return update("/playlists/{resource_id}", id, requestPlaylist);
+        return update("/playlists/{resource_ID}", id, requestPlaylist);
     }
 
 

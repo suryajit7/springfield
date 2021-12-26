@@ -20,6 +20,7 @@ import lombok.extern.jackson.Jacksonized;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
+import javax.persistence.Transient;
 import java.util.List;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
@@ -34,11 +35,14 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @Root(name = "BaseEntity")
 public class BaseEntity {
 
+
     List<Employee> employees;
     List<Company> companies;
     List<Department> departments;
     List<User> users;
+    @Transient
     List<Postman> postmen;
+    @Transient
     List<Workspace> workspaces;
     List<ExternalUrl> externalUrls;
     List<Follower> followers;

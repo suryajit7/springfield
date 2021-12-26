@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Component
 public class BaseService extends Kernel {
 
-    public static final String RESOURCE_ID = "resource_Id";
+    public static final String RESOURCE_ID = "resource_ID";
 
     @LazyAutowired
     private TokenManager tokenManager;
@@ -27,7 +27,7 @@ public class BaseService extends Kernel {
         return given(tokenManager.getRequestSpec())
                 .header(AUTHORIZATION, tokenManager.generateAccessToken())
                 .when()
-                .pathParam("resource_Id", id)
+                .pathParam(RESOURCE_ID, id)
                 .get(path)
                 .then()
                 .spec(tokenManager.getResponseSpec())
@@ -78,7 +78,7 @@ public class BaseService extends Kernel {
                 .body(requestPlaylist)
                 .header(AUTHORIZATION, tokenManager.generateAccessToken())
                 .when()
-                .pathParam("_id", id)
+                .pathParam(RESOURCE_ID, id)
                 .put(path)
                 .then()
                 .spec(tokenManager.getResponseSpec())

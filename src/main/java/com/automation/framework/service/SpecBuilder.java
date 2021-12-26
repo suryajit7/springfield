@@ -19,7 +19,7 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
 @Slf4j
 @Component
-public class SpecBuilder extends BaseService{
+public class SpecBuilder extends BaseService {
 
     @Value("${app.spotify.url}")
     private String spotifyUrl;

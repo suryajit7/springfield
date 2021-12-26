@@ -1,6 +1,9 @@
 package com.automation.framework;
 
 
+import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.util.FileReader;
+import com.automation.framework.util.PathFinder;
 import com.github.javafaker.Faker;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
@@ -11,7 +14,6 @@ import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.parallel.Isolated;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
@@ -30,8 +32,15 @@ public class AutomationSuiteApplicationTests {
 
 	protected Log logger;
 
-	@Autowired
+
+	@LazyAutowired
 	protected Faker faker;
+
+	@LazyAutowired
+	protected PathFinder pathFinder;
+
+	@LazyAutowired
+	protected FileReader fileReader;
 
 	@Value("${app.postman.url}")
 	protected String postmanUrl;

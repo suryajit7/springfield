@@ -6,7 +6,6 @@ import com.automation.framework.data.entity.BaseEntity;
 import com.automation.framework.data.entity.app.postman.Postman;
 import com.automation.framework.data.entity.app.postman.Workspace;
 import com.automation.framework.service.api.spotify.PostmanService;
-import com.automation.framework.util.FileReader;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
 
@@ -30,8 +29,6 @@ public class PostmanTest extends AutomationSuiteApplicationTests {
     @LazyAutowired
     private PostmanService postmanService;
 
-    @LazyAutowired
-    private FileReader fileReader;
 
     @BeforeAll
     public void setupTestData(){
@@ -69,22 +66,21 @@ public class PostmanTest extends AutomationSuiteApplicationTests {
 
         Response getResponse = postmanService.getWorkspaces();
 
-        List<Workspace> workspaces = getResponse.as(BaseEntity.class).getWorkspaces();
-
-        logger.info(workspaces);
+        BaseEntity postmen = getResponse.as(BaseEntity.class);
 
         assertThat(getResponse.statusCode(), equalTo(SC_SUCCESS));
-        assertThat(workspaces).isNotNull();
+        assertThat(postmen).isNotNull();
 
-        workspaces.forEach(workspace -> {
+        postmen.getWorkspaces().forEach(workspace -> {
             assertThat(workspace.getId()).isNotNull();
             assertThat(workspace.getName()).isNotNull();
             assertThat(workspace.getType()).isNotNull();
         });
 
-        assertThat(workspaces.stream().map(Workspace::getName).collect(Collectors.toList()))
+        assertThat(postmen.getWorkspaces().stream().map(Workspace::getName).collect(Collectors.toList()))
                 .contains("MyWorkspace")
                 .isNotNull();
+
     }
 
     @Test
@@ -146,6 +142,7 @@ public class PostmanTest extends AutomationSuiteApplicationTests {
 
         assertThat(updatedWorkspace).isNullOrEmpty();
     }
+
 
 
 
