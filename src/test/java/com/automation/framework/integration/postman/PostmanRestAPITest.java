@@ -5,7 +5,7 @@ import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.BaseEntity;
 import com.automation.framework.data.entity.app.postman.Postman;
 import com.automation.framework.data.entity.app.postman.Workspace;
-import com.automation.framework.service.api.spotify.PostmanService;
+import com.automation.framework.service.api.postman.PostmanService;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
 

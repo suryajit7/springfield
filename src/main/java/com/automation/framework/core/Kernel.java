@@ -1,9 +1,9 @@
 package com.automation.framework.core;
 
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.core.setup.TokenManager;
 import com.automation.framework.service.SpecBuilder;
-import com.automation.framework.util.service.PropertyDecryptService;
+import com.automation.framework.util.PropertyDecryptService;
+import com.automation.framework.util.TokenService;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -14,6 +14,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import javax.annotation.PostConstruct;
 import java.util.Arrays;
@@ -24,6 +25,7 @@ import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 /**
  * The WebDriver and Wait instances are managed by Spring.
  */
+@ComponentScan
 public class Kernel {
 
     protected Log logger;
@@ -43,7 +45,7 @@ public class Kernel {
     protected Faker faker;
 
     @LazyAutowired
-    protected TokenManager tokenManager;
+    protected TokenService tokenService;
 
     @LazyAutowired
     protected SpecBuilder specBuilder;

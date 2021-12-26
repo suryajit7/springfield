@@ -1,17 +1,16 @@
-package com.automation.framework.core.setup;
+package com.automation.framework.util;
 
+import com.automation.framework.core.annotation.LazyService;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 
 import java.time.Instant;
 
 import static com.automation.framework.data.Constants.*;
 
-
 @Slf4j
-@Component
-public class TokenManager {
+@LazyService
+public class TokenService {
 
     private static String accessToken;
     private static Instant expiryTime;

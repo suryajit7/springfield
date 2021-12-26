@@ -1,4 +1,4 @@
-package com.automation.framework.service.api.spotify;
+package com.automation.framework.service.api.postman;
 
 import com.automation.framework.core.annotation.LazyService;
 import com.automation.framework.data.entity.app.postman.Postman;

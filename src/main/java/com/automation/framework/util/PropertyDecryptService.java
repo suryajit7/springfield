@@ -1,4 +1,4 @@
-package com.automation.framework.util.service;
+package com.automation.framework.util;
 
 import com.automation.framework.core.annotation.LazyService;
 import org.springframework.beans.factory.annotation.Value;

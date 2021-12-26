@@ -1,4 +1,4 @@
-package com.automation.framework.util.service;
+package com.automation.framework.util;
 
 import com.automation.framework.core.annotation.LazyService;
 import lombok.extern.slf4j.Slf4j;

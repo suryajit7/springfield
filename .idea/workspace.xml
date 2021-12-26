@@ -5,21 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fb4130f-b789-4823-bf80-41021ff87aaf" name="Changes" comment="Commit119: Major Refactoring">
+      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/spotify/SpotifySpecBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest2/googleSearchTesttest2test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/WindowSwitchTest/setuppass method namepass method name.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/PathFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/PathFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/ScreenshotHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/ScreenshotHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/WindowSwitchHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/WindowSwitchHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/PropertyDecryptService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/ScreenshotService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/service/WindowSwitchService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/setup/TokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/setup/TokenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/setup/TokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/TokenService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/spotify/PostmanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/postman/PostmanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/CommonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/ScreenshotHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/ScreenshotHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/WindowSwitchHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/WindowSwitchHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/PropertyDecryptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PropertyDecryptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/ScreenshotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/ScreenshotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/service/WindowSwitchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/WindowSwitchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/googleSearchTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/googleSearchTest.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +153,9 @@
       <recent name="C:\code\automation-suite\src\test\resources" />
       <recent name="C:\code\automation-suite\src\test\resources\datasets" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.automation.framework.service.api" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.integration in automation-suite.test">
     <configuration name="PostmanAPITestScenarios" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -154,39 +170,6 @@
       <option name="PACKAGE_NAME" value="com.automation.framework.integration.postman" />
       <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.postman.PostmanAPITestScenarios" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostmanRestAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.postman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.postman" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.postman.PostmanRestAPITest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostmanRestAPITest.validateDeleteWorkspaceRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.postman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.postman" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.postman.PostmanRestAPITest" />
-      <option name="METHOD_NAME" value="validateDeleteWorkspaceRequest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,9 +207,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.automation.framework.gui" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.gui" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -237,17 +248,17 @@
       <item itemvalue="Gradle.automation-suite [dependencies]" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="JUnit.PostmanAPITestScenarios" />
-      <item itemvalue="JUnit.PostmanRestAPITest" />
       <item itemvalue="JUnit.PostmanRestAPITest.verifyGetRequestForPostmanWorkspaces" />
-      <item itemvalue="JUnit.PostmanRestAPITest.validateDeleteWorkspaceRequest" />
+      <item itemvalue="TestNG.com.automation.framework.gui" />
+      <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.integration in automation-suite.test" />
+        <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
+        <item itemvalue="TestNG.com.automation.framework.gui" />
         <item itemvalue="JUnit.PostmanAPITestScenarios" />
         <item itemvalue="JUnit.PostmanRestAPITest.verifyGetRequestForPostmanWorkspaces" />
-        <item itemvalue="JUnit.PostmanRestAPITest" />
-        <item itemvalue="JUnit.PostmanRestAPITest.validateDeleteWorkspaceRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -259,20 +270,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635843585992</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Commit83: Updating dependencies">
-      <created>1636635774142</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1636635774142</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Commit84: Added API test example for Json Schema Validation.">
-      <created>1636635836176</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1636635836176</updated>
     </task>
     <task id="LOCAL-00011" summary="Commit85: Added RandomUtils for generating random data and also a dummy class for BaseService.">
       <created>1636777715234</created>
@@ -603,7 +600,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640523326305</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Commit121: Major Refactoring along with fixing Postman and Spotify API tests.">
+      <created>1640527259246</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1640527259246</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Commit122: Small change">
+      <created>1640527858906</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1640527858907</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -613,8 +624,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit98: Updated libraries" />
-    <MESSAGE value="Commit100: Added Encryption feature to framework" />
     <MESSAGE value="Commit101: Refactoring" />
     <MESSAGE value="Commit102: Added Spotify API Tests" />
     <MESSAGE value="Commit103: Adding Spotify Pojos" />
@@ -638,7 +647,9 @@
     <MESSAGE value="Commit120: Minor Refactoring" />
     <MESSAGE value="Commit120: Added Postman API Tests as per the Framework and refactored existing code." />
     <MESSAGE value="Commit120: Major Refactoring along with fixing Postman and Spotify API tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit120: Major Refactoring along with fixing Postman and Spotify API tests." />
+    <MESSAGE value="Commit121: Major Refactoring along with fixing Postman and Spotify API tests." />
+    <MESSAGE value="Commit122: Small change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit122: Small change" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
