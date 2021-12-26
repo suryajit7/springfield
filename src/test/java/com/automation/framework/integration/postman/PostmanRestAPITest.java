@@ -17,10 +17,10 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
 
-    private Postman requestPostman;
     private Postman requestPayload;
     private Postman payload;
     private String resourceID;
@@ -29,10 +29,9 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     @LazyAutowired
     private PostmanService postmanService;
 
-
     @BeforeAll
     public void setupTestData(){
-        requestPostman = new Postman();
+
         requestPayload = fileReader.readJsonFile(POSTMAN_WORKSPACE_DATA)
                 .getPostmen().get(0);
 
@@ -130,8 +129,8 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
 
         Response updateResponse = postmanService.delete(resourceID);
 
-        updateResponse.as(Postman.class).getWorkspace()
-                .getId().equalsIgnoreCase(resourceID);
+        assertTrue(updateResponse.as(Postman.class).getWorkspace()
+                .getId().equalsIgnoreCase(resourceID));
 
         assertThat(updateResponse.statusCode(), equalTo(SC_SUCCESS));
 
