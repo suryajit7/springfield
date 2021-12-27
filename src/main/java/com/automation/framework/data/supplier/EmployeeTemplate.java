@@ -13,7 +13,7 @@ import org.testng.annotations.DataProvider;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.automation.framework.util.converter.PojoHelper.getObject;
+import static com.automation.framework.util.helper.converter.PojoHelper.getObject;
 
 /**
  * Test Data Supplier example using Fixture Template with Faker

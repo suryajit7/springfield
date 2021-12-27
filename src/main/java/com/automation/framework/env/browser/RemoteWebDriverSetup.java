@@ -1,4 +1,4 @@
-package com.automation.framework.env.setup;
+package com.automation.framework.env.browser;
 
 import com.automation.framework.core.annotation.LazyConfiguration;
 import com.automation.framework.core.annotation.ThreadScopeBean;

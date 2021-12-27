@@ -1,7 +1,7 @@
 package com.automation.framework.data.entity.app.ems;
 
-import com.automation.framework.util.converter.StringToBoolean;
-import com.automation.framework.util.converter.StringToInteger;
+import com.automation.framework.util.helper.converter.StringToBoolean;
+import com.automation.framework.util.helper.converter.StringToInteger;
 import com.creditdatamw.zerocell.annotation.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

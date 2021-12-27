@@ -1,9 +1,9 @@
-package com.automation.framework.env;
+package com.automation.framework.env.browser;
 
 public enum Browser {
 
     CHROME("chrome"), FIREFOX("firefox"), EDGE("edge"),
-    INTERNET_EXPLORER("ie"), GHOST("ghost");
+    INTERNET_EXPLORER("internet explorer"), GHOST("ghost");
 
     private final String stringValue;
 
