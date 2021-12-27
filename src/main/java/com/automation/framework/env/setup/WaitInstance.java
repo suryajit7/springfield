@@ -1,4 +1,4 @@
-package com.automation.framework.core.setup;
+package com.automation.framework.env.setup;
 
 import com.automation.framework.core.annotation.LazyConfiguration;
 import lombok.extern.slf4j.Slf4j;
