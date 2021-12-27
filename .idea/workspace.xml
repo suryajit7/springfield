@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/browser/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/setup/RemoteWebDriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/browser/RemoteWebDriverSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/setup/WaitInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/WaitInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/setup/WebDriverInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/browser/WebDriverInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/PojoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/PojoHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToBoolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToBoolean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/converter/StringToLocalDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToLocalDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/Integration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/AutomatedWebElementIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/analytics/AutomatedWebElementIdentification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/IdentifyTestRunCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/analytics/IdentifyTestRunCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/LogAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/analytics/LogAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/app/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/app/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/job/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/job/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/monitor/HealthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/monitor/HealthCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/browser/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/driver/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/browser/RemoteWebDriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/driver/RemoteWebDriverSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/browser/WebDriverInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/driver/WebDriverInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/env/container/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="suryajit7" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -92,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640619812853</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit126: Major Refactoring">
+      <created>1640622193082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640622193082</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,7 +95,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit125: Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit125: Refactoring" />
+    <MESSAGE value="Commit126: Major Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit126: Major Refactoring" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/automation_suite$com_automation_framework_data_supplier.ic" NAME="com.automation.framework.data.supplier Coverage Results" MODIFIED="1633708768936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

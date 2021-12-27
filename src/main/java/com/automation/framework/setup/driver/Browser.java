@@ -1,4 +1,4 @@
-package com.automation.framework.env.browser;
+package com.automation.framework.setup.driver;
 
 public enum Browser {
 
