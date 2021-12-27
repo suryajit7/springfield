@@ -15,6 +15,7 @@ public class BaseUtil {
     }
 
     @Bean
-    public Log getLogger(){ return LogFactory.getLog(getClass()); }
+    public Log getLogger(){
+        return LogFactory.getLog(getClass()); }
 
 }

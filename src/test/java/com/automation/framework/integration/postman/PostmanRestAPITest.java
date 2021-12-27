@@ -98,6 +98,8 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
         assertThat(workspace.getName())
                 .isNotNull()
                 .contains(requestPayload.getWorkspace().getName());
+
+        resourceID = workspace.getId();
     }
 
     @Test
@@ -121,6 +123,8 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
         assertThat(workspace.getName())
                 .isNotNull()
                 .contains(requestPayload.getWorkspace().getName());
+
+        resourceID = updatedWorkspace.getId();
     }
 
     @Test
