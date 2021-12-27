@@ -43,7 +43,7 @@ public class Users extends BasePage {
 
     public void enterUsername(String username) {
         wait.until(visibilityOfElementLocated(By.id(USERNAME_FIELD)));
-        enterText(this.username, username);
+        enterText(By.id(USERNAME_FIELD), username);
     }
 
     public void selectUserType(UserRole userRole) {
@@ -54,7 +54,7 @@ public class Users extends BasePage {
 
     public void enterEmployeeName(String employeeName) {
         wait.until(visibilityOfElementLocated(By.id(EMPLOYEE_NAME)));
-        enterText(this.employeeName, employeeName);
+        enterText(By.id(EMPLOYEE_NAME), employeeName);
     }
 
     public void selectUserStatus(Status status) {

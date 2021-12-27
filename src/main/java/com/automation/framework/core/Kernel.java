@@ -6,11 +6,11 @@ import com.automation.framework.util.PropertyDecryptService;
 import com.automation.framework.util.TokenService;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
@@ -28,7 +28,6 @@ import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 @ComponentScan
 public class Kernel {
 
-    protected Log logger;
     protected Actions actions;
     public PropertyDecryptService decryptService;
 
@@ -39,10 +38,16 @@ public class Kernel {
     protected WebDriverWait wait;
 
     @LazyAutowired
+    protected FluentWait<WebDriver> fluentWait;
+
+    @LazyAutowired
     protected ApplicationContext appCtx;
 
     @LazyAutowired
     protected Faker faker;
+
+    @LazyAutowired
+    protected Log logger;
 
     @LazyAutowired
     protected TokenService tokenService;
@@ -50,8 +55,11 @@ public class Kernel {
     @LazyAutowired
     protected SpecBuilder specBuilder;
 
-    @Value("${default.timeout:50}")
+    @Value("${wait.default.timeout:50}")
     protected int timeout;
+
+    @Value("${wait.polling.interval:10}")
+    protected int pollingInterval;
 
     @Value("${jasypt.encryptor.secret}")
     private String jasyptSecretValue;
@@ -59,8 +67,6 @@ public class Kernel {
     @PostConstruct
     protected void init() {
         System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
-
-        this.logger = LogFactory.getLog(getClass());
         this.decryptService = appCtx.getBean(PropertyDecryptService.class);
 
         if (!isJUnitTest()){

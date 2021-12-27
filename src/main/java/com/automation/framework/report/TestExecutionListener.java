@@ -75,6 +75,8 @@ public class TestExecutionListener implements ITestListener, IInvokedMethodListe
         ITestContext context = result.getTestContext();
         driver = (WebDriver) context.getAttribute(WEBDRIVER);
 
+
+
   /*      Shutterbug.shootPage(this.driver, Capture.FULL_SCROLL, SCROLL_TIMEOUT,true)
                 .withName("Failed_" + result.getMethod().getMethodName()).save(FAILED_SCREENSHOTS_DIR_PATH + localDate.format(formatter));
 
@@ -118,6 +120,7 @@ public class TestExecutionListener implements ITestListener, IInvokedMethodListe
 
     @Override
     public void onFinish(ITestContext context) {
+
         //logger.info("************************");
     }
 }

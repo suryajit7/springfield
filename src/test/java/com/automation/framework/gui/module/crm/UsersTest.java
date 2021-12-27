@@ -1,6 +1,6 @@
-package com.automation.framework.gui.module.opencart;
+package com.automation.framework.gui.module.crm;
 
-import com.automation.framework.gui.BaseTestNGTest;
+import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.app.hrm.LoginPanelPage;
 import com.automation.framework.page.app.hrm.MenuNavigationPage;
@@ -19,11 +19,8 @@ public class UsersTest extends BaseTestNGTest {
     @Value("${app.hrm.url}")
     private String url;
 
-    @Value("${app.hrm.username:demo}")
+    @Value("${app.hrm.username}")
     private String username;
-
-    @Value("${app.hrm.password:demo}")
-    private String password;
 
     @LazyAutowired
     private LoginPanelPage loginPanelPage;
@@ -37,7 +34,6 @@ public class UsersTest extends BaseTestNGTest {
     @BeforeClass
     public void setup() {
         this.loginPanelPage.goTo(url);
-        this.loginPanelPage.enterUsernameAndPassword(username, password);
         this.loginPanelPage.clickLoginButton();
     }
 

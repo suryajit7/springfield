@@ -1,6 +1,7 @@
 package com.automation.framework.page.app.google;
 
 import com.automation.framework.core.annotation.Page;
+import com.automation.framework.core.annotation.Screenshot;
 import com.automation.framework.page.BasePage;
 import lombok.Data;
 import org.openqa.selenium.WebElement;
@@ -30,13 +31,14 @@ public class GoogleSearchPage extends BasePage {
         goTo(url);
     }
 
+    @Screenshot
     public void performSearch(String input) {
         this.searchComponent.searchInGoogle(input);
     }
 
+    @Screenshot
     public void changeLanguage(){
         this.hindiLanguage.click();
-        waitForPageToLoad();
     }
 
 

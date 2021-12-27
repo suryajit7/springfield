@@ -1,6 +1,6 @@
-package com.automation.framework.gui.module.tdm;
+package com.automation.framework.integration;
 
-import com.automation.framework.gui.BaseTestNGTest;
+import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.data.entity.app.ems.Department;
 import com.automation.framework.data.entity.app.ems.Employee;
 import com.automation.framework.util.FileReader;
@@ -16,7 +16,7 @@ import java.nio.file.Files;
 import java.util.Properties;
 
 
-public class ReaderTest extends BaseTestNGTest {
+public class ReaderTest extends AutomationSuiteApplicationTests {
 
     @Autowired
     private FileReader fileReader;
@@ -57,7 +57,7 @@ public class ReaderTest extends BaseTestNGTest {
     public void verifyTestPropertiesFile() throws IOException {
 
         Properties property = PropertiesLoaderUtils.loadProperties(resourceLoader.getResource("property-test.properties"));
-        System.out.print(String.valueOf(property));
+        System.out.print(property);
     }
 
 

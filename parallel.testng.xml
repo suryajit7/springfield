@@ -5,7 +5,7 @@
         <parameter name="config" value="parallel.conf.json"/>
         <parameter name="environment" value="chrome"/>
         <classes>
-            <class name="com.automation.framework.gui.module.opencart.DashboardTest"/>
+            <class name="com.automation.framework.gui.module.opencart.OpenCartDashboardTest"/>
             <class name="com.automation.framework.gui.module.visa.VisaRegistrationTest"/>
             <class name="com.automation.framework.gui.module.google.GoogleSearchTest"/>
         </classes>
@@ -15,7 +15,7 @@
          <parameter name="config" value="parallel.conf.json"/>
          <parameter name="environment" value="firefox"/>
          <classes>
-             <class name="com.automation.framework.gui.module.opencart.DashboardTest"/>
+             <class name="com.automation.framework.gui.module.opencart.OpenCartDashboardTest"/>
              <class name="com.automation.framework.gui.module.visa.VisaRegistrationTest"/>
              <class name="com.automation.framework.gui.module.google.GoogleSearchTest"/>
          </classes>
@@ -25,7 +25,7 @@
          <parameter name="config" value="parallel.conf.json"/>
          <parameter name="environment" value="safari"/>
          <classes>
-             <class name="com.automation.framework.gui.module.opencart.DashboardTest"/>
+             <class name="com.automation.framework.gui.module.opencart.OpenCartDashboardTest"/>
              <class name="com.automation.framework.gui.module.visa.VisaRegistrationTest"/>
              <class name="com.automation.framework.gui.module.google.GoogleSearchTest"/>
          </classes>

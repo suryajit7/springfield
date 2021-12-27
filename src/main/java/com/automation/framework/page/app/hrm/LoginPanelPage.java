@@ -25,11 +25,11 @@ public class LoginPanelPage extends BasePage {
     private WebElement login;
 
     public void enterUsername(String username) {
-        enterText(this.username, username);
+        enterText(By.id(USERNAME_FIELD), username);
     }
 
     public void enterPassword(String password) {
-        enterText(this.password, password);
+        enterText(By.id(PASSWORD_FIELD), password);
     }
 
     public void clickLoginButton() {
@@ -37,8 +37,8 @@ public class LoginPanelPage extends BasePage {
     }
 
 
-    public void enterUsernameAndPassword(String username, String password) {
+    public void enterCredentials(String username) {
         enterUsername(username);
-        enterPassword(password);
+        enterPassword(decryptService.getOrangeHrmPassword());
     }
 }

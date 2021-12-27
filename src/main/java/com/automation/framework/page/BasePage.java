@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class BasePage extends Kernel {
 
@@ -23,10 +24,10 @@ public class BasePage extends Kernel {
         logger.info("Switched to active WebElement.");
     }
 
-    public void enterText(WebElement webelement, String text) {
-        wait.until(visibilityOf(webelement)).click();
-        webelement.clear();
-        webelement.sendKeys(text);
+    public void enterText(By locator, String text) {
+        wait.until(visibilityOfElementLocated(locator)).click();
+        this.driver.findElement(locator).clear();
+        this.driver.findElement(locator).sendKeys(text);
         logger.info("Text entered: ".concat(text));
     }
 
@@ -37,8 +38,34 @@ public class BasePage extends Kernel {
     }
 
     public void waitForPageToLoad() {
-        wait.until(webDriver -> ((JavascriptExecutor) this.driver).executeScript("return document.readyState").toString().equals("complete"));
+        wait.until(webDriver -> ((JavascriptExecutor) this.driver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete")
+                && ((Boolean) ((JavascriptExecutor) this.driver).executeScript("return jQuery.active == 0")));
     }
+
+
+    public Boolean isElementLoaded(By locator){
+        return !getWebElements(this.driver.findElements(locator), locator).isEmpty();
+    }
+
+    private List<WebElement> getWebElements(List<WebElement> webElementList, By locator) {
+        waitForPageToLoad();
+       /* try {
+
+            await()
+                    .dontCatchUncaughtExceptions()
+                    .ignoreExceptions()
+                    .atMost(timeout, SECONDS)
+                    .pollInterval(pollingInterval, SECONDS)
+                    .until(() -> this.wait.until(visibilityOfAllElements(webElementList)));
+        } catch(StaleElementReferenceException exception) {
+
+        }*/
+        return this.driver.findElements(locator);
+    }
+
+  /*  private Callable<ExpectedCondition> getVisibilityStatusOfElements(List<WebElement> elements) {
+        return () -> refreshed(visibilityOfAllElements(elements)).apply(elements).andThen(elements.isEmpty());
+    }*/
 
 
     public void moveToElementAndClick(WebElement webelement) {

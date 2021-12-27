@@ -1,4 +1,4 @@
-package com.automation.framework.util.helper;
+package com.automation.framework.core.aspect;
 
 import com.automation.framework.core.annotation.Window;
 import com.automation.framework.util.WindowSwitchService;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class WindowSwitchHelper {
+public class WindowSwitchAspect {
 
     @Autowired
     private ApplicationContext applicationContext;

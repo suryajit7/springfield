@@ -1,4 +1,4 @@
-package com.automation.framework.util.helper;
+package com.automation.framework.core.aspect;
 
 import com.automation.framework.core.annotation.Screenshot;
 import com.automation.framework.util.ScreenshotService;
@@ -13,7 +13,7 @@ import static com.automation.framework.report.TestExecutionListener.getTestMetho
 
 @Aspect
 @Component
-public class ScreenshotHelper {
+public class ScreenshotAspect {
 
     @Autowired
     private ScreenshotService screenshotService;

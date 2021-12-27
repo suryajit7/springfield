@@ -36,6 +36,9 @@ public class Constants {
     public static final String EXPIRY_TIME = "expires_in";
     public static final String API_KEY = "apiKey";
 
+    //Selenium related constants
+
+
     //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
     public static final String NAME_REGEX = "/^[a-z ,.'-]+$/i";

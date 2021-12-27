@@ -34,15 +34,14 @@ public class Login extends BasePage {
 
 
     public void enterUsername() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(USERNAME_ID)));
-        this.usernameId.click();
-        enterText(this.usernameId, "");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(USERNAME_ID))).click();
+        enterText(By.id(USERNAME_ID), "");
     }
 
     public void enterPassword() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PASSWORD_ID)));
         this.passwordId.click();
-        enterText(this.passwordId, "");
+        enterText(By.id(USERNAME_ID), "");
     }
 
     public void enterUsernameAndPassword() {
