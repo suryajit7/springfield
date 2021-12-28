@@ -1,5 +1,6 @@
 package com.automation.framework.util;
 
+import com.automation.framework.core.annotation.LazyService;
 import com.automation.framework.data.FileType;
 import com.automation.framework.data.entity.BaseEntity;
 import com.creditdatamw.zerocell.Reader;
@@ -9,12 +10,11 @@ import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.logging.Log;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,12 +32,14 @@ import static com.automation.framework.data.FileType.*;
  * All methods will either return a List of objects deserialized from given file or a List of String.
  */
 
-@Slf4j
-@Service
+@LazyService
 public class FileReader {
 
     @Autowired
     private PathFinder pathFinder;
+
+    @Autowired
+    private Log logger;
 
     public File readFile(String filename) {
         return pathFinder.getFilePathForFile(filename).toFile();

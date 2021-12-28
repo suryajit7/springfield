@@ -67,6 +67,7 @@ dependencies {
 	implementation 'org.aeonbits.owner:owner:1.0.12'
 	implementation 'org.aspectj:aspectjweaver:1.9.8.RC3'
 	implementation 'aspectj:aspectjtools:1.5.4'
+	implementation 'com.github.automatedowl:chromedriver-js-errors-collector-testng:1.0.4'
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
