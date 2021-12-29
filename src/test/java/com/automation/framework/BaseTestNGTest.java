@@ -10,6 +10,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
+import java.util.Optional;
+
 
 @SpringBootTest
 @Listeners(TestExecutionListener.class)
@@ -28,11 +30,13 @@ public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
 
         logger.info("****** Tear Down Setup ******");
 
-        WebDriver driver = appCtx.getBean(WebDriver.class);
-
-        driver.quit();
-
-        logger.info("Quiting all browser instances.");
+        Optional<WebDriver> driver = Optional.ofNullable(appCtx.getBean(WebDriver.class));
+        if (driver.isPresent()){
+            driver.get().quit();
+            logger.info("Quiting all browser instances.");
+        } else {
+            logger.warn("WebDriver instance is empty during tearing down.");
+        }
         logger.info("****** Suite Tear Down ******");
     }
 
