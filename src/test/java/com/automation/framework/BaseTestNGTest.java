@@ -1,8 +1,8 @@
 package com.automation.framework;
 
+import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.report.TestExecutionListener;
 import org.openqa.selenium.WebDriver;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -15,8 +15,8 @@ import org.testng.annotations.Listeners;
 @Listeners(TestExecutionListener.class)
 public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
 
-    @Autowired
-    public ApplicationContext appCtx;
+    @LazyAutowired
+    protected ApplicationContext appCtx;
 
     @BeforeSuite(alwaysRun = true)
     public void setupSuite() {

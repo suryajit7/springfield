@@ -15,30 +15,32 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.automation.framework.data.Constants.BROWSER;
+import static com.automation.framework.data.Constants.RUNMODE;
 import static org.openqa.selenium.remote.CapabilityType.*;
 
 
 @LazyConfiguration
-@ConditionalOnProperty(name = "runmode", havingValue = "local")
+@ConditionalOnProperty(name = RUNMODE, havingValue = "local")
 public class WebDriverInstance {
 
 
     @ThreadScopeBean
-    @ConditionalOnProperty(name = "browser", havingValue = "chrome")
+    @ConditionalOnProperty(name = BROWSER, havingValue = "chrome")
     WebDriver getChromeInstance() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver(configureChromeOptions());
     }
 
     @ThreadScopeBean
-    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
+    @ConditionalOnProperty(name = BROWSER, havingValue = "firefox")
     WebDriver getGeckoInstance(){
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
     }
 
     @ThreadScopeBean
-    @ConditionalOnProperty(name = "browser", havingValue = "edge")
+    @ConditionalOnProperty(name = BROWSER, havingValue = "edge")
     WebDriver getEdgeInstance(){
         WebDriverManager.edgedriver().setup();
         return new EdgeDriver();

@@ -28,7 +28,7 @@ import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 @ComponentScan
 public class Kernel {
 
-    protected Actions actions;
+    public Actions actions;
     public PropertyDecryptService decryptService;
 
     @LazyAutowired
@@ -38,22 +38,22 @@ public class Kernel {
     public WebDriverWait wait;
 
     @LazyAutowired
-    protected FluentWait<WebDriver> fluentWait;
+    public FluentWait<WebDriver> fluentWait;
 
     @LazyAutowired
     public ApplicationContext appCtx;
 
     @LazyAutowired
-    protected Faker faker;
+    public Faker faker;
 
     @LazyAutowired
-    protected Log logger;
+    public Log logger;
 
     @LazyAutowired
-    protected TokenService tokenService;
+    public TokenService tokenService;
 
     @LazyAutowired
-    protected SpecBuilder specBuilder;
+    public SpecBuilder specBuilder;
 
     @Value("${wait.default.timeout:50}")
     protected int timeout;

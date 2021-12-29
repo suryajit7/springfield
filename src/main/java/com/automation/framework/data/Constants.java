@@ -7,6 +7,9 @@ public class Constants {
 
     public static final String TEST_RESOURCE = "";
     public static final String SPACE = " ";
+    public static final String BLANK = "";
+    public static final String BROWSER = "browser";
+    public static final String RUNMODE = "runmode";
 
     public static final String POSTMAN_WORKSPACE_DATA = "postmanWorkspaceData.json";
     public static final String POSTMAN_JSON_SCHEMA = "PostmanJsonSchema.json";

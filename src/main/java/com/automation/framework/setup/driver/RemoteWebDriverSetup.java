@@ -14,12 +14,14 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import static com.automation.framework.data.Constants.BROWSER;
+import static com.automation.framework.data.Constants.RUNMODE;
 import static org.openqa.selenium.remote.CapabilityType.BROWSER_NAME;
 import static org.openqa.selenium.remote.CapabilityType.BROWSER_VERSION;
 
 
 @LazyConfiguration
-@ConditionalOnProperty(name = "runmode", havingValue = "remote")
+@ConditionalOnProperty(name = RUNMODE, havingValue = "remote")
 public class RemoteWebDriverSetup {
 
 
@@ -29,7 +31,7 @@ public class RemoteWebDriverSetup {
     private URL url;
 
     @ThreadScopeBean
-    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
+    @ConditionalOnProperty(name = BROWSER, havingValue = "firefox")
     public WebDriver remoteFirefoxDriver() {
         return new RemoteWebDriver(this.url, DesiredCapabilities.firefox());
     }

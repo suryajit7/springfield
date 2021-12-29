@@ -14,10 +14,10 @@ import org.testng.annotations.Test;
 public class DashboardTest extends BaseTestNGTest {
 
     @Autowired
-    private LoginPanelPage login;
+    public LoginPanelPage login;
 
     @Autowired
-    private DashboardPage dashboardPage;
+    public DashboardPage dashboardPage;
 
     @Value("${app.hrm.url}")
     private String hrmUrl;
