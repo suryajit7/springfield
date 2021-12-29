@@ -32,16 +32,16 @@ public class Kernel {
     public PropertyDecryptService decryptService;
 
     @LazyAutowired
-    protected WebDriver driver;
+    public WebDriver driver;
 
     @LazyAutowired
-    protected WebDriverWait wait;
+    public WebDriverWait wait;
 
     @LazyAutowired
     protected FluentWait<WebDriver> fluentWait;
 
     @LazyAutowired
-    protected ApplicationContext appCtx;
+    public ApplicationContext appCtx;
 
     @LazyAutowired
     protected Faker faker;
@@ -65,7 +65,7 @@ public class Kernel {
     private String jasyptSecretValue;
 
     @PostConstruct
-    protected void init() {
+    public void init() {
         System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
         this.decryptService = appCtx.getBean(PropertyDecryptService.class);
 

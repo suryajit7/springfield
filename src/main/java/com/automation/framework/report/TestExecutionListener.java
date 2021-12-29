@@ -1,6 +1,9 @@
 package com.automation.framework.report;
 
 
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.*;
@@ -75,6 +78,8 @@ public class TestExecutionListener implements ITestListener, IInvokedMethodListe
         ITestContext context = result.getTestContext();
         driver = (WebDriver) context.getAttribute(WEBDRIVER);
 
+        saveFailureScreenShot(driver);
+
 
 
   /*      Shutterbug.shootPage(this.driver, Capture.FULL_SCROLL, SCROLL_TIMEOUT,true)
@@ -120,7 +125,12 @@ public class TestExecutionListener implements ITestListener, IInvokedMethodListe
 
     @Override
     public void onFinish(ITestContext context) {
-
         //logger.info("************************");
+    }
+
+
+    @Attachment
+    public byte[] saveFailureScreenShot(WebDriver driver) {
+        return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
     }
 }

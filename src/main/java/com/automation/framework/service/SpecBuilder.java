@@ -37,6 +37,7 @@ public class SpecBuilder extends Kernel {
                 .setBaseUri(spotifyUrl)
                 .setBasePath("/v1")
                 .setContentType(JSON)
+                //.addFilter(new AllureRestAssured())
                 .log(ALL).build();
     }
 
@@ -52,6 +53,7 @@ public class SpecBuilder extends Kernel {
                 .setBaseUri(postmanUrl)
                 .addHeader(X_API_KEY_HEADER, decryptService.getPostmanKey())
                 .setContentType(JSON)
+                //.addFilter(new AllureRestAssured())
                 .log(ALL).build();
     }
 
@@ -70,6 +72,7 @@ public class SpecBuilder extends Kernel {
                 .setBaseUri(spotifyAccountsUrl)
                 .addFormParams(getFormParams())
                 .setContentType(URLENC)
+                //.addFilter(new AllureRestAssured())
                 .log(ALL).build();
     }
 

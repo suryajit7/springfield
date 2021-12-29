@@ -19,7 +19,7 @@ public class BaseService extends SpecBuilder {
     public Response get(String path, String id){
 
         return given(getRequestSpec())
-                .header(AUTHORIZATION, tokenService.generateAccessToken(postAccount()))
+                .header(AUTHORIZATION, tokenService.generateAccessToken(postAccount(), false))
                 .when()
                 .pathParam(RESOURCE_ID, id)
                 .get(path)
@@ -42,7 +42,7 @@ public class BaseService extends SpecBuilder {
 
         return given(getRequestSpec())
                 .body(requestPlaylist)
-                .header(AUTHORIZATION, expiredToken ? decryptService.getSpotifyAccessToken(expiredToken) : tokenService.generateAccessToken(postAccount()))
+                .auth().oauth2(tokenService.generateAccessToken(postAccount(), expiredToken))
                 .pathParam(RESOURCE_ID, id)
                 .post(path)
                 .then()
@@ -70,7 +70,7 @@ public class BaseService extends SpecBuilder {
 
         return given(getRequestSpec())
                 .body(requestPlaylist)
-                .header(AUTHORIZATION, tokenService.generateAccessToken(postAccount()))
+                .auth().oauth2(tokenService.generateAccessToken(postAccount(), false))
                 .when()
                 .pathParam(RESOURCE_ID, id)
                 .put(path)

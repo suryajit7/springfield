@@ -3,10 +3,14 @@ package com.automation.framework.gui.module.crm;
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.page.app.hrm.LoginPanelPage;
 import com.automation.framework.page.app.hrm.dashboard.DashboardPage;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.Test;
 
+@Epic("CRM")
+@Feature("Dashboard")
 public class DashboardTest extends BaseTestNGTest {
 
     @Autowired

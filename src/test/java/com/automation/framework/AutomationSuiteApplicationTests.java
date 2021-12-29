@@ -46,8 +46,7 @@ public class AutomationSuiteApplicationTests {
 	@BeforeAll
 	public void setup(){
 		logger.info("****** Spring Context loaded ******");
-		logger.info("Display Method Name");
-		logger.info(String.valueOf(Thread.currentThread().getId()));
+		logger.info("Thread: ".concat(String.valueOf(Thread.currentThread().getId())));
 	}
 
 	@AfterAll

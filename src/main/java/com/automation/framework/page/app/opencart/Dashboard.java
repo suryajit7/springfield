@@ -3,6 +3,7 @@ package com.automation.framework.page.app.opencart;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -28,6 +29,7 @@ public class Dashboard extends BasePage {
     @FindBy(id = PASSWORD_ID)
     private WebElement password;
 
+    @Step
     public void selectCountryByCode(String countryCode) {
         this.worldMap.selectCountry(countryCode);
     }

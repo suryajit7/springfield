@@ -3,6 +3,7 @@ package com.automation.framework.page.app.hrm;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,14 +25,14 @@ public class MenuNavigationPage extends BasePage {
     @FindBy(how = How.XPATH, using = MENU)
     private WebElement menu;
 
-
+    @Step
     public void moveToMenuOption(List<MenuOption> menuOptions) {
         for (MenuOption option : menuOptions) {
             wait.until(visibilityOf(this.driver.findElement(By.id(option.getMenuId())))).click();
         }
     }
 
-
+    @Step
     public void navigateToMenu(MenuOption menuOption) {
 
         wait.until(visibilityOfElementLocated(By.xpath(ORANGE_HRM_LOGO)));

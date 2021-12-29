@@ -2,6 +2,7 @@ package com.automation.framework.page.app.google;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
+import io.qameta.allure.Step;
 import lombok.Data;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,6 +19,7 @@ public class SearchResultsComponent extends BasePage {
     @FindBy(css = SEARCH_RESULTS)
     private List<WebElement> searchResults;
 
+    @Step
     public List<String> getSearchResults(){
         return this.searchResults.stream()
                 .map(WebElement::getText)

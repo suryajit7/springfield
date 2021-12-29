@@ -15,12 +15,16 @@ public class TokenService {
     private static String accessToken;
     private static Instant expiryTime;
 
-    public String generateAccessToken(Response response){
+    private static PropertyDecryptService decryptService;
+
+    public static String generateAccessToken(Response response, Boolean expiredToken){
         try {
             if (accessToken == null || Instant.now().isAfter(expiryTime)){
                 accessToken = response.path(ACCESS_TOKEN);
                 int expiryDuration = response.path(EXPIRY_TIME);
                 expiryTime = Instant.now().plusSeconds(expiryDuration - 300);
+            } else if (expiredToken) {
+                accessToken = decryptService.getSpotifyAccessToken(expiredToken);
             } else {
                 log.info("Token is still Active.");
             }

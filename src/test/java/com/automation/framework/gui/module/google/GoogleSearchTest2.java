@@ -4,11 +4,14 @@ import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.app.google.GoogleSearchPage;
 import com.automation.framework.util.ScreenshotService;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.report.TestExecutionListener.getTestMethod;
 
-
+@Epic("Google")
+@Feature("GoogleSearch")
 public class GoogleSearchTest2 extends BaseTestNGTest {
 
 

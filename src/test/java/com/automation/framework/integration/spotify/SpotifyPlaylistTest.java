@@ -16,6 +16,7 @@ import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
+
 public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
     public static final String SPOTIFY_USER_ID = "kuub16j6xd3bluyycbvgzkxxv";

@@ -3,6 +3,7 @@ package com.automation.framework.page.app.google;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.core.annotation.Screenshot;
 import com.automation.framework.page.BasePage;
+import io.qameta.allure.Step;
 import lombok.Data;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,15 +28,18 @@ public class GoogleSearchPage extends BasePage {
     @Value("${application.url}")
     private String url;
 
+    @Step
     public void goToURL() {
         goTo(url);
     }
 
+    @Step
     @Screenshot
     public void performSearch(String input) {
         this.searchComponent.searchInGoogle(input);
     }
 
+    @Step
     @Screenshot
     public void changeLanguage(){
         this.hindiLanguage.click();
