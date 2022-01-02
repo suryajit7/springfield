@@ -4,10 +4,12 @@ import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
 import io.qameta.allure.Step;
+import lombok.Data;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 @Page
+@Data
 public class Dashboard extends BasePage {
 
     private final String MENU_DASHBOARD = "menu-dashboard";

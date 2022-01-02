@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.hrm;
+package com.automation.framework.page.app.saucedemo;
 
 public enum MenuOption {
 

@@ -1,9 +1,12 @@
 package com.automation.framework.page;
 
 import com.automation.framework.core.Kernel;
+import com.automation.framework.core.annotation.Page;
+import lombok.Data;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
@@ -11,35 +14,50 @@ import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
+@Page @Data
 public class BasePage extends Kernel {
 
-    public void goTo(String url) {
+    public BasePage goTo(String url) {
         this.driver.get(url);
+        waitForPageToLoad();
         logger.info("URL loaded: ".concat(url));
+        return this;
     }
 
 
-    public void switchToActiveElement() {
+    public BasePage close() {
+        waitForPageToLoad();
+        this.driver.quit();
+        logger.info("Quiting browser instance.");
+        return this;
+    }
+
+
+    public BasePage switchToActiveElement() {
         this.driver.switchTo().activeElement();
         logger.info("Switched to active WebElement.");
+        return this;
     }
 
-    public void enterText(By locator, String text) {
+    public BasePage enterText(By locator, String text) {
         wait.until(visibilityOfElementLocated(locator)).click();
         this.driver.findElement(locator).clear();
         this.driver.findElement(locator).sendKeys(text);
         logger.info("Text entered: ".concat(text));
+        return this;
     }
 
 
-    public void refreshPage() {
+    public BasePage refreshPage() {
         this.driver.navigate().refresh();
         logger.info("Page refreshed");
+        return this;
     }
 
-    public void waitForPageToLoad() {
-        wait.until(webDriver -> ((JavascriptExecutor) this.driver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete")
-                && ((Boolean) ((JavascriptExecutor) this.driver).executeScript("return jQuery.active == 0")));
+    public BasePage waitForPageToLoad() {
+        wait.until((ExpectedCondition) webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete")
+                && ((Boolean) ((JavascriptExecutor) webDriver).executeScript("return jQuery.active == 0")));
+        return this;
     }
 
 
@@ -68,18 +86,19 @@ public class BasePage extends Kernel {
     }*/
 
 
-    public void moveToElementAndClick(WebElement webelement) {
+    public BasePage moveToElementAndClick(WebElement webelement) {
         this.actions.click(webelement);
         logger.info("Moved to WebElement and clicked: ".concat(webelement.getText()));
+        return this;
     }
 
-    public void moveToElementAndClick(List<WebElement> webelements) {
+    public BasePage moveToElementAndClick(List<WebElement> webelements) {
         for (WebElement element : webelements) {
             wait.until(visibilityOf(element));
             this.actions.click(element);
             logger.info("Moved to WebElement and clicked: ".concat(element.getText()));
         }
-
+        return this;
     }
 
     public String getDynamicLocator(String locator, String newString) {
@@ -91,43 +110,49 @@ public class BasePage extends Kernel {
     }
 
 
-    public void dragAndDropWebElement(WebElement source, WebElement destination) {
+    public BasePage dragAndDropWebElement(WebElement source, WebElement destination) {
         this.actions.moveToElement(source).dragAndDrop(source, destination);
         logger.info("WebElement dragged and dropped to ".concat(destination.getText()));
+        return this;
     }
 
 
-    public void selectByVisibleTextInDropdown(WebElement webelement, String visibleText) {
+    public BasePage selectByVisibleTextInDropdown(WebElement webelement, String visibleText) {
         new Select(webelement).selectByVisibleText(visibleText);
         logger.info("WebElement selected by visible text: ".concat(visibleText));
+        return this;
     }
 
 
-    public void selectByValueInDropdown(WebElement webelement, String value) {
+    public BasePage selectByValueInDropdown(WebElement webelement, String value) {
         new Select(webelement).selectByValue(value);
         logger.info("WebElement selected by value: ".concat(value));
+        return this;
     }
 
 
-    public void selectManyByValueInDropdown(WebElement webelement, List<String> multiValues) {
+    public BasePage selectManyByValueInDropdown(WebElement webelement, List<String> multiValues) {
         for (String valueToBeSelected : multiValues) {
             new Select(webelement).selectByValue(valueToBeSelected);
         }
         logger.info("All WebElements selected by value: ".concat(multiValues.toString()));
+        return this;
     }
 
 
-    public void selectManyByVisibleTextInDropdown(WebElement webelement, List<String> multiValues) {
+    public BasePage selectManyByVisibleTextInDropdown(WebElement webelement, List<String> multiValues) {
         for (String valueToBeSelected : multiValues) {
             new Select(webelement).selectByVisibleText(valueToBeSelected);
         }
         logger.info("All WebElements selected by visible text: ".concat(multiValues.toString()));
+        return this;
     }
 
 
-    public void selectByIndexInDropdown(WebElement webelement, int index) {
+    public BasePage selectByIndexInDropdown(WebElement webelement, int index) {
         new Select(webelement).selectByIndex(index);
         logger.info("WebElement selected by index: ".concat(String.valueOf(index)));
+        return this;
     }
 
 
@@ -141,26 +166,30 @@ public class BasePage extends Kernel {
     }
 
 
-    public void deselectByVisibleTextInDropdown(WebElement webelement, String visibleText) {
+    public BasePage deselectByVisibleTextInDropdown(WebElement webelement, String visibleText) {
         new Select(webelement).deselectByVisibleText(visibleText);
         logger.info("WebElement deselected by visible text: ".concat(visibleText));
+        return this;
     }
 
 
-    public void deselectByValueInDropdown(WebElement webelement, String value) {
+    public BasePage deselectByValueInDropdown(WebElement webelement, String value) {
         new Select(webelement).deselectByValue(value);
         logger.info("WebElement deselected by value: ".concat(value));
+        return this;
     }
 
 
-    public void deselectByIndexInDropdown(WebElement webelement, int index) {
+    public BasePage deselectByIndexInDropdown(WebElement webelement, int index) {
         new Select(webelement).deselectByIndex(index);
         logger.info("WebElement deselected by index: ".concat(String.valueOf(index)));
+        return this;
     }
 
-    public void deselectAllInDropdown(WebElement webelement) {
+    public BasePage deselectAllInDropdown(WebElement webelement) {
         new Select(webelement).deselectAll();
         logger.info("All WebElements deselected.");
+        return this;
     }
 
 

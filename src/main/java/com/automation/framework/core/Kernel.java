@@ -14,7 +14,8 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+import org.springframework.test.annotation.DirtiesContext;
 
 import javax.annotation.PostConstruct;
 import java.util.Arrays;
@@ -25,7 +26,8 @@ import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 /**
  * The WebDriver and Wait instances are managed by Spring.
  */
-@ComponentScan
+@Component
+@DirtiesContext
 public class Kernel {
 
     public Actions actions;
@@ -79,4 +81,5 @@ public class Kernel {
     private boolean isJUnitTest() {
         return Arrays.stream(Thread.currentThread().getStackTrace()).anyMatch(test-> test.getClassName().startsWith("org.junit."));
     }
+
 }

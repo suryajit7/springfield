@@ -81,12 +81,12 @@ dependencies {
 }
 
 test {
-	useJUnitPlatform() {
+/*	useJUnitPlatform() {
 		dependsOn cleanTest
-	}
+	}*/
 	useTestNG() {
-		dependsOn cleanTest
-		useDefaultListeners = true
+	/*	dependsOn cleanTest
+		useDefaultListeners = true*/
 		suites 'src/test/java/com/automation/framework/gui/testng.xml'
 	}
 

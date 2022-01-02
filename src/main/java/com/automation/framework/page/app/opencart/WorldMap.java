@@ -2,12 +2,14 @@ package com.automation.framework.page.app.opencart;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
+import lombok.Data;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
+@Data
 @PageComponent
 public class WorldMap extends BasePage {
 

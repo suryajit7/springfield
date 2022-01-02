@@ -6,9 +6,10 @@ import io.qameta.allure.Step;
 import lombok.Data;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 @Data
 @PageComponent
@@ -24,17 +25,19 @@ public class SearchComponent extends BasePage {
     private List<WebElement> googleSearchBtnList;
 
     @Step
-    public void searchInGoogle(String input) {
-        wait.until(ExpectedConditions.visibilityOf(this.searchInputField));
+    public BasePage searchInGoogle(String input) {
+        wait.until(visibilityOf(this.searchInputField));
         this.searchInputField.click();
         this.searchInputField.sendKeys(input);
+        return this;
     }
 
     @Step
-    public void clickGoogleSearchButton() {
+    public BasePage clickGoogleSearchButton() {
         this.googleSearchBtnList.stream()
                 .filter(btn -> btn.isEnabled() && btn.isDisplayed())
                 .findFirst().get().click();
+        return this;
     }
 
 

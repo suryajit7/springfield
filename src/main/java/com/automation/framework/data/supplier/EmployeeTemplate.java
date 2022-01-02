@@ -4,8 +4,6 @@ import br.com.six2six.fixturefactory.Fixture;
 import br.com.six2six.fixturefactory.Rule;
 import br.com.six2six.fixturefactory.loader.TemplateLoader;
 import com.automation.framework.data.entity.app.ems.Employee;
-import com.automation.framework.page.app.hrm.admin.usermanagement.Status;
-import com.automation.framework.page.app.hrm.admin.usermanagement.UserRole;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.DataProvider;
@@ -50,15 +48,11 @@ public class EmployeeTemplate implements TemplateLoader {
         Fixture.of(Employee.class).addTemplate("validEmployee", new Rule() {{
             add("username", random("David", "Luv", "Kakashi", "Briju", "Venki", "Pranav", "Rohan"));
             add("employeeName", random("David Cooper", "Madhukar Trivedi", "Uchiha Kakashi", "Brajesh Pandey", "Venkat Raj", "Pranav Thakar", "Rohan Patel"));
-            add("userRole", random(UserRole.class));
-            add("status", random(Status.class));
         }});
 
         Fixture.of(Employee.class).addTemplate("invalidEmployee", new Rule() {{
             add("username", random("David@rockstar", "Luv", "Kakashi", "Briju", "Venki", "Pranav", "Rohan"));
             add("employeeName", random("David/Cooper", "Madhukar$Trivedi", "Uchiha?Kakashi", "Brajesh.Pandey789", "Venky123", "PranavThakar", "Rohan Patel"));
-            add("userRole", random(UserRole.class));
-            add("status", random(Status.class));
         }});
 
         Fixture.of(Employee.class).addTemplate("invalidEmployeeName").inherits("validEmployee", new Rule() {{

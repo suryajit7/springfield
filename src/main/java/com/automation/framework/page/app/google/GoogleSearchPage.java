@@ -10,8 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
-@Page
-@Data
+@Page @Data
 public class GoogleSearchPage extends BasePage {
 
     private static final String HINDI_LANGUAGE = "//a[contains(text(),'हिन्दी')]";
@@ -29,20 +28,23 @@ public class GoogleSearchPage extends BasePage {
     private String url;
 
     @Step
-    public void goToURL() {
+    public GoogleSearchPage goToURL() {
         goTo(url);
+        return this;
     }
 
     @Step
     @Screenshot
-    public void performSearch(String input) {
+    public GoogleSearchPage performSearch(String input) {
         this.searchComponent.searchInGoogle(input);
+        return this;
     }
 
     @Step
     @Screenshot
-    public void changeLanguage(){
+    public GoogleSearchPage changeLanguage(){
         this.hindiLanguage.click();
+        return this;
     }
 
 

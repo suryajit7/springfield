@@ -78,7 +78,7 @@ public class TestExecutionListener implements ITestListener, IInvokedMethodListe
         ITestContext context = result.getTestContext();
         driver = (WebDriver) context.getAttribute(WEBDRIVER);
 
-        saveFailureScreenShot(driver);
+        //saveFailureScreenShot(driver);
 
 
 

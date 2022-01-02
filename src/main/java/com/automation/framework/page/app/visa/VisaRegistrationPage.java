@@ -2,6 +2,7 @@ package com.automation.framework.page.app.visa;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
+import lombok.Data;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 @Page
+@Data
 public class VisaRegistrationPage extends BasePage {
 
     @FindBy(id = "first_4")
@@ -52,34 +54,40 @@ public class VisaRegistrationPage extends BasePage {
         this.driver.get("https://vins-udemy.s3.amazonaws.com/sb/visa/udemy-visa.html");
     }
 
-    public void setNames(String firstName, String lastName) {
-        //logger.info("Getting names : " + firstName);
+    public VisaRegistrationPage setNames(String firstName, String lastName) {
+        logger.info("Getting names : " + firstName);
         this.firstName.sendKeys(firstName);
         this.lastName.sendKeys(lastName);
+        return this;
     }
 
-    public void setCountryFromAndTo(String countryFrom, String countryTo) {
+    public VisaRegistrationPage setCountryFromAndTo(String countryFrom, String countryTo) {
         new Select(this.fromCountry).selectByValue(countryFrom);
         new Select(this.toCountry).selectByValue(countryTo);
+        return this;
     }
 
-    public void setBirthDate(LocalDate localDate) {
+    public VisaRegistrationPage setBirthDate(LocalDate localDate) {
         new Select(this.year).selectByVisibleText(String.valueOf(localDate.getYear()));
         new Select(this.day).selectByVisibleText(String.valueOf(localDate.getDayOfMonth()));
         new Select(this.month).selectByValue(localDate.getMonth().toString());
+        return this;
     }
 
-    public void setContactDetails(String email, String phone) {
+    public VisaRegistrationPage setContactDetails(String email, String phone) {
         this.email.sendKeys(email);
         this.phone.sendKeys(phone);
+        return this;
     }
 
-    public void setComments(String comments) {
+    public VisaRegistrationPage setComments(String comments) {
         this.comments.sendKeys(Objects.toString(comments, ""));
+        return this;
     }
 
-    public void submit() {
+    public VisaRegistrationPage submit() {
         this.submit.click();
+        return this;
     }
 
     public String getConfirmationNumber() {

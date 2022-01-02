@@ -10,8 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Data
-@PageComponent
+@Data @PageComponent
 public class SearchResultsComponent extends BasePage {
 
     private final String SEARCH_RESULTS = "div.rc";
