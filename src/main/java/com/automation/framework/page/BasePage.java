@@ -56,7 +56,7 @@ public class BasePage extends Kernel {
 
     public BasePage waitForPageToLoad() {
         wait.until((ExpectedCondition) webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete")
-                && ((Boolean) ((JavascriptExecutor) webDriver).executeScript("return jQuery.active == 0")));
+                || ((Boolean) ((JavascriptExecutor) webDriver).executeScript("return jQuery.active == 0")));
         return this;
     }
 

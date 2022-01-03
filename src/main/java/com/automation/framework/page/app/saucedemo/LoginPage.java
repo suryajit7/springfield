@@ -16,7 +16,7 @@ public class LoginPage extends BasePage {
     private final String LOGIN_LOGO = "//div[@class='login_logo']";
     private final String USERNAME_FIELD = "user-name";
     private final String PASSWORD_FIELD = "password";
-    private final String LOGIN_BUTTON = "btnLogin";
+    private final String LOGIN_BUTTON = "login-button";
 
     @Value("${app.saucedemo.url}")
     private String sauceDemoUrl;

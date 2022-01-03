@@ -17,18 +17,18 @@ public class GoogleSearchTest extends BaseTestNGTest {
     @LazyAutowired
     private GoogleSearchPage googleSearchPage;
 
-
     @Test
     public void verifySearchTest() {
 
-        this.googleSearchPage.goToURL()
-                .changeLanguage();
-
-        logger.info("url passed");
+        this.googleSearchPage.goToURL();
 
         assertThat(googleSearchPage.getSearchComponent().getSearchInputField())
                 .isDisplayed()
                 .isNotNull();
+
+        this.googleSearchPage.changeLanguage();
+
+        logger.info("url passed");
 
         this.screenshotService.takeWebPageScreenshot(getTestMethod(), "");
         this.screenshotService.assertWebPageScreenshots(getTestMethod(), "");
