@@ -81,20 +81,20 @@ dependencies {
 }
 
 test {
-/*	useJUnitPlatform() {
+	useJUnitPlatform() {
 		dependsOn cleanTest
-	}*/
-	useTestNG() {
-	/*	dependsOn cleanTest
-		useDefaultListeners = true*/
-		suites 'src/test/java/com/automation/framework/gui/testng.xml'
+		description = 'Runs the all JUnit tests.'
+	}
+	finalizedBy('runTestNGTests')
 	}
 
-/*	task parallelTest(type: Test) {
+
+task runTestNGTests(type: Test) {
 		useTestNG() {
 			dependsOn cleanTest
 			useDefaultListeners = true
-			suites "config/parallel.testng.xml"
+			description = 'Runs the all TestNG tests.'
+			suites 'src/test/java/com/automation/framework/gui/testng.xml'
 		}
-	}*/
-}
+	}
+

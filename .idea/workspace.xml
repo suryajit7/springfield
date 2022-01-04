@@ -5,18 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/05602156-1d7d-4ea2-a5b2-36d255884d61-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/05830eab-a495-4dab-82fb-b1ecd041ff11-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/07584083-4f1c-407f-874d-12e8dd9ed98a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/09398d94-7490-43c7-8e37-7be5d6d16437-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0c92c412-4b63-411c-99a2-51e46a467dfa-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0dbc14ab-4f45-4e67-898b-7487fb2b43c4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/15c3be4f-2a2c-46e0-a77a-71954827cb38-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1779867b-5a95-4d51-aa2d-407bc2080ebb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1a33961d-eb2e-4c4a-b422-9be98a607f9a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1a79b0aa-e9d9-45db-ad42-405d26bb1513-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/22a661a2-35c1-4c13-844c-91164efafdef-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2afc49f7-ce31-4e4a-ba0a-7eb28d202f65-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2ceb4c5f-b5de-43dc-9052-c5980b3d570b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2fc24c4a-b9ed-4e63-a2ba-da6064965786-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/35e4b773-cb68-4638-8f71-a5d853dab9b2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/37aabcc4-906f-4f8d-a623-fb59166d6286-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/40ef4fdf-f776-41b2-8633-74f4fc81cdcd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/46b8dd80-e680-452e-b578-2022991cfcd8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/59a78e4d-f4d7-41c9-ab53-e70c97491d39-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/73e313c5-6a13-479d-b424-e6971ceba21d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/768b99ca-a1ce-4f22-bd2a-a8b721b1a7ca-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7ac59b92-4b68-4491-bee3-3168ff88f6e8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7ae3b71c-7b9c-4c7b-92dd-928409b18392-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7fc1938e-5910-4dc2-a5f3-a48d9686a984-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/843040ae-17f4-49e9-a916-2dc8f72a3a9f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8f59673b-2201-4c0e-b15a-751c72faa65d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/998a88f6-20ed-4b28-85f1-5f33aaee4dbe-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a3dd2a98-e5f7-47bc-9e47-e2d4edcb0bcd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a924631b-8c98-4bef-a3f3-435ab20111b8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b8973e1a-2280-4e20-b879-146c15b3f5b1-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c93c3efd-c839-4bd5-9bbf-48afd16c2f6a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ca304712-6842-40b7-9588-ef4ae01f3b39-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d43f194f-63b7-4cb4-8ac7-1185a66daeb2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d85cf451-e1d1-4a4a-a8fd-fbc4519b9509-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/df440632-e933-47f5-9712-8f2d21cede7b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/efa581ad-6a36-48d4-82d3-149b0154467a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/fa173dc3-dd99-40db-8d5c-49b872f3de51-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTesttest2test2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/GoogleSearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/GoogleSearchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchResultsComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchResultsComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/WorldMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/WorldMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/visa/VisaRegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/visa/VisaRegistrationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,34 +181,13 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'com.automation.framework.gui'">
+  <component name="RunManager" selected="Gradle.automation-suite [test]">
     <configuration name="GoogleSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.automation.framework.gui.module.google.GoogleSearchTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.gui.module.saucedemo.LoginTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -232,21 +245,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="automation-suite [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <option name="AUTO_RESTART" value="false" />
-      <method v="2" />
     </configuration>
     <configuration name="C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
@@ -268,20 +293,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="aws.lambda" factoryName="Remote">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="functionName" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Gradle.LoginTest" />
       <item itemvalue="Gradle.SauceDemoLoginTest" />
-      <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
       <item itemvalue="Gradle.Tests in 'com.automation.framework.gui'" />
       <item itemvalue="Gradle.GoogleSearchTest" />
+      <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
+      <item itemvalue="Gradle.automation-suite [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.automation-suite [test]" />
         <item itemvalue="Gradle.Tests in 'com.automation.framework.gui'" />
         <item itemvalue="Gradle.GoogleSearchTest" />
         <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
         <item itemvalue="Gradle.SauceDemoLoginTest" />
-        <item itemvalue="Gradle.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -350,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641149478093</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit132: Minor Refactoring and added SauceDemoTest">
+      <created>1641221478210</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641221478210</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -385,7 +425,8 @@
     <MESSAGE value="Commit129: Adding Allure Reporting features" />
     <MESSAGE value="Commit131: minor change" />
     <MESSAGE value="Commit131: Major Refactoring and added SauceDemoTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit131: Major Refactoring and added SauceDemoTest" />
+    <MESSAGE value="Commit132: Minor Refactoring and added SauceDemoTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit132: Minor Refactoring and added SauceDemoTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

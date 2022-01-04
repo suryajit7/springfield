@@ -5,6 +5,7 @@ import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.app.google.GoogleSearchPage;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.core.AssertWebElement.assertThat;
@@ -16,6 +17,12 @@ public class GoogleSearchTest extends BaseTestNGTest {
 
     @LazyAutowired
     private GoogleSearchPage googleSearchPage;
+
+
+    @AfterClass
+    public void closeBrowser(){
+        this.googleSearchPage.close();
+    }
 
     @Test
     public void verifySearchTest() {
@@ -41,8 +48,6 @@ public class GoogleSearchTest extends BaseTestNGTest {
                 .performSearch("test2");
 
         this.screenshotService.takeWebPageScreenshot(getTestMethod(), "test2");
-
-        this.googleSearchPage.close();
     }
 
 
