@@ -14,6 +14,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.parallel.Isolated;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.TestPropertySource;
 
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
@@ -23,6 +24,7 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @TestPropertySource(locations = {"classpath:application.properties"})
 @TestMethodOrder(OrderAnnotation.class)
 @TestInstance(PER_CLASS)
+@ComponentScan
 public class AutomationSuiteApplicationTests {
 
 	@LazyAutowired

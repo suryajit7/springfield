@@ -19,6 +19,20 @@ repositories {
 	mavenCentral()
 }
 
+
+jar {
+    archiveBaseName = 'automation-suite'
+    archiveVersion = '0.1.1'
+    manifest {
+        attributes('Main-Class': 'com.automation.framework.AutomationSuiteApplication')
+		//attributes('Main-Class': 'src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java')
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 dependencies {
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools:2.6.2'

@@ -1,0 +1,535 @@
+2022-01-09 10:56:05.682  INFO 1124 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 1124 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 10:56:05.684  INFO 1124 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 10:56:06.144  INFO 1124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 10:56:06.145  INFO 1124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 10:56:07.344  INFO 1124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 10:56:07.345  INFO 1124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 10:56:07.515  INFO 1124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156 ms. Found 1 JPA repository interfaces.
+2022-01-09 10:56:07.557  INFO 1124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 10:56:07.558  INFO 1124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 10:56:07.597  INFO 1124 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 10:56:07.597  INFO 1124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 10:56:08.160  INFO 1124 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 10:56:08.167  INFO 1124 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641705968162' from locations: [encrypted.properties]
+2022-01-09 10:56:08.251  WARN 1124 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 10:56:08.264  INFO 1124 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 10:56:08.307 ERROR 1124 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:13) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 10:57:44.026  INFO 2388 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 2388 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 10:57:44.028  INFO 2388 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 10:57:44.633  INFO 2388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 10:57:44.634  INFO 2388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 10:57:46.073  INFO 2388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 10:57:46.074  INFO 2388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 10:57:46.233  INFO 2388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2022-01-09 10:57:46.273  INFO 2388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 10:57:46.274  INFO 2388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 10:57:46.314  INFO 2388 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 10:57:46.315  INFO 2388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 10:57:46.737  INFO 2388 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 10:57:46.745  INFO 2388 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706066740' from locations: [encrypted.properties]
+2022-01-09 10:57:46.824  WARN 2388 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 10:57:46.837  INFO 2388 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 10:57:46.879 ERROR 2388 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:15) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 10:58:46.543  INFO 2916 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 2916 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 10:58:46.545  INFO 2916 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 10:58:46.989  INFO 2916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 10:58:46.989  INFO 2916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 10:58:48.167  INFO 2916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 10:58:48.168  INFO 2916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 10:58:48.327  INFO 2916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 1 JPA repository interfaces.
+2022-01-09 10:58:48.368  INFO 2916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 10:58:48.369  INFO 2916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 10:58:48.410  INFO 2916 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 10:58:48.410  INFO 2916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 10:58:48.839  INFO 2916 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 10:58:48.847  INFO 2916 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706128841' from locations: [encrypted.properties]
+2022-01-09 10:58:48.929  WARN 2916 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 10:58:48.941  INFO 2916 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 10:58:48.983 ERROR 2916 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:14) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:00:02.531  INFO 3964 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 3964 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:00:02.534  INFO 3964 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:00:02.958  INFO 3964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:00:02.959  INFO 3964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:00:04.082  INFO 3964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:00:04.083  INFO 3964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:00:04.248  INFO 3964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:00:04.291  INFO 3964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:00:04.292  INFO 3964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:00:04.330  INFO 3964 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:00:04.331  INFO 3964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:00:04.736  INFO 3964 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:00:04.743  INFO 3964 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706204738' from locations: [encrypted.properties]
+2022-01-09 11:00:04.818  WARN 3964 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 11:00:04.831  INFO 3964 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 11:00:04.876 ERROR 3964 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:14) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:01:13.216  INFO 13968 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 13968 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:01:13.218  INFO 13968 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:01:13.641  INFO 13968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:01:13.642  INFO 13968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:01:14.768  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:01:14.769  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:01:14.923  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:01:14.963  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:01:14.964  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:01:15.002  INFO 13968 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:01:15.003  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:01:15.425  INFO 13968 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:01:15.432  INFO 13968 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706275427' from locations: [encrypted.properties]
+2022-01-09 11:01:15.509  WARN 13968 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 11:01:15.522  INFO 13968 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 11:01:15.564 ERROR 13968 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:14) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:01:31.710  INFO 1832 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 1832 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:01:31.713  INFO 1832 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:01:32.134  INFO 1832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:01:32.134  INFO 1832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:01:33.247  INFO 1832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:01:33.248  INFO 1832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:01:33.402  INFO 1832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:01:33.450  INFO 1832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:01:33.451  INFO 1832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:01:33.502  INFO 1832 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:01:33.503  INFO 1832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:01:33.962  INFO 1832 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:01:33.973  INFO 1832 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706293964' from locations: [encrypted.properties]
+2022-01-09 11:01:34.086  WARN 1832 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 11:01:34.099  INFO 1832 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 11:01:34.140 ERROR 1832 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:14) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:04:33.683  INFO 13580 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 13580 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:04:33.685  INFO 13580 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:04:34.099  INFO 13580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:04:34.099  INFO 13580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:04:35.203  INFO 13580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:04:35.204  INFO 13580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:04:35.366  INFO 13580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:04:35.409  INFO 13580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:04:35.410  INFO 13580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:04:35.448  INFO 13580 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:04:35.449  INFO 13580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:04:35.840  INFO 13580 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:04:35.847  INFO 13580 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706475842' from locations: [encrypted.properties]
+2022-01-09 11:04:35.925  WARN 13580 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 11:04:35.943  INFO 13580 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 11:04:35.988 ERROR 13580 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:14) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:04:46.223  INFO 4364 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 4364 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:04:46.225  INFO 4364 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:04:46.638  INFO 4364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:04:46.638  INFO 4364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:04:47.765  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:04:47.766  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:04:47.936  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:04:47.977  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:04:47.978  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:04:48.019  INFO 4364 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:04:48.020  INFO 4364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:04:48.426  INFO 4364 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:04:48.436  INFO 4364 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706488428' from locations: [encrypted.properties]
+2022-01-09 11:04:48.512  WARN 4364 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 11:04:48.524  INFO 4364 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 11:04:48.564 ERROR 4364 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:14) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:05:05.703  INFO 544 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 544 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:05:05.705  INFO 544 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:05:06.148  INFO 544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:05:06.148  INFO 544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:05:07.262  INFO 544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:05:07.263  INFO 544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:05:07.431  INFO 544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:05:07.471  INFO 544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:05:07.472  INFO 544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:05:07.510  INFO 544 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:05:07.511  INFO 544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:05:07.925  INFO 544 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:05:07.934  INFO 544 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706507928' from locations: [encrypted.properties]
+2022-01-09 11:05:08.060  WARN 544 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 11:05:08.076  INFO 544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 11:05:08.131 ERROR 544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:14) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:05:48.619  INFO 12832 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 12832 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:05:48.621  INFO 12832 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:05:49.042  INFO 12832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:05:49.042  INFO 12832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:05:50.232  INFO 12832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:05:50.233  INFO 12832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:05:50.397  INFO 12832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:05:50.441  INFO 12832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:05:50.442  INFO 12832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:05:50.482  INFO 12832 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:05:50.482  INFO 12832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:05:50.895  INFO 12832 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:05:50.902  INFO 12832 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706550897' from locations: [encrypted.properties]
+2022-01-09 11:05:50.978  WARN 12832 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+2022-01-09 11:05:50.991  INFO 12832 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 11:05:51.033 ERROR 12832 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start reactive web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.automation.framework.AutomationSuiteApplication.main(AutomationSuiteApplication.java:13) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ReactiveWebApplicationContext due to missing ReactiveWebServerFactory bean.
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.getWebServerFactoryBeanName(ReactiveWebServerApplicationContext.java:108) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:90) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:79) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 13 common frames omitted
+
+2022-01-09 11:07:15.616  INFO 13568 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 13568 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:07:15.618  INFO 13568 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:07:16.042  INFO 13568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:07:16.042  INFO 13568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:07:17.093  INFO 13568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:07:17.094  INFO 13568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:07:17.250  INFO 13568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:07:17.297  INFO 13568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:07:17.298  INFO 13568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:07:17.342  INFO 13568 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:07:17.342  INFO 13568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:07:17.759  INFO 13568 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:07:17.767  INFO 13568 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706637762' from locations: [encrypted.properties]
+2022-01-09 11:07:18.273  INFO 13568 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-09 11:07:22.184  INFO 13568 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-09 11:07:22.305  INFO 13568 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 11:07:22.379  INFO 13568 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-09 11:07:22.611  INFO 13568 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 11:07:22.867  INFO 13568 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-09 11:07:24.471  INFO 13568 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-09 11:07:24.487  INFO 13568 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 11:07:24.651  INFO 13568 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-01-09 11:07:24.664  INFO 13568 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-01-09 11:07:24.666  INFO 13568 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-01-09 11:07:24.675  INFO 13568 --- [restartedMain] c.u.j.encryptor.DefaultLazyEncryptor     : String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-01-09 11:07:24.689  INFO 13568 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-01-09 11:07:24.690  INFO 13568 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-01-09 11:07:24.690  INFO 13568 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-01-09 11:07:24.691  INFO 13568 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-01-09 11:07:24.692  INFO 13568 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-01-09 11:07:24.695  INFO 13568 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-01-09 11:07:27.432  INFO 13568 --- [restartedMain] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 97.0.4692.71 (resolved driver for Chrome 97)
+2022-01-09 11:07:27.454  INFO 13568 --- [restartedMain] i.g.bonigarcia.wdm.WebDriverManager      : Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2022-01-09 11:07:28.244  INFO 13568 --- [restartedMain] i.g.bonigarcia.wdm.online.Downloader     : Downloading https://chromedriver.storage.googleapis.com/97.0.4692.71/chromedriver_win32.zip
+2022-01-09 11:07:29.299  INFO 13568 --- [restartedMain] i.g.bonigarcia.wdm.online.Downloader     : Extracting driver from compressed file chromedriver_win32.zip
+2022-01-09 11:07:29.417  INFO 13568 --- [restartedMain] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\97.0.4692.71\chromedriver.exe
+2022-01-09 11:07:38.783  INFO 13568 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2022-01-09 11:07:40.102  INFO 13568 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-01-09 11:07:41.028  WARN 13568 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-09 11:07:41.090  WARN 13568 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-09 11:07:41.587  INFO 13568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-09 11:07:41.624  INFO 13568 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Started AutomationSuiteApplication in 26.808 seconds (JVM running for 27.611)
+2022-01-09 11:07:41.642  INFO 13568 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 11:07:41.649  INFO 13568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-09 11:07:41.664  INFO 13568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-09 11:09:01.108  INFO 8040 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 8040 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:09:01.111  INFO 8040 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:09:01.544  INFO 8040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:09:01.545  INFO 8040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:09:02.592  INFO 8040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:09:02.593  INFO 8040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:09:02.756  INFO 8040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:09:02.798  INFO 8040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:09:02.799  INFO 8040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:09:02.838  INFO 8040 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:09:02.838  INFO 8040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:09:03.268  INFO 8040 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:09:03.275  INFO 8040 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706743270' from locations: [encrypted.properties]
+2022-01-09 11:09:03.760  INFO 8040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-09 11:09:04.624  INFO 8040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-09 11:09:04.717  INFO 8040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 11:09:04.813  INFO 8040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-09 11:09:05.079  INFO 8040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 11:09:05.274  INFO 8040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-09 11:09:06.201  INFO 8040 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-09 11:09:06.217  INFO 8040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 11:09:06.364  INFO 8040 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-01-09 11:09:06.377  INFO 8040 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-01-09 11:09:06.380  INFO 8040 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-01-09 11:09:06.387  INFO 8040 --- [restartedMain] c.u.j.encryptor.DefaultLazyEncryptor     : String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-01-09 11:09:06.402  INFO 8040 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-01-09 11:09:06.402  INFO 8040 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-01-09 11:09:06.403  INFO 8040 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-01-09 11:09:06.403  INFO 8040 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-01-09 11:09:06.404  INFO 8040 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-01-09 11:09:06.407  INFO 8040 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-01-09 11:09:06.663  INFO 8040 --- [restartedMain] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 97.0.4692.71 (resolved driver for Chrome 97)
+2022-01-09 11:09:06.684  INFO 8040 --- [restartedMain] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\97.0.4692.71\chromedriver.exe
+2022-01-09 11:09:09.834  INFO 8040 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2022-01-09 11:09:11.123  INFO 8040 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-01-09 11:09:11.290  INFO 8040 --- [cluster-rtt-ClusterId{value='61da74ff729c627586771c5d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2022-01-09 11:09:11.290  INFO 8040 --- [cluster-ClusterId{value='61da74ff729c627586771c5d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:27017
+2022-01-09 11:09:11.293  INFO 8040 --- [cluster-ClusterId{value='61da74ff729c627586771c5d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=108193700}
+2022-01-09 11:09:11.355  WARN 8040 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-09 11:09:11.418  WARN 8040 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-09 11:09:11.864  INFO 8040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-09 11:09:11.901  INFO 8040 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Started AutomationSuiteApplication in 11.609 seconds (JVM running for 12.532)
+2022-01-09 11:09:11.917  INFO 8040 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 11:09:11.924  INFO 8040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-09 11:09:11.942  INFO 8040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-09 11:09:42.154  INFO 11872 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Starting AutomationSuiteApplication using Java 11.0.12 on win7pro with PID 11872 (C:\code\automation-suite\build\classes\java\main started by Administrator in C:\code\automation-suite)
+2022-01-09 11:09:42.156  INFO 11872 --- [restartedMain] c.a.f.AutomationSuiteApplication         : No active profile set, falling back to default profiles: default
+2022-01-09 11:09:42.559  INFO 11872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 11:09:42.559  INFO 11872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 11:09:43.605  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:09:43.606  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 11:09:43.763  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2022-01-09 11:09:43.804  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-09 11:09:43.805  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-01-09 11:09:43.845  INFO 11872 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.automation.framework.data.repo.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2022-01-09 11:09:43.846  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 MongoDB repository interfaces.
+2022-01-09 11:09:44.270  INFO 11872 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Loading Encryptable Property Source ''
+2022-01-09 11:09:44.277  INFO 11872 --- [restartedMain] lePropertySourceBeanFactoryPostProcessor : Created Encryptable Property Source 'EncryptedPropertySource#1641706784272' from locations: [encrypted.properties]
+2022-01-09 11:09:44.744  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-09 11:09:45.602  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-09 11:09:45.696  INFO 11872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 11:09:45.789  INFO 11872 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-09 11:09:46.036  INFO 11872 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 11:09:46.227  INFO 11872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-09 11:09:47.124  INFO 11872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-09 11:09:47.141  INFO 11872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 11:09:47.283  INFO 11872 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-01-09 11:09:47.298  INFO 11872 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-01-09 11:09:47.300  INFO 11872 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-01-09 11:09:47.307  INFO 11872 --- [restartedMain] c.u.j.encryptor.DefaultLazyEncryptor     : String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-01-09 11:09:47.322  INFO 11872 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-01-09 11:09:47.322  INFO 11872 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-01-09 11:09:47.323  INFO 11872 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-01-09 11:09:47.323  INFO 11872 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-01-09 11:09:47.324  INFO 11872 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-01-09 11:09:47.327  INFO 11872 --- [restartedMain] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-01-09 11:09:47.581  INFO 11872 --- [restartedMain] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 97.0.4692.71 (resolved driver for Chrome 97)
+2022-01-09 11:09:47.601  INFO 11872 --- [restartedMain] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\97.0.4692.71\chromedriver.exe
+2022-01-09 11:09:49.454  INFO 11872 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2022-01-09 11:09:50.614  INFO 11872 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-01-09 11:09:50.710  INFO 11872 --- [cluster-ClusterId{value='61da7526b4c066440935f4bf', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2022-01-09 11:09:50.710  INFO 11872 --- [cluster-rtt-ClusterId{value='61da7526b4c066440935f4bf', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+2022-01-09 11:09:50.713  INFO 11872 --- [cluster-ClusterId{value='61da7526b4c066440935f4bf', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=34547300}
+2022-01-09 11:09:50.783  WARN 11872 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-09 11:09:50.847  WARN 11872 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-01-09 11:09:51.312  INFO 11872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-09 11:09:51.350  INFO 11872 --- [restartedMain] c.a.f.AutomationSuiteApplication         : Started AutomationSuiteApplication in 9.972 seconds (JVM running for 10.779)
+2022-01-09 11:09:51.368  INFO 11872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 11:09:51.375  INFO 11872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-09 11:09:51.391  INFO 11872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

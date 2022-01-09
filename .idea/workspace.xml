@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container/healthcheck.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiDemos-debug.apk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/driver/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/driver/RemoteWebDriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/RemoteWebDriverSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/driver/WebDriverInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/WebDriverInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/setup/env/container/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/setup/container/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/setup/container/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,18 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="automation-suite" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="automation-suite" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="automation-suite" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -122,6 +137,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -132,6 +148,9 @@
     <option name="showLigatures" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\automation-suite\src\test\resources\results" />
     </key>
@@ -141,50 +160,8 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.container: Compose Deployment">
-    <configuration name="GoogleSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.gui.module.google.GoogleSearchTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'com.automation.framework.gui'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.gui.*&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="automation-suite [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.automation-suite [bootBuildImage]">
+    <configuration name="automation-suite [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -195,7 +172,70 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="automation-suite [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootBuildImage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="automation-suite [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="automation-suite [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,17 +252,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -231,14 +260,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Remote">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="functionName" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <method v="2" />
     </configuration>
     <configuration name="container: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
@@ -249,19 +270,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.Tests in 'com.automation.framework.gui'" />
-      <item itemvalue="Gradle.GoogleSearchTest" />
-      <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
-      <item itemvalue="Gradle.automation-suite [test]" />
       <item itemvalue="Docker.container: Compose Deployment" />
+      <item itemvalue="Gradle.automation-suite [assemble]" />
+      <item itemvalue="Gradle.automation-suite [bootBuildImage]" />
+      <item itemvalue="Gradle.automation-suite [jar]" />
+      <item itemvalue="Gradle.automation-suite [bootRun]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.automation-suite [bootBuildImage]" />
+        <item itemvalue="Gradle.automation-suite [assemble]" />
+        <item itemvalue="Gradle.automation-suite [bootRun]" />
+        <item itemvalue="Gradle.automation-suite [jar]" />
         <item itemvalue="Docker.container: Compose Deployment" />
-        <item itemvalue="Gradle.automation-suite [test]" />
-        <item itemvalue="Gradle.Tests in 'com.automation.framework.gui'" />
-        <item itemvalue="Gradle.GoogleSearchTest" />
-        <item itemvalue="TestNG.C:/code/automation-suite/src/test/java/com/automation/framework/gui/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641296853744</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commit134: Minor Refactoring">
+      <created>1641445029606</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641445029606</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -381,7 +409,8 @@
     <MESSAGE value="Commit131: Major Refactoring and added SauceDemoTest" />
     <MESSAGE value="Commit132: Minor Refactoring and added SauceDemoTest" />
     <MESSAGE value="Commit133: Updated build.gradle to run both Junit and TestNG tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit133: Updated build.gradle to run both Junit and TestNG tests." />
+    <MESSAGE value="Commit134: Minor Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit134: Minor Refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
