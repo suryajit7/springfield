@@ -1,4 +1,4 @@
-package com.automation.framework.data.entity.app.fnb;
+package com.automation.framework.data.entity.fnb;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

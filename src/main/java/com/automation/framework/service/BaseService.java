@@ -1,6 +1,6 @@
 package com.automation.framework.service;
 
-import com.automation.framework.data.entity.app.spotify.Playlist;
+import com.automation.framework.data.entity.spotify.Playlist;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

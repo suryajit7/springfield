@@ -1,8 +1,8 @@
 package com.automation.framework;
 
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.report.TestExecutionListener;
 import com.automation.framework.util.ScreenshotService;
+import com.automation.framework.util.TestExecutionListener;
 import com.github.javafaker.Faker;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;

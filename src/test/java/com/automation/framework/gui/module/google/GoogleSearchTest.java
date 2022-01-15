@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.core.AssertWebElement.assertThat;
-import static com.automation.framework.report.TestExecutionListener.getTestMethod;
+import static com.automation.framework.util.TestExecutionListener.getTestMethod;
 
 @Epic("Google")
 @Feature("GoogleSearch")

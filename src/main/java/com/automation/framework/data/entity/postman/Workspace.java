@@ -1,6 +1,6 @@
-package com.automation.framework.data.entity.app.postman;
+package com.automation.framework.data.entity.postman;
 
-import com.automation.framework.data.entity.app.Error;
+import com.automation.framework.data.entity.Error;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,17 +1,18 @@
 package com.automation.framework.data.entity;
 
 
-import com.automation.framework.data.entity.app.ems.Company;
-import com.automation.framework.data.entity.app.ems.Department;
-import com.automation.framework.data.entity.app.ems.Employee;
-import com.automation.framework.data.entity.app.ems.User;
-import com.automation.framework.data.entity.app.fnb.BreakfastMenu;
-import com.automation.framework.data.entity.app.library.Catalog;
-import com.automation.framework.data.entity.app.postman.Postman;
-import com.automation.framework.data.entity.app.postman.Workspace;
-import com.automation.framework.data.entity.app.spotify.*;
+import com.automation.framework.data.entity.ems.Company;
+import com.automation.framework.data.entity.ems.Department;
+import com.automation.framework.data.entity.ems.Employee;
+import com.automation.framework.data.entity.ems.User;
+import com.automation.framework.data.entity.fnb.BreakfastMenu;
+import com.automation.framework.data.entity.library.Catalog;
+import com.automation.framework.data.entity.postman.Postman;
+import com.automation.framework.data.entity.postman.Workspace;
+import com.automation.framework.data.entity.spotify.*;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+import io.qameta.allure.model.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -57,5 +58,12 @@ public class BaseEntity {
     List<Catalog> catalog;
 
     List<Error> errors;
+
+    //Allure
+    List<TestResult> testResults;
+    List<StepResult> stepResults;
+    List<TestResultContainer> testResultContainers;
+    List<Attachment> attachments;
+    List<Parameter> parameters;
 
 }

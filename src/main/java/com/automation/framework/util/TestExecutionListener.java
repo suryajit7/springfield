@@ -1,4 +1,4 @@
-package com.automation.framework.report;
+package com.automation.framework.util;
 
 
 import io.qameta.allure.Attachment;
