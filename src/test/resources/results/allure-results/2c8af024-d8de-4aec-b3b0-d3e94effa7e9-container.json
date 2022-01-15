@@ -1,0 +1,24 @@
+{
+	"uuid": "2c8af024-d8de-4aec-b3b0-d3e94effa7e9",
+	"name": "org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextAfterTestMethod",
+	"children": [
+		"71347f02-c721-45d5-9d2c-9fbdb65b79fa"
+	],
+	"description": "",
+	"befores": [],
+	"afters": [
+		{
+			"name": "springTestContextAfterTestMethod",
+			"status": "passed",
+			"stage": "finished",
+			"description": "",
+			"steps": [],
+			"attachments": [],
+			"parameters": [],
+			"start": 1642265100037,
+			"stop": 1642265100038
+		}
+	],
+	"start": 1642265100037,
+	"stop": 1642265100038
+}
