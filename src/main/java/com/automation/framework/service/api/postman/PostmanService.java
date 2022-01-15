@@ -1,7 +1,7 @@
 package com.automation.framework.service.api.postman;
 
 import com.automation.framework.core.annotation.LazyService;
-import com.automation.framework.data.entity.app.postman.Postman;
+import com.automation.framework.data.entity.postman.Postman;
 import com.automation.framework.service.BaseService;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;

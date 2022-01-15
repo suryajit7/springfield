@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-import static com.automation.framework.report.TestExecutionListener.getTestMethod;
+import static com.automation.framework.util.TestExecutionListener.getTestMethod;
 
 @Aspect
 @Component

@@ -1,7 +1,7 @@
 package com.automation.framework.service.api.spotify;
 
 import com.automation.framework.core.annotation.LazyService;
-import com.automation.framework.data.entity.app.spotify.Playlist;
+import com.automation.framework.data.entity.spotify.Playlist;
 import com.automation.framework.service.BaseService;
 import io.restassured.response.Response;
 

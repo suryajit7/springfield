@@ -3,7 +3,7 @@ package com.automation.framework.data.supplier;
 import br.com.six2six.fixturefactory.Fixture;
 import br.com.six2six.fixturefactory.Rule;
 import br.com.six2six.fixturefactory.loader.TemplateLoader;
-import com.automation.framework.data.entity.app.ems.Employee;
+import com.automation.framework.data.entity.ems.Employee;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.DataProvider;

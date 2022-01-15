@@ -1,6 +1,6 @@
 package com.automation.framework.data.supplier;
 
-import com.automation.framework.data.entity.app.ems.Company;
+import com.automation.framework.data.entity.ems.Company;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.DataProvider;
