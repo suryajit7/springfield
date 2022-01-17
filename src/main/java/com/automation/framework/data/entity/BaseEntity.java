@@ -20,6 +20,7 @@ import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Transient;
 import java.util.List;
@@ -32,6 +33,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @NoArgsConstructor
 @Jacksonized
 @JsonInclude(NON_NULL)
+@Document
 @JacksonXmlRootElement(localName = "BaseEntity")
 @Root(name = "BaseEntity")
 public class BaseEntity {

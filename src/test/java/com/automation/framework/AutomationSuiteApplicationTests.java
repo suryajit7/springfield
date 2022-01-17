@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.TestPropertySource;
+import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.containers.MySQLContainer;
 
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
@@ -28,7 +29,8 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @ComponentScan
 public class AutomationSuiteApplicationTests {
 
-	public static MySQLContainer mySql;
+	public MySQLContainer mySql;
+	public GenericContainer genericContainer;
 
 	@LazyAutowired
 	protected PathFinder pathFinder;
@@ -40,7 +42,7 @@ public class AutomationSuiteApplicationTests {
 	protected Faker faker;
 
 	@LazyAutowired
-	protected static Log logger;
+	protected Log logger;
 
 	@Value("${app.postman.url}")
 	protected String postmanUrl;
@@ -49,12 +51,12 @@ public class AutomationSuiteApplicationTests {
 	protected String postmanMockServerUrl;
 
 	@BeforeAll
-	public static void setup(){
+	public void setup(){
 		logger.info("****** Spring Context loaded ******");
 		logger.info("Thread: ".concat(String.valueOf(Thread.currentThread().getId())));
 
-		//mySql = new MySQLContainer()
-
+		genericContainer = new GenericContainer("mongo:3.2.4")
+				.withExposedPorts(27017);
 
 	}
 

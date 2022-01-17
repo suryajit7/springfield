@@ -5,94 +5,141 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/BaseMongoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/BaseMongoRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/TestResultRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/mongo/config/MongoConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AppContextProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/database/module/TestContainerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d2ab273a-2db7-480d-b605-373a8d527ebc-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d6e9a8ac-786b-4b58-b4c0-ea5a859973be-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ed2baa28-f32b-4874-91a9-24475bae6e08-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/MongoDbContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-16.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/01726c0a-0415-4d6d-b2b3-64d80411d783-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/07f7f1aa-d5ff-4e2d-ae0d-14c18a4da556-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/08b15cc1-4062-4f5f-a029-3271d43a04e0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0a8dc397-b554-44a5-a5cd-ac5fd7e98274-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/119bb8a2-350a-4811-a0b3-dd1f9239e93a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/19e98c8d-2950-401b-97cc-f107c6429bef-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/210aef1b-ba8e-474b-9408-43a3d5dff360-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2200cc5e-68a9-41c5-b358-21d4b2862d04-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/27c13936-7977-4d99-8518-208f241bd51d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/29da635a-3838-42b3-a225-2b1875de7e42-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/30598918-1a53-4ae8-b57f-21a369bf8bcf-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/30bad426-f3d8-47bc-8bee-3172d986a4c2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/31479934-b92e-42cb-831d-3d6ba212fafa-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/322cbeab-62d8-4128-a234-1bb0430f0bfa-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3a0d2087-a209-45de-9356-9aec815cf8d1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3d7c62e8-758a-4bfe-a39d-de8dddd41478-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/49cc59e2-5937-4af1-ba31-b8c2a9d942f5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/4bce2f39-5249-42cf-afc8-0a567d471022-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5464590d-67d0-4c35-8e3b-6e6bf6af1711-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5846743c-4894-4045-8a88-87ae91066780-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5def074e-849c-493a-bf6f-bd63a4b25c13-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5e6bd029-764b-426f-8a2b-6fd486175c74-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6373db01-49b3-42b9-9e33-ef86759ac97c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/669d388b-439c-4f54-912b-1549e4164c21-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/67f1eb3d-44be-47ee-a53f-0001ac5554e3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6920a7c8-36c9-4c94-935e-856f53adde9d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/75d3216b-2c40-4a37-bf55-4011bdbcd2f6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/76cd6fd9-9df4-48af-97cc-5e704a52562b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8021da69-d185-4dd6-86e4-94146307d985-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/83b2fe36-c9fa-4740-949b-4ab9906dd9eb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/90631efc-4a46-44f2-8559-1e45e2c16cbe-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/92d72ff9-7077-478f-a2f1-374c066c0d7b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/93450613-a6f2-425f-ab17-7aebdd49d417-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/972dbd9e-b32b-4612-9674-f5539c70bf50-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9a0a9029-9f66-4546-b74e-bc8b7e88678c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9e631e7a-db03-43e0-9688-ae9142351ec1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9f1aaed3-2e33-4b6e-a456-b251fbd28c6f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9f5cd08a-a33d-4c9a-8a16-d446999c8043-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a1650795-9d29-4e85-8e43-6dd8c9e0905b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a2b3389a-d0f3-4756-849f-2954def4f137-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a9d8df9a-867a-47bf-916a-e5b9a5ab370f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ad413fbe-f76a-42d7-8190-b5146287755a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/affd41b9-8e83-47e0-936b-4b87a76959a0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b346c950-3c8d-4d0e-8f8e-5cbb40691530-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b49eb756-e915-413b-a46a-b694d284010c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/bb029aab-1e10-4d48-8a63-fcfc4ffd3ec0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c071a98e-6e00-4431-85d1-2522b4fa760b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c15158eb-75bd-4a38-869d-c82f841958b1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c7f25711-58cf-4db0-98cd-d784b730cb13-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/cb2b863e-280f-495f-8ab7-1c3d9145a7ac-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ce929104-c261-4469-8b90-95e82ac9daf9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/cf947fda-4841-459d-acc7-3d3e67df0efc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d979592e-d17c-4578-95b4-efc24319948b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/dd19079d-3622-4d00-8f9e-8dc5a918a797-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/de6368d1-3bc5-4823-a5c4-9a9687391a31-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/df91f146-c8d6-4a20-a27d-790a0ba1dce1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e0dc48b1-0a34-49b9-bb1d-61577f69f85e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e57abe21-29b6-465a-8bd7-226f1179a8d2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e61205f3-5b39-4bfa-8268-26ca8f751fc0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e9871ac9-5117-4196-a3da-d8b35afbcb2c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e9cdecfb-3e83-489f-aba9-e529987f056e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e9e50900-de06-4ee9-87cb-3047a5deaa34-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ece4bf45-558d-4c54-889e-65d2fe5823b0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ed9829cb-5549-4274-b7e9-dc1eaa049b81-container.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/AutomationSuiteApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/aspect/ScreenshotAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/aspect/ScreenshotAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/aspect/WindowSwitchAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/aspect/WindowSwitchAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/scope/BrowserScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/scope/BrowserScope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/scope/BrowserScopePostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/scope/BrowserScopePostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/FileType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/FileType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity$BaseEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/Error$ErrorBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/Error.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/Company$CompanyBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/Company.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/Department$DepartmentBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/Department.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/Employee$EmployeeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/ems/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/fnb/BreakfastMenu$BreakfastMenuBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/fnb/BreakfastMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/fnb/Food$FoodBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/fnb/Food.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/library/Book$BookBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/library/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/library/Catalog$CatalogBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/library/Catalog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/postman/Postman$PostmanBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/postman/Postman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/postman/Workspace$WorkspaceBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/postman/Workspace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/ExternalUrl$ExternalUrlBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/ExternalUrl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Follower$FollowerBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Follower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Owner$OwnerBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Owner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Playlist$PlaylistBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Playlist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Track$TrackBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/entity/app/spotify/Track.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/repo/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/repo/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/CompanyDataFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/CompanyDataFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/report/TestExecutionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/env/driver/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/env/driver/Browser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/GoogleSearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/GoogleSearchPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchResultsComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/google/SearchResultsComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Dashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/WorldMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/opencart/WorldMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/MenuNavigationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/MenuNavigationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/MenuOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/MenuOption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/visa/VisaRegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/visa/VisaRegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/window/PageA.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/window/PageA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/window/PageB.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/window/PageB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/window/PageC.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/window/PageC.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/service/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/service/BaseService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/service/api/postman/PostmanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/service/api/postman/PostmanService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/service/api/spotify/PlaylistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/service/api/spotify/PlaylistService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/EnvironmentWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/EnvironmentWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/PathFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/PathFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/PropertyDecryptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/PropertyDecryptService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/RandomUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/RandomUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/ScreenshotService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/ScreenshotService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/TokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/WaitInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/WaitInstance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/WindowSwitchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/WindowSwitchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/PojoHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/PojoHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToBoolean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToBoolean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToJson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToLocalDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/converter/StringToLocalDate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/aspect/ScreenshotAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/aspect/ScreenshotAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/allure.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/Error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/ems/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/fnb/BreakfastMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/fnb/BreakfastMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/fnb/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/fnb/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/library/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/library/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/postman/Postman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/postman/Postman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/postman/Workspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/postman/Workspace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/ExternalUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/spotify/ExternalUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Follower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/spotify/Follower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/spotify/Owner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/spotify/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/app/spotify/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/spotify/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/BaseMongoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/BaseMongoRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/TestResultRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/mongo/config/MongoConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/mongo/config/MongoConfigProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/CompanyDataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/CompanyDataFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/report/TestExecutionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/TestExecutionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/postman/PostmanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/postman/PostmanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/spotify/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/spotify/PlaylistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTesttest2test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTesttest2test2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/database/module/TestContainerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-09.0.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,8 +202,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="Python Script" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -226,17 +273,22 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.automation.framework.data.repo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\automation-suite\src\test\resources" />
       <recent name="C:\code\automation-suite\src\test\resources\results" />
     </key>
   </component>
@@ -245,66 +297,66 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.automation-suite [runTestNGTests]">
-    <configuration name="automation-suite [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.integration in automation-suite.test">
+    <configuration name="MongoDbContainerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;com.automation.framework.database.module.MongoDbContainerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="assemble" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="automation-suite [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostmanAPITestScenarios" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;com.automation.framework.integration.postman.PostmanAPITestScenarios&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="bootBuildImage" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="automation-suite [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'com.automation.framework.integration'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;com.automation.framework.integration.*&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="bootRun" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -337,25 +389,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="python" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="automation-suite.main" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Administrator\AppData\Local\Programs\Python\Python310\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\code\automation-suite\src\main\python\main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+    <configuration name="integration in automation-suite.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/automation/framework/integration" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -368,19 +417,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.automation-suite [assemble]" />
-      <item itemvalue="Gradle.automation-suite [bootBuildImage]" />
-      <item itemvalue="Gradle.automation-suite [bootRun]" />
-      <item itemvalue="Python.python" />
       <item itemvalue="Gradle.automation-suite [runTestNGTests]" />
+      <item itemvalue="Gradle.MongoDbContainerTest" />
+      <item itemvalue="Gradle.Tests in 'com.automation.framework.integration'" />
+      <item itemvalue="Gradle.PostmanAPITestScenarios" />
+      <item itemvalue="JUnit.integration in automation-suite.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.integration in automation-suite.test" />
+        <item itemvalue="Gradle.PostmanAPITestScenarios" />
+        <item itemvalue="Gradle.Tests in 'com.automation.framework.integration'" />
+        <item itemvalue="Gradle.MongoDbContainerTest" />
         <item itemvalue="Gradle.automation-suite [runTestNGTests]" />
-        <item itemvalue="Python.python" />
-        <item itemvalue="Gradle.automation-suite [bootBuildImage]" />
-        <item itemvalue="Gradle.automation-suite [assemble]" />
-        <item itemvalue="Gradle.automation-suite [bootRun]" />
       </list>
     </recent_temporary>
   </component>
@@ -526,7 +575,28 @@
       <option name="project" value="LOCAL" />
       <updated>1642272485654</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Commit141: Adding Mongo Test Containers and its config.">
+      <created>1642272603835</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1642272603835</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Commit142: Added/Updated dependencies">
+      <created>1642272669297</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1642272669297</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Commit143: refactoring">
+      <created>1642272725324</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1642272725324</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -571,7 +641,10 @@
     <MESSAGE value="Commit139: Adding files" />
     <MESSAGE value="Commit140: Adding files" />
     <MESSAGE value="Commit140: Adding result files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit140: Adding result files" />
+    <MESSAGE value="Commit141: Adding Mongo Test Containers and its config." />
+    <MESSAGE value="Commit142: Added/Updated dependencies" />
+    <MESSAGE value="Commit143: refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit143: refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -586,6 +659,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/UsersTest.java</url>
           <line>42</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.5.4/113816cd79ef8a26a38f8bd5d9148eb062e2d621/spring-data-commons-2.5.4-sources.jar!/org/springframework/data/mapping/PropertyPath.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

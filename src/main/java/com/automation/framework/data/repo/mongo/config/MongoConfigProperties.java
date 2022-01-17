@@ -12,18 +12,24 @@ import org.springframework.stereotype.Component;
 @RefreshScope
 public class MongoConfigProperties {
 
-    @Value("${mongodb.host:localhost}")
+    @Value("${spring.data.mongodb.host:localhost}")
     private String host;
-    @Value("${mongodb.port:4646}")
+
+    @Value("${spring.data.mongodb.port:4646}")
     private int port;
-    @Value("${database.name:mongo}")
+
+    @Value("${spring.data.database.name:mongo}")
     private String dataBaseName;
+
     @Value("${mongo.connection.socket.timeout:50000000}")
     private Integer socketTimeout;
+
     @Value("${spring.data.mongodb.username:automation}")
     private String userName;
+
     @Value("${spring.data.mongodb.password:@utom@t!on@93}")
     private String password;
+
     @Value("${spring.data.mongodb.authentication-database:admin}")
     private String authDatabase;
 }
