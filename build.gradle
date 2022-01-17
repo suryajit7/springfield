@@ -37,7 +37,7 @@ dependencies {
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools:2.6.2'
 
-	implementation 'org.springframework.boot:spring-boot-starter-parent:2.6.2'
+
 	implementation 'org.springframework.boot:spring-boot-starter-aop:2.6.2'
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb:2.6.2'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.2'
@@ -45,7 +45,7 @@ dependencies {
 	implementation 'com.github.ulisesbocchio:jasypt-spring-boot:3.0.4'
 	implementation 'com.h2database:h2:2.0.206'
 	implementation 'mysql:mysql-connector-java:8.0.27'
-	implementation 'org.testng:testng:7.4'
+	implementation 'org.testng:testng:7.5'
 	implementation 'io.github.bonigarcia:webdrivermanager:5.0.2'
 	implementation 'org.projectlombok:lombok:1.18.22'
 	implementation 'com.github.javafaker:javafaker:1.0.2'
