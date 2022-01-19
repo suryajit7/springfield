@@ -1,6 +1,7 @@
 package com.automation.framework;
 
 import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.util.PropertyDecryptService;
 import com.automation.framework.util.ScreenshotService;
 import com.automation.framework.util.TestExecutionListener;
 import com.github.javafaker.Faker;
@@ -16,9 +17,11 @@ import org.testng.annotations.Listeners;
 @Listeners(TestExecutionListener.class)
 public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
 
-
     @LazyAutowired
     protected ApplicationContext appCtx;
+
+    @LazyAutowired
+    protected PropertyDecryptService decryptService;
 
     @LazyAutowired
     protected ScreenshotService screenshotService;

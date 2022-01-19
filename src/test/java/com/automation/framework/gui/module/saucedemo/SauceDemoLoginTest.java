@@ -28,7 +28,7 @@ public class SauceDemoLoginTest extends BaseTestNGTest {
     public void verifyLoginPage() {
 
         this.login.goToUrl()
-                .enterCredentials(this.username)
+                .enterCredentials(this.username, decryptService.getSauceDemoPassword())
                 .clickLoginButton();
     }
 

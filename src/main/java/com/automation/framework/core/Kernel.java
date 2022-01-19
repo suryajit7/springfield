@@ -1,7 +1,6 @@
 package com.automation.framework.core;
 
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.util.PropertyDecryptService;
 import com.automation.framework.util.SpecBuilder;
 import com.automation.framework.util.TokenService;
 import com.github.javafaker.Faker;
@@ -31,7 +30,6 @@ import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 public class Kernel {
 
     public Actions actions;
-    public PropertyDecryptService decryptService;
 
     @LazyAutowired
     public WebDriver driver;
@@ -69,7 +67,6 @@ public class Kernel {
     @PostConstruct
     public void init() {
         System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
-        this.decryptService = appCtx.getBean(PropertyDecryptService.class);
 
         if (!isJUnitTest()){
             PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, timeout), this);

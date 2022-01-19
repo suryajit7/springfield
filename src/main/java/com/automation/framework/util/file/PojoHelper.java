@@ -1,4 +1,4 @@
-package com.automation.framework.util;
+package com.automation.framework.util.file;
 
 import br.com.six2six.fixturefactory.Fixture;
 

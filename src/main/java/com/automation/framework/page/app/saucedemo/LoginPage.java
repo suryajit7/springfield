@@ -52,10 +52,10 @@ public class LoginPage extends BasePage {
     }
 
 
-    public LoginPage enterCredentials(String username) {
+    public LoginPage enterCredentials(String username, String password) {
         waitForPageToLoad();
         enterUsername(username);
-        enterPassword(decryptService.getSauceDemoPassword());
+        enterPassword(password);
         return this;
     }
 }

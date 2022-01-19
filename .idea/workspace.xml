@@ -5,29 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/06aea0ef-50cd-46ac-b6c9-ff52f0cb7a48-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/084816c9-2c6a-439d-bd01-1687447accb4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0f0f12d3-14e6-4276-9ac8-848c44742fc7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2db9e835-4aff-4178-82c2-4f1ace042b23-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3817cfac-d8dd-4e4a-bb99-7d36c4adfe0f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/38547419-d73a-48fe-b43f-3ecd7c310bc6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3cbb0be6-cfa1-4f76-b8f6-5bf2dbe0be5d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5c59e759-e774-4d2b-956d-668364dc6a32-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5fd96230-969d-4948-b47c-c9ce71c3e495-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/727f6d38-d9ca-453a-81c7-fee65cc5b73a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/83411f7d-64ba-456b-86f5-1c193195902c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8932d562-ac1e-436f-bae7-68f04274d560-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9aefa927-ccc3-4c07-a824-6878a14632de-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9ea26515-02f4-49e7-bb83-91ec916a17f6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a312ed5b-c260-4f20-b6e9-238efae5f38c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/af9e09ff-3039-423c-822a-ba04558b8973-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b2699e1a-c2a6-4cde-abff-f7a3c69084ac-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b8920d20-7419-439f-bb0c-fb312e7fe9b5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b9057ac8-6ba1-4474-9984-db213cd2231c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/baeedbb1-f2ec-41b7-a2fe-0faf6e298046-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c0fc3164-6242-4b23-abfe-bd94f3cf2127-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c6d46bb7-45fd-4264-966a-3272a40004da-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ceb6547d-57d8-4aa5-9b44-8556ae33b379-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/dca821b4-88ff-4997-b7c2-29e11a26b57a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e6a34454-f62c-4b86-82c0-56832867c500-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ebf77a5b-679b-4433-9d07-f054b0fafed9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ef625401-c27c-4970-a324-f221968115eb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/efcf51d0-73aa-430e-a958-372f5fb51240-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/todo/Integration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/todo/analytics/AutomatedWebElementIdentification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/todo/analytics/IdentifyTestRunCandidate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/todo/analytics/LogAnalysis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/todo/app/Dashboard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/todo/job/Schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/todo/monitor/HealthCheck.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/encrypted.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/FileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/PojoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PojoHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/StringToJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/Integration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/analytics/AutomatedWebElementIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/AutomatedWebElementIdentification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/analytics/IdentifyTestRunCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/IdentifyTestRunCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/analytics/LogAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/LogAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/app/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/app/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/job/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/job/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/todo/monitor/HealthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/monitor/HealthCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AppContextProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AppContextProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/EnvironmentWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/EnvironmentWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/PathFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PojoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/PojoHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/ScreenshotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/ScreenshotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/encrypted.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,28 +187,7 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.integration in automation-suite.test">
-    <configuration name="MongoDbContainerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.database.module.MongoDbContainerTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.SauceDemoLoginTest">
     <configuration name="PostmanAPITestScenarios" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -272,6 +276,24 @@
       <option name="AUTO_RESTART" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="SauceDemoLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.gui.module.saucedemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.gui.module.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.gui.module.saucedemo.SauceDemoLoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="ARGS_FILE" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -282,19 +304,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.MongoDbContainerTest" />
       <item itemvalue="Gradle.Tests in 'com.automation.framework.integration'" />
       <item itemvalue="Gradle.PostmanAPITestScenarios" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="Gradle.automation-suite [dependencies]" />
+      <item itemvalue="TestNG.SauceDemoLoginTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SauceDemoLoginTest" />
         <item itemvalue="JUnit.integration in automation-suite.test" />
         <item itemvalue="Gradle.automation-suite [dependencies]" />
         <item itemvalue="Gradle.PostmanAPITestScenarios" />
         <item itemvalue="Gradle.Tests in 'com.automation.framework.integration'" />
-        <item itemvalue="Gradle.MongoDbContainerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -482,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642596931714</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Commit147: minor refactoring">
+      <created>1642597460698</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1642597460699</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -533,7 +562,8 @@
     <MESSAGE value="Commit144: refactoring" />
     <MESSAGE value="Commit145: refactoring" />
     <MESSAGE value="Commit146: removed ZeroCell lib usage and minor refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit146: removed ZeroCell lib usage and minor refactoring" />
+    <MESSAGE value="Commit147: minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit147: minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

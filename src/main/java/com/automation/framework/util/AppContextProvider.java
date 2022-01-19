@@ -16,7 +16,6 @@ public class AppContextProvider implements ApplicationContextAware  {
         return applicationContext;
     }
 
-    @SuppressWarnings("AccessStaticViaInstance")
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;

@@ -2,7 +2,7 @@ package com.automation.framework.integration;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.data.entity.ems.Employee;
-import com.automation.framework.util.FileReader;
+import com.automation.framework.util.file.FileReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;

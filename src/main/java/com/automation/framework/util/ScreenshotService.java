@@ -4,6 +4,7 @@ import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.automation.framework.core.annotation.LazyService;
+import com.automation.framework.util.file.PathFinder;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;

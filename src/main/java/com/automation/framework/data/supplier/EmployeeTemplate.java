@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.automation.framework.util.PojoHelper.getObject;
+import static com.automation.framework.util.file.PojoHelper.getObject;
 
 /**
  * Test Data Supplier example using Fixture Template with Faker

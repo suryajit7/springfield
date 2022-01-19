@@ -2,8 +2,8 @@ package com.automation.framework;
 
 
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.util.FileReader;
-import com.automation.framework.util.PathFinder;
+import com.automation.framework.util.file.FileReader;
+import com.automation.framework.util.file.PathFinder;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
 import org.junit.jupiter.api.AfterAll;

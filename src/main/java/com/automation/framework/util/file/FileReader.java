@@ -1,4 +1,4 @@
-package com.automation.framework.util;
+package com.automation.framework.util.file;
 
 import com.automation.framework.core.annotation.LazyService;
 import com.automation.framework.data.FileType;
