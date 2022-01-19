@@ -3,7 +3,6 @@ package com.automation.framework.util;
 import com.automation.framework.core.annotation.LazyService;
 import com.automation.framework.data.FileType;
 import com.automation.framework.data.entity.BaseEntity;
-import com.creditdatamw.zerocell.Reader;
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
@@ -80,13 +79,13 @@ public class FileReader {
         return hasValidExtension(filename, XML) ? serializer.read(BaseEntity.class, pathFinder.getFilePathForFile(filename).toFile()) : BaseEntity.builder().build();
     }
 
-    public <T> List<T> readExcelFile(String filename, Class<T> type, String sheetName) {
+/*    public <T> List<T> readExcelFile(String filename, Class<T> type, String sheetName) {
         return Reader.of(type)
                 .from(pathFinder.getFilePathForFile(filename).toFile())
                 .sheet(sheetName)
                 .skipHeaderRow(true)
                 .list();
-    }
+    }*/
 
     public String getFileExtension(String filename) {
         return FilenameUtils.getExtension(filename);
@@ -95,4 +94,5 @@ public class FileReader {
     public Boolean hasValidExtension(String filename, FileType fileType){
         return getFileExtension(filename).equalsIgnoreCase(fileType.getStringValue());
     }
+
 }

@@ -1,7 +1,6 @@
 package com.automation.framework.integration;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
-import com.automation.framework.data.entity.ems.Department;
 import com.automation.framework.data.entity.ems.Employee;
 import com.automation.framework.util.FileReader;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,8 +40,8 @@ public class ReaderTest extends AutomationSuiteApplicationTests {
 
         System.out.println(fileReader.readJsonFile("EMSTestData.json"));
 
-        fileReader.readExcelFile("DepartmentTestData.xlsx", Department.class, "Sheet1")
-                .forEach(System.out::println);
+   /*     fileReader.readExcelFile("DepartmentTestData.xlsx", Department.class, "Sheet1")
+                .forEach(System.out::println);*/
     }
 
     @Test(priority = 1)

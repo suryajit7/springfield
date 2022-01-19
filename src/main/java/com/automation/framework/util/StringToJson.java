@@ -1,4 +1,4 @@
-package com.automation.framework.util.helper.converter;
+package com.automation.framework.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;

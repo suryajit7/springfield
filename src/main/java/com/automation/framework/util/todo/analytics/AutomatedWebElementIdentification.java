@@ -1,4 +1,4 @@
-package com.automation.framework.util.helper.todo.analytics;
+package com.automation.framework.util.todo.analytics;
 
 /**
  * @Author - suryajt7
