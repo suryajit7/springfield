@@ -1,7 +1,7 @@
 package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
-import com.automation.framework.service.SpecBuilder;
+import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import org.junit.jupiter.api.Order;
@@ -25,7 +25,7 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
 
     @Autowired
-    private SpecBuilder specBuilder;
+    private PropertyDecryptService decryptService;
 
     @Value("${app.postman-echo.url}")
     protected String postmanEchoUrl;
@@ -40,7 +40,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, specBuilder.decryptService.getPostmanKey())
+                .header(X_API_KEY_HEADER, decryptService.getPostmanKey())
                 .log().all()
                 .when()
                 .get("/workspaces")
@@ -57,7 +57,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, specBuilder.decryptService.getPostmanKey())
+                .header(X_API_KEY_HEADER, decryptService.getPostmanKey())
                 .config(config().logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails()))
                 .when()
                 .get("/workspaces")
@@ -72,7 +72,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
         Set blackListHeaders = Set.of(X_API_KEY_HEADER, "Accept");
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, specBuilder.decryptService.getPostmanKey())
+                .header(X_API_KEY_HEADER, decryptService.getPostmanKey())
                 .config(config().logConfig(logConfig().blacklistHeaders(blackListHeaders)))
                 .log().all()
                 .when()
@@ -144,7 +144,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
 
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, specBuilder.decryptService.getPostmanKey())
+                .header(X_API_KEY_HEADER, decryptService.getPostmanKey())
                 .filter(new RequestLoggingFilter(BODY))
                 .filter(new ResponseLoggingFilter(STATUS))
                 .log().all()
@@ -163,7 +163,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
         PrintStream fileOutput = new PrintStream(new File("api-test.log"));
         given()
                 .baseUri(postmanUrl)
-                .header(X_API_KEY_HEADER, specBuilder.decryptService.getPostmanKey())
+                .header(X_API_KEY_HEADER, decryptService.getPostmanKey())
                 .filter(new RequestLoggingFilter(fileOutput))
                 .filter(new ResponseLoggingFilter(fileOutput))
                 .log().all()

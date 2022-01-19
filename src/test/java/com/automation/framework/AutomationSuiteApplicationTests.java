@@ -1,6 +1,7 @@
 package com.automation.framework;
 
 
+import com.automation.framework.core.Kernel;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.util.FileReader;
 import com.automation.framework.util.PathFinder;
@@ -37,6 +38,9 @@ public class AutomationSuiteApplicationTests {
 
 	@LazyAutowired
 	protected FileReader fileReader;
+
+	@LazyAutowired
+	protected Kernel kernel;
 
 	@LazyAutowired
 	protected Faker faker;

@@ -5,10 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-17.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-test.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/service/SpecBuilder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/SpecBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/SpecBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToBoolean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/converter/StringToLocalDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/2c8af024-d8de-4aec-b3b0-d3e94effa7e9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/3a9a704d-94f8-4600-9b5f-6c13ba10202f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/4fd33652-8f8c-4e1a-aaad-760d3d0b5f7c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/71347f02-c721-45d5-9d2c-9fbdb65b79fa-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/71edbb46-21e7-4a8f-a333-4a5d60f16334-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/7234582f-41af-408f-8eb1-04c856a0fe11-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/780b2532-e3a2-4f77-ba94-e3bcb50864ba-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/8632e027-0acd-4954-b01a-db80642e729c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/8f698fa3-5185-4f0f-9932-0ab8d906a443-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/aa6c6cb1-e28f-48dc-b39c-560d7c24d6db-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/adf67be7-5e3e-4133-9e7b-cc03a2be5724-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/adfd97a4-a5d1-481d-b1f8-17fba096ec5c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/affd41b9-8e83-47e0-936b-4b87a76959a0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/bb029aab-1e10-4d48-8a63-fcfc4ffd3ec0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/c071a98e-6e00-4431-85d1-2522b4fa760b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/c15158eb-75bd-4a38-869d-c82f841958b1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/c32e74ef-f897-48bd-877c-22a72ab908d5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/c7f25711-58cf-4db0-98cd-d784b730cb13-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/cb2b863e-280f-495f-8ab7-1c3d9145a7ac-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/ce929104-c261-4469-8b90-95e82ac9daf9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/cf947fda-4841-459d-acc7-3d3e67df0efc-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/d0a1e3c5-ad6f-4b9b-a6e5-91ffdfebc4a0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/d11261e9-cf24-430f-b61d-064c7f731aef-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/d1be760d-9152-44cb-b1cb-b4fc725223c4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/d2ab273a-2db7-480d-b605-373a8d527ebc-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/d6e9a8ac-786b-4b58-b4c0-ea5a859973be-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/d979592e-d17c-4578-95b4-efc24319948b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/dca7c82f-aadc-48ff-ab62-68d5610a6bca-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/dd19079d-3622-4d00-8f9e-8dc5a918a797-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/de6368d1-3bc5-4823-a5c4-9a9687391a31-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/df91f146-c8d6-4a20-a27d-790a0ba1dce1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/e0dc48b1-0a34-49b9-bb1d-61577f69f85e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/e57abe21-29b6-465a-8bd7-226f1179a8d2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/e5a26a4c-d87d-4204-93a1-eaaf5ce05483-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/e61205f3-5b39-4bfa-8268-26ca8f751fc0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/e9871ac9-5117-4196-a3da-d8b35afbcb2c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/e9cdecfb-3e83-489f-aba9-e529987f056e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/e9e50900-de06-4ee9-87cb-3047a5deaa34-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/ece4bf45-558d-4c54-889e-65d2fe5823b0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/ed2baa28-f32b-4874-91a9-24475bae6e08-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/ed9048ce-be85-4d72-b19b-5be8102f6ba1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/ed9829cb-5549-4274-b7e9-dc1eaa049b81-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/f049ef94-914e-4759-aca9-69d8c9aeec4d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/f08f260b-23d9-46a5-8512-670d8cda5e15-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/f1d887f4-e0ba-42b7-9bb7-6420970c1a1d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/f258af56-91d8-4681-b36e-d3d25d5f8b95-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/f3013de2-311c-4c5c-96c7-072bb2d77430-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/results/allure-results/f3ddfa87-2120-4f02-809d-982586cf87a2-container.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +207,7 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.automation-suite [dependencies]">
+  <component name="RunManager" selected="JUnit.integration in automation-suite.test">
     <configuration name="MongoDbContainerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -271,8 +335,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.automation-suite [dependencies]" />
         <item itemvalue="JUnit.integration in automation-suite.test" />
+        <item itemvalue="Gradle.automation-suite [dependencies]" />
         <item itemvalue="Gradle.PostmanAPITestScenarios" />
         <item itemvalue="Gradle.Tests in 'com.automation.framework.integration'" />
         <item itemvalue="Gradle.MongoDbContainerTest" />
@@ -449,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642442797342</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Commit145: refactoring">
+      <created>1642443463477</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1642443463477</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -498,7 +569,8 @@
     <MESSAGE value="Commit142: Added/Updated dependencies" />
     <MESSAGE value="Commit143: refactoring" />
     <MESSAGE value="Commit144: refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit144: refactoring" />
+    <MESSAGE value="Commit145: refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit145: refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

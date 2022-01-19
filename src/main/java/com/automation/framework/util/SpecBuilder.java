@@ -1,7 +1,7 @@
-package com.automation.framework.service;
+package com.automation.framework.util;
 
 
-import com.automation.framework.core.Kernel;
+import com.automation.framework.core.annotation.LazyAutowired;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
@@ -20,7 +20,10 @@ import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
 @Slf4j
 @Component
-public class SpecBuilder extends Kernel {
+public class SpecBuilder {
+
+    @LazyAutowired
+    private PropertyDecryptService decryptService;
 
     @Value("${app.spotify.url}")
     private String spotifyUrl;
@@ -32,8 +35,7 @@ public class SpecBuilder extends Kernel {
     private String postmanUrl;
 
     public RequestSpecification getRequestSpec(){
-        RequestSpecification requestSpecification = null;
-        return requestSpecification = new RequestSpecBuilder()
+        return new RequestSpecBuilder()
                 .setBaseUri(spotifyUrl)
                 .setBasePath("/v1")
                 .setContentType(JSON)
@@ -42,14 +44,12 @@ public class SpecBuilder extends Kernel {
     }
 
     public ResponseSpecification getResponseSpec(){
-        ResponseSpecification responseSpec = null;
-        return responseSpec = new ResponseSpecBuilder()
+        return new ResponseSpecBuilder()
                 .log(ALL).build();
     }
 
     public RequestSpecification getPostmanRequestSpec(){
-        RequestSpecification requestSpecification = null;
-        return requestSpecification = new RequestSpecBuilder()
+        return new RequestSpecBuilder()
                 .setBaseUri(postmanUrl)
                 .addHeader(X_API_KEY_HEADER, decryptService.getPostmanKey())
                 .setContentType(JSON)
@@ -58,17 +58,14 @@ public class SpecBuilder extends Kernel {
     }
 
     public ResponseSpecification getPostmanResponseSpec(){
-        ResponseSpecification responseSpec = null;
-        return responseSpec = new ResponseSpecBuilder()
+        return new ResponseSpecBuilder()
                 .expectStatusCode(SC_SUCCESS)
                 .expectContentType(JSON)
                 .log(ALL).build();
     }
 
     public RequestSpecification getAccountSpec(){
-        RequestSpecification requestSpecification = null;
-
-        return requestSpecification = new RequestSpecBuilder()
+        return new RequestSpecBuilder()
                 .setBaseUri(spotifyAccountsUrl)
                 .addFormParams(getFormParams())
                 .setContentType(URLENC)

@@ -1,7 +1,7 @@
 package com.automation.framework.integration.postman;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
-import com.automation.framework.service.SpecBuilder;
+import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.assertj.core.api.Assertions;
@@ -22,13 +22,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
     @Autowired
-    private SpecBuilder specBuilder;
+    private PropertyDecryptService decryptService;
 
     private String apiToken;
 
     @BeforeAll
     public void setupBeforeTest(){
-        apiToken = specBuilder.decryptService.getPostmanKey();
+        apiToken = decryptService.getPostmanKey();
     }
 
     @Test
