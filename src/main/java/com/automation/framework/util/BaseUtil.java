@@ -11,11 +11,15 @@ public class BaseUtil {
 
     @Bean
     public Faker getFaker(){
-        return new Faker();
-    }
+        return new Faker(); }
 
     @Bean
     public Log getLogger(){
         return LogFactory.getLog(getClass()); }
+
+
+/*    @Bean
+    public MyConfigurableBean getMyConfigurableBean(){
+        return new MyConfigurableBean(); }*/
 
 }

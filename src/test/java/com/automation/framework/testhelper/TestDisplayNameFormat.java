@@ -1,4 +1,4 @@
-package com.automation.framework.core;
+package com.automation.framework.testhelper;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayNameGenerator;

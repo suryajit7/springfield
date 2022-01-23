@@ -4,13 +4,14 @@ import com.automation.framework.core.annotation.Page;
 import com.automation.framework.core.annotation.Screenshot;
 import com.automation.framework.page.BasePage;
 import io.qameta.allure.Step;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
-@Page @Data
+@Page @Getter @Setter
 public class GoogleSearchPage extends BasePage {
 
     private static final String HINDI_LANGUAGE = "//a[contains(text(),'हिन्दी')]";

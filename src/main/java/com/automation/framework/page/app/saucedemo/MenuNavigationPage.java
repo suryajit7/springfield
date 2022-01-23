@@ -4,7 +4,8 @@ package com.automation.framework.page.app.saucedemo;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
 import io.qameta.allure.Step;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,7 +17,9 @@ import static com.automation.framework.page.app.saucedemo.MenuOption.*;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
-@Page @Data
+@Page
+@Getter
+@Setter
 public class MenuNavigationPage extends BasePage {
 
 

@@ -5,53 +5,192 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/06aea0ef-50cd-46ac-b6c9-ff52f0cb7a48-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/084816c9-2c6a-439d-bd01-1687447accb4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0f0f12d3-14e6-4276-9ac8-848c44742fc7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2db9e835-4aff-4178-82c2-4f1ace042b23-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3817cfac-d8dd-4e4a-bb99-7d36c4adfe0f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/38547419-d73a-48fe-b43f-3ecd7c310bc6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3cbb0be6-cfa1-4f76-b8f6-5bf2dbe0be5d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5c59e759-e774-4d2b-956d-668364dc6a32-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5fd96230-969d-4948-b47c-c9ce71c3e495-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/727f6d38-d9ca-453a-81c7-fee65cc5b73a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/83411f7d-64ba-456b-86f5-1c193195902c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8932d562-ac1e-436f-bae7-68f04274d560-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9aefa927-ccc3-4c07-a824-6878a14632de-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9ea26515-02f4-49e7-bb83-91ec916a17f6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a312ed5b-c260-4f20-b6e9-238efae5f38c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/af9e09ff-3039-423c-822a-ba04558b8973-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b2699e1a-c2a6-4cde-abff-f7a3c69084ac-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b8920d20-7419-439f-bb0c-fb312e7fe9b5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b9057ac8-6ba1-4474-9984-db213cd2231c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/baeedbb1-f2ec-41b7-a2fe-0faf6e298046-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c0fc3164-6242-4b23-abfe-bd94f3cf2127-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c6d46bb7-45fd-4264-966a-3272a40004da-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ceb6547d-57d8-4aa5-9b44-8556ae33b379-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/dca821b4-88ff-4997-b7c2-29e11a26b57a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e6a34454-f62c-4b86-82c0-56832867c500-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ebf77a5b-679b-4433-9d07-f054b0fafed9-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ef625401-c27c-4970-a324-f221968115eb-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/efcf51d0-73aa-430e-a958-372f5fb51240-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/ConfigurableBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container/BaseContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AccessTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-21.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/006b2dff-0d34-4688-9150-6e591a9b4eed-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/02631e28-abce-4d47-98a6-42ad5b170a27-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/027030ff-d6a4-4219-927d-be124b562dc9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/02d3219d-fd95-4b86-ad68-63aa0d33ac80-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0c3b15b0-aef0-41b8-b772-1e4e2b5a8ff3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0f4c9db9-a8a1-4101-8f18-9843e7cbc67f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/0fbf47e0-2ce9-4977-ad71-0351d43f52f8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1048c07d-0fff-4ad2-ab07-482578d72000-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1088570c-3a3c-492b-a077-cee4ca1d202d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/109a3241-579c-44a4-b0bf-889f3000605d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/127bf7e2-dc16-4bd1-b61d-24ff481692c1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/12afb077-f4df-4283-b79f-6a16c72b420b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/17b91e78-bb59-4e2b-a3d2-61ae74b56b3d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/18fdae06-c1f2-4a7c-94d3-a3e5002522b2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1a571003-1d72-4f3e-b7f1-0e7b1fe1850c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1c110d55-1b16-4dad-ad4c-4e8699138789-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/1e73a3b2-1c46-47c6-9d8b-30f8c699e588-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/20b9150b-70f1-4ae2-8261-55e90453018a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/21efce88-e808-46c3-a915-b442b2487cf6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2a2630e5-8ca4-4e1d-b97f-adda81518979-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/2f83597b-cd5d-43f7-9ddb-ccaeb7fe8037-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/30f70392-e244-4564-8e1b-a6ba1231687e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/327230bf-4dd5-4485-b00c-72229fef7cb7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/34bd00c8-1875-4566-849c-69c4f5c8685c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/34e19ba3-3057-4eb0-ac93-79eefc6faaee-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/376b70ae-b1f4-450f-bafe-d6a760572bb1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/392788bb-a5d9-4f63-91f3-57e984bb40e6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/397f2f65-40b8-4610-a6a8-7c6ab434dc1c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3b543a5f-8627-4424-9f60-be5529186d38-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3d6fe9b1-489d-4343-a3d0-8d257947a219-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/3fbc05e5-628a-4a6f-bfe8-e6c1c8fe5d31-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/435e9fac-782e-4bcb-9f60-a65011a3800b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/43950454-624e-4cfc-98fa-6233a9aea774-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/43e04c03-560a-4b40-81cc-c0fe58825725-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/459b28b7-7a92-4f9b-8ca7-b71c05c28676-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/47178e5b-46b9-4976-8df4-24dce11152af-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/48063b6f-d5f5-4d44-b6f3-392f242e21f4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/4afd7bfc-78ca-4622-b6c5-629a5a9decba-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/525735e1-f910-46a7-a11a-8ac967de6fb6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/52a82a80-1b47-43c4-8854-fe8605102b5c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/52c8dc72-b169-4914-955b-c4b2bc696898-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/53df8ece-0dee-416d-8b56-d9ecf433bcaa-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/540250fb-c959-4edc-991f-3446f21071e7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/54accf76-a0f9-4b02-acc5-269b4f1a8453-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5548a29d-919f-4940-adad-0e4514e39931-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5607d2c5-b7f1-4ab4-80a6-87da973b1d28-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5760e962-7d1d-4f57-8213-13ccb6018c3e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/58319b82-261d-4f2e-a1b6-fe922ba42175-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/588465f4-6582-4e1d-9adf-33de8af010b2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5befc408-703e-4158-8ca3-a2dcbf876fa6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5c71d0fa-d354-4a56-91a1-493306045901-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5cca9fd9-2bf7-40c2-b846-a789fe30de80-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5ce4590b-7417-4d31-a004-1c8e94a88f06-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5da47f2c-a43b-4667-a946-641ac0cfd269-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/5f23b4d1-fb85-481a-be0b-684516de4271-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/60c8a2a2-26db-4b4a-8b85-9483f01e373b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6203cafd-16b3-4156-a2d9-de2080ef14d5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/65752d48-4280-4b42-82fb-a158b1a41743-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/67cd6f9f-cd5f-4e51-bfe2-0d234bcd1631-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6bd35bde-b795-48bd-8581-a0337f284884-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6c1d6fe6-99f4-4ade-8527-e1b94ebc3403-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6c4f47e5-07b8-4bc8-b25e-80f73e7e08b5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6dd8d778-b91d-4413-a92a-0bd82682b901-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/6e3f5f02-1f3a-42f0-bdd7-996527cca7e1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/713db877-6e2c-4325-be77-09bb078a92f5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7193bc13-3a2a-472c-8d43-c48e68424385-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/73325415-a4e0-4523-a308-a059d9c4eeda-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/78e7fa69-a9b1-4348-9093-f5b09bce4344-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/79b67d85-b3cb-4689-9e8a-2a38ea975697-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7aee3171-c031-4367-a8d1-834544ca72f8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7b0d04cc-8962-4e1b-be34-8cab83180554-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7d6042a8-4fd1-408b-a953-303641ef1b4f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/7edf5f05-91b5-4bbe-bd64-8367ed532cf3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/815bbf65-efe7-4f3b-9a9c-67932ffa2cae-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/82032774-baa9-44dd-a6fa-842ab760d0bc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8401dcff-4006-4fb3-bdee-814017a899f6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/84906f60-d58d-404a-b807-984ff4dfd351-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/85b7ac55-e735-4499-a9d7-20e540c6f1b0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/89278639-663d-4e0e-af16-4858003aaeae-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8a61a350-e0c5-4397-96d2-a9d0b1fe4376-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8b2ec4d1-e6a6-4dfd-a3f8-4f9f6a5a6e73-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8bb8b118-630d-4c4e-b55c-98e933e4cb76-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8f13f90a-08b2-4427-9418-803ef7aeecc3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8f569ba3-66d8-4871-9be7-5b269e748286-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/8f5cf0ee-7a50-4558-a218-1cb4c03f1559-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9072a3a8-84bf-452b-bafb-c9ae167b5c72-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/91c6772d-28e5-4631-8e09-ac6efc09e6ac-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9428fec9-28e2-4a58-b190-2a5eddb2244b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/942c6440-4891-4372-8359-ed8f00f79363-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/942d3214-8f80-454d-be60-f52fc1f454bb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/942f954d-3e16-46ab-9d85-6e50ee9ba82b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/95edcfdf-b218-4c22-9f9d-574148e8a0a6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/96edebc5-75e7-414e-9c71-e890c357f055-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/98faf707-3413-4bfa-b866-be24893e59e3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9b2605af-6584-43b0-a1d1-d410f10c6f32-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/9d163a42-9543-4617-abad-7b3dec63f5d7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a01e6e9f-4c0f-4c54-961d-ecda51f61618-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a0736fda-98df-4e16-841d-ee3ba9f2b13e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a21e3243-e9af-4323-83b6-d0ffb63f73be-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a57bbfce-cbe3-4ab7-b390-889fe18c443b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/a59151f9-9adc-4832-bb01-3705b41e3757-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/aa49fdfe-1d65-478e-aea3-b8f756309695-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ac945991-ad0c-4079-8ac6-1df35572d265-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ad630556-7d5f-4471-b0f1-741a23ca5c92-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ae3b2448-f736-4bf1-bc93-cbd6b6a988a3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b26bd7de-ae0c-422b-a4b6-66863d64cf7d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b3e3d00a-8f6d-4856-96d0-0c44f7861a1c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b6d52586-468e-441f-8e23-e15a946af47d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/b87aa1a8-fbda-4bd4-a834-e003d19e2e41-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ba90d232-93c7-41b5-a776-6790ddc67d62-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/bc15b6e4-d042-4a83-ba6f-e67103a30739-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/bcb71a0b-44bb-4b6b-bc07-9aa15d09a6fd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/bd07c74e-0c6b-403f-830d-9235a71feb88-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/bfac2515-8c07-4427-9542-8ec3ebd1ce78-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c07d45ab-dccf-46e2-a6f7-b1108e286b66-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c23a97de-5199-4600-b58c-b446b8cf18e9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c251ea1d-2cd0-47b3-b53a-809def2eaf21-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/c4d0ab1a-8a97-4b7e-864e-d7e8f73df1c8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/cced57a8-5ac2-4bc3-8ae0-d49a6d453135-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d3371cad-0b36-40c7-aa18-08ed977d06a0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d339f8c6-1011-456f-8a88-99d4c6d74cee-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d35837b1-3bad-4c00-8f29-05ae311f3ba6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/d7a635ea-4126-466d-a753-eff4c3dac8fd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ddfcf463-066f-4a96-9a94-e5012616c62a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/de584208-82c3-44bc-be99-4543265b371e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/deb4b7c3-4677-40bf-891a-b3ff938752f3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/deb75c19-a813-4a5c-9f93-0b787de29f54-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/df4229fe-2671-493c-8451-67f57b41b91c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e15aef93-ea0d-4190-95af-d14b326c0549-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e2c0cf39-3dac-45b6-8dc4-7117908c7841-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/e75d1fc7-402f-42b0-8642-879aede5c68a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/eed1e8bc-5e8a-4593-bc3b-54d84cfe6157-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/eed2a273-2760-4868-8cda-71cd1e0522fc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/f255be3c-9f6b-4746-8014-29a42a8bf37b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/f2da3185-4334-4304-8cc9-53c227f1583f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/f3ee31f9-a99f-4ac2-b15c-05cdfe0ab4d9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/f6427645-6110-4d1f-af4f-d1e4ca72fbfa-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/f97d790a-86e4-4570-8e2d-a05e09a3344b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/fc977e91-66d3-4615-a3a9-f11066175b32-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/fe0d2701-5f7c-4530-90e7-0c7b66264b6f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/fe81af46-050f-44ac-a894-97adda9bf628-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ff17d4c5-5856-4e2e-bd5d-47516f93201d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/results/allure-results/ff81b2ec-6c43-479b-960e-619921ffa663-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/data/supplier/EmployeeTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiDemos-debug.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/MenuNavigationPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/app/saucedemo/MenuNavigationPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/BaseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/BaseUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/encrypted.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/MongoDbContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/MongoDbContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/google/GoogleSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/google/GoogleSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/google/SearchComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/google/SearchComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/google/SearchResultsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/google/SearchResultsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/opencart/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/opencart/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/opencart/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/opencart/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/opencart/WorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/opencart/WorldMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AppContextProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AppContextProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/EnvironmentWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/EnvironmentWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/FileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/PathFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PojoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/PojoHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/ScreenshotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/ScreenshotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/MenuNavigationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/MenuNavigationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/MenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/visa/VisaRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/visa/VisaRegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/spotify/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/spotify/PlaylistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/BaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/BaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PropertyDecryptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/PropertyDecryptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/SpecBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/SpecBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/StringToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/StringToJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/TokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/encrypted.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/encrypted.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/core/AssertField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/testhelper/AssertField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/core/AssertWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/testhelper/AssertWebElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/core/TestDisplayNameFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/testhelper/TestDisplayNameFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/CustomAssertionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/CustomAssertionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +219,11 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="automation-suite" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="automation-suite" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -92,8 +236,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="Python Script" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -143,6 +287,9 @@
       </map>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="22ueLL2eCSxsEf7C0lxxAFmwmmX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -164,7 +311,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="ReaderModeSettings">
@@ -187,72 +334,63 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SauceDemoLoginTest">
-    <configuration name="PostmanAPITestScenarios" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.integration.postman.PostmanAPITestScenarios&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.integration in automation-suite.test">
+    <configuration name="SpotifyPlaylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.SpotifyPlaylistTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="Tests in 'com.automation.framework.integration'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.automation.framework.integration.*&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.SpotifyPlaylistTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="automation-suite [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.SpotifyPlaylistTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToCreatePlaylistWithGivenName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -261,62 +399,63 @@
     <configuration name="integration in automation-suite.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
       <option name="TEST_OBJECT" value="directory" />
       <dir value="$PROJECT_DIR$/src/test/java/com/automation/framework/integration" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <option name="AUTO_RESTART" value="false" />
-      <method v="2" />
+    <configuration default="true" type="TestNG">
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="SauceDemoLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="com.automation.framework.integration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.gui.module.saucedemo.*" />
+          <option name="PATTERN" value="com.automation.framework.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.gui.module.saucedemo" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.gui.module.saucedemo.SauceDemoLoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
-      <shortenClasspath name="ARGS_FILE" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="aws.lambda" factoryName="Remote">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="functionName" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.Tests in 'com.automation.framework.integration'" />
-      <item itemvalue="Gradle.PostmanAPITestScenarios" />
+      <item itemvalue="JUnit.SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" />
+      <item itemvalue="JUnit.SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
+      <item itemvalue="JUnit.SpotifyPlaylistTest" />
+      <item itemvalue="TestNG.com.automation.framework.integration" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
-      <item itemvalue="Gradle.automation-suite [dependencies]" />
-      <item itemvalue="TestNG.SauceDemoLoginTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SauceDemoLoginTest" />
         <item itemvalue="JUnit.integration in automation-suite.test" />
-        <item itemvalue="Gradle.automation-suite [dependencies]" />
-        <item itemvalue="Gradle.PostmanAPITestScenarios" />
-        <item itemvalue="Gradle.Tests in 'com.automation.framework.integration'" />
+        <item itemvalue="TestNG.com.automation.framework.integration" />
+        <item itemvalue="JUnit.SpotifyPlaylistTest" />
+        <item itemvalue="JUnit.SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
+        <item itemvalue="JUnit.SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithGivenName" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642597460699</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Commit148: minor refactoring">
+      <created>1642605936886</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1642605936886</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -563,7 +709,8 @@
     <MESSAGE value="Commit145: refactoring" />
     <MESSAGE value="Commit146: removed ZeroCell lib usage and minor refactoring" />
     <MESSAGE value="Commit147: minor refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit147: minor refactoring" />
+    <MESSAGE value="Commit148: minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit148: minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -571,18 +718,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/saucedemo/MenuNavigationPage.java</url>
-          <line>39</line>
+          <line>43</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/UsersTest.java</url>
           <line>42</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.5.4/113816cd79ef8a26a38f8bd5d9148eb062e2d621/spring-data-commons-2.5.4-sources.jar!/org/springframework/data/mapping/PropertyPath.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -592,6 +734,9 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/automation_suite$SpotifyPlaylistTest_shouldUpdateMySpotifyPlaylist.ic" NAME="SpotifyPlaylistTest.shouldUpdateMySpotifyPlaylist Coverage Results" MODIFIED="1642683807666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.automation.framework.integration.spotify.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/automation_suite$com_automation_framework_data_supplier.ic" NAME="com.automation.framework.data.supplier Coverage Results" MODIFIED="1633708768936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.automation.framework.data.supplier.*</FILTER>
     </SUITE>

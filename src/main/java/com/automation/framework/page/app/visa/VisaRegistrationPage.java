@@ -2,7 +2,8 @@ package com.automation.framework.page.app.visa;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -11,7 +12,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 @Page
-@Data
+@Getter @Setter
 public class VisaRegistrationPage extends BasePage {
 
     @FindBy(id = "first_4")

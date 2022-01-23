@@ -1,4 +1,4 @@
-package com.automation.framework.core;
+package com.automation.framework.testhelper;
 
 import com.google.i18n.phonenumbers.NumberParseException;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;

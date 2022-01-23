@@ -1,5 +1,6 @@
-package com.automation.framework.util;
+package com.automation.framework.util.file;
 
+import com.automation.framework.core.annotation.LazyService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,6 +8,7 @@ import lombok.SneakyThrows;
 
 import java.util.List;
 
+@LazyService
 public class StringToJson {
 
     @SneakyThrows

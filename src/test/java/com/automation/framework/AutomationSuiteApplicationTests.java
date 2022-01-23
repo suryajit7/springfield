@@ -1,7 +1,9 @@
 package com.automation.framework;
 
 
+import com.automation.framework.core.ConfigurableBean;
 import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.util.AppContextProvider;
 import com.automation.framework.util.file.FileReader;
 import com.automation.framework.util.file.PathFinder;
 import com.github.javafaker.Faker;
@@ -12,6 +14,7 @@ import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.parallel.Isolated;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
@@ -31,6 +34,11 @@ public class AutomationSuiteApplicationTests {
 
 	public MySQLContainer mySql;
 	public GenericContainer genericContainer;
+
+	private static AppContextProvider appCtx = new AppContextProvider();
+
+	@Autowired
+	protected static ConfigurableBean myBean;
 
 	@LazyAutowired
 	protected PathFinder pathFinder;
@@ -54,9 +62,12 @@ public class AutomationSuiteApplicationTests {
 	public void setup(){
 		logger.info("****** Spring Context loaded ******");
 		logger.info("Thread: ".concat(String.valueOf(Thread.currentThread().getId())));
-
+		
 		genericContainer = new GenericContainer("mongo:3.2.4")
 				.withExposedPorts(27017);
+
+		myBean = appCtx.getBeanOfType(ConfigurableBean.class);
+		myBean.setExpiredAccessToken(false);
 
 	}
 

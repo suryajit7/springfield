@@ -3,7 +3,8 @@ package com.automation.framework.page.app.google;
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
 import io.qameta.allure.Step;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -11,7 +12,8 @@ import java.util.List;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
-@Data
+@Getter
+@Setter
 @PageComponent
 public class SearchComponent extends BasePage {
 

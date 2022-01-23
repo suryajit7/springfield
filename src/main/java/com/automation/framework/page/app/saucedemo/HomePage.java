@@ -2,9 +2,12 @@ package com.automation.framework.page.app.saucedemo;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Page @Data
+@Page
+@Getter
+@Setter
 public class HomePage extends BasePage {
 
     private final String APP_LOGO = "//div[@class='app_logo']";

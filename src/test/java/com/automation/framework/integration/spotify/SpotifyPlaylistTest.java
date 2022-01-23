@@ -4,6 +4,7 @@ import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.spotify.Playlist;
 import com.automation.framework.service.api.spotify.PlaylistService;
+import com.automation.framework.util.AppContextProvider;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
+import static com.automation.framework.data.Constants.BLANK;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -19,10 +21,11 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
+    private static AppContextProvider appCtx = new AppContextProvider();
     public static final String SPOTIFY_USER_ID = "kuub16j6xd3bluyycbvgzkxxv";
     public static final String SPOTIFY_PLAYLIST_ID = "4I4maKtXwef0mtTIZ74GjU";
-    private Playlist requestPlaylist;
 
+    private Playlist requestPlaylist;
 
     @LazyAutowired
     private PlaylistService playlistService;
@@ -36,7 +39,7 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
     @Order(1)
     public void shouldGetAllExistingSpotifyPlaylists(){
 
-        List<String> playlistIds = playlistService.getUserId(SPOTIFY_USER_ID)
+        List<String> playlistIds = playlistService.getPlaylistIDsForGivenUserID(SPOTIFY_USER_ID)
                 .path("items.id");
 
         logger.info(playlistIds);
@@ -70,9 +73,9 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
     @Order(3)
     public void shouldNotBeAbleToCreatePlaylistWithGivenName(){
 
-        requestPlaylist.setName("");
+        requestPlaylist.setName(BLANK);
 
-        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist,false);
+        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist);
         Playlist responsePlaylist = response.as(Playlist.class);
 
         assertThat(response.statusCode(), equalTo(SC_BAD_REQUEST));
@@ -86,12 +89,14 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
     @Order(4)
     public void shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken() {
 
+        myBean.setExpiredAccessToken(true);
+
         requestPlaylist.setName(faker.music().genre());
 
-        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist, true);
+        Response response = playlistService.post(SPOTIFY_USER_ID, requestPlaylist);
         Playlist responsePlaylist = response.as(Playlist.class);
 
-        assertThat(response.statusCode(), equalTo(SC_UNAUTHORIZED));
+        assertThat(response.statusCode(),equalTo(SC_UNAUTHORIZED));
 
         assertThat(responsePlaylist.getError().getStatus(), equalTo(SC_UNAUTHORIZED));
         assertThat(responsePlaylist.getError().getMessage(), equalTo("Invalid access token"));

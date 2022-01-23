@@ -19,7 +19,7 @@ public class PropertyDecryptService {
     private String spotifyRefreshToken;
 
     @Value("${app.spotify.expired-key}")
-    private String spotifyExpiredAccessToken;
+    private String expiredSpotifyAccessToken;
 
     @Value("${app.saucedemo.password}")
     private String saucedemoPassword;
@@ -36,8 +36,8 @@ public class PropertyDecryptService {
         return spotifyRefreshToken;
     }
 
-    public String getSpotifyAccessToken(Boolean expiredToken) {
-        return expiredToken ? spotifyExpiredAccessToken : spotifyAccessToken;
+    public String getExpiredSpotifyAccessToken() {
+        return expiredSpotifyAccessToken;
     }
 
     public String getSauceDemoPassword() {

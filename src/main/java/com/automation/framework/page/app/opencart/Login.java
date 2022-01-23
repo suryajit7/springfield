@@ -2,14 +2,15 @@ package com.automation.framework.page.app.opencart;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @Page
-@Data
+@Getter @Setter
 public class Login extends BasePage {
 
     private static final String OPENCART_LOGO = "//img[@title='OpenCart']";

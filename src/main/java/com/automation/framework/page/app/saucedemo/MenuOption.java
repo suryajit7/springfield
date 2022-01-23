@@ -1,5 +1,8 @@
 package com.automation.framework.page.app.saucedemo;
 
+import lombok.Getter;
+
+@Getter
 public enum MenuOption {
 
     ADMIN("Admin", "menu_admin_viewAdminModule"), USER_MANAGEMENT("User Management", "menu_admin_UserManagement"), USERS("Users", "menu_admin_viewSystemUsers"),
