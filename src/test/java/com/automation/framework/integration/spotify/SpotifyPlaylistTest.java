@@ -35,6 +35,7 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
         requestPlaylist = new Playlist().getPlaylist(faker.music().genre(), faker.artist().name(), false);
     }
 
+
     @Test
     @Order(1)
     public void shouldGetAllExistingSpotifyPlaylists(){
@@ -100,5 +101,7 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
         assertThat(responsePlaylist.getError().getStatus(), equalTo(SC_UNAUTHORIZED));
         assertThat(responsePlaylist.getError().getMessage(), equalTo("Invalid access token"));
+
+        myBean.setExpiredAccessToken(false);
     }
 }

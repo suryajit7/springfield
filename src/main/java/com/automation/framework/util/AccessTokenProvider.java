@@ -1,7 +1,7 @@
 package com.automation.framework.util;
 
-import com.automation.framework.core.ConfigurableBean;
 import com.automation.framework.core.annotation.LazyService;
+import com.automation.framework.core.config.ConfigurableBean;
 import io.restassured.response.Response;
 import lombok.Synchronized;
 import lombok.extern.slf4j.Slf4j;

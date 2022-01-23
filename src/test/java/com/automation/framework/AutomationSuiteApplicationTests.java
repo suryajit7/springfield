@@ -1,8 +1,8 @@
 package com.automation.framework;
 
 
-import com.automation.framework.core.ConfigurableBean;
 import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.core.config.ConfigurableBean;
 import com.automation.framework.util.AppContextProvider;
 import com.automation.framework.util.file.FileReader;
 import com.automation.framework.util.file.PathFinder;

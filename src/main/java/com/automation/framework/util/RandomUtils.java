@@ -1,13 +1,11 @@
 package com.automation.framework.util;
 
-import org.springframework.context.annotation.Lazy;
-import org.springframework.stereotype.Service;
+import com.automation.framework.core.annotation.LazyService;
 
 import java.security.SecureRandom;
 
 
-@Lazy
-@Service
+@LazyService
 public class RandomUtils {
 
     private static final SecureRandom random = new SecureRandom();

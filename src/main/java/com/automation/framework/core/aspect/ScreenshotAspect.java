@@ -7,8 +7,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
-
 import static com.automation.framework.util.TestExecutionListener.getTestMethod;
 
 @Aspect
@@ -19,8 +17,7 @@ public class ScreenshotAspect {
     private ScreenshotService screenshotService;
 
     @After("@annotation(screenshot)")
-    public void after(Screenshot screenshot) throws IOException {
-        //TODO: add some kind of identifier later as method name etc. so screenshots have good name
-        this.screenshotService.takeWebPageScreenshot(getTestMethod(), "pass method name");
+    public void after(Screenshot screenshot){
+        this.screenshotService.takeWebPageScreenshot(getTestMethod(),"pass method name");
     }
 }

@@ -17,9 +17,4 @@ public class BaseUtil {
     public Log getLogger(){
         return LogFactory.getLog(getClass()); }
 
-
-/*    @Bean
-    public MyConfigurableBean getMyConfigurableBean(){
-        return new MyConfigurableBean(); }*/
-
 }
