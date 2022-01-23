@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/BaseUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/util/helper/AppConfigEncryptHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/ConfigurableBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/ConfigurableBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/aspect/ScreenshotAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/aspect/ScreenshotAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AccessTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/AccessTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/BaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/BaseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/helper/AppConfigEncryptHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/config/AppConfigEncryptHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parallel.testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642960016145</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Commit150: Refactoring">
+      <created>1642963999189</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1642963999189</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -519,7 +517,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit126: Major Refactoring" />
     <MESSAGE value="Commit127: Major Refactoring" />
     <MESSAGE value="Commit128: Major Refactoring" />
     <MESSAGE value="Commit129: Adding Allure Reporting features" />
@@ -544,7 +541,8 @@
     <MESSAGE value="Commit147: minor refactoring" />
     <MESSAGE value="Commit148: minor refactoring" />
     <MESSAGE value="Commit149: Major refactoring along with app context driven AccessTokenProvider." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit149: Major refactoring along with app context driven AccessTokenProvider." />
+    <MESSAGE value="Commit150: Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit150: Refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
