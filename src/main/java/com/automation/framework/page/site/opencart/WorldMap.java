@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.opencart;
+package com.automation.framework.page.site.opencart;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;

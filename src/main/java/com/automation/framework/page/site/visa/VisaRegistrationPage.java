@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.visa;
+package com.automation.framework.page.site.visa;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;

@@ -45,7 +45,7 @@ dependencies {
 	implementation 'org.springframework:spring-context:5.3.15'
 	implementation 'org.springframework:spring-expression:5.3.15'
 	implementation 'com.github.ulisesbocchio:jasypt-spring-boot:3.0.4'
-	implementation 'com.h2database:h2:2.0.206'
+	implementation 'com.h2database:h2:2.1.210'
 	implementation 'mysql:mysql-connector-java:8.0.27'
 	implementation 'org.testng:testng:7.5'
 	implementation 'io.github.bonigarcia:webdrivermanager:5.0.2'
@@ -93,6 +93,8 @@ dependencies {
 	implementation 'org.testcontainers:database-commons:1.16.2'
 	implementation 'com.google.guava:guava:31.0.1-jre'
 	implementation 'com.machinezoo.noexception:noexception:1.7.1'
+	implementation 'io.appium:java-client:8.0.0-beta2'
+
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'

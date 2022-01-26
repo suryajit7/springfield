@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.saucedemo;
+package com.automation.framework.page.site.saucedemo;
 
 
 import com.automation.framework.core.annotation.Page;
@@ -13,7 +13,7 @@ import org.openqa.selenium.support.How;
 
 import java.util.List;
 
-import static com.automation.framework.page.app.saucedemo.MenuOption.*;
+import static com.automation.framework.page.site.saucedemo.MenuOption.*;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 

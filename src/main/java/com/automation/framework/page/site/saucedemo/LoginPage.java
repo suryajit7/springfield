@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.saucedemo;
+package com.automation.framework.page.site.saucedemo;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;

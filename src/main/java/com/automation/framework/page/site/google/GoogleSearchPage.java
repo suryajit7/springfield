@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.google;
+package com.automation.framework.page.site.google;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.core.annotation.Screenshot;

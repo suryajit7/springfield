@@ -3,6 +3,7 @@ package com.automation.framework.core;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.util.SpecBuilder;
 import com.github.javafaker.Faker;
+import io.appium.java_client.AppiumDriver;
 import org.apache.commons.logging.Log;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -29,6 +30,9 @@ public class Kernel {
 
     @LazyAutowired
     public WebDriver driver;
+
+    @LazyAutowired
+    public AppiumDriver appiumDriver;
 
     @LazyAutowired
     public WebDriverWait wait;

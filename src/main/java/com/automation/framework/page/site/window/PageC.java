@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.window;
+package com.automation.framework.page.site.window;
 
 import com.automation.framework.core.annotation.Window;
 import com.automation.framework.page.BasePage;

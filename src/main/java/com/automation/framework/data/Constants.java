@@ -14,6 +14,10 @@ public class Constants {
     public static final String POSTMAN_WORKSPACE_DATA = "postmanWorkspaceData.json";
     public static final String POSTMAN_JSON_SCHEMA = "PostmanJsonSchema.json";
 
+
+    //MobileTesting
+    public static final String ANDROID_DEMO_APK = "AndroidDemoApp.apk";
+
     //API Related Constants
     public static final String CONTENT_TYPE_JSON_CHARSET_UTF8 = "application/json;charset=utf-8";
     public static final String HEADER = "header";
