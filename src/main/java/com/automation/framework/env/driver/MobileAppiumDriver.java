@@ -15,7 +15,7 @@ import static io.appium.java_client.remote.MobileCapabilityType.*;
 
 @Slf4j
 @LazyConfiguration
-public class AppiumDriverFactory {
+public class MobileAppiumDriver {
 
     @Value("${appium.server.url}")
     protected URL appiumServerUrl;

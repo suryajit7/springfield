@@ -55,7 +55,7 @@ public class ReaderTest extends AutomationSuiteApplicationTests {
     @Test(priority = 2)
     public void verifyTestPropertiesFile() throws IOException {
 
-        Properties property = PropertiesLoaderUtils.loadProperties(resourceLoader.getResource("property-test.properties"));
+        Properties property = PropertiesLoaderUtils.loadProperties(resourceLoader.getResource("application.properties"));
         System.out.print(property);
     }
 

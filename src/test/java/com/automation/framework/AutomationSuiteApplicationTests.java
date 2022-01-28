@@ -3,6 +3,7 @@ package com.automation.framework;
 
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.config.ConfigurableBean;
+import com.automation.framework.env.db.TestDBSetup;
 import com.automation.framework.util.AppContextProvider;
 import com.automation.framework.util.file.FileReader;
 import com.automation.framework.util.file.PathFinder;
@@ -13,6 +14,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.parallel.Isolated;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,7 +22,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.TestPropertySource;
 import org.testcontainers.containers.GenericContainer;
-import org.testcontainers.containers.MySQLContainer;
 
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 
@@ -28,11 +29,11 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @Isolated
 @TestPropertySource(locations = {"classpath:application.properties"})
 @TestMethodOrder(OrderAnnotation.class)
+@ExtendWith(TestDBSetup.class)
 @TestInstance(PER_CLASS)
 @ComponentScan
 public class AutomationSuiteApplicationTests {
 
-	public MySQLContainer mySql;
 	public GenericContainer genericContainer;
 
 	private static AppContextProvider appCtx = new AppContextProvider();
