@@ -15,14 +15,10 @@ w
 Gsrc/test/java/com/automation/framework/testhelper/AssertWebElement.java,9\5\95dca697e708e3d060f38040cbef6e23da81c45a
 |
 Lsrc/test/java/com/automation/framework/testhelper/TestDisplayNameFormat.java,3\f\3faa7d26c2ded9539a4672e367e03e22e5e5f4fe
-s
-Csrc/main/java/com/automation/framework/util/AppContextProvider.java,7\b\7bc77da38868f7724201e615973dd69ab40d5238
 m
 =src/main/java/com/automation/framework/util/WaitInstance.java,d\2\d25830367c7654dbc1706c15fbbea343333b6faa
 t
 Dsrc/main/java/com/automation/framework/util/WindowSwitchService.java,a\a\aa661ca26c2da160dfe4211a7f67b6627db7f29b
-l
-<src/main/java/com/automation/framework/util/SpecBuilder.java,d\1\d17b82b76a14e0bbfce7c023c9dd6554002a3a84
 v
 Fsrc/main/java/com/automation/framework/util/TestExecutionListener.java,b\e\be1b63a2375f608ad06bf388c55b3f6d0b1a5f64
 r

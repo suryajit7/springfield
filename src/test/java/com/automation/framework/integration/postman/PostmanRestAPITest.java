@@ -56,9 +56,8 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     @AfterEach
     public void tearWorkspace(){
 
-        Boolean isBlank = postmanService.getWorkspace(resourceID)
-                .as(Postman.class).getId().isBlank();
-        Response response = isBlank ? null : postmanService.delete(resourceID);
+        Response response = postmanService.getWorkspace(resourceID)
+                .as(Postman.class).getWorkspace().getId().isBlank() ? null : postmanService.delete(resourceID);
 
         logger.info(resourceID);
     }
@@ -148,6 +147,8 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
                 .collect(Collectors.toList());
 
         assertThat(updatedWorkspace).isNullOrEmpty();
+
+        resourceID = postmanService.post(payload).as(Postman.class).getWorkspace().getId();
     }
 
 

@@ -11,14 +11,14 @@ import lombok.extern.slf4j.Slf4j;
 public class PostmanService extends BaseService {
 
     private static final String WORKSPACES = "/workspaces";
-    private static final String WORKSPACE_PATH_PARAM = "/workspaces/{resource_ID}";
+    private static final String WORKSPACE_PATH_PARAM = "/workspaces/{path_param}";
 
     public Response getWorkspaces(){
-        return get(WORKSPACES);
+        return getWorkspaces(WORKSPACES);
     }
 
     public Response getWorkspace(String resourceID){
-        return get(WORKSPACE_PATH_PARAM, resourceID);
+        return getWorkspace(WORKSPACE_PATH_PARAM, resourceID);
     }
 
     public Response post(Postman requestPayload){

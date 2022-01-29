@@ -26,8 +26,18 @@ public class BaseService extends Kernel {
                 .extract().response();
     }
 
-    public Response get(String path){
 
+    public Response getWorkspace(String path, String id){
+        return given(specBuilder.getPostmanRequestSpec())
+                .when()
+                .pathParam(PATH_PARAM, id)
+                .get(path)
+                .then()
+                .spec(specBuilder.getPostmanResponseSpec())
+                .extract().response();
+    }
+
+    public Response getWorkspaces(String path){
         return given(specBuilder.getPostmanRequestSpec())
                 .when()
                 .get(path)
@@ -84,7 +94,7 @@ public class BaseService extends Kernel {
         return given(specBuilder.getPostmanRequestSpec())
                 .pathParam(PATH_PARAM, id)
                 .delete(path)
-                .then().spec(specBuilder.getPostmanResponseSpec())
+                .then().spec(specBuilder.getResponseSpec())
                 .extract().response();
     }
 
