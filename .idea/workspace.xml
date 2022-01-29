@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/postman/PostmanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/service/api/postman/PostmanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-16.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-17.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiDemos-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/automation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/datasets/automation.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="com.leinardi.pycharm.pylint.PylintConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="ReaderModeSettings">
@@ -514,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643212274504</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Commit154: Fixed all integration tests">
+      <created>1643483051505</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1643483051505</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -541,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit129: Adding Allure Reporting features" />
     <MESSAGE value="Commit131: minor change" />
     <MESSAGE value="Commit131: Major Refactoring and added SauceDemoTest" />
     <MESSAGE value="Commit132: Minor Refactoring and added SauceDemoTest" />
@@ -566,7 +572,8 @@
     <MESSAGE value="Commit150: Refactoring" />
     <MESSAGE value="Commit151: Refactoring" />
     <MESSAGE value="Commit152: Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit152: Refactoring" />
+    <MESSAGE value="Commit154: Fixed all integration tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit154: Fixed all integration tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -591,11 +598,6 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.16.3/4a36cf03c75e8735aaf46e5b67a662a6973fa96/database-commons-1.16.3-sources.jar!/org/testcontainers/ext/ScriptUtils.java</url>
           <line>339</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
