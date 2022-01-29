@@ -4,7 +4,6 @@ import com.automation.framework.core.annotation.LazyConfiguration;
 import com.automation.framework.core.annotation.ThreadScopeBean;
 import io.appium.java_client.AppiumDriver;
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -12,6 +11,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import java.net.URL;
 
 import static io.appium.java_client.remote.MobileCapabilityType.*;
+import static org.openqa.selenium.remote.CapabilityType.PLATFORM_NAME;
 
 @Slf4j
 @LazyConfiguration
@@ -25,7 +25,7 @@ public class MobileAppiumDriver {
 
     @ThreadScopeBean
     @ConditionalOnMissingBean
-    public WebDriver getAndroidDriver(){
+    public AppiumDriver getAndroidDriver(){
         log.info("activated");
         return new AppiumDriver(appiumServerUrl, configureDroidCapabilitiesOptions());
     }
@@ -40,4 +40,6 @@ public class MobileAppiumDriver {
         capabilities.setCapability(APP,"C:\\apk\\ApiDemos-debug.apk");
         return capabilities;
     }
+
+
 }

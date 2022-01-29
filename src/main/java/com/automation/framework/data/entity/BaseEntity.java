@@ -4,7 +4,7 @@ package com.automation.framework.data.entity;
 import com.automation.framework.data.entity.ems.Company;
 import com.automation.framework.data.entity.ems.Department;
 import com.automation.framework.data.entity.ems.Employee;
-import com.automation.framework.data.entity.ems.User;
+import com.automation.framework.data.entity.ems.Users;
 import com.automation.framework.data.entity.fnb.BreakfastMenu;
 import com.automation.framework.data.entity.library.Catalog;
 import com.automation.framework.data.entity.postman.Postman;
@@ -42,7 +42,7 @@ public class BaseEntity {
     List<Employee> employees;
     List<Company> companies;
     List<Department> departments;
-    List<User> users;
+    List<Users> users;
     @Transient
     List<Postman> postmen;
     @Transient

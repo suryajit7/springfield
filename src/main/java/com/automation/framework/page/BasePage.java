@@ -27,11 +27,6 @@ public class BasePage extends Kernel {
         return this;
     }
 
-    public BasePage getSome(String id){
-        this.appiumDriver.findElementById(id).click();
-        return this;
-    }
-
 
     public BasePage close() {
         waitForPageToLoad();

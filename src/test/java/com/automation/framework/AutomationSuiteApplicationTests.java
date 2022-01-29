@@ -21,7 +21,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.TestPropertySource;
-import org.testcontainers.containers.GenericContainer;
 
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 
@@ -29,17 +28,15 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @Isolated
 @TestPropertySource(locations = {"classpath:application.properties"})
 @TestMethodOrder(OrderAnnotation.class)
-@ExtendWith(TestDBSetup.class)
 @TestInstance(PER_CLASS)
+@ExtendWith(TestDBSetup.class)
 @ComponentScan
 public class AutomationSuiteApplicationTests {
 
-	public GenericContainer genericContainer;
-
-	private static AppContextProvider appCtx = new AppContextProvider();
+	protected static AppContextProvider appCtx = new AppContextProvider();
 
 	@Autowired
-	protected static ConfigurableBean myBean;
+	protected ConfigurableBean myBean;
 
 	@LazyAutowired
 	protected PathFinder pathFinder;
@@ -63,9 +60,6 @@ public class AutomationSuiteApplicationTests {
 	public void setup(){
 		logger.info("****** Spring Context loaded ******");
 		logger.info("Thread: ".concat(String.valueOf(Thread.currentThread().getId())));
-		
-		genericContainer = new GenericContainer("mongo:3.2.4")
-				.withExposedPorts(27017);
 
 		myBean = appCtx.getBeanOfType(ConfigurableBean.class);
 		myBean.setExpiredAccessToken(false);

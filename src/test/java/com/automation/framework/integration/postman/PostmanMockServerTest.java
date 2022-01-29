@@ -8,7 +8,6 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,14 +20,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
-    @Autowired
-    private PropertyDecryptService decryptService;
-
-    private String apiToken;
+    private static String apiToken;
 
     @BeforeAll
     public void setupBeforeTest(){
-        apiToken = decryptService.getPostmanKey();
+        apiToken = appCtx.getBeanOfType(PropertyDecryptService.class).getPostmanKey();
     }
 
     @Test

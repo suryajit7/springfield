@@ -18,7 +18,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Jacksonized
-public class User {
+public class Users {
 
     @Id
     private Integer id;

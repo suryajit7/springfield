@@ -1,2 +1,2 @@
-DROP TABLE IF EXISTS user;
-CREATE TABLE user AS SELECT * FROM CSVREAD('classpath:tables/user_visa.csv');
+DROP TABLE IF EXISTS users;
+CREATE TABLE users AS SELECT * FROM CSVREAD("classpath:user_visa.csv");

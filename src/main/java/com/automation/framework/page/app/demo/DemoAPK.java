@@ -13,6 +13,5 @@ public class DemoAPK extends BasePage{
     String sas = "drag_layer";
 
     public void someAction(){
-      getSome(sas);
     }
 }

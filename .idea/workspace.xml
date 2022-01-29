@@ -5,15 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mavenExecutorSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/automation-suite.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/882324bfaa2443c7c69af9033776227a7252d4f8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/datasets/automation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/datasets/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootRunMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/Kernel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/framework/AutomationSuiteApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/AppiumDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/MobileAppiumDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/MobileAppiumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/MobileAppiumDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/demo/DemoAPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/demo/DemoAPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/BaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/BaseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/datasets/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/tables/user_visa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/datasets/user_visa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-16.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-01-17.0.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +116,8 @@
     <option name="projectConfigVersion" value="4" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.1.1-bin/f29rtwfnc96ub43tt7p47zsru/gradle-7.1.1/lib/plugins/gradle-testing-jvm-7.1.1.jar!/org/gradle/api/tasks/testing/Test.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.assertthat/selenium-shutterbug/1.5/52a838239b08f27eda4d68eeacdf6d1ca3c7b79a/selenium-shutterbug-1.5-sources.jar!/com/assertthat/selenium_shutterbug/core/Shutterbug.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.1.1-bin/f29rtwfnc96ub43tt7p47zsru/gradle-7.1.1/lib/plugins/gradle-testing-jvm-7.1.1.jar!/org/gradle/api/tasks/testing/Test.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -112,6 +137,9 @@
       </map>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
   </component>
@@ -127,16 +155,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA Community Edition IC-212.5080.55" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/automation/framework/env/container" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/datasets" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="ReaderModeSettings">
@@ -147,9 +175,11 @@
       <recent name="com.automation.framework.data.repo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\test\resources\datasets" />
       <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\test\resources\datasets" />
       <recent name="C:\code\automation-suite\src\main\resources" />
       <recent name="C:\code\automation-suite\src\test\resources" />
       <recent name="C:\code\automation-suite\src\test\resources\results" />
@@ -161,24 +191,28 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.integration in automation-suite.test">
-    <configuration name="SpotifyPlaylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.SpotifyPlaylistTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="automation-suite [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpotifyPlaylistTest.shouldGetAllExistingSpotifyPlaylists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
@@ -190,7 +224,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
       <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.SpotifyPlaylistTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
+      <option name="METHOD_NAME" value="shouldGetAllExistingSpotifyPlaylists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,19 +296,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
-      <item itemvalue="JUnit.SpotifyPlaylistTest" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
+      <item itemvalue="JUnit.SpotifyPlaylistTest.shouldGetAllExistingSpotifyPlaylists" />
       <item itemvalue="TestNG.com.automation.framework.integration" />
       <item itemvalue="TestNG.AndroidTest" />
+      <item itemvalue="Gradle.automation-suite [clean]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.integration in automation-suite.test" />
         <item itemvalue="TestNG.com.automation.framework.integration" />
+        <item itemvalue="JUnit.SpotifyPlaylistTest.shouldGetAllExistingSpotifyPlaylists" />
+        <item itemvalue="Gradle.automation-suite [clean]" />
         <item itemvalue="TestNG.AndroidTest" />
-        <item itemvalue="JUnit.SpotifyPlaylistTest" />
-        <item itemvalue="JUnit.SpotifyPlaylistTest.shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken" />
       </list>
     </recent_temporary>
   </component>
@@ -528,7 +562,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -563,17 +596,54 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/saucedemo/MenuNavigationPage.java</url>
           <line>42</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/UsersTest.java</url>
           <line>42</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.16.3/4a36cf03c75e8735aaf46e5b67a662a6973fa96/database-commons-1.16.3-sources.jar!/org/testcontainers/ext/ScriptUtils.java</url>
+          <line>296</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.16.3/4a36cf03c75e8735aaf46e5b67a662a6973fa96/database-commons-1.16.3-sources.jar!/org/testcontainers/ext/ScriptUtils.java</url>
+          <line>339</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/service/BaseService.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
