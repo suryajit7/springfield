@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/BooksTestData.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/BooksTestData.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/DepartmentTestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/DepartmentTestData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/EMSTestData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/EMSTestData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/EmployeeData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/EmployeeData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/UserTestData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/UserTestData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/automation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/automation.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/postmanWorkspaceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/postmanWorkspaceData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/test-data-file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/test-data-file.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/user_visa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/user_visa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -537,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643487097327</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Commit157: Fixed File Reader Tests">
+      <created>1643523595902</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1643523595902</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -564,7 +560,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit131: Major Refactoring and added SauceDemoTest" />
     <MESSAGE value="Commit132: Minor Refactoring and added SauceDemoTest" />
     <MESSAGE value="Commit133: Updated build.gradle to run both Junit and TestNG tests." />
     <MESSAGE value="Commit134: Minor Refactoring" />
@@ -589,7 +584,8 @@
     <MESSAGE value="Commit152: Refactoring" />
     <MESSAGE value="Commit154: Fixed all integration tests" />
     <MESSAGE value="Commit155: Added MongoDB Test Container" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit155: Added MongoDB Test Container" />
+    <MESSAGE value="Commit157: Fixed File Reader Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit157: Fixed File Reader Tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -614,11 +610,6 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.16.3/4a36cf03c75e8735aaf46e5b67a662a6973fa96/database-commons-1.16.3-sources.jar!/org/testcontainers/ext/ScriptUtils.java</url>
           <line>339</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/FileReader.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

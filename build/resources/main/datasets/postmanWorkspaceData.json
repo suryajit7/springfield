@@ -1,0 +1,11 @@
+{
+  "postmen": [
+    {
+      "workspace": {
+        "name": "testWorkspace",
+        "type": "personal",
+        "description": "This is test workspace created by me to test Rest APIs exposed by Postman."
+      }
+    }
+  ]
+}

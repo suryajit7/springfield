@@ -41,7 +41,6 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
 
         mongo = new MongoDBContainer("mongo:latest")
                 .withExposedPorts(MONGODB_PORT)
-                //.withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js")
                 .withReuse(true);
 
     }
@@ -75,19 +74,13 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
         mysql.start();
         mongo.start();
 
-        var containerDelegate = new JdbcDatabaseDelegate(mysql, "");
-
-        try {
-            URL resource = new PathFinder().getFilePathForFile("automation.sql").toUri().toURL();
-            String scripts = IOUtils.toString(resource, StandardCharsets.UTF_8);
-            ScriptUtils.executeDatabaseScript(containerDelegate, "/src/test/resources/datasets/automation.sql", scripts);
-        } catch (ScriptException | IOException e) {
-            e.printStackTrace();
-        }
+        runSqlScripts();
+        runMongoScripts();
 
         assertTrue("Verify MySqlDB container status.", mysql.isRunning());
         assertTrue("Verify MongoDB container status.", mongo.isRunning());
     }
+
 
     /**
      * Callback that is invoked once <em>after</em> all tests in the current
@@ -99,7 +92,21 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     public void afterAll(ExtensionContext context) {
         mysql.stop();
         mongo.stop();
+    }
 
+    private void runMongoScripts() {
         mongo.withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js");
+    }
+
+    private void runSqlScripts() {
+        var containerDelegate = new JdbcDatabaseDelegate(mysql, "");
+
+        try {
+            URL resource = new PathFinder().getFilePathForFile("automation.sql").toUri().toURL();
+            String scripts = IOUtils.toString(resource, StandardCharsets.UTF_8);
+            ScriptUtils.executeDatabaseScript(containerDelegate, "/src/test/resources/datasets/automation.sql", scripts);
+        } catch (ScriptException | IOException e) {
+            e.printStackTrace();
+        }
     }
 }
