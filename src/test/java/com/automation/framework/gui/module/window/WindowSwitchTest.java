@@ -35,6 +35,9 @@ public class WindowSwitchTest extends BaseTestNGTest {
         this.pageA.addToArea(1 + "\n");
         this.pageB.addToArea((2 * 2) + "\n");
         this.pageC.addToArea((3 * 3) + "\n");
+
+        this.mainPage.close();
+
     }
 
 }

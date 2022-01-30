@@ -6,10 +6,11 @@ import io.appium.java_client.AppiumDriver;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
 import java.net.URL;
 
+import static com.automation.framework.data.Constants.BROWSER;
 import static io.appium.java_client.remote.MobileCapabilityType.*;
 import static org.openqa.selenium.remote.CapabilityType.PLATFORM_NAME;
 
@@ -24,7 +25,7 @@ public class MobileAppiumDriver {
     protected URL appiumApp;
 
     @ThreadScopeBean
-    @ConditionalOnMissingBean
+    @ConditionalOnProperty(name = BROWSER, havingValue = "android")
     public AppiumDriver getAndroidDriver(){
         log.info("activated");
         return new AppiumDriver(appiumServerUrl, configureDroidCapabilitiesOptions());

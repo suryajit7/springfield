@@ -34,8 +34,9 @@ public class Dashboard extends BasePage {
     private WebElement password;
 
     @Step
-    public void selectCountryByCode(String countryCode) {
+    public Dashboard selectCountryByCode(String countryCode) {
         this.worldMap.selectCountry(countryCode);
+        return this;
     }
 
 

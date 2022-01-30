@@ -18,6 +18,10 @@ import static org.apache.hc.core5.http.HttpStatus.SC_NOT_FOUND;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * This Test class doesn't make use of Spec Builder or follow general design patterns used in this framework.
+ * I just wanted to try out few things using postman api.
+ */
 public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
     private static String apiToken;

@@ -16,7 +16,7 @@ public class Constants {
 
 
     //MobileTesting
-    public static final String ANDROID_DEMO_APK = "AndroidDemoApp.apk";
+    public static final String ANDROID_DEMO_APK = "apks/AndroidDemoApp.apk";
 
     //API Related Constants
     public static final String CONTENT_TYPE_JSON_CHARSET_UTF8 = "application/json;charset=utf-8";

@@ -38,12 +38,14 @@ public class OpenCartDashboardTest extends BaseTestNGTest {
 
     @Test(priority = 0)
     public void verifyDashboard() {
-        this.dashboard.selectCountryByCode("in");
+        this.dashboard.selectCountryByCode("in")
+                .close();
     }
 
     @Test(priority = 1, enabled = false)
     public void verify() {
-        menuNavigation.navigateToMenu(USERS);
+        this.menuNavigation.navigateToMenu(USERS)
+                .close();
     }
 
 }

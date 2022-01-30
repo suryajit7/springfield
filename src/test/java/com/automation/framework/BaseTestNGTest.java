@@ -36,7 +36,6 @@ public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
 
     @AfterSuite(alwaysRun = true)
     public void tearDownSuite() {
-
         logger.info("****** Tear Down Setup ******");
         logger.info("****** Suite Tear Down ******");
     }

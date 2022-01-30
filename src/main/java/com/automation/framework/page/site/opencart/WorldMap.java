@@ -28,11 +28,12 @@ public class WorldMap extends BasePage {
     @FindBy(xpath = ZOOM_OUT)
     private WebElement zoomOut;
 
-    public void selectCountry(String countryCode) {
+    public WorldMap selectCountry(String countryCode) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(WORLD_MAP_LABEL)));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(getDynamicLocator(SELECT_COUNTRY, countryCode))))
                 .click();
         logger.info("Country selected");
+        return this;
     }
 
 }

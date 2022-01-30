@@ -5,8 +5,8 @@
         <classes>
             <class name="com.automation.framework.gui.module.google.GoogleSearchTest"/>
             <class name="com.automation.framework.gui.module.saucedemo.SauceDemoLoginTest"/>
-<!--            <class name="com.automation.framework.gui.module.opencart.OpenCartDashboardTest"/>
-            <class name="com.automation.framework.gui.module.window.WindowSwitchTest"/>-->
+            <class name="com.automation.framework.gui.module.opencart.OpenCartDashboardTest"/>
+            <class name="com.automation.framework.gui.module.window.WindowSwitchTest"/>
         </classes>
     </test>
 </suite>
