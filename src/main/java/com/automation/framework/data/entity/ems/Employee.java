@@ -24,6 +24,8 @@ public class Employee {
     private Integer deptId;
     private String username;
     private String employeeName;
+    private UserRole userRole;
+    private Status status;
     private Date doj;
 
 }

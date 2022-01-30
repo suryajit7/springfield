@@ -77,8 +77,6 @@ z
 Jsrc/main/java/com/automation/framework/page/site/saucedemo/MenuOption.java,a\7\a7c37c5b8dcfa5cde6839360ea323a1351184b82
 y
 Isrc/main/java/com/automation/framework/page/site/saucedemo/LoginPage.java,9\2\922532d4f477198db3ad4eaf6b01f8da18fae195
-u
-Esrc/test/java/com/automation/framework/unit/CustomAssertionsTest.java,c\8\c8eb7df4b6621a53f1931b64648af964d874421e
 t
 Dsrc/test/java/com/automation/framework/unit/PropertyDecryptTest.java,6\4\6480015c46b937f1aaca3f99f48c4ca481068ffd
 z

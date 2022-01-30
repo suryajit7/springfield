@@ -13,6 +13,7 @@ import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.ext.ScriptUtils;
 import org.testcontainers.jdbc.JdbcDatabaseDelegate;
+import org.testcontainers.utility.MountableFile;
 
 import javax.script.ScriptException;
 import java.io.IOException;
@@ -40,6 +41,7 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
 
         mongo = new MongoDBContainer("mongo:latest")
                 .withExposedPorts(MONGODB_PORT)
+                //.withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js")
                 .withReuse(true);
 
     }
@@ -97,5 +99,7 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     public void afterAll(ExtensionContext context) {
         mysql.stop();
         mongo.stop();
+
+        mongo.withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js");
     }
 }

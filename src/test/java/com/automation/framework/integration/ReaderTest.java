@@ -3,16 +3,14 @@ package com.automation.framework.integration;
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.data.entity.ems.Employee;
 import com.automation.framework.util.file.FileReader;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
-import org.springframework.core.io.support.PropertiesLoaderUtils;
-import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.Properties;
 
 
 public class ReaderTest extends AutomationSuiteApplicationTests {
@@ -29,7 +27,7 @@ public class ReaderTest extends AutomationSuiteApplicationTests {
     @Value("https://www.w3.org/TR/PNG/iso_8859-1.txt")
     private Resource textFile;
 
-    @Test(priority = 0)
+    @Test
     public void verifyFileReaderUtility() throws Exception {
 
         fileReader.readTxtFile("UserTestData.txt")
@@ -39,12 +37,9 @@ public class ReaderTest extends AutomationSuiteApplicationTests {
                 .forEach(System.out::println);
 
         System.out.println(fileReader.readJsonFile("EMSTestData.json"));
-
-   /*     fileReader.readExcelFile("DepartmentTestData.xlsx", Department.class, "Sheet1")
-                .forEach(System.out::println);*/
     }
 
-    @Test(priority = 1)
+    @Test
     public void verifyValueInjection() throws IOException {
         Files.readAllLines(csvResource.getFile().toPath())
                 .forEach(System.out::println);
@@ -52,11 +47,11 @@ public class ReaderTest extends AutomationSuiteApplicationTests {
         System.out.print(new String(textFile.getInputStream().readAllBytes()));
     }
 
-    @Test(priority = 2)
+    @Test
     public void verifyTestPropertiesFile() throws IOException {
 
-        Properties property = PropertiesLoaderUtils.loadProperties(resourceLoader.getResource("application.properties"));
-        System.out.print(property);
+        //Properties property = PropertiesLoaderUtils.loadProperties(resourceLoader.getResource("application.properties"));
+        //System.out.print(property);
     }
 
 

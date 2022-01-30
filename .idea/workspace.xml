@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/scripts/init-mongo.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiDemos-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/automation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/datasets/automation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +67,7 @@
         <option value="Python Script" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -147,6 +152,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.automation.framework.data.entity.ems" />
       <recent name="com.automation.framework.data.repo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -165,24 +171,7 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.automation.framework.integration in automation-suite.test">
-    <configuration name="PostmanRestAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.postman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.postman" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.postman.PostmanRestAPITest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReaderTest.verifyFileReaderUtility">
     <configuration name="PostmanRestAPITest.validateDeleteWorkspaceRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
@@ -201,37 +190,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostmanRestAPITest.verifyGetRequestForPostmanWorkspaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.postman.*" />
+          <option name="PATTERN" value="com.automation.framework.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.postman" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.postman.PostmanRestAPITest" />
-      <option name="METHOD_NAME" value="verifyGetRequestForPostmanWorkspaces" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.ReaderTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpotifyPlaylistTest.shouldUpdateMySpotifyPlaylist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReaderTest.verifyFileReaderUtility" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
+          <option name="PATTERN" value="com.automation.framework.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.SpotifyPlaylistTest" />
-      <option name="METHOD_NAME" value="shouldUpdateMySpotifyPlaylist" />
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.ReaderTest" />
+      <option name="METHOD_NAME" value="verifyFileReaderUtility" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -261,6 +249,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReaderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-suite.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.ReaderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="ARGS_FILE" />
       <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
@@ -272,19 +279,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SpotifyPlaylistTest.shouldUpdateMySpotifyPlaylist" />
-      <item itemvalue="JUnit.PostmanRestAPITest" />
-      <item itemvalue="JUnit.PostmanRestAPITest.verifyGetRequestForPostmanWorkspaces" />
       <item itemvalue="JUnit.PostmanRestAPITest.validateDeleteWorkspaceRequest" />
       <item itemvalue="JUnit.com.automation.framework.integration in automation-suite.test" />
+      <item itemvalue="TestNG.ReaderTest" />
+      <item itemvalue="JUnit.ReaderTest" />
+      <item itemvalue="JUnit.ReaderTest.verifyFileReaderUtility" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReaderTest.verifyFileReaderUtility" />
+        <item itemvalue="JUnit.ReaderTest" />
+        <item itemvalue="TestNG.ReaderTest" />
         <item itemvalue="JUnit.com.automation.framework.integration in automation-suite.test" />
         <item itemvalue="JUnit.PostmanRestAPITest.validateDeleteWorkspaceRequest" />
-        <item itemvalue="JUnit.PostmanRestAPITest" />
-        <item itemvalue="JUnit.PostmanRestAPITest.verifyGetRequestForPostmanWorkspaces" />
-        <item itemvalue="JUnit.SpotifyPlaylistTest.shouldUpdateMySpotifyPlaylist" />
       </list>
     </recent_temporary>
   </component>
@@ -521,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643483051505</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Commit155: Added MongoDB Test Container">
+      <created>1643487097327</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1643487097327</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -548,7 +562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit131: minor change" />
     <MESSAGE value="Commit131: Major Refactoring and added SauceDemoTest" />
     <MESSAGE value="Commit132: Minor Refactoring and added SauceDemoTest" />
     <MESSAGE value="Commit133: Updated build.gradle to run both Junit and TestNG tests." />
@@ -573,7 +586,8 @@
     <MESSAGE value="Commit151: Refactoring" />
     <MESSAGE value="Commit152: Refactoring" />
     <MESSAGE value="Commit154: Fixed all integration tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit154: Fixed all integration tests" />
+    <MESSAGE value="Commit155: Added MongoDB Test Container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit155: Added MongoDB Test Container" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -598,6 +612,11 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.16.3/4a36cf03c75e8735aaf46e5b67a662a6973fa96/database-commons-1.16.3-sources.jar!/org/testcontainers/ext/ScriptUtils.java</url>
           <line>339</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/util/file/FileReader.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

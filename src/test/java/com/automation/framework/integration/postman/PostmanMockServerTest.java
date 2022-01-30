@@ -5,7 +5,7 @@ import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +22,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
     private static String apiToken;
 
-    @BeforeAll
+    @BeforeEach
     public void setupBeforeTest(){
         apiToken = appCtx.getBeanOfType(PropertyDecryptService.class).getPostmanKey();
     }
