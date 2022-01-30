@@ -11,6 +11,7 @@ import org.springframework.core.io.ResourceLoader;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 
 
 public class ReaderTest extends AutomationSuiteApplicationTests {
@@ -21,8 +22,8 @@ public class ReaderTest extends AutomationSuiteApplicationTests {
     @Autowired
     private ResourceLoader resourceLoader;
 
-    @Value("${user.dir}/src/test/resources/datasets/test-data-file.csv")
-    private Resource csvResource;
+    @Value("${user.dir}/src/main/resources/datasets/test-data-file.csv")
+    private Path csvResource;
 
     @Value("https://www.w3.org/TR/PNG/iso_8859-1.txt")
     private Resource textFile;
@@ -41,17 +42,10 @@ public class ReaderTest extends AutomationSuiteApplicationTests {
 
     @Test
     public void verifyValueInjection() throws IOException {
-        Files.readAllLines(csvResource.getFile().toPath())
+        Files.readAllLines(csvResource.toAbsolutePath())
                 .forEach(System.out::println);
 
         System.out.print(new String(textFile.getInputStream().readAllBytes()));
-    }
-
-    @Test
-    public void verifyTestPropertiesFile() throws IOException {
-
-        //Properties property = PropertiesLoaderUtils.loadProperties(resourceLoader.getResource("application.properties"));
-        //System.out.print(property);
     }
 
 

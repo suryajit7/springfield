@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/scripts/init-mongo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Status.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/ems/UserRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/ReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/BooksTestData.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/BooksTestData.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/DepartmentTestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/DepartmentTestData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/EMSTestData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/EMSTestData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/EmployeeData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/EmployeeData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/UserTestData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/UserTestData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/automation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/automation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/postmanWorkspaceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/postmanWorkspaceData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/test-data-file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/test-data-file.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datasets/user_visa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasets/user_visa.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +161,7 @@
       <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\main\resources" />
       <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\test\resources\datasets" />
       <recent name="C:\code\automation-suite\src\main\resources" />
       <recent name="C:\code\automation-suite\src\test\resources" />
@@ -171,7 +173,7 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReaderTest.verifyFileReaderUtility">
+  <component name="RunManager" selected="JUnit.ReaderTest">
     <configuration name="PostmanRestAPITest.validateDeleteWorkspaceRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
@@ -281,14 +283,14 @@
     <list>
       <item itemvalue="JUnit.PostmanRestAPITest.validateDeleteWorkspaceRequest" />
       <item itemvalue="JUnit.com.automation.framework.integration in automation-suite.test" />
-      <item itemvalue="TestNG.ReaderTest" />
       <item itemvalue="JUnit.ReaderTest" />
       <item itemvalue="JUnit.ReaderTest.verifyFileReaderUtility" />
+      <item itemvalue="TestNG.ReaderTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReaderTest.verifyFileReaderUtility" />
         <item itemvalue="JUnit.ReaderTest" />
+        <item itemvalue="JUnit.ReaderTest.verifyFileReaderUtility" />
         <item itemvalue="TestNG.ReaderTest" />
         <item itemvalue="JUnit.com.automation.framework.integration in automation-suite.test" />
         <item itemvalue="JUnit.PostmanRestAPITest.validateDeleteWorkspaceRequest" />

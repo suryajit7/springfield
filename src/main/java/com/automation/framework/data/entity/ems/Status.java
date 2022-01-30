@@ -1,12 +1,12 @@
 package com.automation.framework.data.entity.ems;
 
-public enum UserRole {
+public enum Status {
 
-    ADMIN("Admin"), ESS("ESS");
+    ENABLED("Enabled"), DISABLED("Disabled");
 
     private final String stringValue;
 
-    UserRole(String stringValue) {
+    Status(String stringValue) {
         this.stringValue = stringValue;
     }
 
