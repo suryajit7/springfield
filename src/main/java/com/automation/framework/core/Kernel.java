@@ -22,7 +22,6 @@ import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 /**
  * The WebDriver and Wait instances are managed by Spring.
  */
-
 public class Kernel {
 
     public Actions actions;

@@ -13,14 +13,10 @@ r
 Bsrc/test/java/com/automation/framework/testhelper/AssertField.java,3\3\332da98e7f3d0ca8f4b8800a67be1860b940a1ea
 w
 Gsrc/test/java/com/automation/framework/testhelper/AssertWebElement.java,9\5\95dca697e708e3d060f38040cbef6e23da81c45a
-|
-Lsrc/test/java/com/automation/framework/testhelper/TestDisplayNameFormat.java,3\f\3faa7d26c2ded9539a4672e367e03e22e5e5f4fe
 m
 =src/main/java/com/automation/framework/util/WaitInstance.java,d\2\d25830367c7654dbc1706c15fbbea343333b6faa
 t
 Dsrc/main/java/com/automation/framework/util/WindowSwitchService.java,a\a\aa661ca26c2da160dfe4211a7f67b6627db7f29b
-v
-Fsrc/main/java/com/automation/framework/util/TestExecutionListener.java,b\e\be1b63a2375f608ad06bf388c55b3f6d0b1a5f64
 r
 Bsrc/main/java/com/automation/framework/util/ScreenshotService.java,1\d\1d58f4be6aa1943042c561fc666652e6e1533f8d
 ~
@@ -29,8 +25,6 @@ l
 <src/main/java/com/automation/framework/util/RandomUtils.java,d\a\daa36e0e985f5e064777ba894b0ee5cb7b799a87
 x
 Hsrc/main/java/com/automation/framework/core/config/ConfigurableBean.java,e\8\e83d35b83e8da02db6eea7dfa038eb48d6de5db8
-x
-Hsrc/main/java/com/automation/framework/core/aspect/ScreenshotAspect.java,7\9\794d0d98680e682638283209e98d39b39298d6d1
 s
 Csrc/main/java/com/automation/framework/util/todo/app/Dashboard.java,8\9\890450520420fa199ea6fe3d7ed6352811649803
 v
@@ -71,3 +65,15 @@ z
 Jsrc/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java,5\5\55a20b9cfc1de72c0ee0ff9d93fccaed4248f79a
 |
 Lsrc/main/java/com/automation/framework/data/supplier/CompanyDataFactory.java,7\1\71a76fab95fdbe15871a1b1db890e0355ede833a
+Z
+*.gradle/buildOutputCleanup/outputFiles.bin,a\f\affd37cd1229eda4e03578f6dd1caa731ade4dd4
+‚
+Rsrc/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java,8\9\89612f19ddd1d714d292c587b7afd3c86269d681
+…
+Usrc/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java,e\8\e8aae22f01b2eefe789411ee5d49f917c732b293
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+‡
+Wsrc/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java,5\4\54b1b5e3e1de7e24adcee47782e9a1304abb5092
+v
+Fsrc/main/java/com/automation/framework/AutomationSuiteApplication.java,d\f\df43c60a8ff0b41e8e9eee798263b7620c5a6889

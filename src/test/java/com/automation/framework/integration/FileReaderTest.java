@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 
-public class ReaderTest extends AutomationSuiteApplicationTests {
+public class FileReaderTest extends AutomationSuiteApplicationTests {
 
     @Autowired
     private FileReader fileReader;

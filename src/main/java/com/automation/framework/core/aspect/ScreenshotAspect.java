@@ -7,7 +7,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import static com.automation.framework.util.TestExecutionListener.getTestMethod;
+import static com.automation.framework.util.testhelper.TestExecutionListener.getTestMethod;
 
 @Aspect
 @Component

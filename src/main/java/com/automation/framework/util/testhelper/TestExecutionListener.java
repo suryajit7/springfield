@@ -1,4 +1,4 @@
-package com.automation.framework.util;
+package com.automation.framework.util.testhelper;
 
 
 import io.qameta.allure.Attachment;
