@@ -15,8 +15,6 @@ t
 Dsrc/main/java/com/automation/framework/util/WindowSwitchService.java,a\a\aa661ca26c2da160dfe4211a7f67b6627db7f29b
 l
 <src/main/java/com/automation/framework/util/RandomUtils.java,d\a\daa36e0e985f5e064777ba894b0ee5cb7b799a87
-s
-Csrc/main/java/com/automation/framework/util/todo/app/Dashboard.java,8\9\890450520420fa199ea6fe3d7ed6352811649803
 v
 Fsrc/main/java/com/automation/framework/core/annotation/Screenshot.java,2\6\26fbed4d23b10d767a585fb192786d2bb3bf538c
 y
@@ -55,8 +53,6 @@ z
 Jsrc/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java,5\5\55a20b9cfc1de72c0ee0ff9d93fccaed4248f79a
 |
 Lsrc/main/java/com/automation/framework/data/supplier/CompanyDataFactory.java,7\1\71a76fab95fdbe15871a1b1db890e0355ede833a
-Z
-*.gradle/buildOutputCleanup/outputFiles.bin,a\f\affd37cd1229eda4e03578f6dd1caa731ade4dd4
 u
 Esrc/test/java/com/automation/framework/unit/CustomAssertionsTest.java,c\8\c8eb7df4b6621a53f1931b64648af964d874421e
 }
