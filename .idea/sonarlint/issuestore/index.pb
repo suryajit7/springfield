@@ -57,8 +57,6 @@ Jsrc/main/java/com/automation/framework/data/supplier/EmployeeTemplate.java,5\5
 Lsrc/main/java/com/automation/framework/data/supplier/CompanyDataFactory.java,7\1\71a76fab95fdbe15871a1b1db890e0355ede833a
 Z
 *.gradle/buildOutputCleanup/outputFiles.bin,a\f\affd37cd1229eda4e03578f6dd1caa731ade4dd4
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 u
 Esrc/test/java/com/automation/framework/unit/CustomAssertionsTest.java,c\8\c8eb7df4b6621a53f1931b64648af964d874421e
 }

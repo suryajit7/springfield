@@ -1,7 +1,8 @@
-package com.automation.framework.util;
+package com.automation.framework.core;
 
 
 import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
