@@ -2,12 +2,13 @@ package com.automation.framework.integration.spotify;
 
 import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.core.config.AppContextProvider;
 import com.automation.framework.data.entity.spotify.Playlist;
 import com.automation.framework.service.api.spotify.PlaylistService;
-import com.automation.framework.util.AppContextProvider;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
@@ -51,6 +52,7 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(2)
     public void shouldUpdateMySpotifyPlaylist(){
 
@@ -71,6 +73,7 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(3)
     public void shouldNotBeAbleToCreatePlaylistWithGivenName(){
 
@@ -87,6 +90,7 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(4)
     public void shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken() {
 

@@ -4,6 +4,7 @@ import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +53,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Disabled
     @Order(2)
     public void verifyLoggingIfValidationFails(){
 
@@ -66,6 +68,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Disabled
     @Order(3)
     public void verifyLoggingBlackListedHeaders(){
 
@@ -83,6 +86,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(4)
     public void verifyMultipartFormDataInPostRequest(){
 
@@ -101,6 +105,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(5)
     public void verifyUploadFileMultipartFormData(){
         String attributes = "{\"name\":\"cv\"}";
@@ -119,6 +124,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(6)
     public void verifyDownloadFileMultipartFormData() throws IOException {
         String attributes = "{\"name\":\"cv\"}";
@@ -139,6 +145,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Disabled
     @Order(7)
     public void verifyFilterMethodInRequestAndResponse(){
 
@@ -158,6 +165,7 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Disabled
     @Order(8)
     public void verifyFilterMethodInLoggingForRequestAndResponse() throws FileNotFoundException {
         PrintStream fileOutput = new PrintStream(new File("api-test.log"));

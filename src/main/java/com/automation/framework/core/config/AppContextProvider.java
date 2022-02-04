@@ -1,4 +1,4 @@
-package com.automation.framework.util;
+package com.automation.framework.core.config;
 
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.ApplicationContext;

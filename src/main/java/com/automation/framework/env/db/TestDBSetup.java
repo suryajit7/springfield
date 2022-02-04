@@ -27,8 +27,8 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     private static final int MYSQLDB_PORT = 3306;
     private static final int MONGODB_PORT = 27017;
 
-    private static MongoDBContainer mongo;
-    private static MySQLContainer mysql;
+    private static final MongoDBContainer mongo;
+    private static final MySQLContainer mysql;
 
     static {
 
@@ -40,7 +40,9 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
                 .withReuse(true);
 
         mongo = new MongoDBContainer("mongo:latest")
+                .withAccessToHost(true)
                 .withExposedPorts(MONGODB_PORT)
+                .withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js")
                 .withReuse(true);
 
     }
@@ -72,13 +74,15 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     public void beforeAll(ExtensionContext context) {
 
         mysql.start();
-        mongo.start();
+        mysql.getLogs();
+
+        //mongo.start();
+        mongo.getLogs();
 
         runSqlScripts();
-        runMongoScripts();
 
         assertTrue("Verify MySqlDB container status.", mysql.isRunning());
-        assertTrue("Verify MongoDB container status.", mongo.isRunning());
+        //assertTrue("Verify MongoDB container status.", mongo.isRunning());
     }
 
 
@@ -91,12 +95,9 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     @Override
     public void afterAll(ExtensionContext context) {
         mysql.stop();
-        mongo.stop();
+        //mongo.stop();
     }
 
-    private void runMongoScripts() {
-        mongo.withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js");
-    }
 
     private void runSqlScripts() {
         var containerDelegate = new JdbcDatabaseDelegate(mysql, "");

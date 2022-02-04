@@ -6,6 +6,7 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
@@ -50,6 +51,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(2)
     public void verifyMultipleHeadersRequestUsingMap(){
 
@@ -71,6 +73,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(3)
     public void verifyMultipleHeadersRequestUsingHashMap(){
 
@@ -92,6 +95,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(4)
     public void verifyMultiValueHeadersUsingHeaders(){
 
@@ -114,6 +118,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(5)
     public void verifyResponseHeaders(){
 
@@ -138,6 +143,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(6)
     public void verifyRequestHeaderWithoutXApiKey(){
 
@@ -155,6 +161,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(7)
     public void verifyExtractResponseHeaders(){
 
@@ -180,6 +187,7 @@ public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
 
     @Test
+    @Disabled
     @Order(8)
     public void verifyExtractMultiResponseHeaders(){
 

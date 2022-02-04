@@ -86,6 +86,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Disabled
     @Order(2)
     public void verifyWorkspaceCreationPostRequest(){
 
@@ -106,6 +107,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Disabled
     @Order(3)
     public void validateUpdateWorkspacePutRequest(){
 
@@ -131,6 +133,7 @@ public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
     }
 
     @Test
+    @Disabled
     @Order(4)
     public void validateDeleteWorkspaceRequest(){
 
