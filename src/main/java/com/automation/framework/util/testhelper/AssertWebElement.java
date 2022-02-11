@@ -26,8 +26,7 @@ public class AssertWebElement extends AbstractAssert<AssertWebElement, WebElemen
         } else {
             failWithMessage("Expected element is NOT displayed.");
             log.error("Expected element is NOT displayed.");
-        }
-        return this;
+        } return this;
     }
 
     public AssertWebElement isEnabled() {
@@ -37,8 +36,7 @@ public class AssertWebElement extends AbstractAssert<AssertWebElement, WebElemen
         } else {
             failWithMessage("Expected element is NOT enabled.");
             log.error("Expected element is NOT enabled.");
-        }
-        return this;
+        } return this;
     }
 
     public AssertWebElement isSelected() {
@@ -49,8 +47,7 @@ public class AssertWebElement extends AbstractAssert<AssertWebElement, WebElemen
         } else {
             failWithMessage("Expected element is NOT selected.");
             log.error("Expected element is NOT selected.");
-        }
-        return this;
+        } return this;
     }
 
     public AssertWebElement isButton() {
@@ -62,8 +59,15 @@ public class AssertWebElement extends AbstractAssert<AssertWebElement, WebElemen
         } else {
             failWithMessage("Expected element is NOT a button.");
             log.error("Expected element is NOT a button.");
-        }
-        return this;
+        } return this;
+    }
+
+    public AssertWebElement isLink() {
+        isNotNull();
+        if(!actual.getTagName().equalsIgnoreCase("a")){
+            failWithMessage("Expected element is Not a Link.");
+            log.error("Expected element is Not a Link.");
+        } return this;
     }
 
     public AssertWebElement hasAttributeValue(String attribute, String value) {
@@ -73,8 +77,7 @@ public class AssertWebElement extends AbstractAssert<AssertWebElement, WebElemen
         } else {
             log.error("Expected element doesn't have attribute <%s> value as <%s>.", attribute, value);
             failWithMessage("Expected element doesn't have attribute <%s> value as <%s>.");
-        }
-        return this;
+        } return this;
     }
 
 }
