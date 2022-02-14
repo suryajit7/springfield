@@ -24,7 +24,7 @@ public class WaitInstance {
     @Value("${wait.polling.interval:10}")
     protected int pollingInterval;
 
-    private final List<Class<? extends WebDriverException>> exceptionList = List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class, ElementNotVisibleException.class, ElementNotSelectableException.class, TimeoutException.class, NoSuchSessionException.class, StaleElementReferenceException.class);
+    protected final List<Class<? extends WebDriverException>> exceptionList = List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class, ElementNotVisibleException.class, ElementNotSelectableException.class, TimeoutException.class, NoSuchSessionException.class, StaleElementReferenceException.class);
 
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)

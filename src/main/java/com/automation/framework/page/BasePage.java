@@ -4,21 +4,21 @@ import com.automation.framework.core.Kernel;
 import com.automation.framework.core.annotation.Page;
 import lombok.Getter;
 import lombok.Setter;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
+import static com.automation.framework.data.Constants.BLANK;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 @Page
 @Getter
 @Setter
 public class BasePage extends Kernel {
+
+    protected final List<Class<? extends WebDriverException>> exceptionList = List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class, ElementNotVisibleException.class, ElementNotSelectableException.class, TimeoutException.class, NoSuchSessionException.class, StaleElementReferenceException.class);
 
     public BasePage goTo(String url) {
         this.driver.get(url);
@@ -30,11 +30,19 @@ public class BasePage extends Kernel {
 
     public BasePage close() {
         waitForPageToLoad();
-        this.driver.quit();
+        this.driver.close();
         logger.info("Quiting browser instance.");
         return this;
     }
 
+
+    public WebElement scrollToElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        js.executeScript("arguments[0].scrollIntoView({block: \"center\",inline: \"center\",behavior: \"smooth\"});",element);
+        waitForElementToAppear(element);
+        logger.info(("Browser scrolled for element:").concat(element.getText()));
+        return element;
+    }
 
     public BasePage switchToActiveElement() {
         this.driver.switchTo().activeElement();
@@ -61,6 +69,54 @@ public class BasePage extends Kernel {
         wait.until((ExpectedCondition) webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete")
                 || ((Boolean) ((JavascriptExecutor) webDriver).executeScript("return jQuery.active == 0")));
         return this;
+    }
+
+    public WebElement waitForElementToClickable(WebElement element) {
+        return wait.until(elementToBeClickable(element));
+    }
+
+    public WebElement waitForElementToClickable(By by) {
+        return wait.until(elementToBeClickable(by));
+    }
+
+    public WebElement waitForElementToAppear(WebElement element) {
+        return wait.until(visibilityOf(element));
+    }
+
+    public WebElement waitForElementToAppear(By by) {
+        return wait.until(visibilityOfElementLocated(by));
+    }
+
+
+    public List<WebElement> waitForElementsToAppear(List<WebElement> elements) {
+        return wait.until(visibilityOfAllElements(elements));
+    }
+
+    public List<WebElement> waitForElementsToAppear(By by) {
+        return wait.until(visibilityOfAllElementsLocatedBy(by));
+    }
+
+
+    public WebElement reactivateWebElement(By by, WebElement element){
+        try {
+            wait.ignoreAll(exceptionList)
+                    .until(refreshed(visibilityOf(element)));
+            logger.info(("Element is available.").concat(BLANK).concat(element.toString()));
+
+        } catch (WebDriverException exception) {
+            logger.warn(exception.getMessage());
+        } return this.driver.findElement(by);
+    }
+
+
+    public List<WebElement> reactivateWebElements(By by, List<WebElement> elements){
+        try {
+            wait.ignoreAll(exceptionList)
+                    .until(refreshed(visibilityOfAllElements(elements)));
+            logger.info("Elements is available.");
+        } catch (WebDriverException exception) {
+            logger.warn(exception.getMessage());
+        } return this.driver.findElements(by);
     }
 
 
