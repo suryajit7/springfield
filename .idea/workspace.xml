@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_availablebooks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_getuserprojects.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_listorganisation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_uploadbooks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_userapprovals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_userlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_verification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/test_versiondetails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/WaitInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/WaitInstance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/test_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/main.py" beforeDir="false" />
-    </list>
+    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -335,21 +319,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="JUnit.CustomAssertionsTest" />
       <item itemvalue="JUnit.FileReaderTest.verifyFileReaderUtility" />
+      <item itemvalue="Python.test_api" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python tests.pytest for login_test.MyTestCase" />
-      <item itemvalue="Python tests.pytest for login_test.test_login_page" />
       <item itemvalue="Python tests.pytest for login_test.TestCase" />
-      <item itemvalue="Python.test_api" />
+      <item itemvalue="Python tests.pytest for login_test.test_login_page" />
+      <item itemvalue="JUnit.integration in automation-suite.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileReaderTest.verifyFileReaderUtility" />
-        <item itemvalue="Python tests.pytest for login_test.TestCase" />
         <item itemvalue="Python tests.pytest for login_test.test_login_page" />
+        <item itemvalue="Python tests.pytest for login_test.TestCase" />
         <item itemvalue="Python tests.pytest for login_test.MyTestCase" />
+        <item itemvalue="JUnit.FileReaderTest.verifyFileReaderUtility" />
         <item itemvalue="JUnit.CustomAssertionsTest" />
       </list>
     </recent_temporary>
@@ -685,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644800466566</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Commit170: Minor changes and few practice pytest">
+      <created>1644966206472</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1644966206472</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -712,7 +703,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit142: Added/Updated dependencies" />
     <MESSAGE value="Commit143: refactoring" />
     <MESSAGE value="Commit144: refactoring" />
     <MESSAGE value="Commit145: refactoring" />
@@ -737,7 +727,8 @@
     <MESSAGE value="Commit167: adding api pytest example including build related class files." />
     <MESSAGE value="Commit168: adding Custom assertion class specially designed to assert WebTables." />
     <MESSAGE value="Commit169: Added custom waits for elements and scrolling feature in BasePage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit169: Added custom waits for elements and scrolling feature in BasePage." />
+    <MESSAGE value="Commit170: Minor changes and few practice pytest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit170: Minor changes and few practice pytest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
