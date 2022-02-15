@@ -69,16 +69,12 @@ Rsrc/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.j
 Usrc/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java,e\8\e8aae22f01b2eefe789411ee5d49f917c732b293
 z
 Jsrc/main/java/com/automation/framework/core/config/AppContextProvider.java,c\0\c06d3cfdee662cafdb623741f5fee97cbabf4512
-‡
-Wsrc/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java,5\4\54b1b5e3e1de7e24adcee47782e9a1304abb5092
 p
 @.idea/runConfigurations/integration_in_automation_suite_test.xml,f\8\f88329a2427740cab9c364ace3553d2f4c10e47d
 ƒ
 Ssrc/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java,1\d\1d0b12ddf532d79cad981fa51d311a90c8af22ec
 g
 7src/main/java/com/automation/framework/core/Kernel.java,1\5\15c316c14a85b4bc26c94813492ba5a5c001e3fd
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 q
 Asrc/main/java/com/automation/framework/util/todo/Integration.java,3\b\3b5bbbe7f1e05d92bad42c24a8b4361e75254632
 ‘
@@ -91,8 +87,6 @@ s
 Csrc/main/java/com/automation/framework/util/todo/app/Dashboard.java,8\9\890450520420fa199ea6fe3d7ed6352811649803
 n
 >src/main/java/com/automation/framework/env/db/TestDBSetup.java,9\3\9346a5eb31cad13d140075a9a570d98bd47877dc
-G
-src/main/python/main.py,f\1\f14193a982e570293b74bf82c70f527463d3ed4d
 s
 Csrc/main/java/com/automation/framework/env/db/MongoDbContainer.java,8\1\8179bc728046b6ee070a28f082be0ddb499c8f17
 o
@@ -109,12 +103,8 @@ w
 Gsrc/main/java/com/automation/framework/util/PropertyDecryptService.java,c\9\c94e7403701a454139630304a97f6a1809385bea
 l
 <src/main/java/com/automation/framework/util/RandomUtils.java,d\a\daa36e0e985f5e064777ba894b0ee5cb7b799a87
-M
-src/main/python/login_test.py,0\2\02341a4acafc39394fa4f2e867d252b7b0af45ab
 W
 '.idea/modules/automation-suite.main.iml,4\9\49035a263eaba6d19f1d379046afd9723290fb8f
-K
-src/main/python/api_test.py,a\0\a06b9b8c690573e5f0b7dd94675438906b247d0a
 w
 Gsrc/main/java/com/automation/framework/env/container/BaseContainer.java,8\8\882324bfaa2443c7c69af9033776227a7252d4f8
 w
@@ -125,3 +115,17 @@ e
 5src/test/java/com/automation/framework/gui/testng.xml,1\0\108e0b5f054241f3afaf0e4d497fdcff06603ac0
 |
 Lsrc/main/java/com/automation/framework/util/testhelper/AssertWebElement.java,9\a\9a181d95b96edb53a9e963b59a50a2245a2241c3
+m
+=src/main/java/com/automation/framework/core/WaitInstance.java,c\1\c198582de8ce0c9fc97c3e89a52bf741b7579f1a
+t
+Dsrc/main/java/com/automation/framework/data/entity/ems/Employee.java,f\2\f250cd68aab2f2d00800eed3a60c1f911cf42a0b
+p
+@src/main/java/com/automation/framework/util/file/FileReader.java,4\2\421ea3894c06eb7735914f1e348fef3a4277781a
+i
+9src/main/java/com/automation/framework/data/FileType.java,e\0\e0578b0cfef373ce8e933b9133cefd6c88e89427
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+w
+Gsrc/main/java/com/automation/framework/env/container/docker-compose.yml,f\5\f559abeacf5a4080bf5d38664129886ed1e1d8af
+M
+src/main/python/login_test.py,0\2\02341a4acafc39394fa4f2e867d252b7b0af45ab

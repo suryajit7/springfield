@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_availablebooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_getuserprojects.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_listorganisation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_uploadbooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_userapprovals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_userlist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_verification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/python/test_versiondetails.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/WaitInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/WaitInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/WaitInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/core/WaitInstance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/automation/framework/page/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +149,7 @@
     <property name="jdk.selected.JAVA_MODULE" value="11 (2)" />
     <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA Community Edition IC-212.5080.55" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../foresight-automation-suite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/python" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -167,6 +173,7 @@
       <recent name="com.automation.framework.data.repo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\Springfield\src\main\python" />
       <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\test\resources\datasets" />
       <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
@@ -227,27 +234,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="api_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="automation-suite.main" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Precognitas04\AppData\Local\Programs\Python\Python38\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/python/api_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="automation-suite.main" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -261,6 +247,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/python/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_api" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="automation-suite.main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Precognitas04\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\code\Springfield\src\main\python\test_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -331,11 +338,11 @@
       <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="JUnit.CustomAssertionsTest" />
       <item itemvalue="JUnit.FileReaderTest.verifyFileReaderUtility" />
-      <item itemvalue="Python.api_test" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python tests.pytest for login_test.MyTestCase" />
       <item itemvalue="Python tests.pytest for login_test.test_login_page" />
       <item itemvalue="Python tests.pytest for login_test.TestCase" />
+      <item itemvalue="Python.test_api" />
     </list>
     <recent_temporary>
       <list>
@@ -671,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644589811974</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Commit169: Added custom waits for elements and scrolling feature in BasePage.">
+      <created>1644800466566</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1644800466566</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -698,7 +712,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit141: Adding Mongo Test Containers and its config." />
     <MESSAGE value="Commit142: Added/Updated dependencies" />
     <MESSAGE value="Commit143: refactoring" />
     <MESSAGE value="Commit144: refactoring" />
@@ -723,7 +736,8 @@
     <MESSAGE value="Commit166: minor changes" />
     <MESSAGE value="Commit167: adding api pytest example including build related class files." />
     <MESSAGE value="Commit168: adding Custom assertion class specially designed to assert WebTables." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit168: adding Custom assertion class specially designed to assert WebTables." />
+    <MESSAGE value="Commit169: Added custom waits for elements and scrolling feature in BasePage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit169: Added custom waits for elements and scrolling feature in BasePage." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
