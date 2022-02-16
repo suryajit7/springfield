@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="" />
+    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,7 +183,7 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileReaderTest.verifyFileReaderUtility">
+  <component name="RunManager" selected="JUnit.integration in automation-suite.test">
     <configuration name="CustomAssertionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
@@ -319,6 +328,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="JUnit.CustomAssertionsTest" />
       <item itemvalue="JUnit.FileReaderTest.verifyFileReaderUtility" />
       <item itemvalue="Python.test_api" />
@@ -326,7 +336,6 @@
       <item itemvalue="Python tests.pytest for login_test.MyTestCase" />
       <item itemvalue="Python tests.pytest for login_test.TestCase" />
       <item itemvalue="Python tests.pytest for login_test.test_login_page" />
-      <item itemvalue="JUnit.integration in automation-suite.test" />
     </list>
     <recent_temporary>
       <list>
@@ -676,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644966206472</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Commit171: Minor changes">
+      <created>1644966430899</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1644966430899</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -703,7 +719,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit143: refactoring" />
     <MESSAGE value="Commit144: refactoring" />
     <MESSAGE value="Commit145: refactoring" />
     <MESSAGE value="Commit146: removed ZeroCell lib usage and minor refactoring" />
@@ -728,7 +743,8 @@
     <MESSAGE value="Commit168: adding Custom assertion class specially designed to assert WebTables." />
     <MESSAGE value="Commit169: Added custom waits for elements and scrolling feature in BasePage." />
     <MESSAGE value="Commit170: Minor changes and few practice pytest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit170: Minor changes and few practice pytest" />
+    <MESSAGE value="Commit171: Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit171: Minor changes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

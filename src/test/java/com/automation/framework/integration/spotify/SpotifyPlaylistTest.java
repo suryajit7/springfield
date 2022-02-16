@@ -8,7 +8,6 @@ import com.automation.framework.service.api.spotify.PlaylistService;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
@@ -52,7 +51,6 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
 
     @Test
-    @Disabled
     @Order(2)
     public void shouldUpdateMySpotifyPlaylist(){
 
@@ -73,7 +71,6 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
 
     @Test
-    @Disabled
     @Order(3)
     public void shouldNotBeAbleToCreatePlaylistWithGivenName(){
 
@@ -90,7 +87,6 @@ public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
 
 
     @Test
-    @Disabled
     @Order(4)
     public void shouldNotBeAbleToCreatePlaylistWithExpiredAccessToken() {
 
