@@ -2,8 +2,8 @@ package com.automation.framework.env.db;
 
 
 import com.automation.framework.util.file.PathFinder;
-import com.sun.istack.NotNull;
 import org.apache.commons.io.IOUtils;
+import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
@@ -76,13 +76,13 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
         mysql.start();
         mysql.getLogs();
 
-        //mongo.start();
+        mongo.start();
         mongo.getLogs();
 
         runSqlScripts();
 
         assertTrue("Verify MySqlDB container status.", mysql.isRunning());
-        //assertTrue("Verify MongoDB container status.", mongo.isRunning());
+        assertTrue("Verify MongoDB container status.", mongo.isRunning());
     }
 
 
@@ -95,7 +95,7 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     @Override
     public void afterAll(ExtensionContext context) {
         mysql.stop();
-        //mongo.stop();
+        mongo.stop();
     }
 
 

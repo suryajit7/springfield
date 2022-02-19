@@ -12,7 +12,6 @@ import com.automation.framework.data.entity.postman.Workspace;
 import com.automation.framework.data.entity.spotify.*;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
-import io.qameta.allure.model.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -60,12 +59,5 @@ public class BaseEntity {
     List<Catalog> catalog;
 
     List<Error> errors;
-
-    //Allure
-    List<TestResult> testResults;
-    List<StepResult> stepResults;
-    List<TestResultContainer> testResultContainers;
-    List<Attachment> attachments;
-    List<Parameter> parameters;
 
 }

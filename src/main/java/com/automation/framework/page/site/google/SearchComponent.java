@@ -2,9 +2,7 @@ package com.automation.framework.page.site.google;
 
 import com.automation.framework.core.annotation.PageComponent;
 import com.automation.framework.page.BasePage;
-import io.qameta.allure.Step;
 import lombok.Getter;
-import lombok.Setter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -13,7 +11,6 @@ import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 @Getter
-@Setter
 @PageComponent
 public class SearchComponent extends BasePage {
 
@@ -26,7 +23,7 @@ public class SearchComponent extends BasePage {
     @FindBy(name = GOOGLE_SEARCH_BTN)
     private List<WebElement> googleSearchBtnList;
 
-    @Step
+
     public BasePage searchInGoogle(String input) {
         wait.until(visibilityOf(this.searchInputField));
         this.searchInputField.click();
@@ -34,7 +31,7 @@ public class SearchComponent extends BasePage {
         return this;
     }
 
-    @Step
+
     public BasePage clickGoogleSearchButton() {
         this.googleSearchBtnList.stream()
                 .filter(btn -> btn.isEnabled() && btn.isDisplayed())

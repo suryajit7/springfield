@@ -3,7 +3,6 @@ package com.automation.framework.page.site.saucedemo;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
 import lombok.Getter;
-import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +12,6 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 
 @Page
 @Getter
-@Setter
 public class LoginPage extends BasePage {
 
     private final String LOGIN_LOGO = "//div[@class='login_logo']";

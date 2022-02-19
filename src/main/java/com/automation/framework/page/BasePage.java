@@ -3,7 +3,6 @@ package com.automation.framework.page;
 import com.automation.framework.core.Kernel;
 import com.automation.framework.core.annotation.Page;
 import lombok.Getter;
-import lombok.Setter;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
@@ -15,7 +14,6 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 @Page
 @Getter
-@Setter
 public class BasePage extends Kernel {
 
     protected final List<Class<? extends WebDriverException>> exceptionList = List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class, ElementNotVisibleException.class, ElementNotSelectableException.class, TimeoutException.class, NoSuchSessionException.class, StaleElementReferenceException.class);

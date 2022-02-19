@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All Test Suite"  >
+    <!-- suite name="Suite Name" -->
+    <suite-files>
+        <suite-file path="src/test/java/com/automation/framework/gui/web-app.xml" />
+        <suite-file path="src/test/java/com/automation/framework/mobile/mobile.xml" />
+        <!--<suite-file path="com/automation/framework/gui/testng.xml"/>-->
+    </suite-files>
+</suite>

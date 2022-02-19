@@ -5,14 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/annotation/Screen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/condition/isTestNG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/screen/BaseScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/mobile/mobile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/MobileAppiumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/MobileAppiumDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/app/demo/DemoAPK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/google/GoogleSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/google/GoogleSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/google/SearchComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/google/SearchComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/google/SearchResultsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/google/SearchResultsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/opencart/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/opencart/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/saucedemo/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/saucedemo/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/saucedemo/MenuNavigationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/saucedemo/MenuNavigationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/AssertWebTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/AssertWebTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/TestExecutionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/TestExecutionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/web-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/mobile/android/AndroidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/mobile/AndroidTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +85,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -142,11 +169,11 @@
     <property name="jdk.selected.JAVA_MODULE" value="11 (2)" />
     <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA Community Edition IC-212.5080.55" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="JFrogGlobal" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -166,16 +193,20 @@
       <recent name="com.automation.framework.data.repo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\Springfield\src\test\java\com\automation\framework\mobile" />
       <recent name="C:\code\Springfield\src\main\python" />
       <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\test\resources\datasets" />
       <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\Springfield\src\test\resources" />
+      <recent name="C:\code\Springfield\src\test\java\com\automation\framework\gui" />
+      <recent name="C:\code\Springfield\" />
       <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\main\resources\apks" />
       <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\main\resources" />
-      <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\test\resources\datasets" />
-      <recent name="C:\code\automation-suite\src\main\resources" />
-      <recent name="C:\code\automation-suite\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.automation.framework.mobile" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -184,24 +215,7 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.integration in automation-suite.test">
-    <configuration name="CustomAssertionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.unit.CustomAssertionsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileReaderTest.verifyFileReaderUtility" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-suite.test" />
       <shortenClasspath name="ARGS_FILE" />
       <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
@@ -213,8 +227,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.framework.integration" />
       <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.FileReaderTest" />
-      <option name="METHOD_NAME" value="verifyFileReaderUtility" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -268,6 +281,35 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
+    </configuration>
+    <configuration name="TestNG.xml" type="TestNG" temporary="true">
+      <shortenClasspath name="ARGS_FILE" />
+      <useClassPathOnly />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11 (2)" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="ARGS_FILE" />
@@ -329,21 +371,21 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.integration in automation-suite.test" />
-      <item itemvalue="JUnit.CustomAssertionsTest" />
-      <item itemvalue="JUnit.FileReaderTest.verifyFileReaderUtility" />
+      <item itemvalue="JUnit.FileReaderTest" />
       <item itemvalue="Python.test_api" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python tests.pytest for login_test.MyTestCase" />
       <item itemvalue="Python tests.pytest for login_test.TestCase" />
       <item itemvalue="Python tests.pytest for login_test.test_login_page" />
+      <item itemvalue="TestNG.TestNG.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNG.xml" />
+        <item itemvalue="JUnit.FileReaderTest" />
         <item itemvalue="Python tests.pytest for login_test.test_login_page" />
         <item itemvalue="Python tests.pytest for login_test.TestCase" />
         <item itemvalue="Python tests.pytest for login_test.MyTestCase" />
-        <item itemvalue="JUnit.FileReaderTest.verifyFileReaderUtility" />
-        <item itemvalue="JUnit.CustomAssertionsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -692,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644966430899</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Commit172: enabling all tests">
+      <created>1644994991121</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1644994991121</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -719,7 +768,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit144: refactoring" />
     <MESSAGE value="Commit145: refactoring" />
     <MESSAGE value="Commit146: removed ZeroCell lib usage and minor refactoring" />
     <MESSAGE value="Commit147: minor refactoring" />
@@ -744,17 +792,13 @@
     <MESSAGE value="Commit169: Added custom waits for elements and scrolling feature in BasePage." />
     <MESSAGE value="Commit170: Minor changes and few practice pytest" />
     <MESSAGE value="Commit171: Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit171: Minor changes" />
+    <MESSAGE value="Commit172: enabling all tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit172: enabling all tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/saucedemo/MenuNavigationPage.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/UsersTest.java</url>
           <line>42</line>
@@ -772,13 +816,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java</url>
-          <line>47</line>
+          <line>43</line>
           <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/framework/AutomationSuiteApplication.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

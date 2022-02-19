@@ -27,7 +27,7 @@ public class AssertWebTable extends AbstractAssert<AssertWebElement, WebElement>
 
             Assertions.assertThat(actual.findElements(By.xpath("//tr//th")))
                     .isNotEmpty()
-                    .extracting(WebElement::getText)
+                    //.extracting(WebElement::getText)
                     .containsAll(headerList);
             log.info("The given WebTable has expected Header List.");
         } else {
@@ -43,7 +43,7 @@ public class AssertWebTable extends AbstractAssert<AssertWebElement, WebElement>
 
             Assertions.assertThat(actual.findElements(By.xpath("//tr//th")))
                     .isNotEmpty()
-                    .extracting(WebElement::getText)
+                    //.extracting(WebElement::getText)
                     .asList()
                     .containsExactlyInAnyOrder(headerList.toArray());
             log.info("The given WebTable has expected Header List.");
@@ -60,7 +60,7 @@ public class AssertWebTable extends AbstractAssert<AssertWebElement, WebElement>
 
             Assertions.assertThat(actual.findElements(By.xpath("//tr//th")))
                     .isNotEmpty()
-                    .extracting(WebElement::getText)
+                    //.extracting(WebElement::getText)
                     .asList()
                     .containsExactly(headerList.toArray());
             log.info("The given WebTable has expected Header List.");

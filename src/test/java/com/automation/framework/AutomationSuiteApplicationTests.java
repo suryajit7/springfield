@@ -4,7 +4,6 @@ package com.automation.framework;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.config.AppContextProvider;
 import com.automation.framework.core.config.ConfigurableBean;
-import com.automation.framework.env.db.TestDBSetup;
 import com.automation.framework.util.file.FileReader;
 import com.automation.framework.util.file.PathFinder;
 import com.github.javafaker.Faker;
@@ -14,7 +13,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.parallel.Isolated;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,6 +20,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.TestPropertySource;
 
+import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 
 @SpringBootTest
@@ -29,7 +28,7 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @TestPropertySource(locations = {"classpath:application.properties"})
 @TestMethodOrder(OrderAnnotation.class)
 @TestInstance(PER_CLASS)
-@ExtendWith(TestDBSetup.class)
+//@ExtendWith(TestDBSetup.class)
 @ComponentScan
 public class AutomationSuiteApplicationTests {
 
@@ -56,6 +55,9 @@ public class AutomationSuiteApplicationTests {
 	@Value("${app.postman.mock.url}")
 	protected String postmanMockServerUrl;
 
+	@Value("${jasypt.encryptor.secret}")
+	private String jasyptSecretValue;
+
 	@BeforeAll
 	public void setup(){
 		logger.info("****** Spring Context loaded ******");
@@ -63,6 +65,8 @@ public class AutomationSuiteApplicationTests {
 
 		myBean = appCtx.getBeanOfType(ConfigurableBean.class);
 		myBean.setExpiredAccessToken(false);
+
+		System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
 
 	}
 

@@ -1,6 +1,7 @@
 package com.automation.framework.core;
 
 import com.automation.framework.core.annotation.LazyAutowired;
+import com.automation.framework.core.condition.isTestNG;
 import com.github.javafaker.Faker;
 import org.apache.commons.logging.Log;
 import org.openqa.selenium.WebDriver;
@@ -11,11 +12,10 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Conditional;
 
 import javax.annotation.PostConstruct;
 import java.util.Arrays;
-
-import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 
 
 /**
@@ -27,6 +27,9 @@ public class Kernel {
 
     @LazyAutowired
     public WebDriver driver;
+
+/*    @LazyAutowired
+    public AppiumDriver<MobileElement> appiumDriver;*/
 
     @LazyAutowired
     public WebDriverWait wait;
@@ -52,22 +55,21 @@ public class Kernel {
     @Value("${wait.polling.interval:10}")
     protected int pollingInterval;
 
-    @Value("${jasypt.encryptor.secret}")
-    private String jasyptSecretValue;
+
 
     @PostConstruct
+    @Conditional(isTestNG.class)
     public void init() {
-        System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
-
-        if (!isJUnitTest()){
-            PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, timeout), this);
-            this.actions = new Actions(this.driver);
-            this.driver.manage().window().maximize();
-        }
+        //System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
+        PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, timeout), this);
+        //PageFactory.initElements(new AppiumFieldDecorator(this.appiumDriver), this);
+        this.actions = new Actions(this.driver);
+        this.driver.manage().window().maximize();
 
     }
 
-    private boolean isJUnitTest() {
+
+    private boolean initializePageFactory() {
         return Arrays.stream(Thread.currentThread().getStackTrace()).anyMatch(test-> test.getClassName().contains("junit"));
     }
 

@@ -5,16 +5,12 @@ import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.site.opencart.Dashboard;
 import com.automation.framework.page.site.opencart.Login;
 import com.automation.framework.page.site.saucedemo.MenuNavigationPage;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.page.site.saucedemo.MenuOption.USERS;
 
-@Epic("OpenCart")
-@Feature("Dashboard")
 public class OpenCartDashboardTest extends BaseTestNGTest {
 
     @Value("${app.opencart.url}")

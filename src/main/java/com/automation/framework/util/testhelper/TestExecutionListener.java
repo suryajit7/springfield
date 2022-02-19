@@ -1,7 +1,6 @@
 package com.automation.framework.util.testhelper;
 
 
-import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -129,7 +128,7 @@ public class TestExecutionListener implements ITestListener, IInvokedMethodListe
     }
 
 
-    @Attachment
+    //@Attachment
     public byte[] saveFailureScreenShot(WebDriver driver) {
         return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
     }
