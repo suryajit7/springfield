@@ -17,6 +17,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="automation-suite.main" options="--add-modules java.desktop,java.base" />
+      <module name="automation-suite.test" options="--add-modules java.base" />
     </option>
   </component>
 </project>

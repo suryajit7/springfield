@@ -7,8 +7,15 @@
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,11 +187,11 @@
       <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\Springfield\src\test\java\com\automation\framework" />
       <recent name="C:\code\Springfield\src\test\resources" />
       <recent name="C:\code\Springfield\src\test\java\com\automation\framework\gui" />
       <recent name="C:\code\Springfield\" />
       <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\main\resources\apks" />
-      <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.automation.framework.mobile" />
@@ -374,13 +381,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00002" summary="Commit126: Major Refactoring">
-      <created>1640622193082</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1640622193082</updated>
-    </task>
     <task id="LOCAL-00003" summary="Commit127: Major Refactoring">
       <created>1640622489970</created>
       <option name="number" value="00003" />
@@ -724,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645283746300</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Commit174: minor change">
+      <created>1648837071508</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1648837071509</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -751,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit146: removed ZeroCell lib usage and minor refactoring" />
     <MESSAGE value="Commit147: minor refactoring" />
     <MESSAGE value="Commit148: minor refactoring" />
     <MESSAGE value="Commit149: Major refactoring along with app context driven AccessTokenProvider." />
@@ -776,7 +782,8 @@
     <MESSAGE value="Commit171: Minor changes" />
     <MESSAGE value="Commit172: enabling all tests" />
     <MESSAGE value="Commit173: Adding basic support for running Mobile tests using AppiumDriver." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit173: Adding basic support for running Mobile tests using AppiumDriver." />
+    <MESSAGE value="Commit174: minor change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit174: minor change" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -796,11 +803,6 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.16.3/4a36cf03c75e8735aaf46e5b67a662a6973fa96/database-commons-1.16.3-sources.jar!/org/testcontainers/ext/ScriptUtils.java</url>
           <line>339</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -3,7 +3,6 @@ package com.automation.framework.gui.module.google;
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.site.google.GoogleSearchPage;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.util.testhelper.AssertWebElement.assertThat;
@@ -15,11 +14,6 @@ public class GoogleSearchTest extends BaseTestNGTest {
     @LazyAutowired
     private GoogleSearchPage googleSearchPage;
 
-
-    @AfterClass
-    public void closeBrowser(){
-        this.googleSearchPage.close();
-    }
 
     @Test
     public void verifySearchTest() {
