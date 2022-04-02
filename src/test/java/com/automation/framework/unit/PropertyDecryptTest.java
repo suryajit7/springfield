@@ -1,6 +1,6 @@
-package com.automation.functional.unit;
+package com.automation.framework.unit;
 
-import com.automation.functional.AutomationSuiteApplicationTests;
+import com.automation.framework.AutomationSuiteApplicationTests;
 
 public class PropertyDecryptTest extends AutomationSuiteApplicationTests {
 

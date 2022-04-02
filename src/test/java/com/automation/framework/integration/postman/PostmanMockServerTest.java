@@ -1,7 +1,7 @@
-package com.automation.functional.integration.postman;
+package com.automation.framework.integration.postman;
 
+import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.util.PropertyDecryptService;
-import com.automation.functional.AutomationSuiteApplicationTests;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.assertj.core.api.Assertions;

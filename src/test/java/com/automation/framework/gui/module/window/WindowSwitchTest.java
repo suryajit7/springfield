@@ -1,10 +1,10 @@
-package com.automation.functional.gui.module.window;
+package com.automation.framework.gui.module.window;
 
+import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.page.site.window.MainPage;
 import com.automation.framework.page.site.window.PageA;
 import com.automation.framework.page.site.window.PageB;
 import com.automation.framework.page.site.window.PageC;
-import com.automation.functional.BaseTestNGTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

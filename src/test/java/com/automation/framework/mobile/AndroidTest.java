@@ -1,6 +1,6 @@
-package com.automation.functional.mobile;
+package com.automation.framework.mobile;
 
-import com.automation.functional.BaseTestNGTest;
+import com.automation.framework.BaseTestNGTest;
 import org.testng.annotations.Test;
 
 public class AndroidTest extends BaseTestNGTest {

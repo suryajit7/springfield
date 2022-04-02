@@ -1,10 +1,10 @@
-package com.automation.functional.gui.module.opencart;
+package com.automation.framework.gui.module.opencart;
 
+import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.site.opencart.Dashboard;
 import com.automation.framework.page.site.opencart.Login;
 import com.automation.framework.page.site.saucedemo.MenuNavigationPage;
-import com.automation.functional.BaseTestNGTest;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

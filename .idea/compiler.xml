@@ -18,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="automation-suite.main" options="--add-modules java.desktop,java.base" />
       <module name="automation-suite.test" options="--add-modules java.base" />
+      <module name="com.automation.automation-suite.main" options="--add-modules java.base,java.desktop" />
     </option>
   </component>
 </project>

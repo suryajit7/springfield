@@ -1,4 +1,4 @@
-package com.automation.functional;
+package com.automation.framework;
 
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.BasePage;
