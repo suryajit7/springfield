@@ -1,0 +1,57 @@
+/out/test/resources/allure.properties
+/out/test/resources/logs/automation-suite.log
+/out/test/resources/logs/automation-suite.log.2022-03-28.0.gz
+/build/resources/test/logs/automation-suite.log.2022-04-01.0.gz
+/out/test/resources/logs/automation-suite.log.2022-04-01.0.gz
+/src/test/resources/logs/automation-suite.log.2022-04-01.0.gz
+/build/libs/automation-suite-0.0.1-SNAPSHOT-alltests.jar
+/build/reports/tests/runTestNGTests/css/base-style.css
+/build/reports/tests/runTestNGTests/bullet_point.png
+/.idea/shelf/create_single_jar/checksums.lock
+/build/reports/tests/runTestNGTests/collapseall.gif
+/.idea/shelf/create_single_jar.xml
+/build/reports/tests/runTestNGTests/emailable-report.html
+/build/reports/tests/runTestNGTests/failed.png
+/out/test/resources/screenshots/GoogleSearchTest/googleSearchTest.png
+/out/test/resources/screenshots/GoogleSearchTest2/googleSearchTest_test2test2.png
+/out/test/resources/screenshots/GoogleSearchTest/googleSearchTestpass method namepass method name.png
+/build/reports/tests/runTestNGTests/old/index.html
+/build/reports/tests/runTestNGTests/index.html
+/build/tmp/javadoc/javadoc.options
+/build/reports/tests/runTestNGTests/jquery.min.js
+/out/test/resources/junit-platform.properties
+/build/tmp/testJar/MANIFEST.MF
+/.idea/modules.xml
+/build/reports/tests/runTestNGTests/navigator-bullet.png
+/build/test-results/runTestNGTests/binary/output.bin
+/build/test-results/runTestNGTests/binary/output.bin.idx
+/build/reports/tests/runTestNGTests/passed.png
+/out/test/resources/schemas/PostmanJsonSchema.json
+/build/reports/tests/runTestNGTests/js/report.js
+/build/test-results/runTestNGTests/binary/results.bin
+/out/test/resources/screenshots/WindowSwitchTest/setup_pass method namepass method name.png
+/build/resources/test/screenshots/WindowSwitchTest/setuppass method namepass method name.png
+/out/test/resources/screenshots/WindowSwitchTest/setuppass method namepass method name.png
+/src/test/resources/screenshots/WindowSwitchTest/setuppass method namepass method name.png
+/.idea/shelf/create_single_jar/shelved.patch
+/build/reports/tests/runTestNGTests/skipped.png
+/build/reports/tests/runTestNGTests/css/style.css
+/build/reports/tests/runTestNGTests/testng.css
+/out/test/resources/testng.xml
+/build/reports/tests/runTestNGTests/testng-reports.css
+/build/reports/tests/runTestNGTests/testng-reports.js
+/build/reports/tests/runTestNGTests/testng-reports1.css
+/build/reports/tests/runTestNGTests/testng-reports2.js
+/build/reports/tests/runTestNGTests/testng-results.xml
+/build/resources/test/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png
+/out/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png
+/build/resources/test/screenshots/GoogleSearchTest/verifyGoogleSearchTesttest2test2.png
+/out/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTesttest2test2.png
+/build/resources/test/screenshots/GoogleSearchTest/verifySearchTest.png
+/out/test/resources/screenshots/GoogleSearchTest/verifySearchTest.png
+/build/resources/test/screenshots/GoogleSearchTest/verifySearchTestActual.png
+/out/test/resources/screenshots/GoogleSearchTest/verifySearchTestActual.png
+/build/resources/test/screenshots/GoogleSearchTest/verifySearchTestDifference.png
+/out/test/resources/screenshots/GoogleSearchTest/verifySearchTestDifference.png
+/build/resources/test/screenshots/GoogleSearchTest/verifySearchTestpass method namepass method name.png
+/out/test/resources/screenshots/GoogleSearchTest/verifySearchTestpass method namepass method name.png

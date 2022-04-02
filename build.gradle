@@ -3,6 +3,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'com.github.johnrengelman.shadow' version '7.1.2'
 	id 'java'
+	id 'maven-publish'
 }
 
 group = 'com.automation'
@@ -127,5 +128,17 @@ task testJar(type: com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar) {
 	zip64 = true
 	from sourceSets.main.output, sourceSets.test.output
 	configurations = [project.configurations.testRuntimeClasspath]
+}
+
+
+publishing {
+	publications {
+		maven(MavenPublication) {
+			groupId = 'com.automation'
+			artifactId = 'gradleex-mavenplugin'
+			version = '0.0.1-SNAPSHOT'
+			from components.java
+		}
+	}
 }
 
