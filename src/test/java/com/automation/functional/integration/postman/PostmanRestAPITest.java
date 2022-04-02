@@ -1,11 +1,11 @@
-package com.automation.framework.integration.postman;
+package com.automation.functional.integration.postman;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.BaseEntity;
 import com.automation.framework.data.entity.postman.Postman;
 import com.automation.framework.data.entity.postman.Workspace;
 import com.automation.framework.service.api.postman.PostmanService;
+import com.automation.functional.AutomationSuiteApplicationTests;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
 

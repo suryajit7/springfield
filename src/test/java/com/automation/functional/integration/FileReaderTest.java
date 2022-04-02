@@ -1,8 +1,8 @@
-package com.automation.framework.integration;
+package com.automation.functional.integration;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.data.entity.ems.Employee;
 import com.automation.framework.util.file.FileReader;
+import com.automation.functional.AutomationSuiteApplicationTests;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

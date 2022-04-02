@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/AutomationSuiteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/BaseTestNGTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/google/GoogleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/MultiBrowserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/google/MultiBrowserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/opencart/OpenCartDashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/saucedemo/SauceDemoLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/window/WindowSwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/window/WindowSwitchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/FileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/FileReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/postman/PostmanRestAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/spotify/SpotifyPlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/mobile/AndroidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/mobile/AndroidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/mobile/mobile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/mobile/mobile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/CustomAssertionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/unit/CustomAssertionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/functional/unit/PropertyDecryptTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +211,7 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpotifyPlaylistTest">
+  <component name="RunManager" selected="TestNG.C:/code/Springfield/src/test/java/com/automation/framework/TestNG.xml">
     <configuration name="Springfield [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -361,8 +376,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpotifyPlaylistTest" />
         <item itemvalue="TestNG.C:/code/Springfield/src/test/java/com/automation/framework/TestNG.xml" />
+        <item itemvalue="JUnit.SpotifyPlaylistTest" />
         <item itemvalue="Gradle.Springfield [bootJarMainClassName]" />
         <item itemvalue="Gradle.Springfield [bootBuildImage]" />
         <item itemvalue="Gradle.Springfield [assemble]" />
@@ -371,13 +386,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00003" summary="Commit127: Major Refactoring">
-      <created>1640622489970</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1640622489970</updated>
-    </task>
     <task id="LOCAL-00004" summary="Commit127: Major Refactoring">
       <created>1640622525410</created>
       <option name="number" value="00004" />
@@ -721,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648837071509</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Commit174: updated dependencies">
+      <created>1648902879564</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1648902879565</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -748,7 +763,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit147: minor refactoring" />
     <MESSAGE value="Commit148: minor refactoring" />
     <MESSAGE value="Commit149: Major refactoring along with app context driven AccessTokenProvider." />
     <MESSAGE value="Commit150: Refactoring" />
@@ -773,7 +787,8 @@
     <MESSAGE value="Commit172: enabling all tests" />
     <MESSAGE value="Commit173: Adding basic support for running Mobile tests using AppiumDriver." />
     <MESSAGE value="Commit174: minor change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit174: minor change" />
+    <MESSAGE value="Commit174: updated dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit174: updated dependencies" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

@@ -1,4 +1,4 @@
-package com.automation.framework;
+package com.automation.functional;
 
 
 import com.automation.framework.core.annotation.LazyAutowired;

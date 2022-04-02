@@ -1,10 +1,10 @@
-package com.automation.framework.integration.spotify;
+package com.automation.functional.integration.spotify;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.config.AppContextProvider;
 import com.automation.framework.data.entity.spotify.Playlist;
 import com.automation.framework.service.api.spotify.PlaylistService;
+import com.automation.functional.AutomationSuiteApplicationTests;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;

@@ -1,7 +1,7 @@
-package com.automation.framework.integration.postman;
+package com.automation.functional.integration.postman;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
 import com.automation.framework.util.PropertyDecryptService;
+import com.automation.functional.AutomationSuiteApplicationTests;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import org.junit.jupiter.api.Order;

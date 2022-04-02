@@ -1,8 +1,8 @@
-package com.automation.framework.gui.module.saucedemo;
+package com.automation.functional.gui.module.saucedemo;
 
-import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.site.saucedemo.LoginPage;
+import com.automation.functional.BaseTestNGTest;
 import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.Test;
 
