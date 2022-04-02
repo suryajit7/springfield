@@ -5,26 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/BaseTestNGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/BaseTestNGTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/google/GoogleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/GoogleSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/google/MultiBrowserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/google/MultiBrowserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/opencart/OpenCartDashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/saucedemo/SauceDemoLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/saucedemo/SauceDemoLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/gui/module/window/WindowSwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/window/WindowSwitchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/FileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/FileReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/postman/PostmanRestAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanRestAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/integration/spotify/SpotifyPlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/spotify/SpotifyPlaylistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/mobile/AndroidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/mobile/AndroidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/mobile/mobile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/mobile/mobile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/unit/CustomAssertionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/CustomAssertionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/functional/unit/PropertyDecryptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/unit/PropertyDecryptTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/core/Kernel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +60,13 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="automation-suite" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="automation-suite" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -211,8 +207,8 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Springfield [assemble]">
-    <configuration name="Springfield [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Springfield [testJar]">
+    <configuration name="Springfield [prepareKotlinBuildScriptModel]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -223,7 +219,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="assemble" />
+            <option value="prepareKotlinBuildScriptModel" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -233,7 +229,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Springfield [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Springfield [processResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -244,7 +240,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="bootRun" />
+            <option value="processResources" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -254,39 +250,68 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostmanAPITestScenarios" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.postman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.postman" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.postman.PostmanAPITestScenarios" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Springfield [processTestResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="processTestResources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="SpotifyPlaylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.framework.integration.spotify.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.framework.integration.spotify" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.integration.spotify.SpotifyPlaylistTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Springfield [runTestNGTests]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runTestNGTests" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Springfield [testJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="ARGS_FILE" />
@@ -338,18 +363,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="C:/code/Springfield/src/test/java/com/automation/framework/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automation-suite.test" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/automation/framework/TestNG.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="ARGS_FILE" />
       <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
@@ -362,33 +375,26 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.integration in automation-suite.test" />
-      <item itemvalue="JUnit.SpotifyPlaylistTest" />
       <item itemvalue="Python.test_api" />
       <item itemvalue="Python.main" />
-      <item itemvalue="TestNG.C:/code/Springfield/src/test/java/com/automation/framework/TestNG.xml" />
-      <item itemvalue="Gradle.Springfield [bootRun]" />
-      <item itemvalue="JUnit.PostmanAPITestScenarios" />
-      <item itemvalue="Gradle.Springfield [assemble]" />
+      <item itemvalue="Gradle.Springfield [prepareKotlinBuildScriptModel]" />
+      <item itemvalue="Gradle.Springfield [processResources]" />
+      <item itemvalue="Gradle.Springfield [processTestResources]" />
+      <item itemvalue="Gradle.Springfield [runTestNGTests]" />
+      <item itemvalue="Gradle.Springfield [testJar]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Springfield [assemble]" />
-        <item itemvalue="JUnit.SpotifyPlaylistTest" />
-        <item itemvalue="JUnit.PostmanAPITestScenarios" />
-        <item itemvalue="Gradle.Springfield [bootRun]" />
-        <item itemvalue="TestNG.C:/code/Springfield/src/test/java/com/automation/framework/TestNG.xml" />
+        <item itemvalue="Gradle.Springfield [testJar]" />
+        <item itemvalue="Gradle.Springfield [runTestNGTests]" />
+        <item itemvalue="Gradle.Springfield [processTestResources]" />
+        <item itemvalue="Gradle.Springfield [processResources]" />
+        <item itemvalue="Gradle.Springfield [prepareKotlinBuildScriptModel]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00004" summary="Commit127: Major Refactoring">
-      <created>1640622525410</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1640622525410</updated>
-    </task>
     <task id="LOCAL-00005" summary="Commit128: Major Refactoring">
       <created>1640627482574</created>
       <option name="number" value="00005" />
@@ -732,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648902879565</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Commit176: minor refactoring">
+      <created>1648913337223</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1648913337223</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -759,7 +772,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit148: minor refactoring" />
     <MESSAGE value="Commit149: Major refactoring along with app context driven AccessTokenProvider." />
     <MESSAGE value="Commit150: Refactoring" />
     <MESSAGE value="Commit151: Refactoring" />
@@ -784,7 +796,8 @@
     <MESSAGE value="Commit173: Adding basic support for running Mobile tests using AppiumDriver." />
     <MESSAGE value="Commit174: minor change" />
     <MESSAGE value="Commit174: updated dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit174: updated dependencies" />
+    <MESSAGE value="Commit176: minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit176: minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

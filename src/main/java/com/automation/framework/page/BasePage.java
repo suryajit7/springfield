@@ -1,15 +1,24 @@
 package com.automation.framework.page;
 
 import com.automation.framework.core.Kernel;
+import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.annotation.Page;
+import com.automation.framework.util.PropertyDecryptService;
 import lombok.Getter;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 import static com.automation.framework.data.Constants.BLANK;
+import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 @Page
@@ -17,6 +26,27 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 public class BasePage extends Kernel {
 
     protected final List<Class<? extends WebDriverException>> exceptionList = List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class, ElementNotVisibleException.class, ElementNotSelectableException.class, TimeoutException.class, NoSuchSessionException.class, StaleElementReferenceException.class);
+    public Actions actions;
+
+    @LazyAutowired
+    public WebDriverWait wait;
+
+    @LazyAutowired
+    public FluentWait<WebDriver> fluentWait;
+
+    @LazyAutowired
+    public WebDriver driver;
+
+    @PostConstruct
+    public void init() {
+        System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
+        this.decryptService = appCtx.getBean(PropertyDecryptService.class);
+        PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, timeout), this);
+        //PageFactory.initElements(new AppiumFieldDecorator(this.appiumDriver), this);
+        this.actions = new Actions(this.driver);
+        this.driver.manage().window().maximize();
+
+    }
 
     public BasePage goTo(String url) {
         this.driver.get(url);
