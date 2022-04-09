@@ -6,7 +6,11 @@ import com.automation.framework.core.config.AppContextProvider;
 import com.automation.framework.core.config.ConfigurableBean;
 import com.automation.framework.util.file.FileReader;
 import com.automation.framework.util.file.PathFinder;
+import com.github.fge.jsonschema.cfg.ValidationConfiguration;
+import com.github.fge.jsonschema.main.JsonSchemaFactory;
+import com.github.fge.jsonschema.main.JsonValidator;
 import com.github.javafaker.Faker;
+import io.restassured.module.jsv.JsonSchemaValidatorSettings;
 import org.apache.commons.logging.Log;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -21,6 +25,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.TestPropertySource;
 
 import static com.automation.framework.data.Constants.JASYPT_ENCRYPTOR_KEY;
+import static com.github.fge.jsonschema.SchemaVersion.DRAFTV4;
+import static io.restassured.module.jsv.JsonSchemaValidator.settings;
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 
 @SpringBootTest
@@ -33,6 +39,7 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 public class AutomationSuiteApplicationTests {
 
 	protected static AppContextProvider appCtx = new AppContextProvider();
+	protected JsonValidator validator;
 
 	@Autowired
 	protected ConfigurableBean myBean;
@@ -58,13 +65,26 @@ public class AutomationSuiteApplicationTests {
 	@Value("${jasypt.encryptor.secret}")
 	private String jasyptSecretValue;
 
+	protected final ValidationConfiguration validationConfig = ValidationConfiguration.newBuilder()
+			.setDefaultVersion(DRAFTV4).freeze();
+
+	protected final JsonSchemaFactory jsonSchemaFactory = JsonSchemaFactory.newBuilder()
+			.setValidationConfiguration(validationConfig).freeze();
+
 	@BeforeAll
 	public void setup(){
+
 		logger.info("****** Spring Context loaded ******");
 		logger.info("Thread: ".concat(String.valueOf(Thread.currentThread().getId())));
 
 		myBean = appCtx.getBeanOfType(ConfigurableBean.class);
 		myBean.setExpiredAccessToken(false);
+
+		settings = JsonSchemaValidatorSettings.settings()
+				.with().jsonSchemaFactory(jsonSchemaFactory)
+				.and().with().checkedValidation(true);
+
+		validator = jsonSchemaFactory.getValidator();
 
 		System.setProperty(JASYPT_ENCRYPTOR_KEY, jasyptSecretValue);
 

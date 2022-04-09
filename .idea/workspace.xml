@@ -4,10 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="Commit178:">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.automation.automation-suite.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/0501536a699e0b78b4fd0f6544bd9636dc017bd6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d58f4be6aa1943042c561fc666652e6e1533f8d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24139dae656713ba861751fb2c2ac38839349a7a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e7ddf0d2144d56947ea9a688f0feed9503cc5be" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/421ea3894c06eb7735914f1e348fef3a4277781a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/589255a203e0fdd124796f479aa1030216f2faf1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/6480015c46b937f1aaca3f99f48c4ca481068ffd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69a8350e0dc49598da7657eac37e0ff009437294" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71c54e7305d8bbb89f007c9633f05a5d29698eb4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89612f19ddd1d714d292c587b7afd3c86269d681" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8ba292d91eb4bc488d425c6958a9867a578d9d52" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9346a5eb31cad13d140075a9a570d98bd47877dc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9638d2ef3daaefef97aa6ab5567272668565a0ed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/993f5003ecade78e756564fdd0658a8c383c46f9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a1f18202d588d182e7a20e8a6dfa174f4452e6d5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a856b86663d3d7b9dc5c68ad7e5ff62d31cb15ce" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa661ca26c2da160dfe4211a7f67b6627db7f29b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae41ad7091924fd3bd38da5dbe57a360ab427cb3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d755ad7b5a34e6802e281218115c451c7a9ea5d0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e1de27e922bc2daabfaf75e3fa27d7c0cc6329e3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed4d421358e509ee19a233d6e11b409a5d023db3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f584c49566eb19ebe968ad0486f242d6277550f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/AssertWebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/automation-suite.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/automation-suite.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +132,7 @@
     </file-type-list>
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="4" />
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.assertthat/selenium-shutterbug/1.5/52a838239b08f27eda4d68eeacdf6d1ca3c7b79a/selenium-shutterbug-1.5-sources.jar!/com/assertthat/selenium_shutterbug/core/Shutterbug.java" root0="SKIP_INSPECTION" />
@@ -193,6 +222,9 @@
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.automation.framework.mobile" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.automation.framework.util.testhelper" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -367,14 +399,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.integration in automation-suite.test" />
-      <item itemvalue="Python.test_api" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Gradle.Springfield [prepareKotlinBuildScriptModel]" />
       <item itemvalue="Gradle.Springfield [processResources]" />
       <item itemvalue="Gradle.Springfield [processTestResources]" />
       <item itemvalue="Gradle.Springfield [runTestNGTests]" />
       <item itemvalue="Gradle.Springfield [testJar]" />
+      <item itemvalue="JUnit.integration in automation-suite.test" />
+      <item itemvalue="Python.test_api" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
@@ -388,13 +420,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00006" summary="Commit129: Adding Allure Reporting features">
-      <created>1640677435810</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1640677435810</updated>
-    </task>
     <task active="true" id="Default" summary="Default task">
       <changelist id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="" />
       <created>1640691911248</created>
@@ -738,7 +763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648915949153</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Commit179: minor refactoring">
+      <created>1648916513976</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1648916513976</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -765,7 +797,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit150: Refactoring" />
     <MESSAGE value="Commit151: Refactoring" />
     <MESSAGE value="Commit152: Refactoring" />
     <MESSAGE value="Commit154: Fixed all integration tests" />
@@ -790,7 +821,8 @@
     <MESSAGE value="Commit174: updated dependencies" />
     <MESSAGE value="Commit176: minor refactoring" />
     <MESSAGE value="Commit177: updated gradle build to create jars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit177: updated gradle build to create jars" />
+    <MESSAGE value="Commit179: minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit179: minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
