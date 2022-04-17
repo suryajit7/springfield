@@ -5,38 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.automation.automation-suite.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/0501536a699e0b78b4fd0f6544bd9636dc017bd6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d58f4be6aa1943042c561fc666652e6e1533f8d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24139dae656713ba861751fb2c2ac38839349a7a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e7ddf0d2144d56947ea9a688f0feed9503cc5be" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/421ea3894c06eb7735914f1e348fef3a4277781a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/589255a203e0fdd124796f479aa1030216f2faf1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/6480015c46b937f1aaca3f99f48c4ca481068ffd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69a8350e0dc49598da7657eac37e0ff009437294" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71c54e7305d8bbb89f007c9633f05a5d29698eb4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89612f19ddd1d714d292c587b7afd3c86269d681" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8ba292d91eb4bc488d425c6958a9867a578d9d52" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9346a5eb31cad13d140075a9a570d98bd47877dc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9638d2ef3daaefef97aa6ab5567272668565a0ed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/993f5003ecade78e756564fdd0658a8c383c46f9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a1f18202d588d182e7a20e8a6dfa174f4452e6d5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a856b86663d3d7b9dc5c68ad7e5ff62d31cb15ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa661ca26c2da160dfe4211a7f67b6627db7f29b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae41ad7091924fd3bd38da5dbe57a360ab427cb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d755ad7b5a34e6802e281218115c451c7a9ea5d0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e1de27e922bc2daabfaf75e3fa27d7c0cc6329e3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed4d421358e509ee19a233d6e11b409a5d023db3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f584c49566eb19ebe968ad0486f242d6277550f0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/AssertWebService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/automation-suite.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/automation-suite.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/resources/logs/automation-suite.log.2022-04-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-04-02.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/opencart/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/opencart/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,29 +45,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="automation-suite" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="automation-suite" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="automation-suite" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="automation-suite" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="automation-suite" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -135,8 +91,8 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.assertthat/selenium-shutterbug/1.5/52a838239b08f27eda4d68eeacdf6d1ca3c7b79a/selenium-shutterbug-1.5-sources.jar!/com/assertthat/selenium_shutterbug/core/Shutterbug.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.1.1-bin/f29rtwfnc96ub43tt7p47zsru/gradle-7.1.1/lib/plugins/gradle-testing-jvm-7.1.1.jar!/org/gradle/api/tasks/testing/Test.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.assertthat/selenium-shutterbug/1.5/52a838239b08f27eda4d68eeacdf6d1ca3c7b79a/selenium-shutterbug-1.5-sources.jar!/com/assertthat/selenium_shutterbug/core/Shutterbug.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -172,6 +128,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -230,21 +187,22 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle clean" />
+      <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Springfield [testJar]">
-    <configuration name="Springfield [prepareKotlinBuildScriptModel]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Springfield [shadowJar]">
+    <configuration name="Springfield [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="prepareKotlinBuildScriptModel" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -254,7 +212,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Springfield [processResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Springfield [knows]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -265,28 +223,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="processResources" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Springfield [processTestResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="processTestResources" />
+            <option value="knows" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -308,6 +245,27 @@
         <option name="taskNames">
           <list>
             <option value="runTestNGTests" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Springfield [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -399,22 +357,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.Springfield [prepareKotlinBuildScriptModel]" />
-      <item itemvalue="Gradle.Springfield [processResources]" />
-      <item itemvalue="Gradle.Springfield [processTestResources]" />
       <item itemvalue="Gradle.Springfield [runTestNGTests]" />
       <item itemvalue="Gradle.Springfield [testJar]" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="Python.test_api" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Gradle.Springfield [build]" />
+      <item itemvalue="Gradle.Springfield [knows]" />
+      <item itemvalue="Gradle.Springfield [shadowJar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Springfield [shadowJar]" />
+        <item itemvalue="Gradle.Springfield [knows]" />
+        <item itemvalue="Gradle.Springfield [build]" />
         <item itemvalue="Gradle.Springfield [testJar]" />
         <item itemvalue="Gradle.Springfield [runTestNGTests]" />
-        <item itemvalue="Gradle.Springfield [processTestResources]" />
-        <item itemvalue="Gradle.Springfield [processResources]" />
-        <item itemvalue="Gradle.Springfield [prepareKotlinBuildScriptModel]" />
       </list>
     </recent_temporary>
   </component>
@@ -426,13 +384,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Commit131: minor change">
-      <created>1640805285261</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1640805285261</updated>
     </task>
     <task id="LOCAL-00008" summary="Commit131: Major Refactoring and added SauceDemoTest">
       <created>1641149478093</created>
@@ -770,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648916513976</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Commit180: Adding custom assertions for WebService">
+      <created>1649514010320</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1649514010320</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -797,7 +755,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit151: Refactoring" />
     <MESSAGE value="Commit152: Refactoring" />
     <MESSAGE value="Commit154: Fixed all integration tests" />
     <MESSAGE value="Commit155: Added MongoDB Test Container" />
@@ -822,7 +779,8 @@
     <MESSAGE value="Commit176: minor refactoring" />
     <MESSAGE value="Commit177: updated gradle build to create jars" />
     <MESSAGE value="Commit179: minor refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit179: minor refactoring" />
+    <MESSAGE value="Commit180: Adding custom assertions for WebService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit180: Adding custom assertions for WebService" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

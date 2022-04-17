@@ -30,9 +30,6 @@ public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
     @Value("${app.postman-echo.url}")
     protected String postmanEchoUrl;
 
-    @Value("${app.reqres.url}")
-    protected String reqresUrl;
-
 
     @Test
     @Order(1)
