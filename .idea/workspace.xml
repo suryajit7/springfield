@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/test/resources/logs/automation-suite.log.2022-04-02.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log.2022-04-02.0.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/opencart/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/site/opencart/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/module/opencart/OpenCartDashboardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanAPITestScenarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +60,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="suryajit7 &lt;suryajit7@gmail.com&gt;" />
         <option value="suryajit7" />
       </list>
     </option>
@@ -384,13 +377,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Commit131: Major Refactoring and added SauceDemoTest">
-      <created>1641149478093</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1641149478093</updated>
     </task>
     <task id="LOCAL-00009" summary="Commit132: Minor Refactoring and added SauceDemoTest">
       <created>1641221478210</created>
@@ -728,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649514010320</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Commit181: Minor refactoring">
+      <created>1650214541423</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1650214541424</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -755,7 +748,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit152: Refactoring" />
     <MESSAGE value="Commit154: Fixed all integration tests" />
     <MESSAGE value="Commit155: Added MongoDB Test Container" />
     <MESSAGE value="Commit157: Fixed File Reader Tests" />
@@ -780,7 +772,8 @@
     <MESSAGE value="Commit177: updated gradle build to create jars" />
     <MESSAGE value="Commit179: minor refactoring" />
     <MESSAGE value="Commit180: Adding custom assertions for WebService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit180: Adding custom assertions for WebService" />
+    <MESSAGE value="Commit181: Minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit181: Minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
