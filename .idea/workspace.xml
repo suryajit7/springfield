@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/AssertWebService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/page/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/AutomationSuiteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/integration/postman/PostmanMockServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/MobileAppiumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/driver/MobileAppiumDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/util/testhelper/AssertField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/AssertField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/util/testhelper/AssertWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/AssertWebElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/util/testhelper/TestDisplayNameFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/testhelper/TestDisplayNameFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/automation-suite.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +198,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.integration in automation-suite.test">
+  <component name="RunManager" selected="TestNG.GoogleSearchTest">
     <configuration name="Springfield [knows]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -385,13 +390,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Commit136: Refactoring">
-      <created>1641735412212</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1641735412212</updated>
     </task>
     <task id="LOCAL-00015" summary="Commit137: docker compose Refactoring">
       <created>1641735967569</created>
@@ -729,7 +727,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650300613805</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Commit186: Added custom waits in BasePage and minor refactoring">
+      <created>1650301314522</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1650301314522</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -756,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit161: minor changes" />
     <MESSAGE value="Commit162: minor changes" />
     <MESSAGE value="Commit163: minor changes" />
     <MESSAGE value="Commit164: minor changes" />
@@ -781,7 +785,8 @@
     <MESSAGE value="Commit184: Adding git ignore" />
     <MESSAGE value="Commit185: minor change" />
     <MESSAGE value="Commit186: minor change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit186: minor change" />
+    <MESSAGE value="Commit186: Added custom waits in BasePage and minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit186: Added custom waits in BasePage and minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
