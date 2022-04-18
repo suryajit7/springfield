@@ -3,12 +3,15 @@ package com.automation.framework.page.site.opencart;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
+import io.qameta.allure.Step;
 import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 @Page
 @Getter
+@Setter
 public class Dashboard extends BasePage {
 
     private final String MENU_DASHBOARD = "menu-dashboard";
@@ -30,6 +33,7 @@ public class Dashboard extends BasePage {
     @FindBy(id = PASSWORD_ID)
     private WebElement password;
 
+    @Step
     public Dashboard selectCountryByCode(String countryCode) {
         this.worldMap.selectCountry(countryCode);
         return this;

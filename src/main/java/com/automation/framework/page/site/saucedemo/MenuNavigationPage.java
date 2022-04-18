@@ -3,7 +3,9 @@ package com.automation.framework.page.site.saucedemo;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
+import io.qameta.allure.Step;
 import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +19,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 
 @Page
 @Getter
+@Setter
 public class MenuNavigationPage extends BasePage {
 
 
@@ -26,14 +29,14 @@ public class MenuNavigationPage extends BasePage {
     @FindBy(how = How.XPATH, using = MENU)
     private WebElement menu;
 
-
+    @Step
     public MenuNavigationPage moveToMenuOption(List<MenuOption> menuOptions) {
         for (MenuOption option : menuOptions) {
             wait.until(visibilityOf(this.driver.findElement(By.id(option.getMenuId())))).click();
         } return this;
     }
 
-
+    @Step
     public MenuNavigationPage navigateToMenu(MenuOption menuOption) {
 
         wait.until(visibilityOfElementLocated(By.xpath(ORANGE_HRM_LOGO)));

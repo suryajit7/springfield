@@ -1,10 +1,9 @@
 package com.automation.framework;
 
 import com.automation.framework.core.annotation.LazyAutowired;
-import com.automation.framework.page.BasePage;
 import com.automation.framework.util.PropertyDecryptService;
 import com.automation.framework.util.ScreenshotService;
-import com.automation.framework.util.testhelper.TestExecutionListener;
+import com.automation.framework.util.TestExecutionListener;
 import com.github.javafaker.Faker;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
@@ -22,9 +21,6 @@ public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
     protected ApplicationContext appCtx;
 
     @LazyAutowired
-    protected BasePage basePage;
-
-    @LazyAutowired
     protected PropertyDecryptService decryptService;
 
     @LazyAutowired
@@ -40,9 +36,6 @@ public class BaseTestNGTest extends AbstractTestNGSpringContextTests {
 
     @AfterSuite(alwaysRun = true)
     public void tearDownSuite() {
-
-        basePage.close();
-
         logger.info("****** Tear Down Setup ******");
         logger.info("****** Suite Tear Down ******");
     }

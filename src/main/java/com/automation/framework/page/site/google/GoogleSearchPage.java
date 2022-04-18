@@ -3,14 +3,15 @@ package com.automation.framework.page.site.google;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.core.annotation.Screenshot;
 import com.automation.framework.page.BasePage;
+import io.qameta.allure.Step;
 import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
-@Page
-@Getter
+@Page @Getter @Setter
 public class GoogleSearchPage extends BasePage {
 
     private static final String HINDI_LANGUAGE = "//a[contains(text(),'हिन्दी')]";
@@ -27,20 +28,20 @@ public class GoogleSearchPage extends BasePage {
     @Value("${application.url}")
     private String url;
 
-
+    @Step
     public GoogleSearchPage goToURL() {
         goTo(url);
         return this;
     }
 
-
+    @Step
     @Screenshot
     public GoogleSearchPage performSearch(String input) {
         this.searchComponent.searchInGoogle(input);
         return this;
     }
 
-
+    @Step
     @Screenshot
     public GoogleSearchPage changeLanguage(){
         this.hindiLanguage.click();

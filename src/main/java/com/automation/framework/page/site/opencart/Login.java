@@ -3,13 +3,14 @@ package com.automation.framework.page.site.opencart;
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
 import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @Page
-@Getter
+@Getter @Setter
 public class Login extends BasePage {
 
     private static final String OPENCART_LOGO = "//img[@title='OpenCart']";
@@ -34,35 +35,27 @@ public class Login extends BasePage {
     @FindBy(xpath = FORGOT_PASSWORD)
     private WebElement forgotPassword;
 
-    public Login goToURL(String url) {
-        goTo(url);
-        return this;
-    }
 
-    public Login enterUsername() {
+    public void enterUsername() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(USERNAME_ID))).click();
         enterText(By.id(USERNAME_ID), "");
-        return this;
     }
 
-    public Login enterPassword() {
+    public void enterPassword() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PASSWORD_ID)));
         this.passwordId.click();
         enterText(By.id(USERNAME_ID), "");
-        return this;
     }
 
-    public Login enterUsernameAndPassword() {
+    public void enterUsernameAndPassword() {
         enterUsername();
         enterPassword();
-        return this;
     }
 
-    public Login clickLoginButton() {
+    public void clickLoginButton() {
         wait.until(element -> this.loginButton.isDisplayed());
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOGIN_BUTTON)));
         this.loginButton.click();
-        return this;
     }
 
 

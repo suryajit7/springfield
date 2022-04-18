@@ -2,8 +2,8 @@ package com.automation.framework.env.db;
 
 
 import com.automation.framework.util.file.PathFinder;
+import com.sun.istack.NotNull;
 import org.apache.commons.io.IOUtils;
-import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
@@ -27,8 +27,8 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     private static final int MYSQLDB_PORT = 3306;
     private static final int MONGODB_PORT = 27017;
 
-    private static final MongoDBContainer mongo;
-    private static final MySQLContainer mysql;
+    private static MongoDBContainer mongo;
+    private static MySQLContainer mysql;
 
     static {
 
@@ -40,9 +40,7 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
                 .withReuse(true);
 
         mongo = new MongoDBContainer("mongo:latest")
-                .withAccessToHost(true)
                 .withExposedPorts(MONGODB_PORT)
-                .withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js")
                 .withReuse(true);
 
     }
@@ -74,12 +72,10 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
     public void beforeAll(ExtensionContext context) {
 
         mysql.start();
-        mysql.getLogs();
-
         mongo.start();
-        mongo.getLogs();
 
         runSqlScripts();
+        runMongoScripts();
 
         assertTrue("Verify MySqlDB container status.", mysql.isRunning());
         assertTrue("Verify MongoDB container status.", mongo.isRunning());
@@ -98,6 +94,9 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
         mongo.stop();
     }
 
+    private void runMongoScripts() {
+        mongo.withCopyFileToContainer(MountableFile.forHostPath("src/main/resources/scripts/init-mongo.js"),"/docker-entrypoint-initdb.d/mongo-init.js");
+    }
 
     private void runSqlScripts() {
         var containerDelegate = new JdbcDatabaseDelegate(mysql, "");

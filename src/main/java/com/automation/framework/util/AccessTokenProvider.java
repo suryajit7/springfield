@@ -1,8 +1,6 @@
 package com.automation.framework.util;
 
-import com.automation.framework.core.SpecBuilder;
 import com.automation.framework.core.annotation.LazyService;
-import com.automation.framework.core.config.AppContextProvider;
 import com.automation.framework.core.config.ConfigurableBean;
 import io.restassured.response.Response;
 import lombok.Synchronized;

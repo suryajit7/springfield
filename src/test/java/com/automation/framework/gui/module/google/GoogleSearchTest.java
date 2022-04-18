@@ -3,17 +3,26 @@ package com.automation.framework.gui.module.google;
 import com.automation.framework.BaseTestNGTest;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.site.google.GoogleSearchPage;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-import static com.automation.framework.util.testhelper.AssertWebElement.assertThat;
-import static com.automation.framework.util.testhelper.TestExecutionListener.getTestMethod;
+import static com.automation.framework.testhelper.AssertWebElement.assertThat;
+import static com.automation.framework.util.TestExecutionListener.getTestMethod;
 
-
+@Epic("Google")
+@Feature("GoogleSearch")
 public class GoogleSearchTest extends BaseTestNGTest {
 
     @LazyAutowired
     private GoogleSearchPage googleSearchPage;
 
+
+    @AfterClass
+    public void closeBrowser(){
+        this.googleSearchPage.close();
+    }
 
     @Test
     public void verifySearchTest() {
