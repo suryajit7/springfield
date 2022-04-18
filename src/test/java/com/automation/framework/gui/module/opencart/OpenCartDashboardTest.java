@@ -27,8 +27,8 @@ public class OpenCartDashboardTest extends BaseTestNGTest {
 
     @BeforeClass
     public void setup() {
-        this.login.goTo(url);
-        this.login.enterUsernameAndPassword()
+        this.login.goToURL(url)
+                .enterUsernameAndPassword()
                 .clickLoginButton();
     }
 

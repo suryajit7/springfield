@@ -34,6 +34,10 @@ public class Login extends BasePage {
     @FindBy(xpath = FORGOT_PASSWORD)
     private WebElement forgotPassword;
 
+    public Login goToURL(String url) {
+        goTo(url);
+        return this;
+    }
 
     public Login enterUsername() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(USERNAME_ID))).click();
