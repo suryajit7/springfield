@@ -1,3 +1,4 @@
 /build/
 /gradle/
 /.jpb/
+/src/test/resources/results/allure-results/

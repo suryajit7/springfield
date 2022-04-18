@@ -8,8 +8,8 @@ import io.qameta.allure.Feature;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-import static com.automation.framework.testhelper.AssertWebElement.assertThat;
 import static com.automation.framework.util.TestExecutionListener.getTestMethod;
+import static com.automation.framework.util.testhelper.AssertWebElement.assertThat;
 
 @Epic("Google")
 @Feature("GoogleSearch")
