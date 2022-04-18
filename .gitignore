@@ -4,3 +4,4 @@
 /src/test/resources/results/allure-results/
 /src/test/resources/logs/
 /.gradle/
+/gradle/
