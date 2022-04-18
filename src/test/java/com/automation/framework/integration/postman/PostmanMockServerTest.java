@@ -6,6 +6,7 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
@@ -22,6 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * This Test class doesn't make use of Spec Builder or follow general design patterns used in this framework.
  * I just wanted to try out few things using postman api.
  */
+@Disabled
 public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
 
     private static String apiToken;
