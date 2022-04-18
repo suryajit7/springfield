@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,20 +381,6 @@
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
     </task>
-    <task id="LOCAL-00018" summary="Commit140: Adding files">
-      <created>1642258993101</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1642258993101</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Commit140: Adding result files">
-      <created>1642272485654</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1642272485654</updated>
-    </task>
     <task id="LOCAL-00020" summary="Commit141: Adding Mongo Test Containers and its config.">
       <created>1642272603835</created>
       <option name="number" value="00020" />
@@ -723,7 +710,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650304162084</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Commit191: minor refactoring">
+      <created>1650306429290</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1650306429290</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Commit192: minor refactoring">
+      <created>1650306478014</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1650306478014</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -750,8 +751,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit164: minor changes" />
-    <MESSAGE value="Commit165: minor changes" />
     <MESSAGE value="Commit166: minor changes" />
     <MESSAGE value="Commit167: adding api pytest example including build related class files." />
     <MESSAGE value="Commit168: adding Custom assertion class specially designed to assert WebTables." />
@@ -775,7 +774,9 @@
     <MESSAGE value="Commit186: Added custom waits in BasePage and minor refactoring" />
     <MESSAGE value="Commit187: Added custom Assertion for WebService minor refactoring" />
     <MESSAGE value="Commit188: upgraded dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit188: upgraded dependencies" />
+    <MESSAGE value="Commit191: minor refactoring" />
+    <MESSAGE value="Commit192: minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit192: minor refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
