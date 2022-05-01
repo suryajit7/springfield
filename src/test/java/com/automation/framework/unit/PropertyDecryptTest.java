@@ -1,8 +1,8 @@
 package com.automation.framework.unit;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.SpringfieldApplicationTests;
 
-public class PropertyDecryptTest extends AutomationSuiteApplicationTests {
+public class PropertyDecryptTest extends SpringfieldApplicationTests {
 
 /*    @Test
     @Order(1)

@@ -1,6 +1,6 @@
 package com.automation.framework.integration;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.SpringfieldApplicationTests;
 import com.automation.framework.data.entity.ems.Employee;
 import com.automation.framework.util.file.FileReader;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 
-public class ReaderTest extends AutomationSuiteApplicationTests {
+public class ReaderTest extends SpringfieldApplicationTests {
 
     @Autowired
     private FileReader fileReader;

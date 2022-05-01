@@ -35,7 +35,7 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 @TestInstance(PER_CLASS)
 //@ExtendWith(TestDBSetup.class)
 @ComponentScan
-public class AutomationSuiteApplicationTests {
+public class SpringfieldApplicationTests {
 
 	protected static AppContextProvider appCtx = new AppContextProvider();
 

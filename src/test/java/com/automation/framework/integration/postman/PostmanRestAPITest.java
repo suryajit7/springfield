@@ -1,6 +1,6 @@
 package com.automation.framework.integration.postman;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.SpringfieldApplicationTests;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.BaseEntity;
 import com.automation.framework.data.entity.postman.Postman;
@@ -20,7 +20,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class PostmanRestAPITest extends AutomationSuiteApplicationTests {
+public class PostmanRestAPITest extends SpringfieldApplicationTests {
 
     private Postman requestPayload;
     private Postman payload;

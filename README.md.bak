@@ -5,6 +5,11 @@ Work In Progress*
 
 The key objective behind this project is to design a robust Automation Test Framework that would support test automation at all levels, including, but not limited to UI (Presentation Layer), APIs & Integration (Service Layer), and Unit/Components, etc. The framework supports various Test Data, Test Environment, Configuration Management, and Test Automation features which are needed to run any modern automated tests.
 
+The Framework can test -
+1. UI Flows using Selenium Webdriver
+2. APIs using Rest Assured
+3. DB like SQL and MongoDB
+4. Mobile apps
 
 **Features:**
 1. Context and Dependency Injection using Spring.

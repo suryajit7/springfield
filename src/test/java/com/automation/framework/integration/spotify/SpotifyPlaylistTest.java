@@ -1,6 +1,6 @@
 package com.automation.framework.integration.spotify;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.SpringfieldApplicationTests;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.data.entity.spotify.Playlist;
 import com.automation.framework.service.api.spotify.PlaylistService;
@@ -19,7 +19,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 
-public class SpotifyPlaylistTest extends AutomationSuiteApplicationTests {
+public class SpotifyPlaylistTest extends SpringfieldApplicationTests {
 
     private static AppContextProvider appCtx = new AppContextProvider();
     public static final String SPOTIFY_USER_ID = "kuub16j6xd3bluyycbvgzkxxv";

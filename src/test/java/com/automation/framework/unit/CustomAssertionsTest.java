@@ -1,11 +1,11 @@
 package com.automation.framework.unit;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.SpringfieldApplicationTests;
 import com.automation.framework.util.testhelper.AssertField;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-public class CustomAssertionsTest extends AutomationSuiteApplicationTests {
+public class CustomAssertionsTest extends SpringfieldApplicationTests {
 
     @Test
     @Order(1)

@@ -1,6 +1,6 @@
 package com.automation.framework.integration.postman;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.SpringfieldApplicationTests;
 import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -22,7 +22,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
 
-public class PostmanAPITestScenarios extends AutomationSuiteApplicationTests {
+public class PostmanAPITestScenarios extends SpringfieldApplicationTests {
 
     @Autowired
     private PropertyDecryptService decryptService;

@@ -16,12 +16,12 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EntityScan({"com.automation"})
 @EnableMongoAuditing
 @EnableMongoRepositories(basePackages = "com.automation")
-public class AutomationSuiteApplication {
+public class SpringfieldApplication {
 
 	public static void main(String[] args) {
 
 		log.info("***** AutomationSuiteApplication *****");
-		SpringApplication.run(AutomationSuiteApplication.class, args);
+		SpringApplication.run(SpringfieldApplication.class, args);
 	}
 
 }

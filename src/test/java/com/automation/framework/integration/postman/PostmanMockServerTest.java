@@ -1,6 +1,6 @@
 package com.automation.framework.integration.postman;
 
-import com.automation.framework.AutomationSuiteApplicationTests;
+import com.automation.framework.SpringfieldApplicationTests;
 import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * I just wanted to try out few things using postman api.
  */
 @Disabled
-public class PostmanMockServerTest extends AutomationSuiteApplicationTests {
+public class PostmanMockServerTest extends SpringfieldApplicationTests {
 
     private static String apiToken;
 
