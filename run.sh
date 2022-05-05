@@ -1,0 +1,1 @@
+java -cp springfield.jar:springfield-dockerized-plain.jar:libs/* com.automation.framework.SpringfieldApplication

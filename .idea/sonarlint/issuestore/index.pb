@@ -18,8 +18,6 @@ e
 5src/test/java/com/automation/framework/gui/testng.xml,1\0\108e0b5f054241f3afaf0e4d497fdcff06603ac0
 j
 :src/test/java/com/automation/framework/BaseTestNGTest.java,f\3\f3d6c996912593cd7a9548c8d42d589a000eb2a7
-7
-gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 ;
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
 s

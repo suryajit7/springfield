@@ -4,6 +4,7 @@ import com.automation.framework.SpringfieldApplicationTests;
 import com.automation.framework.util.PropertyDecryptService;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ import static io.restassured.filter.log.LogDetail.STATUS;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.apache.hc.core5.http.HttpStatus.SC_SUCCESS;
 
-
+@Disabled
 public class PostmanAPITestScenarios extends SpringfieldApplicationTests {
 
     @Autowired

@@ -8,6 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.testng.TestNG;
+
+import java.util.List;
 
 @Slf4j
 @Configuration
@@ -21,6 +24,15 @@ public class SpringfieldApplication {
 	public static void main(String[] args) {
 
 		log.info("***** AutomationSuiteApplication *****");
+
+		TestNG runner = new TestNG();
+
+		List<String> suiteFiles = List.of("src\\test\\java\\com\\automation\\framework\\gui\\testng.xml");
+
+		runner.setTestSuites(suiteFiles);
+
+		runner.run();
+
 		SpringApplication.run(SpringfieldApplication.class, args);
 	}
 
