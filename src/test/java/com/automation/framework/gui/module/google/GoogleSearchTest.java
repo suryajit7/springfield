@@ -1,18 +1,15 @@
 package com.automation.framework.gui.module.google;
 
 import com.automation.framework.BaseTestNGTest;
-import com.automation.framework.SpringfieldApplication;
 import com.automation.framework.core.annotation.LazyAutowired;
 import com.automation.framework.page.site.google.GoogleSearchPage;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import static com.automation.framework.util.TestExecutionListener.getTestMethod;
 import static com.automation.framework.util.testhelper.AssertWebElement.assertThat;
 
-@ContextConfiguration(loader= AnnotationConfigContextLoader.class, classes = SpringfieldApplication.class)
+
 public class GoogleSearchTest extends BaseTestNGTest {
 
     @LazyAutowired
