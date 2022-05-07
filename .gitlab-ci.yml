@@ -45,9 +45,6 @@ docker-test:
 
 secret_detection:
   stage: test
-  allow_failure: false
-  variables:
-    SECRET_DETECTION_HISTORIC_SCAN: "true"
   artifacts:
     paths: [ gl-secret-detection-report.json ]
     reports:

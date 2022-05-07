@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/python/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,13 +396,6 @@
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
     </task>
-    <task id="LOCAL-00027" summary="Commit148: minor refactoring">
-      <created>1642605936886</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1642605936886</updated>
-    </task>
     <task id="LOCAL-00028" summary="Commit149: Major refactoring along with app context driven AccessTokenProvider.">
       <created>1642960016145</created>
       <option name="number" value="00028" />
@@ -740,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651919172550</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Commit197: DELETING SENSITIVE FILES">
+      <created>1651920402685</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1651920402685</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -776,7 +775,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit171: Minor changes" />
     <MESSAGE value="Commit172: enabling all tests" />
     <MESSAGE value="Commit173: Adding basic support for running Mobile tests using AppiumDriver." />
     <MESSAGE value="Commit174: minor change" />
@@ -801,7 +799,8 @@
     <MESSAGE value="Commit195: Added Dockerfile and docker-compose with necessary scripts to dockerize the tests." />
     <MESSAGE value="Commit196: Moving python tests" />
     <MESSAGE value="Commit197: Adding Gitlab-CI pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit197: Adding Gitlab-CI pipeline" />
+    <MESSAGE value="Commit197: DELETING SENSITIVE FILES" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit197: DELETING SENSITIVE FILES" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
