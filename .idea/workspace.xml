@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiDemos-debug.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/SpringfieldApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/SpringfieldApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/python/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -401,20 +397,6 @@
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
     </task>
-    <task id="LOCAL-00025" summary="Commit146: removed ZeroCell lib usage and minor refactoring">
-      <created>1642596931714</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1642596931714</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Commit147: minor refactoring">
-      <created>1642597460698</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1642597460699</updated>
-    </task>
     <task id="LOCAL-00027" summary="Commit148: minor refactoring">
       <created>1642605936886</created>
       <option name="number" value="00027" />
@@ -744,7 +726,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651916494279</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Commit197: Adding Gitlab-CI pipeline">
+      <created>1651918953068</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1651918953068</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Commit197: Adding Gitlab-CI pipeline">
+      <created>1651919172550</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1651919172550</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -780,7 +776,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit170: Minor changes and few practice pytest" />
     <MESSAGE value="Commit171: Minor changes" />
     <MESSAGE value="Commit172: enabling all tests" />
     <MESSAGE value="Commit173: Adding basic support for running Mobile tests using AppiumDriver." />
@@ -805,7 +800,8 @@
     <MESSAGE value="Commit194: minor refactoring" />
     <MESSAGE value="Commit195: Added Dockerfile and docker-compose with necessary scripts to dockerize the tests." />
     <MESSAGE value="Commit196: Moving python tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit196: Moving python tests" />
+    <MESSAGE value="Commit197: Adding Gitlab-CI pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit197: Adding Gitlab-CI pipeline" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
