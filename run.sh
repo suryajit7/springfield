@@ -1,1 +1,1 @@
-java -cp springfield.jar:springfield-dockerized-plain.jar:libs/* com.automation.framework.SpringfieldApplication
+java -cp dockerized-springfield.jar:dockerized-springfield-tests.jar:libs/* org.testng.TestNG testng.xml

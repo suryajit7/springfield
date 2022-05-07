@@ -19,6 +19,7 @@
       <module name="automation-suite.main" options="--add-modules java.desktop,java.base" />
       <module name="automation-suite.test" options="--add-modules java.base" />
       <module name="com.automation.automation-suite.main" options="--add-modules java.base,java.desktop" />
+      <module name="springfield" options="-parameters" />
     </option>
   </component>
 </project>

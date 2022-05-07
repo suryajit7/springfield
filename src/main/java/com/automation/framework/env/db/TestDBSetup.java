@@ -3,7 +3,6 @@ package com.automation.framework.env.db;
 
 import com.automation.framework.util.file.PathFinder;
 import com.sun.istack.NotNull;
-import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
@@ -11,14 +10,10 @@ import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.containers.MySQLContainer;
-import org.testcontainers.ext.ScriptUtils;
 import org.testcontainers.jdbc.JdbcDatabaseDelegate;
 import org.testcontainers.utility.MountableFile;
 
-import javax.script.ScriptException;
-import java.io.IOException;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 
 import static org.junit.Assert.assertTrue;
 
@@ -103,9 +98,9 @@ public class TestDBSetup implements BeforeAllCallback, AfterAllCallback {
 
         try {
             URL resource = new PathFinder().getFilePathForFile("automation.sql").toUri().toURL();
-            String scripts = IOUtils.toString(resource, StandardCharsets.UTF_8);
-            ScriptUtils.executeDatabaseScript(containerDelegate, "/src/test/resources/datasets/automation.sql", scripts);
-        } catch (ScriptException | IOException e) {
+            //String scripts = IOUtils.toString(resource, StandardCharsets.UTF_8);
+            //ScriptUtils.executeDatabaseScript(containerDelegate, "/src/test/resources/datasets/automation.sql", scripts);
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -1,4 +1,4 @@
-FROM gradle:jdk11 AS package
+FROM maven:3.6.0-jdk-11 AS package
 
 RUN apt-get update && apt-get install -y \
     curl \
@@ -7,16 +7,12 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY build.gradle                           .
-COPY gradlew                                .
-COPY gradlew.bat                            .
-COPY settings.gradle                        .
-COPY healthcheck.sh                         .
-COPY src                                    ./src
-COPY build                                  ./build
-COPY testng-7.5.jar                         ./build/libs/
+COPY pom.xml                          .
+COPY healthcheck.sh                   .
+RUN mvn -e -B dependency:resolve
 
-RUN gradle build -x test
+COPY src                              ./src
+RUN mvn package -DskipTests
 
 WORKDIR /app/
 
@@ -28,22 +24,15 @@ FROM fabric8/java-alpine-openjdk11-jre AS testrun
 RUN mkdir -p /jar
 WORKDIR /jar/
 
-COPY --from=package /app/build/libs/springfield.jar                         .
-COPY --from=package /app/build/libs/springfield-dockerized-plain.jar        .
-COPY --from=package /app/build/libs                                         ./libs
+COPY --from=package /app/target/dockerized-springfield.jar          .
+COPY --from=package /app/target/dockerized-springfield-tests.jar    .
+COPY --from=package /app/target/libs                                ./libs
 
-COPY src/main/resources/application.properties                              ./src/main/resources/application.properties
-COPY src/main/resources/encrypted.properties                                ./src/main/resources/encrypted.properties
-COPY src/main/resources/datasets                                            ./src/main/resources/datasets
-COPY src/main/resources/scripts                                             ./src/main/resources/scripts
+COPY src/main/resources                                             ./src/main/resources/
+COPY src/test/resources                                             ./src/test/resources/
 
-COPY src/test/java/com/automation/framework/gui/testng.xml                  ./src/test/java/com/automation/framework/gui/testng.xml
-COPY src/test/java/com/automation/framework/gui/testng.xml                  .
-COPY src/test/resources/allure.properties                                   ./src/test/resources/allure.properties
-COPY src/test/resources/junit-platform.properties                           ./src/test/resources/junit-platform.properties
-COPY src/test/resources/schemas                                             ./src/test/resources/schemas
-
-COPY run.sh                                                                 .
+COPY testng.xml                                                     .
+COPY run.sh                                                         .
 
 WORKDIR /jar/
 
