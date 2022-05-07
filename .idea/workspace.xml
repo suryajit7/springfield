@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/SpringfieldApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/SpringfieldApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/mongo/config/MongoConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/data/repo/mongo/config/MongoConfigProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/env/db/TestDBSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/framework/gui/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTestpass method namepass method name.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTesttest2test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifyGoogleSearchTesttest2test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifySearchTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifySearchTest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifySearchTestActual.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifySearchTestActual.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifySearchTestDifference.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/GoogleSearchTest/verifySearchTestDifference.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng-7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/login_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_availablebooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_availablebooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_getuserprojects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_getuserprojects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_listorganisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_listorganisation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_userapprovals.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_userapprovals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_userlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_userlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/test_versiondetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_versiondetails.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,11 +189,11 @@
       <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\personal\springfield\src\test" />
       <recent name="C:\code\personal\springfield" />
       <recent name="C:\code\Springfield\src\test\java\com\automation\framework" />
       <recent name="C:\code\Springfield\src\test\resources" />
       <recent name="C:\code\Springfield\src\test\java\com\automation\framework\gui" />
-      <recent name="C:\code\Springfield\" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.automation.framework.mobile" />
@@ -422,13 +414,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Commit144: refactoring">
-      <created>1642442797341</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1642442797342</updated>
     </task>
     <task id="LOCAL-00024" summary="Commit145: refactoring">
       <created>1642443463477</created>
@@ -766,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651790578724</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Commit195: Added Dockerfile and docker-compose with necessary scripts to dockerize the tests.">
+      <created>1651914944570</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1651914944571</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -847,6 +839,10 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.16.3/4a36cf03c75e8735aaf46e5b67a662a6973fa96/database-commons-1.16.3-sources.jar!/org/testcontainers/ext/ScriptUtils.java</url>
           <line>339</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/test/python/test_getuserprojects.py</url>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
