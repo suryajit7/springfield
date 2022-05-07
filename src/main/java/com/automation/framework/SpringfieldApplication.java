@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.testng.TestNG;
 
 
 @Configuration
@@ -17,11 +18,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableMongoRepositories(basePackages = "com.automation")
 public class SpringfieldApplication {
 
-	public static void main(String[] args) throws ClassNotFoundException {
-
-
-
-		SpringApplication.run(SpringfieldApplication.class, args);
+	public static void main(String[] args) {
+		SpringApplication.run(TestNG.class, args);
 	}
 
 }

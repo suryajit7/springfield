@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/login_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_availablebooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_availablebooks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_getuserprojects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_getuserprojects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_listorganisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_listorganisation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_userapprovals.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_userapprovals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_userlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_userlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/test_versiondetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/python/test_versiondetails.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiDemos-debug.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/SpringfieldApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/SpringfieldApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,10 +209,10 @@
       <command value="gradle :jar" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/code/personal/springfield/testng.xml">
-    <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.automation.framework.TestRunner" />
-      <module name="springfield.test" />
+  <component name="RunManager" selected="Application.SpringfieldApplication">
+    <configuration name="SpringfieldApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.SpringfieldApplication" />
+      <module name="springfield.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.automation.framework.*" />
@@ -240,27 +235,6 @@
         <option name="taskNames">
           <list>
             <option value=":jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="springfield [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="-x test" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -341,6 +315,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="C:/code/personal/springfield/testng.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="springfield" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/code/personal/springfield/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="springfield.test" />
       <shortenClasspath name="ARGS_FILE" />
@@ -387,22 +373,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestRunner" />
       <item itemvalue="Gradle.springfield [build]" />
-      <item itemvalue="Gradle.springfield [bootJar]" />
       <item itemvalue="Gradle.springfield [:jar]" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="Python.test_api" />
       <item itemvalue="Python.main" />
       <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml" />
+      <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml (1)" />
+      <item itemvalue="Application.SpringfieldApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringfieldApplication" />
+        <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml (1)" />
         <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml" />
         <item itemvalue="Gradle.springfield [build]" />
         <item itemvalue="Gradle.springfield [:jar]" />
-        <item itemvalue="Gradle.springfield [bootJar]" />
-        <item itemvalue="Application.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -414,13 +400,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Commit145: refactoring">
-      <created>1642443463477</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1642443463477</updated>
     </task>
     <task id="LOCAL-00025" summary="Commit146: removed ZeroCell lib usage and minor refactoring">
       <created>1642596931714</created>
@@ -758,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651914944571</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Commit196: Moving python tests">
+      <created>1651916494279</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1651916494279</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -794,7 +780,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commit169: Added custom waits for elements and scrolling feature in BasePage." />
     <MESSAGE value="Commit170: Minor changes and few practice pytest" />
     <MESSAGE value="Commit171: Minor changes" />
     <MESSAGE value="Commit172: enabling all tests" />
@@ -819,7 +804,8 @@
     <MESSAGE value="Commit193: minor refactoring" />
     <MESSAGE value="Commit194: minor refactoring" />
     <MESSAGE value="Commit195: Added Dockerfile and docker-compose with necessary scripts to dockerize the tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit195: Added Dockerfile and docker-compose with necessary scripts to dockerize the tests." />
+    <MESSAGE value="Commit196: Moving python tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit196: Moving python tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
