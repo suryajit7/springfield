@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="">
+    <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="Commit199: adding travel domain and minor refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/screen/BaseScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +205,7 @@
       <command value="gradle :jar" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.SpringfieldApplication">
+  <component name="RunManager" selected="TestNG.GoogleSearchTest.verify">
     <configuration name="SpringfieldApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.automation.framework.SpringfieldApplication" />
       <module name="springfield.main" />
@@ -217,27 +218,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="springfield [:jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="springfield [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -357,6 +337,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GoogleSearchTest.verify" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="springfield.test" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.framework.gui.module.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.framework.gui.module.google" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.framework.gui.module.google.GoogleSearchTest" />
+      <option name="METHOD_NAME" value="verify" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <shortenClasspath name="ARGS_FILE" />
       <extension name="History Recorder Settings" includeConstructors="false" includeGettersSetters="false" minMethodSize="2" maxBreakpointsPerMethod="5" maxBreakpoints="200" maxDepthVariables="3" mode="1" nrCollectionItems="5" includeCollections="true" nrFieldsToShow="10" />
@@ -369,21 +369,21 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.springfield [build]" />
-      <item itemvalue="Gradle.springfield [:jar]" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
       <item itemvalue="Python.test_api" />
       <item itemvalue="Python.main" />
       <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml" />
       <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml (1)" />
       <item itemvalue="Application.SpringfieldApplication" />
+      <item itemvalue="TestNG.GoogleSearchTest.verify" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoogleSearchTest.verify" />
         <item itemvalue="Application.SpringfieldApplication" />
         <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml (1)" />
         <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml" />
         <item itemvalue="Gradle.springfield [build]" />
-        <item itemvalue="Gradle.springfield [:jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -395,20 +395,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640691911248</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Commit155: Added MongoDB Test Container">
-      <created>1643487097327</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1643487097327</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Commit157: Fixed File Reader Tests">
-      <created>1643523595902</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1643523595902</updated>
     </task>
     <task id="LOCAL-00035" summary="Commit158: Adding Build related files">
       <created>1643524617515</created>
@@ -739,7 +725,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651950950310</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Commit199: adding travel domain and minor refactoring">
+      <created>1652007791271</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1652007791272</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Commit199: adding travel domain and minor refactoring">
+      <created>1652022951947</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1652022951947</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="UnknownFeatures">
