@@ -1,4 +1,4 @@
-package com.automation.framework.page.app.demo;
+package com.automation.framework.screen.app;
 
 import com.automation.framework.core.annotation.Page;
 import com.automation.framework.page.BasePage;
