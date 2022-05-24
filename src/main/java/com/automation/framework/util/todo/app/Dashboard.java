@@ -2,7 +2,7 @@ package com.automation.framework.util.todo.app;
 
 
 /**
- * @Author - suryajt7
+ * @Author - suryajit7
  * TODO: Create a RealTime dashboard which should display pictorial status for below -
  * 1. Overall tests results for all Unit, Integration, UI, Database tests within their respective suites and tags.
  * 2. Environment details where they were run.

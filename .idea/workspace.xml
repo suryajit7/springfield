@@ -3,10 +3,27 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="springfield" />
+      <module name="springfield.test" />
+      <module name="springfield.main" />
+    </loaded-modules>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6833c7-9d8c-47e7-b368-e0baf7537605" name="Changes" comment="Commit199: adding travel domain and minor refactoring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/screen/BaseScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/tests/DifferentTypesOfTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/Integration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/AutomatedWebElementIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/AutomatedWebElementIdentification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/LogAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/analytics/LogAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/app/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/app/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/job/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/job/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/monitor/HealthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/util/todo/monitor/HealthCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +115,8 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.1.1-bin/f29rtwfnc96ub43tt7p47zsru/gradle-7.1.1/lib/plugins/gradle-testing-jvm-7.1.1.jar!/org/gradle/api/tasks/testing/Test.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.assertthat/selenium-shutterbug/1.5/52a838239b08f27eda4d68eeacdf6d1ca3c7b79a/selenium-shutterbug-1.5-sources.jar!/com/assertthat/selenium_shutterbug/core/Shutterbug.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.1.1-bin/f29rtwfnc96ub43tt7p47zsru/gradle-7.1.1/lib/plugins/gradle-testing-jvm-7.1.1.jar!/org/gradle/api/tasks/testing/Test.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -149,11 +166,11 @@
     <property name="jdk.selected.JAVA_MODULE" value="11 (2)" />
     <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA Community Edition IC-212.5080.55" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/framework/src/main/java/com/automation/framework" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
+    <property name="settings.editor.selected.configurable" value="GitLabConfigurableProvider" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -173,11 +190,11 @@
       <recent name="com.automation.framework.data.repo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\personal\springfield\framework\src\main\java\com\automation\framework" />
       <recent name="C:\code\personal\springfield" />
       <recent name="C:\code\Springfield\src\test\java\com\automation\framework\mobile" />
       <recent name="C:\code\Springfield\src\main\python" />
       <recent name="C:\Users\Precognitas04\IdeaProjects\automation-suite\src\test\resources\datasets" />
-      <recent name="C:\code\automation-suite\src\main\java\com\automation\framework\env\container" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\personal\springfield\src\test" />
@@ -203,6 +220,9 @@
       <command value="gradle bootJar -x test" />
       <command value="gradle build -x test" />
       <command value="gradle :jar" />
+      <command value="mvn clean" />
+      <command value="mvn dependency:analyze" />
+      <command value="mvn dependency:get" />
     </option>
   </component>
   <component name="RunManager" selected="TestNG.GoogleSearchTest.verify">
@@ -368,13 +388,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.SpringfieldApplication" />
       <item itemvalue="Gradle.springfield [build]" />
       <item itemvalue="JUnit.integration in automation-suite.test" />
-      <item itemvalue="Python.test_api" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.test_api" />
       <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml" />
       <item itemvalue="TestNG.C:/code/personal/springfield/testng.xml (1)" />
-      <item itemvalue="Application.SpringfieldApplication" />
       <item itemvalue="TestNG.GoogleSearchTest.verify" />
     </list>
     <recent_temporary>
@@ -821,18 +841,7 @@
           <line>339</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/test/python/test_getuserprojects.py</url>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
       </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
