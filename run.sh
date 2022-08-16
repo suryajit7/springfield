@@ -1,1 +1,0 @@
-java -cp dockerized-springfield.jar:dockerized-springfield-tests.jar:libs/* org.testng.TestNG testng.xml

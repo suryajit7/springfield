@@ -1,6 +1,0 @@
-name,phone,email,address,postalZip,country,region
-Fatima Jennings,1-405-212-4267,libero.dui@sitametconsectetuer.com,687-1744 Aptent Rd.,21412,Mexico,Missouri
-Claudia Shepherd,(638) 327-6306,magnis.dis@malesuadafringilla.co.uk,8180 Ultricies St.,38750,Brazil,Gelderland
-Nola Lyons,1-572-794-0455,lectus.nullam@elitpharetra.org,"Aileen Hancock,1-251-714-2045,donec.luctus@interdum.edu,195-8368 Scelerisque St.,83799,Nigeria,Gävleborgs län",27657,South Korea,Utrecht
-Aileen Hancock,1-251-714-2045,donec.luctus@interdum.edu,195-8368 Scelerisque St.,83799,Nigeria,Gävleborgs län
-Kadeem Estrada,(847) 178-8594,nec.luctus@duiselementum.co.uk,Ap #468-8563 Non St.,263560,Mexico,Azad Kashmir
