@@ -1,4 +1,4 @@
-package com.automation.framework;
+package works.springfield.framework;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
