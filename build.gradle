@@ -28,6 +28,7 @@ ext {
 }
 
 dependencies {
+
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-batch'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
@@ -38,12 +39,23 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-aop'
 	implementation 'org.springframework.data:spring-data-rest-hal-explorer'
 	implementation 'org.springframework.session:spring-session-core'
-
+	implementation 'org.springframework:spring-test:5.3.22'
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.10'
+
+	implementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+	implementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+	implementation 'org.junit.jupiter:junit-jupiter-params:5.9.0'
 
 	implementation 'mysql:mysql-connector-java:8.0.30'
 
 	implementation 'org.seleniumhq.selenium:selenium-java:4.4.0'
+
+	implementation 'org.testcontainers:testcontainers:1.17.3'
+	implementation 'org.testcontainers:mysql:1.17.3'
+	implementation 'org.testcontainers:mongodb:1.17.3'
+	implementation 'org.testcontainers:postgresql:1.17.3'
+	implementation 'org.testcontainers:kafka:1.17.3'
+
 
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -58,7 +70,7 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.batch:spring-batch-test'
 	testImplementation 'org.springframework.graphql:spring-graphql-test'
-	testImplementation 'org.testcontainers:junit-jupiter'
+
 }
 
 dependencyManagement {
@@ -84,6 +96,7 @@ task prepareDockerfileTemplate(type: Copy) {
 	filter { it.replaceAll('<%=version%>', project.version) }
 	into "$buildDir"
 }
+
 // add explicit dependencies, otherwise we get warning at console
 dockerPrepare.dependsOn bootJar
 bootJar.dependsOn prepareDockerfileTemplate
