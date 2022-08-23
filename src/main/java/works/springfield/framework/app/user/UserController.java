@@ -28,7 +28,10 @@ public class UserController {
 
     // constructor injector for exposing metrics at Actuator /prometheus
     public UserController(MeterRegistry registry) {
-        Gauge.builder("usercontroller.usercount", fetchUserCount()).tag("version", "v1").description("usercontroller descrip").register(registry);
+        Gauge.builder("usercontroller.usercount", fetchUserCount())
+                .tag("version", "v1")
+                .description("usercontroller descrip")
+                .register(registry);
     }
 
     @Timed(value = "user.get.time", description = "time to retrieve users", percentiles = { 0.5, 0.9 })

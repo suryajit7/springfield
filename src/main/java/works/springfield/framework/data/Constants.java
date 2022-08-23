@@ -8,8 +8,8 @@ public class Constants {
     public static final String TEST_RESOURCE = "";
     public static final String SPACE = " ";
     public static final String BLANK = "";
-    public static final String BROWSER = "browser";
-    public static final String RUNMODE = "runmode";
+    public static final String WEBDRIVER_BROWSER = "selenium.webdriver.browser";
+    public static final String WEBDRIVER_RUNMODE = "selenium.webdriver.runmode";
 
     //API Related Constants
     public static final String CONTENT_TYPE_JSON_CHARSET_UTF8 = "application/json;charset=utf-8";

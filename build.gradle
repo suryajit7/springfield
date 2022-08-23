@@ -39,7 +39,7 @@ dependencies {
 	implementation 'org.springframework.data:spring-data-rest-hal-explorer'
 	implementation 'org.springframework.session:spring-session-core'
 
-	implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.10'
 
 	implementation 'mysql:mysql-connector-java:8.0.30'
 
