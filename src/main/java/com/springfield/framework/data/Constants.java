@@ -5,6 +5,8 @@ import org.openqa.selenium.*;
 import java.nio.file.Paths;
 import java.util.List;
 
+import static java.lang.System.getenv;
+
 /**
  * All framework related constants which are not defined in application.properties.
  */
@@ -16,7 +18,9 @@ public class Constants {
     public static final String WEBDRIVER_BROWSER = "selenium.webdriver.browser";
     public static final String WEBDRIVER_RUNMODE = "selenium.webdriver.runmode";
     public static final String LOCALHOST = "localhost";
+
     public static final String SPOTIFY_API_ENDPOINT = "https://api.spotify.com";
+    public static final String SPOTIFY_ACCOUNT_URL = "https://accounts.spotify.com";
 
     public static final List<Class<? extends WebDriverException>> WEBDRIVER_EXCEPTION_LIST =
             List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class,
@@ -46,7 +50,6 @@ public class Constants {
     public static final String X_RATE_LIMIT_LIMIT = "X-RateLimit-Limit";
     public static final String X_RATE_LIMIT_REMAINING = "X-RateLimit-Remaining";
     public static final String X_RATE_LIMIT_RESET = "X-RateLimit-Reset";
-    public static final String SPOTIFY_CLIENT_ID = "d05041af758d44a39037ba8a77e8743a";
 
     public static final String CLIENT_ID = "client_id";
     public static final String CLIENT_SECRET = "client_secret";
@@ -57,6 +60,14 @@ public class Constants {
     public static final String EXPIRY_TIME = "expires_in";
     public static final String API_KEY = "apiKey";
     public static final String PATH_PARAM = "path_param";
+
+    public static final String APP_USERNAME = getenv("APP_USERNAME");
+    public static final String APP_PASSWORD = getenv("APP_PASSWORD");
+    public static final String APP_POOL_ID = getenv("APP_POOL_ID");
+    public static final String APP_CLIENT_ID = getenv("APP_CLIENT_ID");
+    public static final String SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID");
+    public static final String SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET");
+    public static final String SPOTIFY_REFRESH_TOKEN = getenv("SPOTIFY_REFRESH_TOKEN");
 
     //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";

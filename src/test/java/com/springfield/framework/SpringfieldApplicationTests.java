@@ -4,7 +4,9 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.github.fge.jsonschema.cfg.ValidationConfiguration;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
 import com.github.fge.jsonschema.main.JsonValidator;
+import com.github.javafaker.Faker;
 import com.saasquatch.jsonschemainferrer.*;
+import com.springfield.framework.core.annotation.LazyAutowired;
 import io.restassured.module.jsv.JsonSchemaValidatorSettings;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -24,6 +26,9 @@ public class SpringfieldApplicationTests {
 	protected String host;
 	protected static JsonValidator validator;
 	protected AmazonS3 s3client;
+
+	@LazyAutowired
+	protected Faker faker;
 
 	protected static final JsonSchemaInferrer jsonSchemaInferrer = JsonSchemaInferrer.newBuilder()
 			.setSpecVersion(SpecVersion.DRAFT_04)

@@ -1,6 +1,5 @@
 package com.springfield.framework.core;
 
-import com.springfield.framework.core.config.SpecBuilder;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -20,8 +19,6 @@ public class Kernel {
     @Autowired
     public WebDriverWait wait;
 
-    @Autowired
-    public SpecBuilder specBuilder;
 
 /*    @Autowired
     public Log logger;*/
