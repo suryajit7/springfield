@@ -32,7 +32,7 @@ public class Await {
                 .ignoreExceptions()
                 .pollDelay(ofMillis(10))
                 .atLeast(ofMillis(10))
-                .atMost(ofSeconds(300));
+                .atMost(ofSeconds(180));
     }
 
 

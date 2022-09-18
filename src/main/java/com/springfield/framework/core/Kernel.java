@@ -1,7 +1,7 @@
 package com.springfield.framework.core;
 
-import com.springfield.framework.core.annotation.LazyAutowired;
-import org.apache.commons.logging.Log;
+import com.springfield.framework.core.config.SpecBuilder;
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -11,17 +11,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
 
-
+@Getter
 public class Kernel {
 
-    @LazyAutowired
+    @Autowired
     public WebDriver driver;
 
-    @LazyAutowired
+    @Autowired
     public WebDriverWait wait;
 
     @Autowired
-    public Log logger;
+    public SpecBuilder specBuilder;
+
+/*    @Autowired
+    public Log logger;*/
 
     public Actions actions;
 

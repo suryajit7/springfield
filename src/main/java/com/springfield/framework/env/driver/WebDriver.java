@@ -1,12 +1,11 @@
 package com.springfield.framework.env.driver;
 
-import com.springfield.framework.core.annotation.LazyConfiguration;
 import com.springfield.framework.core.annotation.ThreadScopeBean;
 import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Configuration;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -14,9 +13,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.springfield.framework.data.Constants.WEBDRIVER_RUNMODE;
+import static com.springfield.framework.util.Await.getInitializedAwait;
+import static io.restassured.RestAssured.given;
+import static io.restassured.http.ContentType.JSON;
 import static java.util.Collections.singletonList;
 
-@LazyConfiguration
+@Configuration
 public class WebDriver {
 
     protected String host;
@@ -26,6 +28,9 @@ public class WebDriver {
     public org.openqa.selenium.WebDriver getRemoteWebDriver() throws MalformedURLException {
 
         host = System.getenv("HUB_HOST") != null ? System.getenv("HUB_HOST") : "localhost";
+
+        getInitializedAwait()
+                .until(() -> getGridAvailability(host));
         return new RemoteWebDriver(new URL("http://" + host + ":4444/wd/hub"), getCapabilities());
     }
 
@@ -37,7 +42,6 @@ public class WebDriver {
 
     private Capabilities getCapabilities() {
 
-        MutableCapabilities mutableCapabilities = new ChromeOptions();
         ChromeOptions chromeOptions = new ChromeOptions();
         Map<String, Object> prefs = new HashMap<String, Object>();
 
@@ -48,6 +52,13 @@ public class WebDriver {
         chromeOptions.setExperimentalOption("excludeSwitches", singletonList("enable-automation"));
         chromeOptions.setExperimentalOption("prefs", prefs);
 
-        return mutableCapabilities.merge(chromeOptions);
+        return chromeOptions;
+    }
+
+    private Boolean getGridAvailability(String host){
+        return given().contentType(JSON)
+                .when().get(("http://").concat(host).concat(":4444/wd/hub/status"))
+                .then().extract().response().path("value.message")
+                .toString().equalsIgnoreCase("Selenium Grid ready.");
     }
 }

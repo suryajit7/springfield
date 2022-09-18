@@ -15,6 +15,8 @@ public class Constants {
     public static final String BLANK = "";
     public static final String WEBDRIVER_BROWSER = "selenium.webdriver.browser";
     public static final String WEBDRIVER_RUNMODE = "selenium.webdriver.runmode";
+    public static final String LOCALHOST = "localhost";
+    public static final String SPOTIFY_API_ENDPOINT = "https://api.spotify.com";
 
     public static final List<Class<? extends WebDriverException>> WEBDRIVER_EXCEPTION_LIST =
             List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class,
@@ -54,7 +56,7 @@ public class Constants {
     public static final String REDIRECT_URI = "redirect_uri";
     public static final String EXPIRY_TIME = "expires_in";
     public static final String API_KEY = "apiKey";
-
+    public static final String PATH_PARAM = "path_param";
 
     //Common Regex Constants
     public static final String RFC5322_EMAIL_REGEX = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";

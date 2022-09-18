@@ -24,7 +24,7 @@ public abstract class BasePage extends Kernel {
     public BasePage goTo(String url) {
         this.driver.get(url);
         waitForPageToLoad();
-        logger.info("URL loaded: ".concat(url));
+        //logger.info("URL loaded: ".concat(url));
         return this;
     }
 
@@ -45,7 +45,7 @@ public abstract class BasePage extends Kernel {
         wait.until(visibilityOf(element));
         waitForPageToLoad();
 
-        logger.info(("Browser scrolled for element:").concat(element.getText()));
+        //logger.info(("Browser scrolled for element:").concat(element.getText()));
         return element;
     }
 
@@ -69,14 +69,14 @@ public abstract class BasePage extends Kernel {
     public BasePage switchToActiveElement() {
         waitForPageToLoad();
         this.driver.switchTo().activeElement();
-        logger.info("Switched to active WebElement.");
+        //logger.info("Switched to active WebElement.");
         return this;
     }
 
 
     public BasePage click(WebElement element) {
         wait.until(visibilityOf(element)).click();
-        logger.info(("WebElement clicked: ").concat(element.getText()));
+        //logger.info(("WebElement clicked: ").concat(element.getText()));
         return this;
     }
 
@@ -85,7 +85,7 @@ public abstract class BasePage extends Kernel {
         wait.until(visibilityOf(element)).click();
         element.clear();
         element.sendKeys(text);
-        logger.info(("Text entered: ").concat(text.contains("pass") ? ("App Password") : (text)));
+        //logger.info(("Text entered: ").concat(text.contains("pass") ? ("App Password") : (text)));
         return this;
     }
 
@@ -93,13 +93,13 @@ public abstract class BasePage extends Kernel {
     public BasePage refreshPage() {
         this.driver.navigate().refresh();
         waitForPageToLoad();
-        logger.info("Page is refreshed.");
+        //logger.info("Page is refreshed.");
         return this;
     }
 
 
     public BasePage waitForPageToLoad() {
-        logger.info("Waiting for the whole Page to load.");
+        //logger.info("Waiting for the whole Page to load.");
         wait.until((ExpectedCondition) webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete")
                 || ((Boolean) ((JavascriptExecutor) webDriver).executeScript("return jQuery.active == 0")));
         return this;
@@ -117,7 +117,7 @@ public abstract class BasePage extends Kernel {
                     .withMessage("Elements is Not available.")
                     .until(refreshed(visibilityOfAllElements(this.driver.findElements(locator))));
         } catch (WebDriverException exception) {
-            logger.info(exception.getMessage());
+            //logger.info(exception.getMessage());
         } return this.driver.findElement(locator);
     }
 
@@ -125,7 +125,7 @@ public abstract class BasePage extends Kernel {
 
     public BasePage moveToElementAndClick(WebElement webelement) {
         this.actions.click(webelement);
-        logger.info("Moved to WebElement and clicked: ".concat(webelement.getText()));
+        //logger.info("Moved to WebElement and clicked: ".concat(webelement.getText()));
         return this;
     }
 
@@ -133,7 +133,7 @@ public abstract class BasePage extends Kernel {
         for (WebElement element : elementList) {
             wait.until(visibilityOf(element));
             this.actions.click(element);
-            logger.info("Moved to WebElement and clicked: ".concat(element.getText()));
+            //logger.info("Moved to WebElement and clicked: ".concat(element.getText()));
         } return this;
     }
 
