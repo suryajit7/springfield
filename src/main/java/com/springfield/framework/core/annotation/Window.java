@@ -2,7 +2,7 @@ package com.springfield.framework.core.annotation;
 
 import java.lang.annotation.*;
 
-@Page
+@PageObject
 @Documented
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

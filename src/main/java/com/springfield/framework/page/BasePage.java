@@ -2,7 +2,8 @@ package com.springfield.framework.page;
 
 import com.springfield.framework.core.Kernel;
 import com.springfield.framework.core.annotation.LazyAutowired;
-import com.springfield.framework.core.annotation.Page;
+import com.springfield.framework.core.annotation.PageObject;
+import com.springfield.framework.page.site.OrangeMenu;
 import lombok.Getter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,11 +19,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import javax.annotation.PostConstruct;
 import java.util.List;
 
+import static com.springfield.framework.data.Constants.ORANGE_URL;
 import static com.springfield.framework.data.Constants.WEBDRIVER_EXCEPTION_LIST;
 import static com.springfield.framework.util.Await.*;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-@Page
+@PageObject
 @Getter
 public abstract class BasePage extends Kernel {
 
@@ -44,8 +46,8 @@ public abstract class BasePage extends Kernel {
         this.driver.manage().window().maximize();
     }
 
-    public BasePage goTo(String url) {
-        this.driver.get(url);
+    public BasePage goTo(OrangeMenu menuOption) {
+        this.driver.get(ORANGE_URL.concat(menuOption.getStrValue()));
         waitForPageToLoad();
         //logger.info("URL loaded: ".concat(url));
         return this;

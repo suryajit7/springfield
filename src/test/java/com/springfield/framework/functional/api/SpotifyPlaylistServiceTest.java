@@ -19,7 +19,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class SpotifyPlaylistTest extends SpringfieldApplicationTests {
+public class SpotifyPlaylistServiceTest extends SpringfieldApplicationTests {
 
     public static final String SPOTIFY_USER_ID = "kuub16j6xd3bluyycbvgzkxxv";
     public static final String SPOTIFY_PLAYLIST_ID = "4I4maKtXwef0mtTIZ74GjU";
