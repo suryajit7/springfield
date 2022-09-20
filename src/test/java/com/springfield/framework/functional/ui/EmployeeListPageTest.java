@@ -35,7 +35,7 @@ public class EmployeeListPageTest extends SpringfieldApplicationTests {
 
     @AfterAll
     public void tearDownTestSetup(){
-        //orangeLoginPage.getDriver().close();
+        orangeLoginPage.getDriver().close();
     }
 
 

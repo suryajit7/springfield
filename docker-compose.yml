@@ -1,0 +1,63 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:4.4.0
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+
+  chrome:
+    image: selenium/node-chrome:4.4.0
+    shm_size: '3gb'
+    depends_on:
+      - hub
+    links:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+      - VNC_NO_PASSWORD=1
+
+  automation-test:
+    build: .
+    container_name: automation-test
+    depends_on:
+      - chrome
+    links:
+      - hub
+    environment:
+      - APP_USERNAME=${APP_USERNAME}
+      - APP_PASSWORD=${APP_PASSWORD}
+      - APP_POOL_ID=${APP_POOL_ID}
+      - APP_CLIENT_ID=${APP_CLIENT_ID}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
+      - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
+      - SPOTIFY_REFRESH_TOKEN=${SPOTIFY_REFRESH_TOKEN}
+      - MODULE=testng.xml
+    volumes:
+      - ./src/test/resources/results:/app
+
+#  allure:
+#    image: "frankescobar/allure-docker-service"
+#    environment:
+#      CHECK_RESULTS_EVERY_SECONDS: 1
+#      KEEP_HISTORY: 1
+#    ports:
+#      - "5050:5050"
+#    volumes:
+#      - ./allure-results:/app/allure-results
+#      - ./allure-reports:/app/default-reports
+
+#  allure-ui:
+#    image: "frankescobar/allure-docker-service-ui"
+#    environment:
+#      ALLURE_DOCKER_PUBLIC_API_URL: "http://localhost:5050"
+#      ALLURE_DOCKER_PUBLIC_API_URL_PREFIX: ""
+#    ports:
+#      - "5252:5252"

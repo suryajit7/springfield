@@ -236,6 +236,11 @@
 			</exclusions>
 		</dependency>
 		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-launcher</artifactId>
+			<version>1.9.0</version>
+		</dependency>
+		<dependency>
 			<groupId>io.projectreactor</groupId>
 			<artifactId>reactor-test</artifactId>
 		</dependency>
@@ -270,8 +275,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<!-- changing launcher to exec junit instead of spring main class   -->
-					<mainClass>org.junit.runner.JUnitCore</mainClass>
-					<includeSystemScope>true</includeSystemScope>
+				<!--	<mainClass>org.junit.runner.JUnitCore</mainClass>
+					<includeSystemScope>true</includeSystemScope>-->
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
