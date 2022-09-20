@@ -1,6 +1,8 @@
 package com.springfield.framework.util;
 
 import com.springfield.framework.core.AwaitInterface;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.awaitility.core.ConditionFactory;
 import org.openqa.selenium.WebElement;
 
@@ -8,6 +10,8 @@ import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
 import static org.awaitility.Awaitility.await;
 
+@Data
+@NoArgsConstructor
 public class Await {
 
     public static AwaitInterface elementIsDisplayed = (element) -> getInitializedAwait()
@@ -21,6 +25,7 @@ public class Await {
 
     public static AwaitInterface elementIsButton = (element) -> getInitializedAwait()
             .until(() -> element.getTagName().equalsIgnoreCase("button") || element.getAttribute("type").equalsIgnoreCase("button"));
+
 
     public static WebElement awaitUntil(AwaitInterface method, WebElement element) {
         method.syncUsingAwait(element);

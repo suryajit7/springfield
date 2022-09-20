@@ -8,24 +8,24 @@ import com.github.javafaker.Faker;
 import com.saasquatch.jsonschemainferrer.*;
 import com.springfield.framework.core.annotation.LazyAutowired;
 import io.restassured.module.jsv.JsonSchemaValidatorSettings;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
 
 import static com.github.fge.jsonschema.SchemaVersion.DRAFTV4;
+import static com.springfield.framework.core.auth.aws.AWSClientBuilder.getAmazonS3Client;
 import static com.springfield.framework.data.Constants.ALL_PROJECT_DIR_PATHS;
 import static io.restassured.module.jsv.JsonSchemaValidator.settings;
 
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SpringfieldApplicationTests {
 
 	protected String host;
 	protected static JsonValidator validator;
-	protected AmazonS3 s3client;
+	protected static AmazonS3 s3client;
 
 	@LazyAutowired
 	protected Faker faker;
@@ -47,7 +47,7 @@ public class SpringfieldApplicationTests {
 	@BeforeAll
 	public static void setupTest() {
 
-		//s3client = getAmazonS3Client();
+		s3client = getAmazonS3Client();
 
 		settings = JsonSchemaValidatorSettings.settings()
 				.with().jsonSchemaFactory(jsonSchemaFactory)

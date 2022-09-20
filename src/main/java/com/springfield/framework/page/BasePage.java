@@ -1,14 +1,21 @@
 package com.springfield.framework.page;
 
 import com.springfield.framework.core.Kernel;
+import com.springfield.framework.core.annotation.LazyAutowired;
 import com.springfield.framework.core.annotation.Page;
 import lombok.Getter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 import static com.springfield.framework.data.Constants.WEBDRIVER_EXCEPTION_LIST;
@@ -19,7 +26,23 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 @Getter
 public abstract class BasePage extends Kernel {
 
+    @LazyAutowired
+    public RemoteWebDriver driver;
+
+    @LazyAutowired
+    public WebDriverWait wait;
+
+    public Actions actions;
+
     public abstract BasePage isPageLoaded();
+
+    @PostConstruct
+    public void init() {
+
+        PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, 30), this);
+        this.actions = new Actions(this.driver);
+        this.driver.manage().window().maximize();
+    }
 
     public BasePage goTo(String url) {
         this.driver.get(url);

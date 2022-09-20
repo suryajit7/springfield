@@ -5,7 +5,7 @@ import com.amazonaws.services.cognitoidp.model.AuthenticationResultType;
 import com.amazonaws.services.cognitoidp.model.InitiateAuthRequest;
 import com.amazonaws.services.cognitoidp.model.InitiateAuthResult;
 import com.springfield.framework.data.BaseEntity;
-import com.springfield.framework.service.spotify.api.LoginService;
+import com.springfield.framework.service.api.LoginService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.Instant;

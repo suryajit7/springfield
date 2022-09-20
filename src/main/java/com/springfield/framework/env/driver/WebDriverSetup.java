@@ -19,13 +19,13 @@ import static io.restassured.http.ContentType.JSON;
 import static java.util.Collections.singletonList;
 
 @Configuration
-public class WebDriver {
+public class WebDriverSetup {
 
     protected String host;
 
     @ThreadScopeBean
     @ConditionalOnProperty(name = WEBDRIVER_RUNMODE, havingValue = "remote")
-    public org.openqa.selenium.WebDriver getRemoteWebDriver() throws MalformedURLException {
+    public RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
 
         host = System.getenv("HUB_HOST") != null ? System.getenv("HUB_HOST") : "localhost";
 
@@ -36,7 +36,7 @@ public class WebDriver {
 
     @ThreadScopeBean
     @ConditionalOnProperty(name = WEBDRIVER_RUNMODE, havingValue = "cloud")
-    public org.openqa.selenium.WebDriver remoteChromeDriver() throws MalformedURLException {
+    public RemoteWebDriver remoteChromeDriver() throws MalformedURLException {
         return new RemoteWebDriver(new URL("https://uchihasuryajit_rIUiWy:HXYBWT4pHu8sCrrXTQNz@hub.browserstack.com/wd/hub"), getCapabilities());
     }
 

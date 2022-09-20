@@ -1,8 +1,8 @@
-package com.springfield.framework.service.spotify.api;
+package com.springfield.framework.service.api;
 
 import com.springfield.framework.core.annotation.LazyService;
 import com.springfield.framework.data.entity.Playlist;
-import com.springfield.framework.service.spotify.BaseService;
+import com.springfield.framework.service.BaseService;
 import io.restassured.response.Response;
 
 @LazyService

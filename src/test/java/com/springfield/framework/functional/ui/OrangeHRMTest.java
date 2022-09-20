@@ -1,21 +1,20 @@
 package com.springfield.framework.functional.ui;
 
 import com.springfield.framework.SpringfieldApplicationTests;
+import com.springfield.framework.core.annotation.LazyAutowired;
 import com.springfield.framework.page.site.LoginPage;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class OrangeHRMTest extends SpringfieldApplicationTests {
 
 
-    @Autowired
+    @LazyAutowired
     private LoginPage loginPage;
 
-    @BeforeAll
-    public void beforeTestExecution(){
+    @Test
+    public void login(){
 
         loginPage.goTo("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
                 .isPageLoaded()
@@ -23,12 +22,6 @@ public class OrangeHRMTest extends SpringfieldApplicationTests {
                 .enterText(loginPage.getPasswordField(),"admin123")
                 .click(loginPage.getLoginButton())
                 .waitForPageToLoad();
-    }
-
-    @Test
-    public void login(){
-
-        System.out.println("test");
 
     }
 

@@ -50,27 +50,30 @@ public class Playlist {
     }
 
     @Data
+    @Builder
     @AllArgsConstructor
     @NoArgsConstructor
     @Jacksonized
-    public class ExternalUrl {
+    public static class ExternalUrl {
         private String spotify;
     }
 
     @Data
+    @Builder
     @AllArgsConstructor
     @NoArgsConstructor
     @Jacksonized
-    public class Follower {
+    public static class Follower {
         private String href;
         private Integer total;
     }
 
     @Data
+    @Builder
     @AllArgsConstructor
     @NoArgsConstructor
     @Jacksonized
-    public class Owner {
+    public static class Owner {
 
         private String display_name;
         private ExternalUrl external_urls;
@@ -81,10 +84,11 @@ public class Playlist {
     }
 
     @Data
+    @Builder
     @AllArgsConstructor
     @NoArgsConstructor
     @Jacksonized
-    public class Track {
+    public static class Track {
 
         private String href;
         private List<Object> items;

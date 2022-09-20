@@ -6,9 +6,6 @@ import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static com.springfield.framework.util.Await.awaitUntil;
-import static com.springfield.framework.util.Await.elementIsDisplayed;
-
 @Page
 @Getter
 public class LoginPage extends BasePage {
@@ -38,9 +35,6 @@ public class LoginPage extends BasePage {
     @Override
     public LoginPage isPageLoaded() {
         waitForPageToLoad();
-        awaitUntil(elementIsDisplayed, orangeHRMLogo);
-        awaitUntil(elementIsDisplayed, usernameField);
-        awaitUntil(elementIsDisplayed, passwordField);
         return this;
     }
 }

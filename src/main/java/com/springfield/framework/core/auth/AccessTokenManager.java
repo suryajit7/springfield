@@ -1,7 +1,7 @@
 package com.springfield.framework.core.auth;
 
 
-import com.springfield.framework.service.spotify.api.LoginService;
+import com.springfield.framework.service.api.LoginService;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 

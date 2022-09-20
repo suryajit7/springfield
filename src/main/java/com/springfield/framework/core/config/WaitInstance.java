@@ -3,6 +3,7 @@ package com.springfield.framework.core.config;
 import com.springfield.framework.core.annotation.LazyConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.*;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,7 +32,7 @@ public class WaitInstance {
     @Bean
     @ConditionalOnMissingBean
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-    public WebDriverWait webDriverWait(WebDriver driver) {
+    public WebDriverWait getWebDriverWaitInstance(RemoteWebDriver driver) {
         return new WebDriverWait(driver, ofSeconds(30));
     }
 

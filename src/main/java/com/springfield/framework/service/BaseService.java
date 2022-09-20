@@ -1,7 +1,8 @@
-package com.springfield.framework.service.spotify;
+package com.springfield.framework.service;
 
 import com.springfield.framework.core.Kernel;
 import com.springfield.framework.core.config.SpecBuilder;
+import com.springfield.framework.data.entity.Playlist;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -75,10 +76,10 @@ public class BaseService extends Kernel {
     }
 
 
-    public Response put(String path, String pathID, Object payload){
+    public Response put(String path, String pathID, Playlist payload){
         return given(SpecBuilder.getRequestSpec())
-                .auth().oauth2(generateBearerAccessToken())
                 .body(payload)
+                .auth().oauth2(generateBearerAccessToken())
                 .pathParam(PATH_PARAM, pathID)
                 .put(path)
                 .then()
