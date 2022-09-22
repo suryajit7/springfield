@@ -19,7 +19,11 @@ import static io.restassured.http.ContentType.JSON;
 import static java.util.Collections.singletonList;
 
 @Configuration
+<<<<<<<< HEAD:src/main/java/com/springfield/framework/env/driver/WebDriverSetup.java
 public class WebDriverSetup {
+========
+public class RemoteWebDriverSetup {
+>>>>>>>> da722d3 (SPRFD-0007: Fixed Docker related issues.):src/main/java/com/springfield/framework/env/driver/RemoteWebDriverSetup.java
 
     protected String host;
 

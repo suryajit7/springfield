@@ -8,6 +8,7 @@ import com.springfield.framework.util.testhelper.AssertWebService;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
@@ -19,6 +20,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
+@Disabled
 public class SpotifyPlaylistServiceTest extends SpringfieldApplicationTests {
 
     public static final String SPOTIFY_USER_ID = "kuub16j6xd3bluyycbvgzkxxv";

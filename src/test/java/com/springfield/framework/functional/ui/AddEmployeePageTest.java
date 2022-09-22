@@ -39,6 +39,7 @@ public class AddEmployeePageTest extends SpringfieldApplicationTests {
                 .enterText(addEmployeePage.getEmployeeMiddleNameInputField(), faker.funnyName().name())
                 .enterText(addEmployeePage.getEmployeeLastNameInputField(), faker.name().lastName())
                 .click(addEmployeePage.getCancelButton());
+
     }
 
     @AfterAll

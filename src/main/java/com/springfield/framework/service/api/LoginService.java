@@ -22,7 +22,6 @@ public class LoginService extends BaseService {
     public Response postResponse(){
 
         HashMap<String, String> formParams = new HashMap<>();
-
         formParams.put(CLIENT_ID, SPOTIFY_CLIENT_ID);
         formParams.put(CLIENT_SECRET, SPOTIFY_CLIENT_SECRET);
         formParams.put(REFRESH_TOKEN, SPOTIFY_REFRESH_TOKEN);

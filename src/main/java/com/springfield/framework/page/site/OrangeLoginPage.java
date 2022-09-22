@@ -9,8 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import static com.springfield.framework.page.site.OrangeMenu.LOGIN;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
-@Getter
 @PageObject
+@Getter
 public class OrangeLoginPage extends BasePage {
 
     private final String ORANGE_HRM_LOGO = "//img[@alt='company-branding']";

@@ -38,8 +38,4 @@ public class EmployeeListPageTest extends SpringfieldApplicationTests {
         orangeLoginPage.getDriver().close();
     }
 
-
-
-
-
 }

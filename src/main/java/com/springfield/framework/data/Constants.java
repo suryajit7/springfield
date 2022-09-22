@@ -21,7 +21,7 @@ public class Constants {
 
     public static final String SPOTIFY_API_ENDPOINT = "https://api.spotify.com";
     public static final String SPOTIFY_ACCOUNT_URL = "https://accounts.spotify.com";
-    public static final String ORANGE_URL = "https://opensource-demo.orangehrmlive.com/web/index.php";
+    public static final String ORANGE_HRM_URL = "https://opensource-demo.orangehrmlive.com/web/index.php";
 
     public static final List<Class<? extends WebDriverException>> WEBDRIVER_EXCEPTION_LIST =
             List.of(NoSuchWindowException.class, NoSuchFrameException.class, NoAlertPresentException.class, InvalidSelectorException.class,
