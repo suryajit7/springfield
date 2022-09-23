@@ -12,8 +12,8 @@ services:
     shm_size: '3gb'
     depends_on:
       - hub
-    networks:
-      - springfield-net
+    links:
+      - hub
     environment:
       - SE_EVENT_BUS_HOST=hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
@@ -22,32 +22,15 @@ services:
       - SCREEN_HEIGHT=1080
       - VNC_NO_PASSWORD=1
 
-  mysqldb:
-    image: mysql:8
-    container_name: mysql-springdb
-    ports:
-      - "3306:3306"
-    networks:
-      - springfield-net
-    command:
-      - "mysqld"
-      - "--wait_timeout=10"
-    environment:
-      - MYSQL_ROOT_PASSWORD=mysql@123
-      - MYSQL_DATABASE=springdb
-      - MYSQL_USER=lisa
-      - MYSQL_PASSWORD=mysql@123
-
   springfield:
     build: .
-    container_name: springfield
+    container_name: app
     ports:
       - "8080:8080"
     networks:
       - springfield-net
     depends_on:
       - mysqldb
-      - hub
     environment:
       - APP_USERNAME=${APP_USERNAME}
       - APP_PASSWORD=${APP_PASSWORD}
@@ -58,9 +41,18 @@ services:
       - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
       - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
       - SPOTIFY_REFRESH_TOKEN=${SPOTIFY_REFRESH_TOKEN}
-      - spring.datasource.url=jdbc:mysql://mysqldb:3306/springdb?allowPublicKeyRetrieval=true&useSSL=false
     volumes:
       - ./src/test/resources/results:/app
+
+  mysqldb:
+    image: mysql:8
+    networks:
+      - springfield-net
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql@123
+      - MYSQL_DATABASE=springdb
+      - MYSQL_USER=lisa
+      - MYSQL_PASSWORD=mysql@123
 
 networks:
   springfield-net:
