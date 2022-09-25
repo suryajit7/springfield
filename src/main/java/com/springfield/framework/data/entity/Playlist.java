@@ -1,6 +1,5 @@
 package com.springfield.framework.data.entity;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,14 +9,11 @@ import lombok.extern.jackson.Jacksonized;
 
 import java.util.List;
 
-import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Jacksonized
-@JsonInclude(NON_NULL)
 public class Playlist {
 
     private Boolean collaborative;

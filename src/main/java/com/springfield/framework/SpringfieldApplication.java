@@ -15,9 +15,7 @@ public class SpringfieldApplication {
 	}
 
 	public static void main(String[] args) {
-
 		SpringApplication.run(SpringfieldApplication.class, args);
-
 	}
 
 

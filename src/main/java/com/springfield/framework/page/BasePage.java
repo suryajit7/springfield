@@ -1,6 +1,7 @@
 package com.springfield.framework.page;
 
 import com.springfield.framework.core.Kernel;
+import com.springfield.framework.core.annotation.LazyAutowired;
 import com.springfield.framework.core.annotation.PageObject;
 import com.springfield.framework.page.site.OrangeMenu;
 import lombok.Getter;
@@ -14,7 +15,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -28,13 +28,6 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 @PageObject
 public abstract class BasePage extends Kernel {
 
-    @Autowired
-    public RemoteWebDriver driver;
-
-    @Autowired
-    public WebDriverWait wait;
-
-    public Actions actions;
     @LazyAutowired
     public RemoteWebDriver driver;
 
@@ -53,18 +46,9 @@ public abstract class BasePage extends Kernel {
         this.driver.manage().window().maximize();
     }
 
+
     public BasePage goTo(OrangeMenu menuOption) {
         this.driver.get(ORANGE_HRM_URL.concat(menuOption.getStrValue()));
-    @PostConstruct
-    public void init() {
-
-        PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, 30), this);
-        this.actions = new Actions(this.driver);
-        this.driver.manage().window().maximize();
-    }
-
-    public BasePage goTo(OrangeMenu menuOption) {
-        this.driver.get(ORANGE_URL.concat(menuOption.getStrValue()));
         waitForPageToLoad();
         //logger.info("URL loaded: ".concat(url));
         return this;
