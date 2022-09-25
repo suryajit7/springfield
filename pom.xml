@@ -15,6 +15,8 @@
 	<description>Spring Based Full-Fledged Enterprise Level Test Automation Framework</description>
 	<properties>
 		<java.version>11</java.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
 		<testcontainers.version>1.17.3</testcontainers.version>
 		<selenium.version>4.4.0</selenium.version>
@@ -188,18 +190,38 @@
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
 
 
 		<!-- aws dependencies -->
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk</artifactId>
-			<version>1.12.300</version>
+			<version>1.12.307</version>
 		</dependency>
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk-s3</artifactId>
-			<version>1.12.300</version>
+			<version>1.12.307</version>
 		</dependency>
 		<dependency>
 			<groupId>com.amazonaws</groupId>
@@ -223,6 +245,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
@@ -295,7 +318,7 @@
 	</dependencies>
 	<build>
 		<finalName>springfield-dockerized</finalName>
-		<!-- all test class will be compiled with all source   -->
+		<!-- all test class will be compiled with all sources   -->
 		<testOutputDirectory>target/classes</testOutputDirectory>
 		<plugins>
 			<plugin>

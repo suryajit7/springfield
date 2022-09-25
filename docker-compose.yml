@@ -1,34 +1,10 @@
-version: "3"
+version: "3.9"
 services:
-  hub:
-    image: selenium/hub:4.4.0
-    ports:
-      - "4442:4442"
-      - "4443:4443"
-      - "4444:4444"
-
-  chrome:
-    image: selenium/node-chrome:4.4.0
-    shm_size: '3gb'
-    depends_on:
-      - hub
-    links:
-      - hub
-    environment:
-      - SE_EVENT_BUS_HOST=hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SCREEN_WIDTH=1920
-      - SCREEN_HEIGHT=1080
-      - VNC_NO_PASSWORD=1
-
   springfield:
     build: .
-    container_name: app
     ports:
       - "8080:8080"
-    networks:
-      - springfield-net
+    restart: on-failure:3
     depends_on:
       - mysqldb
     environment:
@@ -41,18 +17,16 @@ services:
       - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
       - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
       - SPOTIFY_REFRESH_TOKEN=${SPOTIFY_REFRESH_TOKEN}
-    volumes:
-      - ./src/test/resources/results:/app
+      - MYSQL_HOST=mysqldb
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${MYSQLDB_ROOT_PASSWORD}
+      - MYSQL_PORT=3306
 
   mysqldb:
     image: mysql:8
-    networks:
-      - springfield-net
+    container_name: mysqldb
+    ports:
+      - "3307:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=mysql@123
       - MYSQL_DATABASE=springdb
-      - MYSQL_USER=lisa
-      - MYSQL_PASSWORD=mysql@123
-
-networks:
-  springfield-net:
