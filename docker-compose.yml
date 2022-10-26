@@ -4,7 +4,6 @@ services:
     build: .
     ports:
       - "8080:8080"
-    restart: on-failure:3
     depends_on:
       - mysqldb
     environment:
@@ -30,3 +29,25 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=mysql@123
       - MYSQL_DATABASE=springdb
+
+  hub:
+    image: selenium/hub:4.5.0
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+
+  chrome:
+    image: selenium/node-chrome:4.5.0
+    shm_size: '3gb'
+    depends_on:
+      - hub
+    links:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+      - VNC_NO_PASSWORD=1

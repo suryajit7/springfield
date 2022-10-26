@@ -106,6 +106,12 @@ public abstract class BasePage extends Kernel {
         return this;
     }
 
+    public BasePage click(By locator) {
+        wait.until(visibilityOfElementLocated(locator)).click();
+        //logger.info(("WebElement clicked: ").concat(element.getText()));
+        return this;
+    }
+
 
     public BasePage enterText(WebElement element, String text) {
         wait.until(visibilityOf(element)).click();
