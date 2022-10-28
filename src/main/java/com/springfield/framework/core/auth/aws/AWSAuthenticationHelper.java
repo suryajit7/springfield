@@ -1,6 +1,6 @@
 package com.springfield.framework.core.auth.aws;
 
-import com.springfield.framework.core.CognitoInternalErrorException;
+import com.springfield.framework.core.exception.CognitoInternalErrorException;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

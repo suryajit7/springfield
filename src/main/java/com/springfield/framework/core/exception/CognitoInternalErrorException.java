@@ -1,4 +1,4 @@
-package com.springfield.framework.core;
+package com.springfield.framework.core.exception;
 
 public class CognitoInternalErrorException extends RuntimeException {
     public CognitoInternalErrorException(String message, Exception e) {
